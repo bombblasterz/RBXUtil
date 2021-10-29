@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="generator" content="Docusaurus v2.0.0-beta.6">
+<title data-react-helmet="true">Component | RBXUtil</title><meta data-react-helmet="true" property="og:title" content="Component | RBXUtil"><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"><meta data-react-helmet="true" name="description" content="A class which is used to bind instances to tags and extend their functionality.
+
+:::note
+Documentation may be incomplete!
+:::"><meta data-react-helmet="true" property="og:description" content="A class which is used to bind instances to tags and extend their functionality.
+
+:::note
+Documentation may be incomplete!
+:::"><meta data-react-helmet="true" property="og:url" content="https://finobinos.github.io/RBXUtil/api/Component"><meta data-react-helmet="true" name="docusaurus_locale" content="en"><meta data-react-helmet="true" name="docusaurus_tag" content="default"><link data-react-helmet="true" rel="canonical" href="https://finobinos.github.io/RBXUtil/api/Component"><link data-react-helmet="true" rel="alternate" href="https://finobinos.github.io/RBXUtil/api/Component" hreflang="en"><link data-react-helmet="true" rel="alternate" href="https://finobinos.github.io/RBXUtil/api/Component" hreflang="x-default"><link rel="stylesheet" href="/RBXUtil/assets/css/styles.3c0ff9e9.css">
+<link rel="preload" href="/RBXUtil/assets/js/runtime~main.9c608af2.js" as="script">
+<link rel="preload" href="/RBXUtil/assets/js/main.0b9d9f17.js" as="script">
+</head>
+<body>
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){var t=null;try{t=localStorage.getItem("theme")}catch(t){}return t}();t(null!==e?e:"light")}()</script><div id="__docusaurus">
+<div><a href="#" class="skipToContent_1oUP">Skip to main content</a></div><nav class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Navigation bar toggle" class="navbar__toggle clean-btn" type="button" tabindex="0"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/RBXUtil/"><b class="navbar__title">RBXUtil</b></a><a class="navbar__item navbar__link" href="/RBXUtil/docs/intro">Docs</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/RBXUtil/api/">API</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/finobinos/RBXUtil" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link"><span>GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_3J9K"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></span></a><div class="react-toggle toggle_3Zt9 react-toggle--disabled"><div class="react-toggle-track" role="button" tabindex="-1"><div class="react-toggle-track-check"><span class="toggle_71bT">🌜</span></div><div class="react-toggle-track-x"><span class="toggle_71bT">🌞</span></div><div class="react-toggle-thumb"></div></div><input type="checkbox" class="react-toggle-screenreader-only" aria-label="Switch between dark and light mode"></div><div class="navbar__search"><span aria-label="expand searchbar" role="button" class="search-icon" tabindex="0"></span><input type="search" id="search_input_react" placeholder="Press S to Search..." aria-label="Search" class="navbar__search-input search-bar"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div class="main-wrapper docPageContainer_2Kz0"><div class="docPage_1bdk"><div class="docSidebarContainer_1ykS"><div class="sidebar_15mo"><nav class="menu thin-scrollbar menu_Bmed menuWithAnnouncementBar_2WvA"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link menu__list-item"><a class="menu__link menu__link--active" aria-current="page" href="/RBXUtil/api/Component">​Component</a></li><li class="theme-doc-sidebar-item-link menu__list-item"><a class="menu__link" href="/RBXUtil/api/Maid">​Maid</a></li><li class="theme-doc-sidebar-item-link menu__list-item"><a class="menu__link" href="/RBXUtil/api/NumberUtil">​Number​Util</a></li><li class="theme-doc-sidebar-item-link menu__list-item"><a class="menu__link" href="/RBXUtil/api/Ray">​Ray</a></li><li class="theme-doc-sidebar-item-link menu__list-item"><a class="menu__link" href="/RBXUtil/api/SafeWaitUtil">​Safe​Wait​Util</a></li><li class="theme-doc-sidebar-item-link menu__list-item"><a class="menu__link" href="/RBXUtil/api/Signal">​Signal</a></li></ul></nav><button type="button" title="Collapse sidebar" aria-label="Collapse sidebar" class="button button--secondary button--outline collapseSidebarButton_1CGd"><svg width="20" height="20" aria-hidden="true" class="collapseSidebarButtonIcon_3E-R"><g fill="#7a7a7a"><path d="M9.992 10.023c0 .2-.062.399-.172.547l-4.996 7.492a.982.982 0 01-.828.454H1c-.55 0-1-.453-1-1 0-.2.059-.403.168-.551l4.629-6.942L.168 3.078A.939.939 0 010 2.528c0-.548.45-.997 1-.997h2.996c.352 0 .649.18.828.45L9.82 9.472c.11.148.172.347.172.55zm0 0"></path><path d="M19.98 10.023c0 .2-.058.399-.168.547l-4.996 7.492a.987.987 0 01-.828.454h-3c-.547 0-.996-.453-.996-1 0-.2.059-.403.168-.551l4.625-6.942-4.625-6.945a.939.939 0 01-.168-.55 1 1 0 01.996-.997h3c.348 0 .649.18.828.45l4.996 7.492c.11.148.168.347.168.55zm0 0"></path></g></svg></button></div></div><main class="docMainContainer_28N5"><div class="container padding-vert--lg"><div class="row"><div class="col docItemCol_3WPG"><div class="docItemContainer_3XDu"><article><div class="member_qHIL markdown"><div class="tocCollapsible_1PrD theme-doc-toc-mobile tocMobile_3ryM"><button type="button" class="clean-btn tocCollapsibleButton_2O1e">On this page</button></div><header><h1 class="docTitle_1ddc" style="text-decoration:none"><span style="display:inline-block">Component</span></h1><div class="luaClassTags_2Zrs"></div><div>
+<p>A class which is used to bind instances to tags and extend their functionality.</p>
+<div class="admonition admonition-note alert alert--secondary">
+  <div class="admonition-heading">
+    <h5><span class="admonition-icon"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16">
+          <path d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path>
+        </svg></span>note</h5>
+  </div>
+  <div class="admonition-content">
+    <p>Documentation may be incomplete!</p>
+  </div>
+</div>
+</div></header><h2><a aria-hidden="true" tabindex="-1" class="anchor anchor__h2 anchorWithStickyNavbar_31ik" id="properties"></a>Properties<a class="hash-link" href="#properties" title="Direct link to heading">#</a></h2><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Objects"></a><code style="text-decoration:none">Objects</code><a class="hash-link" href="#Objects" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#ff793f;color:#ff793f">Component</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Component/init.lua#L84"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Component.Objects: </code> <code class="blue_2Afy">table</code></div><div>
+<p>A table which contains all active objects of the component.</p>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="OnComponentAdded"></a><code style="text-decoration:none">OnComponentAdded</code><a class="hash-link" href="#OnComponentAdded" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Component/init.lua#L50"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Component.OnComponentAdded: </code> <code class="blue_2Afy">Signal</code></div><div>
+<p>A signal which is fired whenever a component is added.</p>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="OnComponentDestroyed"></a><code style="text-decoration:none">OnComponentDestroyed</code><a class="hash-link" href="#OnComponentDestroyed" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Component/init.lua#L58"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Component.OnComponentDestroyed: </code> <code class="blue_2Afy">Signal</code></div><div>
+<p>
+  A signal which is fired whenever a component is destroyed. Passing in the component destroyed as the
+  argument.
+</p>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="OnObjectAdded"></a><code style="text-decoration:none">OnObjectAdded</code><a class="hash-link" href="#OnObjectAdded" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#ff793f;color:#ff793f">Component</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Component/init.lua#L67"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Component.OnObjectAdded: </code> <code class="blue_2Afy">Signal</code></div><div>
+<p>
+  A signal which is fired whenever a new object is added to the component. Passing in the object added as the
+  argument.
+</p>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="OnObjectDestroyed"></a><code style="text-decoration:none">OnObjectDestroyed</code><a class="hash-link" href="#OnObjectDestroyed" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#ff793f;color:#ff793f">Component</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Component/init.lua#L76"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Component.OnObjectDestroyed: </code> <code class="blue_2Afy">Signal</code></div><div>
+<p>
+  A signal which is fired whenever a new object is destroyed from the component. Passing in the object destroyed as the
+  argument.
+</p>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Tags"></a><code style="text-decoration:none">Tags</code><a class="hash-link" href="#Tags" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#ff793f;color:#ff793f">Component</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Component/init.lua#L92"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Component.Tags: </code> <code class="blue_2Afy">table</code></div><div>
+<p>A table which contains the tags of the component i.e <code>Component.RequiredTags</code> or <code>Component.OptionalTags</code>.</p>
+</div><h2><a aria-hidden="true" tabindex="-1" class="anchor anchor__h2 anchorWithStickyNavbar_31ik" id="functions"></a>Functions<a class="hash-link" href="#functions" title="Direct link to heading">#</a></h2><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="BindComponentsFolder"></a><code style="text-decoration:none">BindComponentsFolder</code><a class="hash-link" href="#BindComponentsFolder" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Component/init.lua#L352"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Component.</code><code class="green_3LnD">BindComponentsFolder</code><code>(</code><code>componentsFolder: </code><code class="blue_2Afy">Folder</code><code>) → </code><code>(</code><code>)</code></div><div>
+<p>
+  Binds all the children (module scripts) in <code>componentsFolder</code> such that each will binded to it's own
+  component through <code>Component.new</code> when <code>Component.Start</code> is called.
+</p>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="GetComponentFromTags"></a><code style="text-decoration:none">GetComponentFromTags</code><a class="hash-link" href="#GetComponentFromTags" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Component/init.lua#L188"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Component.</code><code class="green_3LnD">GetComponentFromTags</code><code>(</code><code>tags: </code><code class="blue_2Afy">table</code><code>) → </code><code class="blue_2Afy">table</code><code class="op_1JtD"> | </code><code class="blue_2Afy">nil</code></div><div>
+<p>A method which returns a component whose <code>RequiredTags</code> or <code>OptionalTags</code> match <code>tags</code>.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Tag members</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>OptionalTags</code></td>
+      <td>This member will be compared against the <code>OptionalTags</code> member of the component (if it has one). If they are equal, the component will be returned.</td>
+    </tr>
+    <tr>
+      <td><code>RequiredTags</code></td>
+      <td>This member will be compared against the <code>RequiredTags</code> member of the component (if it has one). If they are equal, the component will be returned.</td>
+    </tr>
+  </tbody>
+</table>
+<div class="admonition admonition-note alert alert--secondary">
+  <div class="admonition-heading">
+    <h5><span class="admonition-icon"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16">
+          <path d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path>
+        </svg></span>note</h5>
+  </div>
+  <div class="admonition-content">
+    <p>The <code>tags</code> table must contain only of these members which must be a table.</p>
+  </div>
+</div>
+<pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> tags <span class="token operator">=</span> <span class="token punctuation">{</span>
+	RequiredTags <span class="token operator">=</span> <span class="token punctuation">{</span>
+		<span class="token string">"A"</span><span class="token punctuation">,</span>
+		<span class="token string">"B"</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">-- Will get a component whose RequiredTags is the same as tags.RequiredTags</span>
+<span class="token keyword">local</span> component <span class="token operator">=</span> Component<span class="token punctuation">.</span><span class="token function">GetComponentFromTags</span><span class="token punctuation">(</span>tags<span class="token punctuation">)</span>
+</code></pre>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="GetComponentObjectFromInstance"></a><code style="text-decoration:none">GetComponentObjectFromInstance</code><a class="hash-link" href="#GetComponentObjectFromInstance" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Component/init.lua#L123"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Component.</code><code class="green_3LnD">GetComponentObjectFromInstance</code><code>(</code><div class="inset_2cJr"><div><code>instance: </code><code class="blue_2Afy">Instance</code><code>,</code></div><div><code>component: </code><code class="blue_2Afy">Component</code><code class="op_1JtD"> | </code><code class="blue_2Afy">nil</code></div></div><code>) → </code><code class="blue_2Afy">table</code><code class="op_1JtD"> | </code><code class="blue_2Afy">nil</code></div><div>
+<p>A method which returns an object of some component or <code>component</code> (if provided) binded to <code>instance</code>.</p>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="IsComponent"></a><code style="text-decoration:none">IsComponent</code><a class="hash-link" href="#IsComponent" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Component/init.lua#L233"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Component.</code><code class="green_3LnD">IsComponent</code><code>(</code><code>self: </code><code class="blue_2Afy">any</code><code>) → </code><code class="blue_2Afy">boolean</code></div><div>
+<p>Returns a boolean indicating if the given argument is a Component or not.</p>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="new"></a><code style="text-decoration:none">new</code><a class="hash-link" href="#new" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Component/init.lua#L389"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Component.</code><code class="green_3LnD">new</code><code>(</code><code>module: </code><code class="blue_2Afy">ModuleScript</code><code>) → </code><code>(</code><code>)</code></div><div>
+<p>Creates and binds <code>module</code> to a new component, <code>module</code> must have these members and methods:</p>
+<table>
+  <thead>
+    <tr>
+      <th>Required members and methods</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>.new</code></td>
+      <td>A constructor method which will be called whenever a new object is to be binded to the component.</td>
+    </tr>
+    <tr>
+      <td><code>:Destroy</code></td>
+      <td>A method which will be called on a object to be destroyed.</td>
+    </tr>
+    <tr>
+      <td><code>OptionalTags</code> or <code>RequiredTags</code></td>
+      <td>The tags that an instance must have in order to be binded to the component</td>
+    </tr>
+  </tbody>
+</table>
+<p><code>module</code> can also have these optional lifecycle methods and members:</p>
+<table>
+  <thead>
+    <tr>
+      <th>Optional lifecycle methods and members</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>RenderUpdatePriority</code></td>
+      <td>An <code>EnumItem</code>. Learn more about it <a href="https://developer.roblox.com/en-us/api-reference/function/RunService/BindToRenderStep" target="_blank">here</a>.</td>
+    </tr>
+    <tr>
+      <td><code>:Init</code></td>
+      <td>A method which will be called on an object added, after <code>.new</code> is called for it.</td>
+    </tr>
+    <tr>
+      <td><code>:Deinit</code></td>
+      <td>A method which will be called on an object just before it's destroyed.</td>
+    </tr>
+    <tr>
+      <td><code>HeartbeatUpdate</code></td>
+      <td>A method called every <code>RunService.Heartbeat</code> on an object.</td>
+    </tr>
+    <tr>
+      <td><code>PhysicsUpdate</code></td>
+      <td>A method called every <code>RunService.Stepped</code> on an object.</td>
+    </tr>
+    <tr>
+      <td><code>RenderUpdate</code></td>
+      <td>A method called every <code>RunService.RenderStepped</code> on an object.</td>
+    </tr>
+  </tbody>
+</table>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Start"></a><code style="text-decoration:none">Start</code><a class="hash-link" href="#Start" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Component/init.lua#L436"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Component.</code><code class="green_3LnD">Start</code><code>(</code><code>) → </code><code>(</code><code>)</code></div><div>
+<p>Creates and binds a component to each module script in the folder provided as argument to <code>Component.BindComponentsFolder</code>.</p>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="WaitForComponentFromTags"></a><code style="text-decoration:none">WaitForComponentFromTags</code><a class="hash-link" href="#WaitForComponentFromTags" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Component/init.lua#L245"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Component.</code><code class="green_3LnD">WaitForComponentFromTags</code><code>(</code><div class="inset_2cJr"><div><code>tags: </code><code class="blue_2Afy">tags</code><code>,</code></div><div><code>timeout: </code><code class="blue_2Afy">number</code><code class="op_1JtD"> | </code><code class="blue_2Afy">nil</code></div></div><code>) → </code><code class="blue_2Afy">Component</code><code class="op_1JtD"> | </code><code class="blue_2Afy">nil</code></div><div>
+<p>Works the same as <code>Component.GetComponentFromTags</code>, except yields the thread until a valid component is found under <code>timeout</code> seconds (if provided).</p>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Destroy"></a><code style="text-decoration:none">Destroy</code><a class="hash-link" href="#Destroy" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#ff793f;color:#ff793f">Component</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Component/init.lua#L470"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Component:</code><code class="green_3LnD">Destroy</code><code>(</code><code>) → </code><code>(</code><code>)</code></div><div>
+<p>Destroys the component it self i.e cleaning up all signals and destroying all objects.</p>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="DestroyAllObjects"></a><code style="text-decoration:none">DestroyAllObjects</code><a class="hash-link" href="#DestroyAllObjects" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#ff793f;color:#ff793f">Component</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Component/init.lua#L458"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Component:</code><code class="green_3LnD">DestroyAllObjects</code><code>(</code><code>) → </code><code>(</code><code>)</code></div><div>
+<p>Destroys all objects in the component.</p>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="GetAllObjects"></a><code style="text-decoration:none">GetAllObjects</code><a class="hash-link" href="#GetAllObjects" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#ff793f;color:#ff793f">Component</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Component/init.lua#L481"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Component:</code><code class="green_3LnD">GetAllObjects</code><code>(</code><code>) → </code><code class="blue_2Afy">table</code></div><div>
+<p>Returns all the objects in the component.</p>
+</div></div></article></div><details><summary>Show raw api</summary><pre style="max-width:100%;white-space:pre-wrap">{
+    &quot;functions&quot;: [
+        {
+            &quot;name&quot;: &quot;GetComponentObjectFromInstance&quot;,
+            &quot;desc&quot;: &quot;A method which returns an object of some component or `component` (if provided) binded to `instance`.&quot;,
+            &quot;params&quot;: [
+                {
+                    &quot;name&quot;: &quot;instance&quot;,
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;Instance&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;component&quot;,
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;Component | nil&quot;
+                }
+            ],
+            &quot;returns&quot;: [
+                {
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;table | nil&quot;
+                }
+            ],
+            &quot;function_type&quot;: &quot;static&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 123,
+                &quot;path&quot;: &quot;packages/Component/init.lua&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;GetComponentFromTags&quot;,
+            &quot;desc&quot;: &quot;A method which returns a component whose `RequiredTags` or `OptionalTags` match `tags`.\n\n| Tag members      | Description                          |\n| ----------- | ------------------------------------ |\n| `OptionalTags`  | This member will be compared against the `OptionalTags` member of the component (if it has one). If they are equal, the component will be returned.  |\n| `RequiredTags`  | This member will be compared against the `RequiredTags` member of the component (if it has one). If they are equal, the component will be returned. |\n\n:::note\nThe `tags` table must contain only of these members which must be a table.\n:::\n\n```lua\nlocal tags = {\n\tRequiredTags = {\n\t\t\&quot;A\&quot;,\n\t\t\&quot;B\&quot;\n\t}\n}\n\n-- Will get a component whose RequiredTags is the same as tags.RequiredTags\nlocal component = Component.GetComponentFromTags(tags)\n```&quot;,
+            &quot;params&quot;: [
+                {
+                    &quot;name&quot;: &quot;tags&quot;,
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;table&quot;
+                }
+            ],
+            &quot;returns&quot;: [
+                {
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;table | nil&quot;
+                }
+            ],
+            &quot;function_type&quot;: &quot;static&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 188,
+                &quot;path&quot;: &quot;packages/Component/init.lua&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;IsComponent&quot;,
+            &quot;desc&quot;: &quot;Returns a boolean indicating if the given argument is a Component or not.&quot;,
+            &quot;params&quot;: [
+                {
+                    &quot;name&quot;: &quot;self&quot;,
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;any&quot;
+                }
+            ],
+            &quot;returns&quot;: [
+                {
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;boolean&quot;
+                }
+            ],
+            &quot;function_type&quot;: &quot;static&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 233,
+                &quot;path&quot;: &quot;packages/Component/init.lua&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;WaitForComponentFromTags&quot;,
+            &quot;desc&quot;: &quot;Works the same as `Component.GetComponentFromTags`,\texcept yields the thread until a valid component is found under `timeout` seconds (if provided).&quot;,
+            &quot;params&quot;: [
+                {
+                    &quot;name&quot;: &quot;tags&quot;,
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;tags&quot;
+                },
+                {
+                    &quot;name&quot;: &quot;timeout&quot;,
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;number | nil&quot;
+                }
+            ],
+            &quot;returns&quot;: [
+                {
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;Component | nil&quot;
+                }
+            ],
+            &quot;function_type&quot;: &quot;static&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 245,
+                &quot;path&quot;: &quot;packages/Component/init.lua&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;BindComponentsFolder&quot;,
+            &quot;desc&quot;: &quot;Binds all the children (module scripts) in `componentsFolder` such that each will binded to it&#x27;s own\ncomponent through `Component.new` when `Component.Start` is called. &quot;,
+            &quot;params&quot;: [
+                {
+                    &quot;name&quot;: &quot;componentsFolder&quot;,
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;Folder&quot;
+                }
+            ],
+            &quot;returns&quot;: [],
+            &quot;function_type&quot;: &quot;static&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 352,
+                &quot;path&quot;: &quot;packages/Component/init.lua&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;new&quot;,
+            &quot;desc&quot;: &quot;Creates and binds `module` to a new component, `module` must have these members and methods:\n\n| Required members and methods     | Description                          |\n| ----------- | ------------------------------------ |\n| `.new`  | A constructor method which will be called whenever a new object is to be binded to the component.  |\n| `:Destroy`     | A method which will be called on a object to be destroyed. |\n| `OptionalTags` or `RequiredTags`    | The tags that an instance must have in order to be binded to the component |\n\n`module` can also have these optional lifecycle methods and members:\n\n| Optional lifecycle methods and members     | Description                          |\n| ----------- | ------------------------------------ |\n| `RenderUpdatePriority`  | An `EnumItem`. Learn more about it [here](https://developer.roblox.com/en-us/api-reference/function/RunService/BindToRenderStep).  |\n| `:Init`  | A method which will be called on an object added, after `.new` is called for it.  |\n| `:Deinit`     | A method which will be called on an object just before it&#x27;s destroyed. |\n| `HeartbeatUpdate`  | A method called every `RunService.Heartbeat` on an object. |\n| `PhysicsUpdate`  | A method called every `RunService.Stepped` on an object. |\n| `RenderUpdate`  | A method called every `RunService.RenderStepped` on an object. |&quot;,
+            &quot;params&quot;: [
+                {
+                    &quot;name&quot;: &quot;module&quot;,
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;ModuleScript&quot;
+                }
+            ],
+            &quot;returns&quot;: [],
+            &quot;function_type&quot;: &quot;static&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 389,
+                &quot;path&quot;: &quot;packages/Component/init.lua&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;Start&quot;,
+            &quot;desc&quot;: &quot;Creates and binds a component to each module script in the folder provided as argument to `Component.BindComponentsFolder`.\t&quot;,
+            &quot;params&quot;: [],
+            &quot;returns&quot;: [],
+            &quot;function_type&quot;: &quot;static&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 436,
+                &quot;path&quot;: &quot;packages/Component/init.lua&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;DestroyAllObjects&quot;,
+            &quot;desc&quot;: &quot;Destroys all objects in the component.&quot;,
+            &quot;params&quot;: [],
+            &quot;returns&quot;: [],
+            &quot;function_type&quot;: &quot;method&quot;,
+            &quot;tags&quot;: [
+                &quot;Component&quot;
+            ],
+            &quot;source&quot;: {
+                &quot;line&quot;: 458,
+                &quot;path&quot;: &quot;packages/Component/init.lua&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;Destroy&quot;,
+            &quot;desc&quot;: &quot;Destroys the component it self i.e cleaning up all signals and destroying all objects.&quot;,
+            &quot;params&quot;: [],
+            &quot;returns&quot;: [],
+            &quot;function_type&quot;: &quot;method&quot;,
+            &quot;tags&quot;: [
+                &quot;Component&quot;
+            ],
+            &quot;source&quot;: {
+                &quot;line&quot;: 470,
+                &quot;path&quot;: &quot;packages/Component/init.lua&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;GetAllObjects&quot;,
+            &quot;desc&quot;: &quot;Returns all the objects in the component.&quot;,
+            &quot;params&quot;: [],
+            &quot;returns&quot;: [
+                {
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;table&quot;
+                }
+            ],
+            &quot;function_type&quot;: &quot;method&quot;,
+            &quot;tags&quot;: [
+                &quot;Component&quot;
+            ],
+            &quot;source&quot;: {
+                &quot;line&quot;: 481,
+                &quot;path&quot;: &quot;packages/Component/init.lua&quot;
+            }
+        }
+    ],
+    &quot;properties&quot;: [
+        {
+            &quot;name&quot;: &quot;OnComponentAdded&quot;,
+            &quot;desc&quot;: &quot;A signal which is fired whenever a component is added.&quot;,
+            &quot;lua_type&quot;: &quot;Signal&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 50,
+                &quot;path&quot;: &quot;packages/Component/init.lua&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;OnComponentDestroyed&quot;,
+            &quot;desc&quot;: &quot;A signal which is fired whenever a component is destroyed. Passing in the component destroyed as the\nargument.&quot;,
+            &quot;lua_type&quot;: &quot;Signal&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 58,
+                &quot;path&quot;: &quot;packages/Component/init.lua&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;OnObjectAdded&quot;,
+            &quot;desc&quot;: &quot;A signal which is fired whenever a new object is added to the component. Passing in the object added as the\nargument.&quot;,
+            &quot;lua_type&quot;: &quot;Signal&quot;,
+            &quot;tags&quot;: [
+                &quot;Component&quot;
+            ],
+            &quot;source&quot;: {
+                &quot;line&quot;: 67,
+                &quot;path&quot;: &quot;packages/Component/init.lua&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;OnObjectDestroyed&quot;,
+            &quot;desc&quot;: &quot;A signal which is fired whenever a new object is destroyed from the component. Passing in the object destroyed as the\nargument.&quot;,
+            &quot;lua_type&quot;: &quot;Signal&quot;,
+            &quot;tags&quot;: [
+                &quot;Component&quot;
+            ],
+            &quot;source&quot;: {
+                &quot;line&quot;: 76,
+                &quot;path&quot;: &quot;packages/Component/init.lua&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;Objects&quot;,
+            &quot;desc&quot;: &quot;A table which contains all active objects of the component.&quot;,
+            &quot;lua_type&quot;: &quot;table&quot;,
+            &quot;tags&quot;: [
+                &quot;Component&quot;
+            ],
+            &quot;source&quot;: {
+                &quot;line&quot;: 84,
+                &quot;path&quot;: &quot;packages/Component/init.lua&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;Tags&quot;,
+            &quot;desc&quot;: &quot;A table which contains the tags of the component i.e `Component.RequiredTags` or `Component.OptionalTags`.&quot;,
+            &quot;lua_type&quot;: &quot;table&quot;,
+            &quot;tags&quot;: [
+                &quot;Component&quot;
+            ],
+            &quot;source&quot;: {
+                &quot;line&quot;: 92,
+                &quot;path&quot;: &quot;packages/Component/init.lua&quot;
+            }
+        }
+    ],
+    &quot;types&quot;: [],
+    &quot;name&quot;: &quot;Component&quot;,
+    &quot;desc&quot;: &quot;A class which is used to bind instances to tags and extend their functionality.\n\n:::note\nDocumentation may be incomplete!\n:::&quot;,
+    &quot;source&quot;: {
+        &quot;line&quot;: 43,
+        &quot;path&quot;: &quot;packages/Component/init.lua&quot;
+    }
+}</pre></details></div><div class="col col--3"><div class="tableOfContents_35-E thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#types" class="table-of-contents__link">Types</a></li><li><a href="#properties" class="table-of-contents__link">Properties</a><ul><li><a href="#Objects" class="table-of-contents__link">Objects</a></li><li><a href="#OnComponentAdded" class="table-of-contents__link">OnComponentAdded</a></li><li><a href="#OnComponentDestroyed" class="table-of-contents__link">OnComponentDestroyed</a></li><li><a href="#OnObjectAdded" class="table-of-contents__link">OnObjectAdded</a></li><li><a href="#OnObjectDestroyed" class="table-of-contents__link">OnObjectDestroyed</a></li><li><a href="#Tags" class="table-of-contents__link">Tags</a></li></ul></li><li><a href="#functions" class="table-of-contents__link">Functions</a><ul><li><a href="#BindComponentsFolder" class="table-of-contents__link">.BindComponentsFolder</a></li><li><a href="#GetComponentFromTags" class="table-of-contents__link">.GetComponentFromTags</a></li><li><a href="#GetComponentObjectFromInstance" class="table-of-contents__link">.GetComponentObjectFromInstance</a></li><li><a href="#IsComponent" class="table-of-contents__link">.IsComponent</a></li><li><a href="#new" class="table-of-contents__link">.new</a></li><li><a href="#Start" class="table-of-contents__link">.Start</a></li><li><a href="#WaitForComponentFromTags" class="table-of-contents__link">.WaitForComponentFromTags</a></li><li><a href="#Destroy" class="table-of-contents__link">:Destroy</a></li><li><a href="#DestroyAllObjects" class="table-of-contents__link">:DestroyAllObjects</a></li><li><a href="#GetAllObjects" class="table-of-contents__link">:GetAllObjects</a></li></ul></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2021 finobinos. Built with Moonwave and Docusaurus.</div></div></div></footer></div>
+<script src="/RBXUtil/assets/js/runtime~main.9c608af2.js"></script>
+<script src="/RBXUtil/assets/js/main.0b9d9f17.js"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[356],{97868:function(s){s.exports=JSON.parse('{"sourceUrl":"https://github.com/finobinos/RBXUtil/blob/main","baseUrl":"/RBXUtil/","classOrder":[]}')}}]);
