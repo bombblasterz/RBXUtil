@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[541],{20441:function(e){e.exports=JSON.parse('{"functions":[],"properties":[],"types":[],"name":"UserInput","desc":":::note\\nDocumentation is under work!\\n:::","source":{"line":20,"path":"packages/UserInput/init.lua"}}')}}]);
