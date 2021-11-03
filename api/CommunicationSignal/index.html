@@ -45,8 +45,8 @@ local communicationSignal = CommunicationSignal.GetSignal(&quot;SomeSignal&quot;
 print(communicationSignal.Members.Test(&quot;Hi&quot;)) --&gt; &quot;Hey!&quot;
 print( communicationSignal.Members.Bo) --&gt; {1, 2, 3}
 ```"><meta data-react-helmet="true" property="og:url" content="https://finobinos.github.io/RBXUtil/api/CommunicationSignal"><meta data-react-helmet="true" name="docusaurus_locale" content="en"><meta data-react-helmet="true" name="docusaurus_tag" content="default"><link data-react-helmet="true" rel="canonical" href="https://finobinos.github.io/RBXUtil/api/CommunicationSignal"><link data-react-helmet="true" rel="alternate" href="https://finobinos.github.io/RBXUtil/api/CommunicationSignal" hreflang="en"><link data-react-helmet="true" rel="alternate" href="https://finobinos.github.io/RBXUtil/api/CommunicationSignal" hreflang="x-default"><link rel="stylesheet" href="/RBXUtil/assets/css/styles.3c0ff9e9.css">
-<link rel="preload" href="/RBXUtil/assets/js/runtime~main.6d593646.js" as="script">
-<link rel="preload" href="/RBXUtil/assets/js/main.dd6e4271.js" as="script">
+<link rel="preload" href="/RBXUtil/assets/js/runtime~main.666ea340.js" as="script">
+<link rel="preload" href="/RBXUtil/assets/js/main.23ea5c7c.js" as="script">
 </head>
 <body>
 <script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){var t=null;try{t=localStorage.getItem("theme")}catch(t){}return t}();t(null!==e?e:"light")}()</script><div id="__docusaurus">
@@ -73,7 +73,7 @@ communicationSignal<span class="token punctuation">:</span><span class="token fu
 <span class="token function">print</span><span class="token punctuation">(</span> communicationSignal<span class="token punctuation">.</span>Members<span class="token punctuation">.</span>Bo<span class="token punctuation">)</span> <span class="token comment">--> {1, 2, 3}</span>
 </code></pre>
 </div></header><h2><a aria-hidden="true" tabindex="-1" class="anchor anchor__h2 anchorWithStickyNavbar_31ik" id="functions"></a>Functions<a class="hash-link" href="#functions" title="Direct link to heading">#</a></h2><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="GetSignal"></a><code style="text-decoration:none">GetSignal</code><a class="hash-link" href="#GetSignal" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Remote/CommunicationSignal/Server.lua#L147"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>CommunicationSignal.</code><code class="green_3LnD">GetSignal</code><code>(</code><code>identifier: </code><code class="blue_2Afy">string</code><code>) → </code><code class="blue_2Afy">CommunicationSignal</code><code class="op_1JtD"> | </code><code class="blue_2Afy">nil</code></div><div>
-<p>Returns a communication signal of <code>identifier</code>.</p>
+<p>Returns the communication signal whose identifier is <code>identifier</code>.</p>
 </div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="IsA"></a><code style="text-decoration:none">IsA</code><a class="hash-link" href="#IsA" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Remote/CommunicationSignal/Server.lua#L169"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>CommunicationSignal.</code><code class="green_3LnD">IsA</code><code>(</code><code>self: </code><code class="blue_2Afy">any</code><code>) → </code><code class="blue_2Afy">boolean</code></div><div>
 <p>A method which is used to check if <code>self</code> is a communication signal or not.</p>
 </div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="new"></a><code style="text-decoration:none">new</code><a class="hash-link" href="#new" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Remote/CommunicationSignal/Server.lua#L115"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>CommunicationSignal.</code><code class="green_3LnD">new</code><code>(</code><code>identifier: </code><code class="blue_2Afy">string</code><code>) → </code><code class="blue_2Afy">CommunicationSignal</code></div><div>
@@ -130,7 +130,7 @@ communicationSignal<span class="token punctuation">:</span><span class="token fu
         },
         {
             &quot;name&quot;: &quot;GetSignal&quot;,
-            &quot;desc&quot;: &quot;Returns a communication signal of `identifier`.&quot;,
+            &quot;desc&quot;: &quot;Returns the communication signal whose identifier is `identifier`.&quot;,
             &quot;params&quot;: [
                 {
                     &quot;name&quot;: &quot;identifier&quot;,
@@ -224,7 +224,7 @@ communicationSignal<span class="token punctuation">:</span><span class="token fu
         &quot;path&quot;: &quot;packages/Remote/CommunicationSignal/Server.lua&quot;
     }
 }</pre></details></div><div class="col col--3"><div class="tableOfContents_35-E thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#types" class="table-of-contents__link">Types</a></li><li><a href="#properties" class="table-of-contents__link">Properties</a></li><li><a href="#functions" class="table-of-contents__link">Functions</a><ul><li><a href="#GetSignal" class="table-of-contents__link">.GetSignal</a></li><li><a href="#IsA" class="table-of-contents__link">.IsA</a></li><li><a href="#new" class="table-of-contents__link">.new</a></li><li><a href="#BindKeyValuePair" class="table-of-contents__link">:BindKeyValuePair</a></li><li><a href="#Destroy" class="table-of-contents__link">:Destroy</a></li></ul></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2021 finobinos. Built with Moonwave and Docusaurus.</div></div></div></footer></div>
-<script src="/RBXUtil/assets/js/runtime~main.6d593646.js"></script>
-<script src="/RBXUtil/assets/js/main.dd6e4271.js"></script>
+<script src="/RBXUtil/assets/js/runtime~main.666ea340.js"></script>
+<script src="/RBXUtil/assets/js/main.23ea5c7c.js"></script>
 </body>
 </html>
