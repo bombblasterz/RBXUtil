@@ -21,8 +21,8 @@ print(clientRemoteProperty:GetValue()) --&gt; 50
 clientRemoteProperty:SetValue(clientRemoteProperty:GetValue() + 100)
 print(clientRemoteProperty:GetValue()) --&gt; 150
 ```"><meta data-react-helmet="true" property="og:url" content="https://finobinos.github.io/RBXUtil/api/ClientRemoteProperty"><meta data-react-helmet="true" name="docusaurus_locale" content="en"><meta data-react-helmet="true" name="docusaurus_tag" content="default"><link data-react-helmet="true" rel="canonical" href="https://finobinos.github.io/RBXUtil/api/ClientRemoteProperty"><link data-react-helmet="true" rel="alternate" href="https://finobinos.github.io/RBXUtil/api/ClientRemoteProperty" hreflang="en"><link data-react-helmet="true" rel="alternate" href="https://finobinos.github.io/RBXUtil/api/ClientRemoteProperty" hreflang="x-default"><link rel="stylesheet" href="/RBXUtil/assets/css/styles.3c0ff9e9.css">
-<link rel="preload" href="/RBXUtil/assets/js/runtime~main.130c5584.js" as="script">
-<link rel="preload" href="/RBXUtil/assets/js/main.adcd7b54.js" as="script">
+<link rel="preload" href="/RBXUtil/assets/js/runtime~main.39ba4067.js" as="script">
+<link rel="preload" href="/RBXUtil/assets/js/main.d20ff003.js" as="script">
 </head>
 <body>
 <script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){var t=null;try{t=localStorage.getItem("theme")}catch(t){}return t}();t(null!==e?e:"light")}()</script><div id="__docusaurus">
@@ -64,12 +64,22 @@ clientRemoteProperty<span class="token punctuation">:</span><span class="token f
     <p>Trivial errors will occur if your code unintentionally works on a destroyed client remote property, only call this method when you're done working with it!</p>
   </div>
 </div>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="GetValue"></a><code style="text-decoration:none">GetValue</code><a class="hash-link" href="#GetValue" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#925FB9;color:#925FB9">ClientRemoteProperty</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Remote/ClientRemoteProperty.lua#L161"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>ClientRemoteProperty:</code><code class="green_3LnD">GetValue</code><code>(</code><code>) → </code><code class="blue_2Afy">any</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="GetValue"></a><code style="text-decoration:none">GetValue</code><a class="hash-link" href="#GetValue" title="Direct link to heading">#</a></h3><span class="badge_3ZFo" style="color:#f1c40f"><span class="badgeTooltip_2qiw">This is a yielding function. When called, it will pause the Lua thread that called the function until a result is ready to be returned, without interrupting other scripts.</span><span class="badgeToolTipTail_2yaQ"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="#f1c40f" role="img" aria-label="This is a yielding function. When called, it will pause the Lua thread that called the function until a result is ready to be returned, without interrupting other scripts."><path d="M96.4 11.9c-1.4-2.5-4-4-6.9-4H10.8c-2.9 0-5.4 1.5-6.9 4-1.4 2.5-1.4 5.5 0 7.9L43.3 88c1.4 2.5 4 4 6.9 4 2.9 0 5.4-1.5 6.9-4l39.3-68.2c1.4-2.4 1.4-5.4 0-7.9zM46.3 54.5c1.1-1.1 2.3-1.6 3.8-1.6s2.8.5 3.8 1.6c1.1 1.1 1.6 2.3 1.6 3.8s-.5 2.8-1.6 3.8c-1.1 1.1-2.3 1.6-3.8 1.6s-2.8-.5-3.8-1.6c-1.1-1.1-1.6-2.3-1.6-3.8.1-1.5.6-2.8 1.6-3.8zm-.5-4.9V21.8h8.8v27.8h-8.8z"></path></svg> Yields</span></span><span class="docTag_3qMS" style="border-color:#925FB9;color:#925FB9">ClientRemoteProperty</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Remote/ClientRemoteProperty.lua#L166"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>ClientRemoteProperty:</code><code class="green_3LnD">GetValue</code><code>(</code><code>) → </code><code class="blue_2Afy">any</code></div><div>
 <p>
   Returns the value of the client remote property. If bound by the server, then it will retrieve the value
   of the client from it's serverside counter part and if there is no value set specifically for the client,
   then the value retured will be the current value of the serverside counter part.
 </p>
+<div class="admonition admonition-note alert alert--secondary">
+  <div class="admonition-heading">
+    <h5><span class="admonition-icon"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16">
+          <path d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path>
+        </svg></span>note</h5>
+  </div>
+  <div class="admonition-content">
+    <p>This method may temporarily yield the thread.</p>
+  </div>
+</div>
 </div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="IsBoundToServer"></a><code style="text-decoration:none">IsBoundToServer</code><a class="hash-link" href="#IsBoundToServer" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#925FB9;color:#925FB9">ClientRemoteProperty</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Remote/ClientRemoteProperty.lua#L96"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>ClientRemoteProperty:</code><code class="green_3LnD">IsBoundToServer</code><code>(</code><code>) → </code><code class="blue_2Afy">boolean</code></div><div>
 <p>Returns a boolean indicating if the client remote property is bound to the server (remote property).</p>
 </div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="SetValue"></a><code style="text-decoration:none">SetValue</code><a class="hash-link" href="#SetValue" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#925FB9;color:#925FB9">ClientRemoteProperty</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Remote/ClientRemoteProperty.lua#L143"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>ClientRemoteProperty:</code><code class="green_3LnD">SetValue</code><code>(</code><code>newValue: </code><code class="blue_2Afy">any</code><code>) → </code><code>(</code><code>)</code></div><div>
@@ -179,7 +189,7 @@ clientRemoteProperty<span class="token punctuation">:</span><span class="token f
         },
         {
             &quot;name&quot;: &quot;GetValue&quot;,
-            &quot;desc&quot;: &quot;Returns the value of the client remote property. If bound by the server, then it will retrieve the value\nof the client from it&#x27;s serverside counter part and if there is no value set specifically for the client, \nthen the value retured will be the current value of the serverside counter part.&quot;,
+            &quot;desc&quot;: &quot;Returns the value of the client remote property. If bound by the server, then it will retrieve the value\nof the client from it&#x27;s serverside counter part and if there is no value set specifically for the client, \nthen the value retured will be the current value of the serverside counter part.\n\n:::note\nThis method may temporarily yield the thread.\n:::&quot;,
             &quot;params&quot;: [],
             &quot;returns&quot;: [
                 {
@@ -191,8 +201,9 @@ clientRemoteProperty<span class="token punctuation">:</span><span class="token f
             &quot;tags&quot;: [
                 &quot;ClientRemoteProperty&quot;
             ],
+            &quot;yields&quot;: true,
             &quot;source&quot;: {
-                &quot;line&quot;: 161,
+                &quot;line&quot;: 166,
                 &quot;path&quot;: &quot;packages/Remote/ClientRemoteProperty.lua&quot;
             }
         }
@@ -219,7 +230,7 @@ clientRemoteProperty<span class="token punctuation">:</span><span class="token f
         &quot;path&quot;: &quot;packages/Remote/ClientRemoteProperty.lua&quot;
     }
 }</pre></details></div><div class="col col--3"><div class="tableOfContents_35-E thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#types" class="table-of-contents__link">Types</a></li><li><a href="#properties" class="table-of-contents__link">Properties</a><ul><li><a href="#OnValueUpdate" class="table-of-contents__link">OnValueUpdate</a></li></ul></li><li><a href="#functions" class="table-of-contents__link">Functions</a><ul><li><a href="#IsA" class="table-of-contents__link">.IsA</a></li><li><a href="#new" class="table-of-contents__link">.new</a></li><li><a href="#Destroy" class="table-of-contents__link">:Destroy</a></li><li><a href="#GetValue" class="table-of-contents__link">:GetValue</a></li><li><a href="#IsBoundToServer" class="table-of-contents__link">:IsBoundToServer</a></li><li><a href="#SetValue" class="table-of-contents__link">:SetValue</a></li></ul></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2021 finobinos. Built with Moonwave and Docusaurus.</div></div></div></footer></div>
-<script src="/RBXUtil/assets/js/runtime~main.130c5584.js"></script>
-<script src="/RBXUtil/assets/js/main.adcd7b54.js"></script>
+<script src="/RBXUtil/assets/js/runtime~main.39ba4067.js"></script>
+<script src="/RBXUtil/assets/js/main.d20ff003.js"></script>
 </body>
 </html>

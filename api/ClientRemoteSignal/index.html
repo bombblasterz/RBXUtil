@@ -23,8 +23,8 @@ end)
 
 clientRemoteSignal:Fire(&quot;yo&quot;)
 ```"><meta data-react-helmet="true" property="og:url" content="https://finobinos.github.io/RBXUtil/api/ClientRemoteSignal"><meta data-react-helmet="true" name="docusaurus_locale" content="en"><meta data-react-helmet="true" name="docusaurus_tag" content="default"><link data-react-helmet="true" rel="canonical" href="https://finobinos.github.io/RBXUtil/api/ClientRemoteSignal"><link data-react-helmet="true" rel="alternate" href="https://finobinos.github.io/RBXUtil/api/ClientRemoteSignal" hreflang="en"><link data-react-helmet="true" rel="alternate" href="https://finobinos.github.io/RBXUtil/api/ClientRemoteSignal" hreflang="x-default"><link rel="stylesheet" href="/RBXUtil/assets/css/styles.3c0ff9e9.css">
-<link rel="preload" href="/RBXUtil/assets/js/runtime~main.130c5584.js" as="script">
-<link rel="preload" href="/RBXUtil/assets/js/main.adcd7b54.js" as="script">
+<link rel="preload" href="/RBXUtil/assets/js/runtime~main.39ba4067.js" as="script">
+<link rel="preload" href="/RBXUtil/assets/js/main.d20ff003.js" as="script">
 </head>
 <body>
 <script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){var t=null;try{t=localStorage.getItem("theme")}catch(t){}return t}();t(null!==e?e:"light")}()</script><div id="__docusaurus">
@@ -71,7 +71,7 @@ clientRemoteSignal<span class="token punctuation">:</span><span class="token fun
 <p>Same as <code>self._remote:FireServer(...)</code>.</p>
 </div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="IsBoundToServer"></a><code style="text-decoration:none">IsBoundToServer</code><a class="hash-link" href="#IsBoundToServer" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#79b473;color:#79b473">ClientRemoteSignal</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Remote/ClientRemoteSignal.lua#L79"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>ClientRemoteSignal:</code><code class="green_3LnD">IsBoundToServer</code><code>(</code><code>) → </code><code class="blue_2Afy">boolean</code></div><div>
 <p>Returns a boolean indicating if the client remote signal is bound to the server (remote signal).</p>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Wait"></a><code style="text-decoration:none">Wait</code><a class="hash-link" href="#Wait" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Remote/ClientRemoteSignal.lua#L147"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>ClientRemoteSignal:</code><code class="green_3LnD">Wait</code><code>(</code><code>) → </code><code class="blue_2Afy">...</code><code class="blue_2Afy">any</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Wait"></a><code style="text-decoration:none">Wait</code><a class="hash-link" href="#Wait" title="Direct link to heading">#</a></h3><span class="badge_3ZFo" style="color:#f1c40f"><span class="badgeTooltip_2qiw">This is a yielding function. When called, it will pause the Lua thread that called the function until a result is ready to be returned, without interrupting other scripts.</span><span class="badgeToolTipTail_2yaQ"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="#f1c40f" role="img" aria-label="This is a yielding function. When called, it will pause the Lua thread that called the function until a result is ready to be returned, without interrupting other scripts."><path d="M96.4 11.9c-1.4-2.5-4-4-6.9-4H10.8c-2.9 0-5.4 1.5-6.9 4-1.4 2.5-1.4 5.5 0 7.9L43.3 88c1.4 2.5 4 4 6.9 4 2.9 0 5.4-1.5 6.9-4l39.3-68.2c1.4-2.4 1.4-5.4 0-7.9zM46.3 54.5c1.1-1.1 2.3-1.6 3.8-1.6s2.8.5 3.8 1.6c1.1 1.1 1.6 2.3 1.6 3.8s-.5 2.8-1.6 3.8c-1.1 1.1-2.3 1.6-3.8 1.6s-2.8-.5-3.8-1.6c-1.1-1.1-1.6-2.3-1.6-3.8.1-1.5.6-2.8 1.6-3.8zm-.5-4.9V21.8h8.8v27.8h-8.8z"></path></svg> Yields</span></span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Remote/ClientRemoteSignal.lua#L148"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>ClientRemoteSignal:</code><code class="green_3LnD">Wait</code><code>(</code><code>) → </code><code class="blue_2Afy">...</code><code class="blue_2Afy">any</code></div><div>
 <p>Same as <code>self._remote.OnClientEvent:Wait()</code>.</p>
 </div></div></article></div><details><summary>Show raw api</summary><pre style="max-width:100%;white-space:pre-wrap">{
     &quot;functions&quot;: [
@@ -208,8 +208,9 @@ clientRemoteSignal<span class="token punctuation">:</span><span class="token fun
                 }
             ],
             &quot;function_type&quot;: &quot;method&quot;,
+            &quot;yields&quot;: true,
             &quot;source&quot;: {
-                &quot;line&quot;: 147,
+                &quot;line&quot;: 148,
                 &quot;path&quot;: &quot;packages/Remote/ClientRemoteSignal.lua&quot;
             }
         }
@@ -226,7 +227,7 @@ clientRemoteSignal<span class="token punctuation">:</span><span class="token fun
         &quot;path&quot;: &quot;packages/Remote/ClientRemoteSignal.lua&quot;
     }
 }</pre></details></div><div class="col col--3"><div class="tableOfContents_35-E thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#types" class="table-of-contents__link">Types</a></li><li><a href="#properties" class="table-of-contents__link">Properties</a></li><li><a href="#functions" class="table-of-contents__link">Functions</a><ul><li><a href="#IsA" class="table-of-contents__link">.IsA</a></li><li><a href="#new" class="table-of-contents__link">.new</a></li><li><a href="#Connect" class="table-of-contents__link">:Connect</a></li><li><a href="#Destroy" class="table-of-contents__link">:Destroy</a></li><li><a href="#FireServer" class="table-of-contents__link">:FireServer</a></li><li><a href="#IsBoundToServer" class="table-of-contents__link">:IsBoundToServer</a></li><li><a href="#Wait" class="table-of-contents__link">:Wait</a></li></ul></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2021 finobinos. Built with Moonwave and Docusaurus.</div></div></div></footer></div>
-<script src="/RBXUtil/assets/js/runtime~main.130c5584.js"></script>
-<script src="/RBXUtil/assets/js/main.adcd7b54.js"></script>
+<script src="/RBXUtil/assets/js/runtime~main.39ba4067.js"></script>
+<script src="/RBXUtil/assets/js/main.d20ff003.js"></script>
 </body>
 </html>
