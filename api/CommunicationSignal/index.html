@@ -12,12 +12,12 @@ to the client in a much easier and abstracted fashion.
 local communicationSignal = CommunicationSignal.new(&quot;SomeSignal&quot;)
 
 -- Bind method &quot;Test&quot; to the client:
-communicationSignal:BindKeyValuePair(&quot;Test&quot;, function(player)
+communicationSignal:Bind(&quot;Test&quot;, function(player)
 	return &quot;Hey!&quot;
 end))
 
 -- Bind member &quot;Bo&quot; to the client:
-communicationSignal:BindKeyValuePair(&quot;Bo&quot;, {1, 2, 3})
+communicationSignal:Bind(&quot;Bo&quot;, {1, 2, 3})
 
 -- On the client
 local communicationSignal = CommunicationSignal.GetSignal(&quot;SomeSignal&quot;):expect()
@@ -32,12 +32,12 @@ to the client in a much easier and abstracted fashion.
 local communicationSignal = CommunicationSignal.new(&quot;SomeSignal&quot;)
 
 -- Bind method &quot;Test&quot; to the client:
-communicationSignal:BindKeyValuePair(&quot;Test&quot;, function(player)
+communicationSignal:Bind(&quot;Test&quot;, function(player)
 	return &quot;Hey!&quot;
 end))
 
 -- Bind member &quot;Bo&quot; to the client:
-communicationSignal:BindKeyValuePair(&quot;Bo&quot;, {1, 2, 3})
+communicationSignal:Bind(&quot;Bo&quot;, {1, 2, 3})
 
 -- On the client
 local communicationSignal = CommunicationSignal.GetSignal(&quot;SomeSignal&quot;):expect()
@@ -45,8 +45,8 @@ local communicationSignal = CommunicationSignal.GetSignal(&quot;SomeSignal&quot;
 print(communicationSignal.Members.Test(&quot;Hi&quot;)) --&gt; &quot;Hey!&quot;
 print( communicationSignal.Members.Bo) --&gt; {1, 2, 3}
 ```"><meta data-react-helmet="true" property="og:url" content="https://finobinos.github.io/RBXUtil/api/CommunicationSignal"><meta data-react-helmet="true" name="docusaurus_locale" content="en"><meta data-react-helmet="true" name="docusaurus_tag" content="default"><link data-react-helmet="true" rel="canonical" href="https://finobinos.github.io/RBXUtil/api/CommunicationSignal"><link data-react-helmet="true" rel="alternate" href="https://finobinos.github.io/RBXUtil/api/CommunicationSignal" hreflang="en"><link data-react-helmet="true" rel="alternate" href="https://finobinos.github.io/RBXUtil/api/CommunicationSignal" hreflang="x-default"><link rel="stylesheet" href="/RBXUtil/assets/css/styles.3c0ff9e9.css">
-<link rel="preload" href="/RBXUtil/assets/js/runtime~main.26dc1de6.js" as="script">
-<link rel="preload" href="/RBXUtil/assets/js/main.31c9947f.js" as="script">
+<link rel="preload" href="/RBXUtil/assets/js/runtime~main.520fda72.js" as="script">
+<link rel="preload" href="/RBXUtil/assets/js/main.cd9a0d1d.js" as="script">
 </head>
 <body>
 <script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){var t=null;try{t=localStorage.getItem("theme")}catch(t){}return t}();t(null!==e?e:"light")}()</script><div id="__docusaurus">
@@ -59,12 +59,12 @@ print( communicationSignal.Members.Bo) --&gt; {1, 2, 3}
 <span class="token keyword">local</span> communicationSignal <span class="token operator">=</span> CommunicationSignal<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token string">"SomeSignal"</span><span class="token punctuation">)</span>
 
 <span class="token comment">-- Bind method "Test" to the client:</span>
-communicationSignal<span class="token punctuation">:</span><span class="token function">BindKeyValuePair</span><span class="token punctuation">(</span><span class="token string">"Test"</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span>player<span class="token punctuation">)</span>
+communicationSignal<span class="token punctuation">:</span><span class="token function">Bind</span><span class="token punctuation">(</span><span class="token string">"Test"</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span>player<span class="token punctuation">)</span>
 	<span class="token keyword">return</span> <span class="token string">"Hey!"</span>
 <span class="token keyword">end</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 
 <span class="token comment">-- Bind member "Bo" to the client:</span>
-communicationSignal<span class="token punctuation">:</span><span class="token function">BindKeyValuePair</span><span class="token punctuation">(</span><span class="token string">"Bo"</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+communicationSignal<span class="token punctuation">:</span><span class="token function">Bind</span><span class="token punctuation">(</span><span class="token string">"Bo"</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
 
 <span class="token comment">-- On the client</span>
 <span class="token keyword">local</span> communicationSignal <span class="token operator">=</span> CommunicationSignal<span class="token punctuation">.</span><span class="token function">GetSignal</span><span class="token punctuation">(</span><span class="token string">"SomeSignal"</span><span class="token punctuation">)</span><span class="token punctuation">:</span><span class="token function">expect</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
@@ -72,13 +72,13 @@ communicationSignal<span class="token punctuation">:</span><span class="token fu
 <span class="token function">print</span><span class="token punctuation">(</span>communicationSignal<span class="token punctuation">.</span>Members<span class="token punctuation">.</span><span class="token function">Test</span><span class="token punctuation">(</span><span class="token string">"Hi"</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">--> "Hey!"</span>
 <span class="token function">print</span><span class="token punctuation">(</span> communicationSignal<span class="token punctuation">.</span>Members<span class="token punctuation">.</span>Bo<span class="token punctuation">)</span> <span class="token comment">--> {1, 2, 3}</span>
 </code></pre>
-</div></header><h2><a aria-hidden="true" tabindex="-1" class="anchor anchor__h2 anchorWithStickyNavbar_31ik" id="functions"></a>Functions<a class="hash-link" href="#functions" title="Direct link to heading">#</a></h2><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="GetSignal"></a><code style="text-decoration:none">GetSignal</code><a class="hash-link" href="#GetSignal" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Remote/CommunicationSignal/Server.lua#L152"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>CommunicationSignal.</code><code class="green_3LnD">GetSignal</code><code>(</code><code>identifier: </code><code class="blue_2Afy">string</code><code>) → </code><code class="blue_2Afy">CommunicationSignal</code><code class="op_1JtD"> | </code><code class="blue_2Afy">nil</code></div><div>
+</div></header><h2><a aria-hidden="true" tabindex="-1" class="anchor anchor__h2 anchorWithStickyNavbar_31ik" id="functions"></a>Functions<a class="hash-link" href="#functions" title="Direct link to heading">#</a></h2><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="GetSignal"></a><code style="text-decoration:none">GetSignal</code><a class="hash-link" href="#GetSignal" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Remote/CommunicationSignal/Server.lua#L153"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>CommunicationSignal.</code><code class="green_3LnD">GetSignal</code><code>(</code><code>identifier: </code><code class="blue_2Afy">string</code><code>) → </code><code class="blue_2Afy">CommunicationSignal</code><code class="op_1JtD"> | </code><code class="blue_2Afy">nil</code></div><div>
 <p>Returns the communication signal whose identifier is <code>identifier</code>.</p>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="IsA"></a><code style="text-decoration:none">IsA</code><a class="hash-link" href="#IsA" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Remote/CommunicationSignal/Server.lua#L174"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>CommunicationSignal.</code><code class="green_3LnD">IsA</code><code>(</code><code>self: </code><code class="blue_2Afy">any</code><code>) → </code><code class="blue_2Afy">boolean</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="IsA"></a><code style="text-decoration:none">IsA</code><a class="hash-link" href="#IsA" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Remote/CommunicationSignal/Server.lua#L175"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>CommunicationSignal.</code><code class="green_3LnD">IsA</code><code>(</code><code>self: </code><code class="blue_2Afy">any</code><code>) → </code><code class="blue_2Afy">boolean</code></div><div>
 <p>A method which is used to check if <code>self</code> is a communication signal or not.</p>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="new"></a><code style="text-decoration:none">new</code><a class="hash-link" href="#new" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Remote/CommunicationSignal/Server.lua#L115"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>CommunicationSignal.</code><code class="green_3LnD">new</code><code>(</code><code>identifier: </code><code class="blue_2Afy">string</code><code>) → </code><code class="blue_2Afy">CommunicationSignal</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="new"></a><code style="text-decoration:none">new</code><a class="hash-link" href="#new" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Remote/CommunicationSignal/Server.lua#L116"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>CommunicationSignal.</code><code class="green_3LnD">new</code><code>(</code><code>identifier: </code><code class="blue_2Afy">string</code><code>) → </code><code class="blue_2Afy">CommunicationSignal</code></div><div>
 <p>Creates and returns a new communication signal with the identifier of <code>identifier</code>.</p>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="BindKeyValuePair"></a><code style="text-decoration:none">BindKeyValuePair</code><a class="hash-link" href="#BindKeyValuePair" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#ff5252;color:#ff5252">CommunicationSignal</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Remote/CommunicationSignal/Server.lua#L191"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>CommunicationSignal:</code><code class="green_3LnD">BindKeyValuePair</code><code>(</code><div class="inset_2cJr"><div><code>key: </code><code class="blue_2Afy">string</code><code class="op_1JtD"> | </code><code class="blue_2Afy">number</code><code>,</code></div><div><code>value: </code><code class="blue_2Afy">RemoteSignal</code><code class="op_1JtD"> | </code><code class="blue_2Afy">RemoteProperty</code><code class="op_1JtD"> | </code><code class="blue_2Afy">function</code><code class="op_1JtD"> | </code><code class="blue_2Afy">boolean</code><code class="op_1JtD"> | </code><code class="blue_2Afy">string</code><code class="op_1JtD"> | </code><code class="blue_2Afy">number</code><code class="op_1JtD"> | </code><code class="blue_2Afy">Instance</code><code class="op_1JtD"> | </code><code class="blue_2Afy">table</code></div></div><code>) → </code><code>(</code><code>)</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Bind"></a><code style="text-decoration:none">Bind</code><a class="hash-link" href="#Bind" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#ff5252;color:#ff5252">CommunicationSignal</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Remote/CommunicationSignal/Server.lua#L192"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>CommunicationSignal:</code><code class="green_3LnD">Bind</code><code>(</code><div class="inset_2cJr"><div><code>key: </code><code class="blue_2Afy">string</code><code>,</code></div><div><code>value: </code><code class="blue_2Afy">RemoteSignal</code><code class="op_1JtD"> | </code><code class="blue_2Afy">RemoteProperty</code><code class="op_1JtD"> | </code><code class="blue_2Afy">function</code><code class="op_1JtD"> | </code><code class="blue_2Afy">boolean</code><code class="op_1JtD"> | </code><code class="blue_2Afy">string</code><code class="op_1JtD"> | </code><code class="blue_2Afy">number</code><code class="op_1JtD"> | </code><code class="blue_2Afy">Instance</code><code class="op_1JtD"> | </code><code class="blue_2Afy">table</code></div></div><code>) → </code><code>(</code><code>)</code></div><div>
 <p>Binds and exposes a new key <code>key</code> with value <code>value</code> to the client.</p>
 <div class="admonition admonition-note alert alert--secondary">
   <div class="admonition-heading">
@@ -92,7 +92,7 @@ communicationSignal<span class="token punctuation">:</span><span class="token fu
     </ul>
   </div>
 </div>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Destroy"></a><code style="text-decoration:none">Destroy</code><a class="hash-link" href="#Destroy" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#925FB9;color:#925FB9">ClientRemoteProperty</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Remote/CommunicationSignal/Server.lua#L232"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>CommunicationSignal:</code><code class="green_3LnD">Destroy</code><code>(</code><code>) → </code><code>(</code><code>)</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Destroy"></a><code style="text-decoration:none">Destroy</code><a class="hash-link" href="#Destroy" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#925FB9;color:#925FB9">ClientRemoteProperty</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Remote/CommunicationSignal/Server.lua#L235"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>CommunicationSignal:</code><code class="green_3LnD">Destroy</code><code>(</code><code>) → </code><code>(</code><code>)</code></div><div>
 <p>Destroys the communication signal and makes it unusable.</p>
 <div class="admonition admonition-warning alert alert--danger">
   <div class="admonition-heading">
@@ -124,7 +124,7 @@ communicationSignal<span class="token punctuation">:</span><span class="token fu
             ],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 115,
+                &quot;line&quot;: 116,
                 &quot;path&quot;: &quot;packages/Remote/CommunicationSignal/Server.lua&quot;
             }
         },
@@ -146,7 +146,7 @@ communicationSignal<span class="token punctuation">:</span><span class="token fu
             ],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 152,
+                &quot;line&quot;: 153,
                 &quot;path&quot;: &quot;packages/Remote/CommunicationSignal/Server.lua&quot;
             }
         },
@@ -168,18 +168,18 @@ communicationSignal<span class="token punctuation">:</span><span class="token fu
             ],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 174,
+                &quot;line&quot;: 175,
                 &quot;path&quot;: &quot;packages/Remote/CommunicationSignal/Server.lua&quot;
             }
         },
         {
-            &quot;name&quot;: &quot;BindKeyValuePair&quot;,
+            &quot;name&quot;: &quot;Bind&quot;,
             &quot;desc&quot;: &quot;Binds and exposes a new key `key` with value `value` to the client. \n\n:::note\n- Remote function limitations apply. For more information, see [Remote Functions and Events](https://developer.roblox.com/en-us/articles/Remote-Functions-and-Events).\n:::&quot;,
             &quot;params&quot;: [
                 {
                     &quot;name&quot;: &quot;key&quot;,
                     &quot;desc&quot;: &quot;&quot;,
-                    &quot;lua_type&quot;: &quot;string | number&quot;
+                    &quot;lua_type&quot;: &quot;string&quot;
                 },
                 {
                     &quot;name&quot;: &quot;value&quot;,
@@ -193,7 +193,7 @@ communicationSignal<span class="token punctuation">:</span><span class="token fu
                 &quot;CommunicationSignal&quot;
             ],
             &quot;source&quot;: {
-                &quot;line&quot;: 191,
+                &quot;line&quot;: 192,
                 &quot;path&quot;: &quot;packages/Remote/CommunicationSignal/Server.lua&quot;
             }
         },
@@ -207,7 +207,7 @@ communicationSignal<span class="token punctuation">:</span><span class="token fu
                 &quot;ClientRemoteProperty&quot;
             ],
             &quot;source&quot;: {
-                &quot;line&quot;: 232,
+                &quot;line&quot;: 235,
                 &quot;path&quot;: &quot;packages/Remote/CommunicationSignal/Server.lua&quot;
             }
         }
@@ -215,16 +215,16 @@ communicationSignal<span class="token punctuation">:</span><span class="token fu
     &quot;properties&quot;: [],
     &quot;types&quot;: [],
     &quot;name&quot;: &quot;CommunicationSignal&quot;,
-    &quot;desc&quot;: &quot;Communication signals are used to expose members, methods, remote signals and remote properties\nto the client in a much easier and abstracted fashion.\n\n```lua\n-- On the server\nlocal communicationSignal = CommunicationSignal.new(\&quot;SomeSignal\&quot;)\n\n-- Bind method \&quot;Test\&quot; to the client:\ncommunicationSignal:BindKeyValuePair(\&quot;Test\&quot;, function(player)\n\treturn \&quot;Hey!\&quot;\nend))\n\n-- Bind member \&quot;Bo\&quot; to the client:\ncommunicationSignal:BindKeyValuePair(\&quot;Bo\&quot;, {1, 2, 3})\n\n-- On the client\nlocal communicationSignal = CommunicationSignal.GetSignal(\&quot;SomeSignal\&quot;):expect()\n\nprint(communicationSignal.Members.Test(\&quot;Hi\&quot;)) --&gt; \&quot;Hey!\&quot;\nprint( communicationSignal.Members.Bo) --&gt; {1, 2, 3}\n```&quot;,
+    &quot;desc&quot;: &quot;Communication signals are used to expose members, methods, remote signals and remote properties\nto the client in a much easier and abstracted fashion.\n\n```lua\n-- On the server\nlocal communicationSignal = CommunicationSignal.new(\&quot;SomeSignal\&quot;)\n\n-- Bind method \&quot;Test\&quot; to the client:\ncommunicationSignal:Bind(\&quot;Test\&quot;, function(player)\n\treturn \&quot;Hey!\&quot;\nend))\n\n-- Bind member \&quot;Bo\&quot; to the client:\ncommunicationSignal:Bind(\&quot;Bo\&quot;, {1, 2, 3})\n\n-- On the client\nlocal communicationSignal = CommunicationSignal.GetSignal(\&quot;SomeSignal\&quot;):expect()\n\nprint(communicationSignal.Members.Test(\&quot;Hi\&quot;)) --&gt; \&quot;Hey!\&quot;\nprint( communicationSignal.Members.Bo) --&gt; {1, 2, 3}\n```&quot;,
     &quot;realm&quot;: [
         &quot;Server&quot;
     ],
     &quot;source&quot;: {
-        &quot;line&quot;: 51,
+        &quot;line&quot;: 52,
         &quot;path&quot;: &quot;packages/Remote/CommunicationSignal/Server.lua&quot;
     }
-}</pre></details></div><div class="col col--3"><div class="tableOfContents_35-E thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#types" class="table-of-contents__link">Types</a></li><li><a href="#properties" class="table-of-contents__link">Properties</a></li><li><a href="#functions" class="table-of-contents__link">Functions</a><ul><li><a href="#GetSignal" class="table-of-contents__link">.GetSignal</a></li><li><a href="#IsA" class="table-of-contents__link">.IsA</a></li><li><a href="#new" class="table-of-contents__link">.new</a></li><li><a href="#BindKeyValuePair" class="table-of-contents__link">:BindKeyValuePair</a></li><li><a href="#Destroy" class="table-of-contents__link">:Destroy</a></li></ul></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2021 finobinos. Built with Moonwave and Docusaurus.</div></div></div></footer></div>
-<script src="/RBXUtil/assets/js/runtime~main.26dc1de6.js"></script>
-<script src="/RBXUtil/assets/js/main.31c9947f.js"></script>
+}</pre></details></div><div class="col col--3"><div class="tableOfContents_35-E thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#types" class="table-of-contents__link">Types</a></li><li><a href="#properties" class="table-of-contents__link">Properties</a></li><li><a href="#functions" class="table-of-contents__link">Functions</a><ul><li><a href="#GetSignal" class="table-of-contents__link">.GetSignal</a></li><li><a href="#IsA" class="table-of-contents__link">.IsA</a></li><li><a href="#new" class="table-of-contents__link">.new</a></li><li><a href="#Bind" class="table-of-contents__link">:Bind</a></li><li><a href="#Destroy" class="table-of-contents__link">:Destroy</a></li></ul></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2021 finobinos. Built with Moonwave and Docusaurus.</div></div></div></footer></div>
+<script src="/RBXUtil/assets/js/runtime~main.520fda72.js"></script>
+<script src="/RBXUtil/assets/js/main.cd9a0d1d.js"></script>
 </body>
 </html>

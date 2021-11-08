@@ -32,7 +32,7 @@ For e.g:
 ```lua
 -- On the server
 local communicationSignal = CommunicationSignal.new(&quot;ServersideService&quot;)
-communicationSignal:BindKeyValuePair(&quot;Bo&quot;, RemoteSignal.new())
+communicationSignal:Bind(&quot;Bo&quot;, RemoteSignal.new())
 
 -- On the client
 local communicationSignal = CommunicationSignal.GetSignal(&quot;ServersideService&quot;):expect() -- as GetSignal returns a promise
@@ -66,15 +66,15 @@ For e.g:
 ```lua
 -- On the server
 local communicationSignal = CommunicationSignal.new(&quot;ServersideService&quot;)
-communicationSignal:BindKeyValuePair(&quot;Bo&quot;, RemoteSignal.new())
+communicationSignal:Bind(&quot;Bo&quot;, RemoteSignal.new())
 
 -- On the client
 local communicationSignal = CommunicationSignal.GetSignal(&quot;ServersideService&quot;):expect() -- as GetSignal returns a promise
 print(ClientRemoteProperty.IsA(communicationSignal.RemoteSignals.Bo)) --&gt; true
 ```
 :::"><meta data-react-helmet="true" property="og:url" content="https://finobinos.github.io/RBXUtil/api/ClientCommunicationSignal"><meta data-react-helmet="true" name="docusaurus_locale" content="en"><meta data-react-helmet="true" name="docusaurus_tag" content="default"><link data-react-helmet="true" rel="canonical" href="https://finobinos.github.io/RBXUtil/api/ClientCommunicationSignal"><link data-react-helmet="true" rel="alternate" href="https://finobinos.github.io/RBXUtil/api/ClientCommunicationSignal" hreflang="en"><link data-react-helmet="true" rel="alternate" href="https://finobinos.github.io/RBXUtil/api/ClientCommunicationSignal" hreflang="x-default"><link rel="stylesheet" href="/RBXUtil/assets/css/styles.3c0ff9e9.css">
-<link rel="preload" href="/RBXUtil/assets/js/runtime~main.26dc1de6.js" as="script">
-<link rel="preload" href="/RBXUtil/assets/js/main.31c9947f.js" as="script">
+<link rel="preload" href="/RBXUtil/assets/js/runtime~main.520fda72.js" as="script">
+<link rel="preload" href="/RBXUtil/assets/js/main.cd9a0d1d.js" as="script">
 </head>
 <body>
 <script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){var t=null;try{t=localStorage.getItem("theme")}catch(t){}return t}();t(null!==e?e:"light")}()</script><div id="__docusaurus">
@@ -112,7 +112,7 @@ communicationSignal<span class="token punctuation">:</span><span class="token fu
     <p>For e.g:</p>
     <pre class="language-lua"><code class="language-lua"><span class="token comment">-- On the server</span>
 <span class="token keyword">local</span> communicationSignal <span class="token operator">=</span> CommunicationSignal<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token string">"ServersideService"</span><span class="token punctuation">)</span>
-communicationSignal<span class="token punctuation">:</span><span class="token function">BindKeyValuePair</span><span class="token punctuation">(</span><span class="token string">"Bo"</span><span class="token punctuation">,</span> RemoteSignal<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+communicationSignal<span class="token punctuation">:</span><span class="token function">Bind</span><span class="token punctuation">(</span><span class="token string">"Bo"</span><span class="token punctuation">,</span> RemoteSignal<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 
 <span class="token comment">-- On the client</span>
 <span class="token keyword">local</span> communicationSignal <span class="token operator">=</span> CommunicationSignal<span class="token punctuation">.</span><span class="token function">GetSignal</span><span class="token punctuation">(</span><span class="token string">"ServersideService"</span><span class="token punctuation">)</span><span class="token punctuation">:</span><span class="token function">expect</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">-- as GetSignal returns a promise</span>
@@ -120,19 +120,19 @@ communicationSignal<span class="token punctuation">:</span><span class="token fu
 </code></pre>
   </div>
 </div>
-</div></header><h2><a aria-hidden="true" tabindex="-1" class="anchor anchor__h2 anchorWithStickyNavbar_31ik" id="properties"></a>Properties<a class="hash-link" href="#properties" title="Direct link to heading">#</a></h2><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Members"></a><code style="text-decoration:none">Members</code><a class="hash-link" href="#Members" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#218c74;color:#218c74">ClientCommunicationSignal</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Remote/CommunicationSignal/Client.lua#L64"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>ClientCommunicationSignal.Members: </code> <code class="blue_2Afy">table</code></div><div>
+</div></header><h2><a aria-hidden="true" tabindex="-1" class="anchor anchor__h2 anchorWithStickyNavbar_31ik" id="properties"></a>Properties<a class="hash-link" href="#properties" title="Direct link to heading">#</a></h2><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Members"></a><code style="text-decoration:none">Members</code><a class="hash-link" href="#Members" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#218c74;color:#218c74">ClientCommunicationSignal</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Remote/CommunicationSignal/Client.lua#L65"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>ClientCommunicationSignal.Members: </code> <code class="blue_2Afy">table</code></div><div>
 <p>A dictionary of all members binded to the signal.</p>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Members"></a><code style="text-decoration:none">Members</code><a class="hash-link" href="#Members" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#218c74;color:#218c74">ClientCommunicationSignal</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Remote/CommunicationSignal/Server.lua#L59"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>ClientCommunicationSignal.Members: </code> <code class="blue_2Afy">table</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Members"></a><code style="text-decoration:none">Members</code><a class="hash-link" href="#Members" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#218c74;color:#218c74">ClientCommunicationSignal</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Remote/CommunicationSignal/Server.lua#L60"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>ClientCommunicationSignal.Members: </code> <code class="blue_2Afy">table</code></div><div>
 <p>A dictionary of all members binded to the signal.</p>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="RemoteProperties"></a><code style="text-decoration:none">RemoteProperties</code><a class="hash-link" href="#RemoteProperties" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#218c74;color:#218c74">ClientCommunicationSignal</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Remote/CommunicationSignal/Client.lua#L80"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>ClientCommunicationSignal.RemoteProperties: </code> <code class="blue_2Afy">table</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="RemoteProperties"></a><code style="text-decoration:none">RemoteProperties</code><a class="hash-link" href="#RemoteProperties" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#218c74;color:#218c74">ClientCommunicationSignal</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Remote/CommunicationSignal/Client.lua#L81"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>ClientCommunicationSignal.RemoteProperties: </code> <code class="blue_2Afy">table</code></div><div>
 <p>A dictionary of all remote properties binded to the signal.</p>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="RemoteProperties"></a><code style="text-decoration:none">RemoteProperties</code><a class="hash-link" href="#RemoteProperties" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#218c74;color:#218c74">ClientCommunicationSignal</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Remote/CommunicationSignal/Server.lua#L75"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>ClientCommunicationSignal.RemoteProperties: </code> <code class="blue_2Afy">table</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="RemoteProperties"></a><code style="text-decoration:none">RemoteProperties</code><a class="hash-link" href="#RemoteProperties" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#218c74;color:#218c74">ClientCommunicationSignal</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Remote/CommunicationSignal/Server.lua#L76"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>ClientCommunicationSignal.RemoteProperties: </code> <code class="blue_2Afy">table</code></div><div>
 <p>A dictionary of all remote properties binded to the signal.</p>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="RemoteSignals"></a><code style="text-decoration:none">RemoteSignals</code><a class="hash-link" href="#RemoteSignals" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#218c74;color:#218c74">ClientCommunicationSignal</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Remote/CommunicationSignal/Client.lua#L72"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>ClientCommunicationSignal.RemoteSignals: </code> <code class="blue_2Afy">table</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="RemoteSignals"></a><code style="text-decoration:none">RemoteSignals</code><a class="hash-link" href="#RemoteSignals" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#218c74;color:#218c74">ClientCommunicationSignal</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Remote/CommunicationSignal/Client.lua#L73"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>ClientCommunicationSignal.RemoteSignals: </code> <code class="blue_2Afy">table</code></div><div>
 <p>A dictionary of all remote signals binded to the signal.</p>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="RemoteSignals"></a><code style="text-decoration:none">RemoteSignals</code><a class="hash-link" href="#RemoteSignals" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#218c74;color:#218c74">ClientCommunicationSignal</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Remote/CommunicationSignal/Server.lua#L67"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>ClientCommunicationSignal.RemoteSignals: </code> <code class="blue_2Afy">table</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="RemoteSignals"></a><code style="text-decoration:none">RemoteSignals</code><a class="hash-link" href="#RemoteSignals" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#218c74;color:#218c74">ClientCommunicationSignal</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Remote/CommunicationSignal/Server.lua#L68"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>ClientCommunicationSignal.RemoteSignals: </code> <code class="blue_2Afy">table</code></div><div>
 <p>A dictionary of all remote signals binded to the signal.</p>
-</div><h2><a aria-hidden="true" tabindex="-1" class="anchor anchor__h2 anchorWithStickyNavbar_31ik" id="functions"></a>Functions<a class="hash-link" href="#functions" title="Direct link to heading">#</a></h2><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="GetSignal"></a><code style="text-decoration:none">GetSignal</code><a class="hash-link" href="#GetSignal" title="Direct link to heading">#</a></h3><span class="badge_3ZFo" style="color:#f1c40f"><span class="badgeTooltip_2qiw">This is a yielding function. When called, it will pause the Lua thread that called the function until a result is ready to be returned, without interrupting other scripts.</span><span class="badgeToolTipTail_2yaQ"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="#f1c40f" role="img" aria-label="This is a yielding function. When called, it will pause the Lua thread that called the function until a result is ready to be returned, without interrupting other scripts."><path d="M96.4 11.9c-1.4-2.5-4-4-6.9-4H10.8c-2.9 0-5.4 1.5-6.9 4-1.4 2.5-1.4 5.5 0 7.9L43.3 88c1.4 2.5 4 4 6.9 4 2.9 0 5.4-1.5 6.9-4l39.3-68.2c1.4-2.4 1.4-5.4 0-7.9zM46.3 54.5c1.1-1.1 2.3-1.6 3.8-1.6s2.8.5 3.8 1.6c1.1 1.1 1.6 2.3 1.6 3.8s-.5 2.8-1.6 3.8c-1.1 1.1-2.3 1.6-3.8 1.6s-2.8-.5-3.8-1.6c-1.1-1.1-1.6-2.3-1.6-3.8.1-1.5.6-2.8 1.6-3.8zm-.5-4.9V21.8h8.8v27.8h-8.8z"></path></svg> Yields</span></span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Remote/CommunicationSignal/Client.lua#L134"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>ClientCommunicationSignal.</code><code class="green_3LnD">GetSignal</code><code>(</code><div class="inset_2cJr"><div><code>identifier: </code><code class="blue_2Afy">string</code><code>,</code></div><div><code>timeout: </code><code class="blue_2Afy">number</code><code class="op_1JtD"> | </code><code class="blue_2Afy">nil</code></div></div><code>) → </code><code class="blue_2Afy">Promsie</code></div><div>
+</div><h2><a aria-hidden="true" tabindex="-1" class="anchor anchor__h2 anchorWithStickyNavbar_31ik" id="functions"></a>Functions<a class="hash-link" href="#functions" title="Direct link to heading">#</a></h2><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="GetSignal"></a><code style="text-decoration:none">GetSignal</code><a class="hash-link" href="#GetSignal" title="Direct link to heading">#</a></h3><span class="badge_3ZFo" style="color:#f1c40f"><span class="badgeTooltip_2qiw">This is a yielding function. When called, it will pause the Lua thread that called the function until a result is ready to be returned, without interrupting other scripts.</span><span class="badgeToolTipTail_2yaQ"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="#f1c40f" role="img" aria-label="This is a yielding function. When called, it will pause the Lua thread that called the function until a result is ready to be returned, without interrupting other scripts."><path d="M96.4 11.9c-1.4-2.5-4-4-6.9-4H10.8c-2.9 0-5.4 1.5-6.9 4-1.4 2.5-1.4 5.5 0 7.9L43.3 88c1.4 2.5 4 4 6.9 4 2.9 0 5.4-1.5 6.9-4l39.3-68.2c1.4-2.4 1.4-5.4 0-7.9zM46.3 54.5c1.1-1.1 2.3-1.6 3.8-1.6s2.8.5 3.8 1.6c1.1 1.1 1.6 2.3 1.6 3.8s-.5 2.8-1.6 3.8c-1.1 1.1-2.3 1.6-3.8 1.6s-2.8-.5-3.8-1.6c-1.1-1.1-1.6-2.3-1.6-3.8.1-1.5.6-2.8 1.6-3.8zm-.5-4.9V21.8h8.8v27.8h-8.8z"></path></svg> Yields</span></span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Remote/CommunicationSignal/Client.lua#L135"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>ClientCommunicationSignal.</code><code class="green_3LnD">GetSignal</code><code>(</code><div class="inset_2cJr"><div><code>identifier: </code><code class="blue_2Afy">string</code><code>,</code></div><div><code>timeout: </code><code class="blue_2Afy">number</code><code class="op_1JtD"> | </code><code class="blue_2Afy">nil</code></div></div><code>) → </code><code class="blue_2Afy">Promsie</code></div><div>
 <p>
   Creates a new client communication signal and binds it with it's server counterpart. Returns a promise which is resolved
   once the signal is successfully created. The method will wait for <code>timeout</code> (or 1 if not specified) seconds for the server counterpart to exist
@@ -140,7 +140,7 @@ communicationSignal<span class="token punctuation">:</span><span class="token fu
 </p>
 <pre class="language-lua"><code class="language-lua"><span class="token comment">-- On the server:</span>
 <span class="token keyword">local</span> signal <span class="token operator">=</span> CommunicationSignal<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token string">"Signal"</span><span class="token punctuation">)</span>
-signal<span class="token punctuation">:</span><span class="token function">BindKeyValuePair</span><span class="token punctuation">(</span><span class="token string">"bo"</span><span class="token punctuation">,</span> <span class="token keyword">true</span><span class="token punctuation">)</span>
+signal<span class="token punctuation">:</span><span class="token function">Bind</span><span class="token punctuation">(</span><span class="token string">"bo"</span><span class="token punctuation">,</span> <span class="token keyword">true</span><span class="token punctuation">)</span>
 
 <span class="token comment">-- On the client:</span>
 CommunicationSignal<span class="token punctuation">.</span><span class="token function">GetSignal</span><span class="token punctuation">(</span><span class="token string">"Signal"</span><span class="token punctuation">)</span><span class="token punctuation">:</span><span class="token function">andThen</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span>signal<span class="token punctuation">)</span>
@@ -157,7 +157,7 @@ CommunicationSignal<span class="token punctuation">.</span><span class="token fu
     <p>The returned signal will be unsuable once the signal's serverside counterpart is destroyed, for e.g:</p>
     <pre class="language-lua"><code class="language-lua"><span class="token comment">-- On the server:</span>
 <span class="token keyword">local</span> signal <span class="token operator">=</span> CommunicationSignal<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token string">"Signal"</span><span class="token punctuation">)</span>
-signal<span class="token punctuation">:</span><span class="token function">BindKeyValuePair</span><span class="token punctuation">(</span><span class="token string">"test"</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span>
+signal<span class="token punctuation">:</span><span class="token function">Bind</span><span class="token punctuation">(</span><span class="token string">"test"</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span>
 task<span class="token punctuation">.</span><span class="token function">delay</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> signal<span class="token punctuation">:</span><span class="token function">Destroy</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">end</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 
 <span class="token comment">-- On the client</span>
@@ -168,14 +168,14 @@ task<span class="token punctuation">.</span><span class="token function">wait</s
 </code></pre>
   </div>
 </div>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="IsA"></a><code style="text-decoration:none">IsA</code><a class="hash-link" href="#IsA" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Remote/CommunicationSignal/Client.lua#L200"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>ClientCommunicationSignal.</code><code class="green_3LnD">IsA</code><code>(</code><code>self: </code><code class="blue_2Afy">any</code><code>) → </code><code class="blue_2Afy">boolean</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="IsA"></a><code style="text-decoration:none">IsA</code><a class="hash-link" href="#IsA" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Remote/CommunicationSignal/Client.lua#L201"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>ClientCommunicationSignal.</code><code class="green_3LnD">IsA</code><code>(</code><code>self: </code><code class="blue_2Afy">any</code><code>) → </code><code class="blue_2Afy">boolean</code></div><div>
 <p>A method which is used to check if <code>self</code> is a client communication signal or not.</p>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Dispatch"></a><code style="text-decoration:none">Dispatch</code><a class="hash-link" href="#Dispatch" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Remote/CommunicationSignal/Client.lua#L233"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>ClientCommunicationSignal:</code><code class="green_3LnD">Dispatch</code><code>(</code><code>) → </code><code class="blue_2Afy">table</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Dispatch"></a><code style="text-decoration:none">Dispatch</code><a class="hash-link" href="#Dispatch" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Remote/CommunicationSignal/Client.lua#L234"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>ClientCommunicationSignal:</code><code class="green_3LnD">Dispatch</code><code>(</code><code>) → </code><code class="blue_2Afy">table</code></div><div>
 <p>A method which dispatches the client communication signal for client-side use.</p>
 <p>For e.g:</p>
 <pre class="language-lua"><code class="language-lua"><span class="token comment">-- On the server:</span>
 <span class="token keyword">local</span> signal <span class="token operator">=</span> CommunicationSignal<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token string">"Signal"</span><span class="token punctuation">)</span>
-signal<span class="token punctuation">:</span><span class="token function">BindKeyValuePair</span><span class="token punctuation">(</span><span class="token string">"Table"</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+signal<span class="token punctuation">:</span><span class="token function">Bind</span><span class="token punctuation">(</span><span class="token string">"Table"</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
 
 <span class="token comment">-- On the client:</span>
 <span class="token keyword">local</span> clientCommunicationSignal <span class="token operator">=</span> CommunicationSignal<span class="token punctuation">.</span><span class="token function">GetSignal</span><span class="token punctuation">(</span><span class="token string">"Signal"</span><span class="token punctuation">)</span><span class="token punctuation">:</span><span class="token function">expect</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
@@ -197,11 +197,13 @@ signal<span class="token punctuation">:</span><span class="token function">BindK
     <p>The dispatched signal will be updated as new members, remote signals or remote properties are binded.</p>
   </div>
 </div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="GetMethod"></a><code style="text-decoration:none">GetMethod</code><a class="hash-link" href="#GetMethod" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Remote/CommunicationSignal/Client.lua#L278"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>ClientCommunicationSignal:</code><code class="green_3LnD">GetMethod</code><code>(</code><code>methodName: </code><code class="blue_2Afy">string</code><code>) → </code><code class="blue_2Afy">function</code><code class="op_1JtD"> | </code><code class="blue_2Afy">nil</code></div><div>
+<p>A method which returns a method of key <code>methodName</code> from the signal.</p>
 </div></div></article></div><details><summary>Show raw api</summary><pre style="max-width:100%;white-space:pre-wrap">{
     &quot;functions&quot;: [
         {
             &quot;name&quot;: &quot;GetSignal&quot;,
-            &quot;desc&quot;: &quot;Creates a new client communication signal and binds it with it&#x27;s server counterpart. Returns a promise which is resolved\nonce the signal is successfully created. The method will wait for `timeout` (or 1 if not specified) seconds for the server counterpart to exist\nbefore assuming that it doesn&#x27;t.\n\n```lua\n-- On the server:\nlocal signal = CommunicationSignal.new(\&quot;Signal\&quot;)\nsignal:BindKeyValuePair(\&quot;bo\&quot;, true)\n\n-- On the client:\nCommunicationSignal.GetSignal(\&quot;Signal\&quot;):andThen(function(signal)\n\tprint(signal.Members.bo) --&gt; true\nend)\n```\n\n:::warning\nThe returned signal will be unsuable once the signal&#x27;s serverside counterpart is destroyed, for e.g:\n\n```lua\n-- On the server:\nlocal signal = CommunicationSignal.new(\&quot;Signal\&quot;)\nsignal:BindKeyValuePair(\&quot;test\&quot;, 1)\ntask.delay(5, function() signal:Destroy() end))\n\n-- On the client\nlocal sig = CommunicationSignal.GetSignal(\&quot;Signal\&quot;):expect()\nprint(CommunicationSignal.Members.test) --&gt; 1\ntask.wait(6) -- wait for it to be destroyed on the server\nprint(CommunicationSignal.Members) --&gt; nil\n```\n:::&quot;,
+            &quot;desc&quot;: &quot;Creates a new client communication signal and binds it with it&#x27;s server counterpart. Returns a promise which is resolved\nonce the signal is successfully created. The method will wait for `timeout` (or 1 if not specified) seconds for the server counterpart to exist\nbefore assuming that it doesn&#x27;t.\n\n```lua\n-- On the server:\nlocal signal = CommunicationSignal.new(\&quot;Signal\&quot;)\nsignal:Bind(\&quot;bo\&quot;, true)\n\n-- On the client:\nCommunicationSignal.GetSignal(\&quot;Signal\&quot;):andThen(function(signal)\n\tprint(signal.Members.bo) --&gt; true\nend)\n```\n\n:::warning\nThe returned signal will be unsuable once the signal&#x27;s serverside counterpart is destroyed, for e.g:\n\n```lua\n-- On the server:\nlocal signal = CommunicationSignal.new(\&quot;Signal\&quot;)\nsignal:Bind(\&quot;test\&quot;, 1)\ntask.delay(5, function() signal:Destroy() end))\n\n-- On the client\nlocal sig = CommunicationSignal.GetSignal(\&quot;Signal\&quot;):expect()\nprint(CommunicationSignal.Members.test) --&gt; 1\ntask.wait(6) -- wait for it to be destroyed on the server\nprint(CommunicationSignal.Members) --&gt; nil\n```\n:::&quot;,
             &quot;params&quot;: [
                 {
                     &quot;name&quot;: &quot;identifier&quot;,
@@ -223,7 +225,7 @@ signal<span class="token punctuation">:</span><span class="token function">BindK
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;yields&quot;: true,
             &quot;source&quot;: {
-                &quot;line&quot;: 134,
+                &quot;line&quot;: 135,
                 &quot;path&quot;: &quot;packages/Remote/CommunicationSignal/Client.lua&quot;
             }
         },
@@ -245,13 +247,13 @@ signal<span class="token punctuation">:</span><span class="token function">BindK
             ],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 200,
+                &quot;line&quot;: 201,
                 &quot;path&quot;: &quot;packages/Remote/CommunicationSignal/Client.lua&quot;
             }
         },
         {
             &quot;name&quot;: &quot;Dispatch&quot;,
-            &quot;desc&quot;: &quot;A method which dispatches the client communication signal for client-side use.\n\nFor e.g:\n\n```lua\n-- On the server:\nlocal signal = CommunicationSignal.new(\&quot;Signal\&quot;)\nsignal:BindKeyValuePair(\&quot;Table\&quot;, {1,2,3})\n\n-- On the client:\nlocal clientCommunicationSignal = CommunicationSignal.GetSignal(\&quot;Signal\&quot;):expect()\nlocal dispatchedSignal = clientCommunicationSignal:Dispatch()\n\n-- Normally to access members you would do:\nprint(clientCommunicationSignal.Members.Table) --&gt; {1, 2, 3}\n\n-- Dispatched signal:\nprint(dispatchedSignal.Table) --&gt;  {1, 2, 3} \n```\n\n:::tip\nThe dispatched signal will be updated as new members, remote signals or remote properties are binded. \n:::&quot;,
+            &quot;desc&quot;: &quot;A method which dispatches the client communication signal for client-side use.\n\nFor e.g:\n\n```lua\n-- On the server:\nlocal signal = CommunicationSignal.new(\&quot;Signal\&quot;)\nsignal:Bind(\&quot;Table\&quot;, {1,2,3})\n\n-- On the client:\nlocal clientCommunicationSignal = CommunicationSignal.GetSignal(\&quot;Signal\&quot;):expect()\nlocal dispatchedSignal = clientCommunicationSignal:Dispatch()\n\n-- Normally to access members you would do:\nprint(clientCommunicationSignal.Members.Table) --&gt; {1, 2, 3}\n\n-- Dispatched signal:\nprint(dispatchedSignal.Table) --&gt;  {1, 2, 3} \n```\n\n:::tip\nThe dispatched signal will be updated as new members, remote signals or remote properties are binded. \n:::&quot;,
             &quot;params&quot;: [],
             &quot;returns&quot;: [
                 {
@@ -261,7 +263,29 @@ signal<span class="token punctuation">:</span><span class="token function">BindK
             ],
             &quot;function_type&quot;: &quot;method&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 233,
+                &quot;line&quot;: 234,
+                &quot;path&quot;: &quot;packages/Remote/CommunicationSignal/Client.lua&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;GetMethod&quot;,
+            &quot;desc&quot;: &quot;A method which returns a method of key `methodName` from the signal.&quot;,
+            &quot;params&quot;: [
+                {
+                    &quot;name&quot;: &quot;methodName&quot;,
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;string&quot;
+                }
+            ],
+            &quot;returns&quot;: [
+                {
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;function | nil&quot;
+                }
+            ],
+            &quot;function_type&quot;: &quot;method&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 278,
                 &quot;path&quot;: &quot;packages/Remote/CommunicationSignal/Client.lua&quot;
             }
         }
@@ -275,7 +299,7 @@ signal<span class="token punctuation">:</span><span class="token function">BindK
                 &quot;ClientCommunicationSignal&quot;
             ],
             &quot;source&quot;: {
-                &quot;line&quot;: 64,
+                &quot;line&quot;: 65,
                 &quot;path&quot;: &quot;packages/Remote/CommunicationSignal/Client.lua&quot;
             }
         },
@@ -287,7 +311,7 @@ signal<span class="token punctuation">:</span><span class="token function">BindK
                 &quot;ClientCommunicationSignal&quot;
             ],
             &quot;source&quot;: {
-                &quot;line&quot;: 72,
+                &quot;line&quot;: 73,
                 &quot;path&quot;: &quot;packages/Remote/CommunicationSignal/Client.lua&quot;
             }
         },
@@ -299,7 +323,7 @@ signal<span class="token punctuation">:</span><span class="token function">BindK
                 &quot;ClientCommunicationSignal&quot;
             ],
             &quot;source&quot;: {
-                &quot;line&quot;: 80,
+                &quot;line&quot;: 81,
                 &quot;path&quot;: &quot;packages/Remote/CommunicationSignal/Client.lua&quot;
             }
         },
@@ -311,7 +335,7 @@ signal<span class="token punctuation">:</span><span class="token function">BindK
                 &quot;ClientCommunicationSignal&quot;
             ],
             &quot;source&quot;: {
-                &quot;line&quot;: 59,
+                &quot;line&quot;: 60,
                 &quot;path&quot;: &quot;packages/Remote/CommunicationSignal/Server.lua&quot;
             }
         },
@@ -323,7 +347,7 @@ signal<span class="token punctuation">:</span><span class="token function">BindK
                 &quot;ClientCommunicationSignal&quot;
             ],
             &quot;source&quot;: {
-                &quot;line&quot;: 67,
+                &quot;line&quot;: 68,
                 &quot;path&quot;: &quot;packages/Remote/CommunicationSignal/Server.lua&quot;
             }
         },
@@ -335,23 +359,23 @@ signal<span class="token punctuation">:</span><span class="token function">BindK
                 &quot;ClientCommunicationSignal&quot;
             ],
             &quot;source&quot;: {
-                &quot;line&quot;: 75,
+                &quot;line&quot;: 76,
                 &quot;path&quot;: &quot;packages/Remote/CommunicationSignal/Server.lua&quot;
             }
         }
     ],
     &quot;types&quot;: [],
     &quot;name&quot;: &quot;ClientCommunicationSignal&quot;,
-    &quot;desc&quot;: &quot;A client communication signal contains all the members, remote signals and remote properties binded to it&#x27;s server\ncounter part.\n\n```lua\n-- On the server:\nlocal communicationSignal = CommunicationSignal.new(\&quot;ServersideService\&quot;)\ncommunicationSignal:Bind(\&quot;Test\&quot;, 123)\ncommunicationSignal:Bind(\&quot;T\&quot;, {1, 2, 3})\ncommunicationSignal:Bind(\&quot;Signal\&quot;, RemoteSignal.new())\n\n-- On the client:\nlocal communicationSignal = CommunicationSignal.GetSignal(\&quot;ServersideService\&quot;)\n\nprint(\n\tcommunicationSignal.Members.Test,  --&gt; 123\n\tcommunicationSignal.Members.T, --&gt; {1, 2, 3}\n\tcommunicationRemote.RemoteSignals.Signal \n)\n```\n:::note\nRemote signals and remote properties (binded to a signal) are represented differently on the client. They are represented\nas client remote properties and signals, except they are binded to their serverside counter parts. \n\nFor e.g:\n\n```lua\n-- On the server\nlocal communicationSignal = CommunicationSignal.new(\&quot;ServersideService\&quot;)\ncommunicationSignal:BindKeyValuePair(\&quot;Bo\&quot;, RemoteSignal.new())\n\n-- On the client\nlocal communicationSignal = CommunicationSignal.GetSignal(\&quot;ServersideService\&quot;):expect() -- as GetSignal returns a promise\nprint(ClientRemoteProperty.IsA(communicationSignal.RemoteSignals.Bo)) --&gt; true\n```\n:::&quot;,
+    &quot;desc&quot;: &quot;A client communication signal contains all the members, remote signals and remote properties binded to it&#x27;s server\ncounter part.\n\n```lua\n-- On the server:\nlocal communicationSignal = CommunicationSignal.new(\&quot;ServersideService\&quot;)\ncommunicationSignal:Bind(\&quot;Test\&quot;, 123)\ncommunicationSignal:Bind(\&quot;T\&quot;, {1, 2, 3})\ncommunicationSignal:Bind(\&quot;Signal\&quot;, RemoteSignal.new())\n\n-- On the client:\nlocal communicationSignal = CommunicationSignal.GetSignal(\&quot;ServersideService\&quot;)\n\nprint(\n\tcommunicationSignal.Members.Test,  --&gt; 123\n\tcommunicationSignal.Members.T, --&gt; {1, 2, 3}\n\tcommunicationRemote.RemoteSignals.Signal \n)\n```\n:::note\nRemote signals and remote properties (binded to a signal) are represented differently on the client. They are represented\nas client remote properties and signals, except they are binded to their serverside counter parts. \n\nFor e.g:\n\n```lua\n-- On the server\nlocal communicationSignal = CommunicationSignal.new(\&quot;ServersideService\&quot;)\ncommunicationSignal:Bind(\&quot;Bo\&quot;, RemoteSignal.new())\n\n-- On the client\nlocal communicationSignal = CommunicationSignal.GetSignal(\&quot;ServersideService\&quot;):expect() -- as GetSignal returns a promise\nprint(ClientRemoteProperty.IsA(communicationSignal.RemoteSignals.Bo)) --&gt; true\n```\n:::&quot;,
     &quot;realm&quot;: [
         &quot;Client&quot;
     ],
     &quot;source&quot;: {
-        &quot;line&quot;: 56,
+        &quot;line&quot;: 57,
         &quot;path&quot;: &quot;packages/Remote/CommunicationSignal/Client.lua&quot;
     }
-}</pre></details></div><div class="col col--3"><div class="tableOfContents_35-E thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#types" class="table-of-contents__link">Types</a></li><li><a href="#properties" class="table-of-contents__link">Properties</a><ul><li><a href="#Members" class="table-of-contents__link">Members</a></li><li><a href="#Members" class="table-of-contents__link">Members</a></li><li><a href="#RemoteProperties" class="table-of-contents__link">RemoteProperties</a></li><li><a href="#RemoteProperties" class="table-of-contents__link">RemoteProperties</a></li><li><a href="#RemoteSignals" class="table-of-contents__link">RemoteSignals</a></li><li><a href="#RemoteSignals" class="table-of-contents__link">RemoteSignals</a></li></ul></li><li><a href="#functions" class="table-of-contents__link">Functions</a><ul><li><a href="#GetSignal" class="table-of-contents__link">.GetSignal</a></li><li><a href="#IsA" class="table-of-contents__link">.IsA</a></li><li><a href="#Dispatch" class="table-of-contents__link">:Dispatch</a></li></ul></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2021 finobinos. Built with Moonwave and Docusaurus.</div></div></div></footer></div>
-<script src="/RBXUtil/assets/js/runtime~main.26dc1de6.js"></script>
-<script src="/RBXUtil/assets/js/main.31c9947f.js"></script>
+}</pre></details></div><div class="col col--3"><div class="tableOfContents_35-E thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#types" class="table-of-contents__link">Types</a></li><li><a href="#properties" class="table-of-contents__link">Properties</a><ul><li><a href="#Members" class="table-of-contents__link">Members</a></li><li><a href="#Members" class="table-of-contents__link">Members</a></li><li><a href="#RemoteProperties" class="table-of-contents__link">RemoteProperties</a></li><li><a href="#RemoteProperties" class="table-of-contents__link">RemoteProperties</a></li><li><a href="#RemoteSignals" class="table-of-contents__link">RemoteSignals</a></li><li><a href="#RemoteSignals" class="table-of-contents__link">RemoteSignals</a></li></ul></li><li><a href="#functions" class="table-of-contents__link">Functions</a><ul><li><a href="#GetSignal" class="table-of-contents__link">.GetSignal</a></li><li><a href="#IsA" class="table-of-contents__link">.IsA</a></li><li><a href="#Dispatch" class="table-of-contents__link">:Dispatch</a></li><li><a href="#GetMethod" class="table-of-contents__link">:GetMethod</a></li></ul></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2021 finobinos. Built with Moonwave and Docusaurus.</div></div></div></footer></div>
+<script src="/RBXUtil/assets/js/runtime~main.520fda72.js"></script>
+<script src="/RBXUtil/assets/js/main.cd9a0d1d.js"></script>
 </body>
 </html>
