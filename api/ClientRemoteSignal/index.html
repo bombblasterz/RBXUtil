@@ -23,8 +23,8 @@ end)
 
 clientRemoteSignal:Fire(&quot;yo&quot;)
 ```"><meta data-react-helmet="true" property="og:url" content="https://finobinos.github.io/RBXUtil/api/ClientRemoteSignal"><meta data-react-helmet="true" name="docusaurus_locale" content="en"><meta data-react-helmet="true" name="docusaurus_tag" content="default"><link data-react-helmet="true" rel="canonical" href="https://finobinos.github.io/RBXUtil/api/ClientRemoteSignal"><link data-react-helmet="true" rel="alternate" href="https://finobinos.github.io/RBXUtil/api/ClientRemoteSignal" hreflang="en"><link data-react-helmet="true" rel="alternate" href="https://finobinos.github.io/RBXUtil/api/ClientRemoteSignal" hreflang="x-default"><link rel="stylesheet" href="/RBXUtil/assets/css/styles.3c0ff9e9.css">
-<link rel="preload" href="/RBXUtil/assets/js/runtime~main.2c3d36a7.js" as="script">
-<link rel="preload" href="/RBXUtil/assets/js/main.278767a6.js" as="script">
+<link rel="preload" href="/RBXUtil/assets/js/runtime~main.1cf2577f.js" as="script">
+<link rel="preload" href="/RBXUtil/assets/js/main.40dfdfb7.js" as="script">
 </head>
 <body>
 <script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){var t=null;try{t=localStorage.getItem("theme")}catch(t){}return t}();t(null!==e?e:"light")}()</script><div id="__docusaurus">
@@ -45,7 +45,7 @@ clientRemoteSignal<span class="token punctuation">:</span><span class="token fun
 <p>Creates and returns a new client remote signal.</p>
 </div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Connect"></a><code style="text-decoration:none">Connect</code><a class="hash-link" href="#Connect" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#79b473;color:#79b473">ClientRemoteSignal</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Remote/ClientRemoteSignal.lua#L97"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>ClientRemoteSignal:</code><code class="green_3LnD">Connect</code><code>(</code><code>callback: </code><code class="blue_2Afy">function</code><code>) → </code><code class="blue_2Afy">RBXScriptConnection</code></div><div>
 <p>Same as <code>self._remote:Connect(callback)</code>.</p>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Destroy"></a><code style="text-decoration:none">Destroy</code><a class="hash-link" href="#Destroy" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#79b473;color:#79b473">ClientRemoteSignal</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Remote/ClientRemoteSignal.lua#L137"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>ClientRemoteSignal:</code><code class="green_3LnD">Destroy</code><code>(</code><code>...: </code><code class="blue_2Afy">any</code><code>) → </code><code>(</code><code>)</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Destroy"></a><code style="text-decoration:none">Destroy</code><a class="hash-link" href="#Destroy" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#79b473;color:#79b473">ClientRemoteSignal</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Remote/ClientRemoteSignal.lua#L141"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>ClientRemoteSignal:</code><code class="green_3LnD">Destroy</code><code>(</code><code>...: </code><code class="blue_2Afy">any</code><code>) → </code><code>(</code><code>)</code></div><div>
 <p>Destroys the client remote signal and makes it unusuable.</p>
 <div class="admonition admonition-note alert alert--secondary">
   <div class="admonition-heading">
@@ -55,6 +55,16 @@ clientRemoteSignal<span class="token punctuation">:</span><span class="token fun
   </div>
   <div class="admonition-content">
     <p>The client remote signal will also be destroyed if the remote signal it was bound to was destroyed.</p>
+  </div>
+</div>
+<div class="admonition admonition-note alert alert--secondary">
+  <div class="admonition-heading">
+    <h5><span class="admonition-icon"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16">
+          <path d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path>
+        </svg></span>note</h5>
+  </div>
+  <div class="admonition-content">
+    <p>It is undefined behavior to destroy a client remote signal if it is bound to the server.</p>
   </div>
 </div>
 <div class="admonition admonition-warning alert alert--danger">
@@ -71,7 +81,7 @@ clientRemoteSignal<span class="token punctuation">:</span><span class="token fun
 <p>Same as <code>self._remote:FireServer(...)</code>.</p>
 </div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="IsBoundToServer"></a><code style="text-decoration:none">IsBoundToServer</code><a class="hash-link" href="#IsBoundToServer" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#79b473;color:#79b473">ClientRemoteSignal</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Remote/ClientRemoteSignal.lua#L79"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>ClientRemoteSignal:</code><code class="green_3LnD">IsBoundToServer</code><code>(</code><code>) → </code><code class="blue_2Afy">boolean</code></div><div>
 <p>Returns a boolean indicating if the client remote signal is bound to the server (remote signal).</p>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Wait"></a><code style="text-decoration:none">Wait</code><a class="hash-link" href="#Wait" title="Direct link to heading">#</a></h3><span class="badge_3ZFo" style="color:#f1c40f"><span class="badgeTooltip_2qiw">This is a yielding function. When called, it will pause the Lua thread that called the function until a result is ready to be returned, without interrupting other scripts.</span><span class="badgeToolTipTail_2yaQ"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="#f1c40f" role="img" aria-label="This is a yielding function. When called, it will pause the Lua thread that called the function until a result is ready to be returned, without interrupting other scripts."><path d="M96.4 11.9c-1.4-2.5-4-4-6.9-4H10.8c-2.9 0-5.4 1.5-6.9 4-1.4 2.5-1.4 5.5 0 7.9L43.3 88c1.4 2.5 4 4 6.9 4 2.9 0 5.4-1.5 6.9-4l39.3-68.2c1.4-2.4 1.4-5.4 0-7.9zM46.3 54.5c1.1-1.1 2.3-1.6 3.8-1.6s2.8.5 3.8 1.6c1.1 1.1 1.6 2.3 1.6 3.8s-.5 2.8-1.6 3.8c-1.1 1.1-2.3 1.6-3.8 1.6s-2.8-.5-3.8-1.6c-1.1-1.1-1.6-2.3-1.6-3.8.1-1.5.6-2.8 1.6-3.8zm-.5-4.9V21.8h8.8v27.8h-8.8z"></path></svg> Yields</span></span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Remote/ClientRemoteSignal.lua#L148"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>ClientRemoteSignal:</code><code class="green_3LnD">Wait</code><code>(</code><code>) → </code><code class="blue_2Afy">...</code><code class="blue_2Afy">any</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Wait"></a><code style="text-decoration:none">Wait</code><a class="hash-link" href="#Wait" title="Direct link to heading">#</a></h3><span class="badge_3ZFo" style="color:#f1c40f"><span class="badgeTooltip_2qiw">This is a yielding function. When called, it will pause the Lua thread that called the function until a result is ready to be returned, without interrupting other scripts.</span><span class="badgeToolTipTail_2yaQ"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="#f1c40f" role="img" aria-label="This is a yielding function. When called, it will pause the Lua thread that called the function until a result is ready to be returned, without interrupting other scripts."><path d="M96.4 11.9c-1.4-2.5-4-4-6.9-4H10.8c-2.9 0-5.4 1.5-6.9 4-1.4 2.5-1.4 5.5 0 7.9L43.3 88c1.4 2.5 4 4 6.9 4 2.9 0 5.4-1.5 6.9-4l39.3-68.2c1.4-2.4 1.4-5.4 0-7.9zM46.3 54.5c1.1-1.1 2.3-1.6 3.8-1.6s2.8.5 3.8 1.6c1.1 1.1 1.6 2.3 1.6 3.8s-.5 2.8-1.6 3.8c-1.1 1.1-2.3 1.6-3.8 1.6s-2.8-.5-3.8-1.6c-1.1-1.1-1.6-2.3-1.6-3.8.1-1.5.6-2.8 1.6-3.8zm-.5-4.9V21.8h8.8v27.8h-8.8z"></path></svg> Yields</span></span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Remote/ClientRemoteSignal.lua#L152"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>ClientRemoteSignal:</code><code class="green_3LnD">Wait</code><code>(</code><code>) → </code><code class="blue_2Afy">...</code><code class="blue_2Afy">any</code></div><div>
 <p>Same as <code>self._remote.OnClientEvent:Wait()</code>.</p>
 </div></div></article></div><details><summary>Show raw api</summary><pre style="max-width:100%;white-space:pre-wrap">{
     &quot;functions&quot;: [
@@ -179,7 +189,7 @@ clientRemoteSignal<span class="token punctuation">:</span><span class="token fun
         },
         {
             &quot;name&quot;: &quot;Destroy&quot;,
-            &quot;desc&quot;: &quot;Destroys the client remote signal and makes it unusuable.\n\n:::note\nThe client remote signal will also be destroyed if the remote signal it was bound to was destroyed.\n:::\n\n:::warning \nTrivial errors will occur if your code unintentionally works on a destroyed client remote signal, only call this method when you&#x27;re done working with it!\n:::&quot;,
+            &quot;desc&quot;: &quot;Destroys the client remote signal and makes it unusuable.\n\n:::note\nThe client remote signal will also be destroyed if the remote signal it was bound to was destroyed.\n:::\n\n:::note\nIt is undefined behavior to destroy a client remote signal if it is bound to the server.\n:::\n\n:::warning \nTrivial errors will occur if your code unintentionally works on a destroyed client remote signal, only call this method when you&#x27;re done working with it!\n:::&quot;,
             &quot;params&quot;: [
                 {
                     &quot;name&quot;: &quot;...&quot;,
@@ -193,7 +203,7 @@ clientRemoteSignal<span class="token punctuation">:</span><span class="token fun
                 &quot;ClientRemoteSignal&quot;
             ],
             &quot;source&quot;: {
-                &quot;line&quot;: 137,
+                &quot;line&quot;: 141,
                 &quot;path&quot;: &quot;packages/Remote/ClientRemoteSignal.lua&quot;
             }
         },
@@ -210,7 +220,7 @@ clientRemoteSignal<span class="token punctuation">:</span><span class="token fun
             &quot;function_type&quot;: &quot;method&quot;,
             &quot;yields&quot;: true,
             &quot;source&quot;: {
-                &quot;line&quot;: 148,
+                &quot;line&quot;: 152,
                 &quot;path&quot;: &quot;packages/Remote/ClientRemoteSignal.lua&quot;
             }
         }
@@ -227,7 +237,7 @@ clientRemoteSignal<span class="token punctuation">:</span><span class="token fun
         &quot;path&quot;: &quot;packages/Remote/ClientRemoteSignal.lua&quot;
     }
 }</pre></details></div><div class="col col--3"><div class="tableOfContents_35-E thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#types" class="table-of-contents__link">Types</a></li><li><a href="#properties" class="table-of-contents__link">Properties</a></li><li><a href="#functions" class="table-of-contents__link">Functions</a><ul><li><a href="#IsA" class="table-of-contents__link">.IsA</a></li><li><a href="#new" class="table-of-contents__link">.new</a></li><li><a href="#Connect" class="table-of-contents__link">:Connect</a></li><li><a href="#Destroy" class="table-of-contents__link">:Destroy</a></li><li><a href="#FireServer" class="table-of-contents__link">:FireServer</a></li><li><a href="#IsBoundToServer" class="table-of-contents__link">:IsBoundToServer</a></li><li><a href="#Wait" class="table-of-contents__link">:Wait</a></li></ul></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2021 finobinos. Built with Moonwave and Docusaurus.</div></div></div></footer></div>
-<script src="/RBXUtil/assets/js/runtime~main.2c3d36a7.js"></script>
-<script src="/RBXUtil/assets/js/main.278767a6.js"></script>
+<script src="/RBXUtil/assets/js/runtime~main.1cf2577f.js"></script>
+<script src="/RBXUtil/assets/js/main.40dfdfb7.js"></script>
 </body>
 </html>
