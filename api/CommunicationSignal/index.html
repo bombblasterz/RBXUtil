@@ -45,8 +45,8 @@ local communicationSignal = CommunicationSignal.GetSignal(&quot;SomeSignal&quot;
 print(communicationSignal.Members.Test(&quot;Hi&quot;)) --&gt; &quot;Hey!&quot;
 print( communicationSignal.Members.Bo) --&gt; {1, 2, 3}
 ```"><meta data-react-helmet="true" property="og:url" content="https://finobinos.github.io/RBXUtil/api/CommunicationSignal"><meta data-react-helmet="true" name="docusaurus_locale" content="en"><meta data-react-helmet="true" name="docusaurus_tag" content="default"><link data-react-helmet="true" rel="canonical" href="https://finobinos.github.io/RBXUtil/api/CommunicationSignal"><link data-react-helmet="true" rel="alternate" href="https://finobinos.github.io/RBXUtil/api/CommunicationSignal" hreflang="en"><link data-react-helmet="true" rel="alternate" href="https://finobinos.github.io/RBXUtil/api/CommunicationSignal" hreflang="x-default"><link rel="stylesheet" href="/RBXUtil/assets/css/styles.3c0ff9e9.css">
-<link rel="preload" href="/RBXUtil/assets/js/runtime~main.bcd7af1b.js" as="script">
-<link rel="preload" href="/RBXUtil/assets/js/main.805383db.js" as="script">
+<link rel="preload" href="/RBXUtil/assets/js/runtime~main.a633c996.js" as="script">
+<link rel="preload" href="/RBXUtil/assets/js/main.9d8dcaa9.js" as="script">
 </head>
 <body>
 <script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){var t=null;try{t=localStorage.getItem("theme")}catch(t){}return t}();t(null!==e?e:"light")}()</script><div id="__docusaurus">
@@ -92,7 +92,7 @@ communicationSignal<span class="token punctuation">:</span><span class="token fu
     </ul>
   </div>
 </div>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Destroy"></a><code style="text-decoration:none">Destroy</code><a class="hash-link" href="#Destroy" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#925FB9;color:#925FB9">ClientRemoteProperty</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Remote/CommunicationSignal/Server.lua#L260"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>CommunicationSignal:</code><code class="green_3LnD">Destroy</code><code>(</code><code>) → </code><code>(</code><code>)</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Destroy"></a><code style="text-decoration:none">Destroy</code><a class="hash-link" href="#Destroy" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#ff5252;color:#ff5252">CommunicationSignal</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Remote/CommunicationSignal/Server.lua#L260"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>CommunicationSignal:</code><code class="green_3LnD">Destroy</code><code>(</code><code>) → </code><code>(</code><code>)</code></div><div>
 <p>Destroys the communication signal and makes it unusable, also destroys the client counterpart and makes it unusuable.</p>
 <div class="admonition admonition-warning alert alert--danger">
   <div class="admonition-heading">
@@ -104,8 +104,8 @@ communicationSignal<span class="token punctuation">:</span><span class="token fu
     <p>Trivial errors will occur if your code unintentionally works on a destroyed communication signal, only call this method when you're done working with it!</p>
   </div>
 </div>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="DispatchToClient"></a><code style="text-decoration:none">DispatchToClient</code><a class="hash-link" href="#DispatchToClient" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#925FB9;color:#925FB9">ClientRemoteProperty</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Remote/CommunicationSignal/Server.lua#L244"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>CommunicationSignal:</code><code class="green_3LnD">DispatchToClient</code><code>(</code><code>) → </code><code>(</code><code>)</code></div><div>
-<p>Destroys the communication signal and makes it unusable, also destroys the client counterpart and makes it unusuable.</p>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="DispatchToClient"></a><code style="text-decoration:none">DispatchToClient</code><a class="hash-link" href="#DispatchToClient" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#ff5252;color:#ff5252">CommunicationSignal</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Remote/CommunicationSignal/Server.lua#L244"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>CommunicationSignal:</code><code class="green_3LnD">DispatchToClient</code><code>(</code><code>) → </code><code>(</code><code>)</code></div><div>
+<p>Dispatches the communication signal to the client.</p>
 <div class="admonition admonition-note alert alert--secondary">
   <div class="admonition-heading">
     <h5><span class="admonition-icon"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16">
@@ -114,7 +114,7 @@ communicationSignal<span class="token punctuation">:</span><span class="token fu
   </div>
   <div class="admonition-content">
     <p>
-      Dispatches the communication signal to the client. Any members, remote properties or remote signals binded <em>after</em>
+      Any members, remote properties or remote signals binded <em>after</em>
       this method is called is <strong>undefined behavior</strong>.
     </p>
   </div>
@@ -214,12 +214,12 @@ communicationSignal<span class="token punctuation">:</span><span class="token fu
         },
         {
             &quot;name&quot;: &quot;DispatchToClient&quot;,
-            &quot;desc&quot;: &quot;Destroys the communication signal and makes it unusable, also destroys the client counterpart and makes it unusuable.\n\n:::note  \nDispatches the communication signal to the client. Any members, remote properties or remote signals binded *after*\nthis method is called is **undefined behavior**.\n:::&quot;,
+            &quot;desc&quot;: &quot;Dispatches the communication signal to the client. \n\n:::note\nAny members, remote properties or remote signals binded *after*\nthis method is called is **undefined behavior**.\n:::&quot;,
             &quot;params&quot;: [],
             &quot;returns&quot;: [],
             &quot;function_type&quot;: &quot;method&quot;,
             &quot;tags&quot;: [
-                &quot;ClientRemoteProperty&quot;
+                &quot;CommunicationSignal&quot;
             ],
             &quot;source&quot;: {
                 &quot;line&quot;: 244,
@@ -233,7 +233,7 @@ communicationSignal<span class="token punctuation">:</span><span class="token fu
             &quot;returns&quot;: [],
             &quot;function_type&quot;: &quot;method&quot;,
             &quot;tags&quot;: [
-                &quot;ClientRemoteProperty&quot;
+                &quot;CommunicationSignal&quot;
             ],
             &quot;source&quot;: {
                 &quot;line&quot;: 260,
@@ -253,7 +253,7 @@ communicationSignal<span class="token punctuation">:</span><span class="token fu
         &quot;path&quot;: &quot;packages/Remote/CommunicationSignal/Server.lua&quot;
     }
 }</pre></details></div><div class="col col--3"><div class="tableOfContents_35-E thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#types" class="table-of-contents__link">Types</a></li><li><a href="#properties" class="table-of-contents__link">Properties</a></li><li><a href="#functions" class="table-of-contents__link">Functions</a><ul><li><a href="#GetSignal" class="table-of-contents__link">.GetSignal</a></li><li><a href="#IsA" class="table-of-contents__link">.IsA</a></li><li><a href="#new" class="table-of-contents__link">.new</a></li><li><a href="#Bind" class="table-of-contents__link">:Bind</a></li><li><a href="#Destroy" class="table-of-contents__link">:Destroy</a></li><li><a href="#DispatchToClient" class="table-of-contents__link">:DispatchToClient</a></li></ul></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2021 finobinos. Built with Moonwave and Docusaurus.</div></div></div></footer></div>
-<script src="/RBXUtil/assets/js/runtime~main.bcd7af1b.js"></script>
-<script src="/RBXUtil/assets/js/main.805383db.js"></script>
+<script src="/RBXUtil/assets/js/runtime~main.a633c996.js"></script>
+<script src="/RBXUtil/assets/js/main.9d8dcaa9.js"></script>
 </body>
 </html>

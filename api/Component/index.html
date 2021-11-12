@@ -7,8 +7,8 @@
 <title data-react-helmet="true">Component | RBXUtil</title><meta data-react-helmet="true" property="og:title" content="Component | RBXUtil"><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"><meta data-react-helmet="true" name="description" content="A class which is used to bind instances to tags and extend their functionality. Components are like binders, but are
 handled differently."><meta data-react-helmet="true" property="og:description" content="A class which is used to bind instances to tags and extend their functionality. Components are like binders, but are
 handled differently."><meta data-react-helmet="true" property="og:url" content="https://finobinos.github.io/RBXUtil/api/Component"><meta data-react-helmet="true" name="docusaurus_locale" content="en"><meta data-react-helmet="true" name="docusaurus_tag" content="default"><link data-react-helmet="true" rel="canonical" href="https://finobinos.github.io/RBXUtil/api/Component"><link data-react-helmet="true" rel="alternate" href="https://finobinos.github.io/RBXUtil/api/Component" hreflang="en"><link data-react-helmet="true" rel="alternate" href="https://finobinos.github.io/RBXUtil/api/Component" hreflang="x-default"><link rel="stylesheet" href="/RBXUtil/assets/css/styles.3c0ff9e9.css">
-<link rel="preload" href="/RBXUtil/assets/js/runtime~main.bcd7af1b.js" as="script">
-<link rel="preload" href="/RBXUtil/assets/js/main.805383db.js" as="script">
+<link rel="preload" href="/RBXUtil/assets/js/runtime~main.a633c996.js" as="script">
+<link rel="preload" href="/RBXUtil/assets/js/main.9d8dcaa9.js" as="script">
 </head>
 <body>
 <script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){var t=null;try{t=localStorage.getItem("theme")}catch(t){}return t}();t(null!==e?e:"light")}()</script><div id="__docusaurus">
@@ -17,19 +17,27 @@ handled differently."><meta data-react-helmet="true" property="og:url" content="
   A class which is used to bind instances to tags and extend their functionality. Components are like binders, but are
   handled differently.
 </p>
-</div></header><h2><a aria-hidden="true" tabindex="-1" class="anchor anchor__h2 anchorWithStickyNavbar_31ik" id="properties"></a>Properties<a class="hash-link" href="#properties" title="Direct link to heading">#</a></h2><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="OnComponentAdded"></a><code style="text-decoration:none">OnComponentAdded</code><a class="hash-link" href="#OnComponentAdded" title="Direct link to heading">#</a></h3><span class="badge_3ZFo" style="color:#e74c3c"><span class="badgeTooltip_2qiw">This item is read only and cannot be modified.</span><span class="badgeToolTipTail_2yaQ"><svg xmlns="http://www.w3.org/2000/svg" height="300px" width="300px" fill="#e74c3c" x="0px" y="0px" viewBox="0 0 96 96"><path d="M70.354,15.662h-7.496H25.566c-3.282,0-5.19-0.776-5.728-1.169v-1.456c0.538-0.393,2.445-1.168,5.728-1.168h46.479V8H25.566  c-4.776,0-9.594,1.468-9.594,4.747v61.458C15.972,86.645,20.328,88,37.495,88h42.535V15.662H70.354z"></path></svg> Read Only</span></span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Component/init.lua#L44"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Component.OnComponentAdded: </code> <code class="blue_2Afy">Signal</code><code class="op_1JtD">&lt;</code><code class="blue_2Afy">componentAdded</code><code>: </code><code class="blue_2Afy">Component</code><code class="op_1JtD">&gt;</code></div><div>
+</div></header><h2><a aria-hidden="true" tabindex="-1" class="anchor anchor__h2 anchorWithStickyNavbar_31ik" id="properties"></a>Properties<a class="hash-link" href="#properties" title="Direct link to heading">#</a></h2><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="ActiveObjects"></a><code style="text-decoration:none">ActiveObjects</code><a class="hash-link" href="#ActiveObjects" title="Direct link to heading">#</a></h3><span class="badge_3ZFo" style="color:#e74c3c"><span class="badgeTooltip_2qiw">This item is read only and cannot be modified.</span><span class="badgeToolTipTail_2yaQ"><svg xmlns="http://www.w3.org/2000/svg" height="300px" width="300px" fill="#e74c3c" x="0px" y="0px" viewBox="0 0 96 96"><path d="M70.354,15.662h-7.496H25.566c-3.282,0-5.19-0.776-5.728-1.169v-1.456c0.538-0.393,2.445-1.168,5.728-1.168h46.479V8H25.566  c-4.776,0-9.594,1.468-9.594,4.747v61.458C15.972,86.645,20.328,88,37.495,88h42.535V15.662H70.354z"></path></svg> Read Only</span></span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Component/init.lua#L44"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Component.ActiveObjects: </code> <code class="blue_2Afy">table</code></div><div>
+<p>A dictionary of all active component objects.</p>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="OnComponentAdded"></a><code style="text-decoration:none">OnComponentAdded</code><a class="hash-link" href="#OnComponentAdded" title="Direct link to heading">#</a></h3><span class="badge_3ZFo" style="color:#e74c3c"><span class="badgeTooltip_2qiw">This item is read only and cannot be modified.</span><span class="badgeToolTipTail_2yaQ"><svg xmlns="http://www.w3.org/2000/svg" height="300px" width="300px" fill="#e74c3c" x="0px" y="0px" viewBox="0 0 96 96"><path d="M70.354,15.662h-7.496H25.566c-3.282,0-5.19-0.776-5.728-1.169v-1.456c0.538-0.393,2.445-1.168,5.728-1.168h46.479V8H25.566  c-4.776,0-9.594,1.468-9.594,4.747v61.458C15.972,86.645,20.328,88,37.495,88h42.535V15.662H70.354z"></path></svg> Read Only</span></span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Component/init.lua#L51"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Component.OnComponentAdded: </code> <code class="blue_2Afy">Signal</code><code class="op_1JtD">&lt;</code><code class="blue_2Afy">componentAdded</code><code>: </code><code class="blue_2Afy">Component</code><code class="op_1JtD">&gt;</code></div><div>
 <p>A signal which is fired whenever a component is added.</p>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="OnComponentDestroyed"></a><code style="text-decoration:none">OnComponentDestroyed</code><a class="hash-link" href="#OnComponentDestroyed" title="Direct link to heading">#</a></h3><span class="badge_3ZFo" style="color:#e74c3c"><span class="badgeTooltip_2qiw">This item is read only and cannot be modified.</span><span class="badgeToolTipTail_2yaQ"><svg xmlns="http://www.w3.org/2000/svg" height="300px" width="300px" fill="#e74c3c" x="0px" y="0px" viewBox="0 0 96 96"><path d="M70.354,15.662h-7.496H25.566c-3.282,0-5.19-0.776-5.728-1.169v-1.456c0.538-0.393,2.445-1.168,5.728-1.168h46.479V8H25.566  c-4.776,0-9.594,1.468-9.594,4.747v61.458C15.972,86.645,20.328,88,37.495,88h42.535V15.662H70.354z"></path></svg> Read Only</span></span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Component/init.lua#L51"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Component.OnComponentDestroyed: </code> <code class="blue_2Afy">Signal</code><code class="op_1JtD">&lt;</code><code class="blue_2Afy">componentDestroyed</code><code>: </code><code class="blue_2Afy">Component</code><code class="op_1JtD">&gt;</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="OnComponentDestroyed"></a><code style="text-decoration:none">OnComponentDestroyed</code><a class="hash-link" href="#OnComponentDestroyed" title="Direct link to heading">#</a></h3><span class="badge_3ZFo" style="color:#e74c3c"><span class="badgeTooltip_2qiw">This item is read only and cannot be modified.</span><span class="badgeToolTipTail_2yaQ"><svg xmlns="http://www.w3.org/2000/svg" height="300px" width="300px" fill="#e74c3c" x="0px" y="0px" viewBox="0 0 96 96"><path d="M70.354,15.662h-7.496H25.566c-3.282,0-5.19-0.776-5.728-1.169v-1.456c0.538-0.393,2.445-1.168,5.728-1.168h46.479V8H25.566  c-4.776,0-9.594,1.468-9.594,4.747v61.458C15.972,86.645,20.328,88,37.495,88h42.535V15.662H70.354z"></path></svg> Read Only</span></span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Component/init.lua#L58"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Component.OnComponentDestroyed: </code> <code class="blue_2Afy">Signal</code><code class="op_1JtD">&lt;</code><code class="blue_2Afy">componentDestroyed</code><code>: </code><code class="blue_2Afy">Component</code><code class="op_1JtD">&gt;</code></div><div>
 <p>A signal which is fired whenever a component is destroyed.</p>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="OnObjectAdded"></a><code style="text-decoration:none">OnObjectAdded</code><a class="hash-link" href="#OnObjectAdded" title="Direct link to heading">#</a></h3><span class="badge_3ZFo" style="color:#e74c3c"><span class="badgeTooltip_2qiw">This item is read only and cannot be modified.</span><span class="badgeToolTipTail_2yaQ"><svg xmlns="http://www.w3.org/2000/svg" height="300px" width="300px" fill="#e74c3c" x="0px" y="0px" viewBox="0 0 96 96"><path d="M70.354,15.662h-7.496H25.566c-3.282,0-5.19-0.776-5.728-1.169v-1.456c0.538-0.393,2.445-1.168,5.728-1.168h46.479V8H25.566  c-4.776,0-9.594,1.468-9.594,4.747v61.458C15.972,86.645,20.328,88,37.495,88h42.535V15.662H70.354z"></path></svg> Read Only</span></span><span class="docTag_3qMS" style="border-color:#ff793f;color:#ff793f">Component</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Component/init.lua#L59"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Component.OnObjectAdded: </code> <code class="blue_2Afy">Signal</code><code class="op_1JtD">&lt;</code><code>objectAdded: </code><code class="blue_2Afy">table</code><code class="op_1JtD">&gt;</code></div><div>
-<p>A signal which is fired whenever a new object is created in the component.</p>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="OnObjectDestroyed"></a><code style="text-decoration:none">OnObjectDestroyed</code><a class="hash-link" href="#OnObjectDestroyed" title="Direct link to heading">#</a></h3><span class="badge_3ZFo" style="color:#e74c3c"><span class="badgeTooltip_2qiw">This item is read only and cannot be modified.</span><span class="badgeToolTipTail_2yaQ"><svg xmlns="http://www.w3.org/2000/svg" height="300px" width="300px" fill="#e74c3c" x="0px" y="0px" viewBox="0 0 96 96"><path d="M70.354,15.662h-7.496H25.566c-3.282,0-5.19-0.776-5.728-1.169v-1.456c0.538-0.393,2.445-1.168,5.728-1.168h46.479V8H25.566  c-4.776,0-9.594,1.468-9.594,4.747v61.458C15.972,86.645,20.328,88,37.495,88h42.535V15.662H70.354z"></path></svg> Read Only</span></span><span class="docTag_3qMS" style="border-color:#ff793f;color:#ff793f">Component</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Component/init.lua#L67"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Component.OnObjectDestroyed: </code> <code class="blue_2Afy">Signal</code><code class="op_1JtD">&lt;</code><code>objectDestroyed: </code><code class="blue_2Afy">table</code><code class="op_1JtD">&gt;</code></div><div>
-<p>A signal which is fired whenever an object of the component is destroyed.</p>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Tags"></a><code style="text-decoration:none">Tags</code><a class="hash-link" href="#Tags" title="Direct link to heading">#</a></h3><span class="badge_3ZFo" style="color:#e74c3c"><span class="badgeTooltip_2qiw">This item is read only and cannot be modified.</span><span class="badgeToolTipTail_2yaQ"><svg xmlns="http://www.w3.org/2000/svg" height="300px" width="300px" fill="#e74c3c" x="0px" y="0px" viewBox="0 0 96 96"><path d="M70.354,15.662h-7.496H25.566c-3.282,0-5.19-0.776-5.728-1.169v-1.456c0.538-0.393,2.445-1.168,5.728-1.168h46.479V8H25.566  c-4.776,0-9.594,1.468-9.594,4.747v61.458C15.972,86.645,20.328,88,37.495,88h42.535V15.662H70.354z"></path></svg> Read Only</span></span><span class="docTag_3qMS" style="border-color:#ff793f;color:#ff793f">Component</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Component/init.lua#L76"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Component.Tags: </code> <code class="blue_2Afy">table</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="OnObjectAdded"></a><code style="text-decoration:none">OnObjectAdded</code><a class="hash-link" href="#OnObjectAdded" title="Direct link to heading">#</a></h3><span class="badge_3ZFo" style="color:#e74c3c"><span class="badgeTooltip_2qiw">This item is read only and cannot be modified.</span><span class="badgeToolTipTail_2yaQ"><svg xmlns="http://www.w3.org/2000/svg" height="300px" width="300px" fill="#e74c3c" x="0px" y="0px" viewBox="0 0 96 96"><path d="M70.354,15.662h-7.496H25.566c-3.282,0-5.19-0.776-5.728-1.169v-1.456c0.538-0.393,2.445-1.168,5.728-1.168h46.479V8H25.566  c-4.776,0-9.594,1.468-9.594,4.747v61.458C15.972,86.645,20.328,88,37.495,88h42.535V15.662H70.354z"></path></svg> Read Only</span></span><span class="docTag_3qMS" style="border-color:#ff793f;color:#ff793f">Component</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Component/init.lua#L68"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Component.OnObjectAdded: </code> <code class="blue_2Afy">Signal</code><code class="op_1JtD">&lt;</code><code>objectAdded: </code><code class="blue_2Afy">table</code><code class="op_1JtD">&gt;</code></div><div>
+<p>
+  A signal which is fired whenever an object is created and returned
+  through the constructor method of the class bound to the component.
+</p>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="OnObjectDestroyed"></a><code style="text-decoration:none">OnObjectDestroyed</code><a class="hash-link" href="#OnObjectDestroyed" title="Direct link to heading">#</a></h3><span class="badge_3ZFo" style="color:#e74c3c"><span class="badgeTooltip_2qiw">This item is read only and cannot be modified.</span><span class="badgeToolTipTail_2yaQ"><svg xmlns="http://www.w3.org/2000/svg" height="300px" width="300px" fill="#e74c3c" x="0px" y="0px" viewBox="0 0 96 96"><path d="M70.354,15.662h-7.496H25.566c-3.282,0-5.19-0.776-5.728-1.169v-1.456c0.538-0.393,2.445-1.168,5.728-1.168h46.479V8H25.566  c-4.776,0-9.594,1.468-9.594,4.747v61.458C15.972,86.645,20.328,88,37.495,88h42.535V15.662H70.354z"></path></svg> Read Only</span></span><span class="docTag_3qMS" style="border-color:#ff793f;color:#ff793f">Component</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Component/init.lua#L78"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Component.OnObjectDestroyed: </code> <code class="blue_2Afy">Signal</code><code class="op_1JtD">&lt;</code><code>objectDestroyed: </code><code class="blue_2Afy">table</code><code class="op_1JtD">&gt;</code></div><div>
+<p>
+  A signal which is fired whenever an object of the class bound to the component
+  is destroyed.
+</p>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Tags"></a><code style="text-decoration:none">Tags</code><a class="hash-link" href="#Tags" title="Direct link to heading">#</a></h3><span class="badge_3ZFo" style="color:#e74c3c"><span class="badgeTooltip_2qiw">This item is read only and cannot be modified.</span><span class="badgeToolTipTail_2yaQ"><svg xmlns="http://www.w3.org/2000/svg" height="300px" width="300px" fill="#e74c3c" x="0px" y="0px" viewBox="0 0 96 96"><path d="M70.354,15.662h-7.496H25.566c-3.282,0-5.19-0.776-5.728-1.169v-1.456c0.538-0.393,2.445-1.168,5.728-1.168h46.479V8H25.566  c-4.776,0-9.594,1.468-9.594,4.747v61.458C15.972,86.645,20.328,88,37.495,88h42.535V15.662H70.354z"></path></svg> Read Only</span></span><span class="docTag_3qMS" style="border-color:#ff793f;color:#ff793f">Component</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Component/init.lua#L87"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Component.Tags: </code> <code class="blue_2Afy">table</code></div><div>
 <p>The reference to the <code>Tags</code> table in the class bound to the component.</p>
-</div><h2><a aria-hidden="true" tabindex="-1" class="anchor anchor__h2 anchorWithStickyNavbar_31ik" id="functions"></a>Functions<a class="hash-link" href="#functions" title="Direct link to heading">#</a></h2><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="GetAll"></a><code style="text-decoration:none">GetAll</code><a class="hash-link" href="#GetAll" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Component/init.lua#L165"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Component.</code><code class="green_3LnD">GetAll</code><code>(</code><code>) → </code><code class="blue_2Afy">table</code></div><div>
+</div><h2><a aria-hidden="true" tabindex="-1" class="anchor anchor__h2 anchorWithStickyNavbar_31ik" id="functions"></a>Functions<a class="hash-link" href="#functions" title="Direct link to heading">#</a></h2><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="GetAll"></a><code style="text-decoration:none">GetAll</code><a class="hash-link" href="#GetAll" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Component/init.lua#L176"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Component.</code><code class="green_3LnD">GetAll</code><code>(</code><code>) → </code><code class="blue_2Afy">table</code></div><div>
 <p>Returns an array of all components.</p>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="GetFromTags"></a><code style="text-decoration:none">GetFromTags</code><a class="hash-link" href="#GetFromTags" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Component/init.lua#L187"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Component.</code><code class="green_3LnD">GetFromTags</code><code>(</code><code>tags: </code><code class="blue_2Afy">table</code><code>) → </code><code class="blue_2Afy">Component</code><code class="op_1JtD"> | </code><code class="blue_2Afy">nil</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="GetFromTags"></a><code style="text-decoration:none">GetFromTags</code><a class="hash-link" href="#GetFromTags" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Component/init.lua#L198"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Component.</code><code class="green_3LnD">GetFromTags</code><code>(</code><code>tags: </code><code class="blue_2Afy">table</code><code>) → </code><code class="blue_2Afy">Component</code><code class="op_1JtD"> | </code><code class="blue_2Afy">nil</code></div><div>
 <p>Returns a component from <code>tags</code>.</p>
 <p>For e.g:</p>
 <pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> class <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
@@ -39,12 +47,12 @@ class<span class="token punctuation">.</span>Tags <span class="token operator">=
 Component<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span>class<span class="token punctuation">)</span>
 <span class="token function">print</span><span class="token punctuation">(</span>Component<span class="token punctuation">.</span><span class="token function">GetFromTags</span><span class="token punctuation">(</span>class<span class="token punctuation">.</span>Tags<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">--> {...} (class)</span>
 </code></pre>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="GetObjectFromInstance"></a><code style="text-decoration:none">GetObjectFromInstance</code><a class="hash-link" href="#GetObjectFromInstance" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Component/init.lua#L292"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Component.</code><code class="green_3LnD">GetObjectFromInstance</code><code>(</code><code>) → </code><code class="blue_2Afy">table</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="GetObjectFromInstance"></a><code style="text-decoration:none">GetObjectFromInstance</code><a class="hash-link" href="#GetObjectFromInstance" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Component/init.lua#L310"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Component.</code><code class="green_3LnD">GetObjectFromInstance</code><code>(</code><code>) → </code><code class="blue_2Afy">table</code></div><div>
 <p>Returns an object of any component bound to <code>instance</code>.</p>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="IsA"></a><code style="text-decoration:none">IsA</code><a class="hash-link" href="#IsA" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Component/init.lua#L155"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Component.</code><code class="green_3LnD">IsA</code><code>(</code><code>self: </code><code class="blue_2Afy">any</code><code>) → </code><code class="blue_2Afy">boolean</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="IsA"></a><code style="text-decoration:none">IsA</code><a class="hash-link" href="#IsA" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Component/init.lua#L166"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Component.</code><code class="green_3LnD">IsA</code><code>(</code><code>self: </code><code class="blue_2Afy">any</code><code>) → </code><code class="blue_2Afy">boolean</code></div><div>
 <p>Returns a boolean indicating if <code>self</code> is a component or not.</p>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="new"></a><code style="text-decoration:none">new</code><a class="hash-link" href="#new" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Component/init.lua#L325"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Component.</code><code class="green_3LnD">new</code><code>(</code><code>module: </code><code class="blue_2Afy">ModuleScript</code><code>) → </code><code>(</code><code>)</code></div><div>
-<p>Creates and binds a new component to <code>module</code>, <code>module</code> must have the following required members and methods:</p>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="new"></a><code style="text-decoration:none">new</code><a class="hash-link" href="#new" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Component/init.lua#L378"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Component.</code><code class="green_3LnD">new</code><code>(</code><code>class: </code><code class="blue_2Afy">table</code><code>) → </code><code>(</code><code>)</code></div><div>
+<p>Creates and binds a new component to <code>class</code>, <code>class</code> must have the following required members and methods:</p>
 <table>
   <thead>
     <tr>
@@ -54,19 +62,32 @@ Component<span class="token punctuation">.</span><span class="token function">ne
   </thead>
   <tbody>
     <tr>
+      <td><code>Tags</code></td>
+      <td>An array of strings (<a href="https://developer.roblox.com/en-us/api-reference/class/CollectionService" target="_blank">CollectionService</a> tags).</td>
+    </tr>
+    <tr>
       <td><code>.new</code></td>
-      <td>A constructor method which will be called whenever a new object is created.</td>
+      <td>A constructor method which is called whenever an instance is added or found whose <a href="https://developer.roblox.com/en-us/api-reference/class/CollectionService" target="_blank">CollectionService</a> tags match <code>Tags</code>. The instance is passed as the only argument to this method and is considered "bound" to the object returned by this method.</td>
     </tr>
     <tr>
       <td><code>:Destroy</code></td>
-      <td>A method which will be called on an object which is destroyed.</td>
-    </tr>
-    <tr>
-      <td><code>Tags</code></td>
-      <td>An array of strings (CollectionService tags).</td>
+      <td>A method which which is called on an object (returned by the constructor method) bound to a instance which no longer has matching CollectionService tags or is destroyed / parented to <code>nil</code>.</td>
     </tr>
   </tbody>
 </table>
+<div class="admonition admonition-note alert alert--secondary">
+  <div class="admonition-heading">
+    <h5><span class="admonition-icon"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16">
+          <path d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path>
+        </svg></span>note</h5>
+  </div>
+  <div class="admonition-content">
+    <p>
+      It is expected that the constructor method <code>.new</code> returns an object (a table which "inherits" from <code>class</code>). However, it is also
+      safe to return nothing from the constructor method.
+    </p>
+  </div>
+</div>
 <table>
   <thead>
     <tr>
@@ -81,11 +102,11 @@ Component<span class="token punctuation">.</span><span class="token function">ne
     </tr>
     <tr>
       <td><code>:Start</code></td>
-      <td>A method which is called on an object created, just after <code>.new</code> is called for it.</td>
+      <td>A method which is called on an object just after it is created and returned from the constructor method.</td>
     </tr>
     <tr>
       <td><code>:Stop</code></td>
-      <td>A method which is called on an object destroyed. Perform any cleanup for the object in this method</td>
+      <td>A method which is called on an object bound to an instance whose CollectionService tags no longer matches <code>Tags</code>.</td>
     </tr>
     <tr>
       <td><code>PostSimulationUpdate</code></td>
@@ -101,10 +122,39 @@ Component<span class="token punctuation">.</span><span class="token function">ne
     </tr>
   </tbody>
 </table>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="ObserveFromTags"></a><code style="text-decoration:none">ObserveFromTags</code><a class="hash-link" href="#ObserveFromTags" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Component/init.lua#L229"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Component.</code><code class="green_3LnD">ObserveFromTags</code><code>(</code><div class="inset_2cJr"><div><code>tags: </code><code class="blue_2Afy">tags</code><code>,</code></div><div><code>timeout: </code><code class="blue_2Afy">number</code><code class="op_1JtD"> | </code><code class="blue_2Afy">nil</code></div></div><code>) → </code><code class="blue_2Afy">Promise</code></div><div>
 <p>
-  Works the same as <code>Component.GetFromTags</code>, except returns a promise which is resolved with the valid component once a valid component
-  is found under <code>timeout</code> seconds, if specified. If <code>timeout</code> is specified and a valid component was still not found, then the promise
+  Example component class; any part with the <code>Part</code> tag will have it's brick color change to green and smoothly rotate.
+  Once the <code>Part</code> tag is removed, the part will no longer rotate and have it's brick color change to red. There are no
+  limiations to how many parts can be binded to a component, which means you can have many parts with <code>Part</code> tag bound
+  to this funtionality of the class!
+</p>
+<pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> Part <span class="token operator">=</span> <span class="token punctuation">{</span>Tags <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">"Part"</span><span class="token punctuation">}</span><span class="token punctuation">}</span>
+Part<span class="token punctuation">.</span>__index <span class="token operator">=</span> Part
+
+<span class="token keyword">function</span> Part<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span>part<span class="token punctuation">)</span>
+	<span class="token keyword">return</span> <span class="token function">setmetatable</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>__index <span class="token operator">=</span> Part<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword">end</span>
+
+<span class="token keyword">function</span> Part<span class="token punctuation">:</span><span class="token function">Start</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+	self<span class="token punctuation">.</span>Instance<span class="token punctuation">.</span>BrickColor <span class="token operator">=</span> BrickColor<span class="token punctuation">.</span><span class="token function">Green</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">end</span>
+
+<span class="token keyword">function</span> Part<span class="token punctuation">:</span><span class="token function">PostSimulationUpdate</span><span class="token punctuation">(</span>deltaTime<span class="token punctuation">)</span>
+	self<span class="token punctuation">.</span>Instance<span class="token punctuation">.</span>CFrame <span class="token operator">*</span><span class="token operator">=</span> CFrame<span class="token punctuation">.</span><span class="token function">Angles</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> math<span class="token punctuation">.</span><span class="token function">rad</span><span class="token punctuation">(</span><span class="token number">35</span><span class="token punctuation">)</span> <span class="token operator">*</span> deltaTime<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span>
+<span class="token keyword">end</span>
+
+<span class="token keyword">function</span> Part<span class="token punctuation">:</span><span class="token function">Stop</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+	self<span class="token punctuation">.</span>Instance<span class="token punctuation">.</span>BrickColor <span class="token operator">=</span> BrickColor<span class="token punctuation">.</span><span class="token function">Red</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">end</span>
+
+<span class="token keyword">function</span> Part<span class="token punctuation">:</span><span class="token function">Destroy</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+	
+<span class="token keyword">end</span>
+</code></pre>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="ObserveFromTags"></a><code style="text-decoration:none">ObserveFromTags</code><a class="hash-link" href="#ObserveFromTags" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Component/init.lua#L241"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Component.</code><code class="green_3LnD">ObserveFromTags</code><code>(</code><div class="inset_2cJr"><div><code>tags: </code><code class="blue_2Afy">tags</code><code>,</code></div><div><code>timeout: </code><code class="blue_2Afy">number</code><code class="op_1JtD"> | </code><code class="blue_2Afy">nil</code></div></div><code>) → </code><code class="blue_2Afy">Promise</code></div><div>
+<p>
+  Works the same as <code>Component.GetFromTags</code>, except returns a promise which is resolved with the valid component found
+  under <code>timeout</code> seconds, if specified. If <code>timeout</code> is specified and a valid component was still not found, then the promise
   will reject with a <code>nil</code> value.
 </p>
 <p>For e.g:</p>
@@ -121,11 +171,8 @@ Component<span class="token punctuation">.</span><span class="token function">Ob
 
 <span class="token comment">--> "Component found!</span>
 </code></pre>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="RegisterComponentsIn"></a><code style="text-decoration:none">RegisterComponentsIn</code><a class="hash-link" href="#RegisterComponentsIn" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Component/init.lua#L125"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Component.</code><code class="green_3LnD">RegisterComponentsIn</code><code>(</code><code>componentsFolder: </code><code class="blue_2Afy">Folder</code><code>) → </code><code>(</code><code>)</code></div><div>
-<p>
-  Registers all the children (module scripts) in <code>componentsFolder</code>, such that each child will have its
-  own component created and binded to it.
-</p>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="RegisterComponentsIn"></a><code style="text-decoration:none">RegisterComponentsIn</code><a class="hash-link" href="#RegisterComponentsIn" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Component/init.lua#L136"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Component.</code><code class="green_3LnD">RegisterComponentsIn</code><code>(</code><code>componentsFolder: </code><code class="blue_2Afy">Folder</code><code>) → </code><code>(</code><code>)</code></div><div>
+<p>Registers all the module scripts in <code>componentsFolder</code>, so that each module script will be binded to a new component.</p>
 <div class="admonition admonition-note alert alert--secondary">
   <div class="admonition-heading">
     <h5><span class="admonition-icon"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16">
@@ -133,10 +180,13 @@ Component<span class="token punctuation">.</span><span class="token function">Ob
         </svg></span>note</h5>
   </div>
   <div class="admonition-content">
-    <p>Folders nested in <code>componentsFolder</code> will also be accounted for.</p>
+    <p>
+      Descendants aren't accounted for. However, folders in <code>componentsFolder</code> will be accounted for, as well as nested folders
+      in folders.
+    </p>
   </div>
 </div>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Destroy"></a><code style="text-decoration:none">Destroy</code><a class="hash-link" href="#Destroy" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#ff793f;color:#ff793f">Component</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Component/init.lua#L439"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Component:</code><code class="green_3LnD">Destroy</code><code>(</code><code>) → </code><code>(</code><code>)</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Destroy"></a><code style="text-decoration:none">Destroy</code><a class="hash-link" href="#Destroy" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#ff793f;color:#ff793f">Component</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Component/init.lua#L475"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Component:</code><code class="green_3LnD">Destroy</code><code>(</code><code>) → </code><code>(</code><code>)</code></div><div>
 <p>Destroys the component and renders it unusuable.</p>
 <div class="admonition admonition-warning alert alert--danger">
   <div class="admonition-heading">
@@ -151,15 +201,13 @@ Component<span class="token punctuation">.</span><span class="token function">Ob
     </p>
   </div>
 </div>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="GetObjectFromInstance"></a><code style="text-decoration:none">GetObjectFromInstance</code><a class="hash-link" href="#GetObjectFromInstance" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#ff793f;color:#ff793f">Component</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Component/init.lua#L414"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Component:</code><code class="green_3LnD">GetObjectFromInstance</code><code>(</code><code>instance: </code><code class="blue_2Afy">Instance</code><code>) → </code><code class="blue_2Afy">table</code></div><div>
-<p>Returns an active object bound to <code>instance</code> in the component.</p>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="GetObjects"></a><code style="text-decoration:none">GetObjects</code><a class="hash-link" href="#GetObjects" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#ff793f;color:#ff793f">Component</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Component/init.lua#L402"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Component:</code><code class="green_3LnD">GetObjects</code><code>(</code><code>) → </code><code class="blue_2Afy">table</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="GetObjects"></a><code style="text-decoration:none">GetObjects</code><a class="hash-link" href="#GetObjects" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#ff793f;color:#ff793f">Component</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Component/init.lua#L460"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Component:</code><code class="green_3LnD">GetObjects</code><code>(</code><code>) → </code><code class="blue_2Afy">table</code></div><div>
 <p>Returns all the active objects in the component.</p>
 </div></div></article></div><details><summary>Show raw api</summary><pre style="max-width:100%;white-space:pre-wrap">{
     &quot;functions&quot;: [
         {
             &quot;name&quot;: &quot;RegisterComponentsIn&quot;,
-            &quot;desc&quot;: &quot;Registers all the children (module scripts) in `componentsFolder`, such that each child will have its\nown component created and binded to it.\n\n:::note\nFolders nested in `componentsFolder` will also be accounted for.\n:::&quot;,
+            &quot;desc&quot;: &quot;Registers all the module scripts in `componentsFolder`, so that each module script will be binded to a new component.\n\n:::note\nDescendants aren&#x27;t accounted for. However, folders in `componentsFolder` will be accounted for, as well as nested folders\nin folders.\n:::&quot;,
             &quot;params&quot;: [
                 {
                     &quot;name&quot;: &quot;componentsFolder&quot;,
@@ -170,7 +218,7 @@ Component<span class="token punctuation">.</span><span class="token function">Ob
             &quot;returns&quot;: [],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 125,
+                &quot;line&quot;: 136,
                 &quot;path&quot;: &quot;packages/Component/init.lua&quot;
             }
         },
@@ -192,7 +240,7 @@ Component<span class="token punctuation">.</span><span class="token function">Ob
             ],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 155,
+                &quot;line&quot;: 166,
                 &quot;path&quot;: &quot;packages/Component/init.lua&quot;
             }
         },
@@ -208,7 +256,7 @@ Component<span class="token punctuation">.</span><span class="token function">Ob
             ],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 165,
+                &quot;line&quot;: 176,
                 &quot;path&quot;: &quot;packages/Component/init.lua&quot;
             }
         },
@@ -230,13 +278,13 @@ Component<span class="token punctuation">.</span><span class="token function">Ob
             ],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 187,
+                &quot;line&quot;: 198,
                 &quot;path&quot;: &quot;packages/Component/init.lua&quot;
             }
         },
         {
             &quot;name&quot;: &quot;ObserveFromTags&quot;,
-            &quot;desc&quot;: &quot;Works the same as `Component.GetFromTags`,\texcept returns a promise which is resolved with the valid component once a valid component\nis found under `timeout` seconds, if specified. If `timeout` is specified and a valid component was still not found, then the promise \nwill reject with a `nil` value.\n\nFor e.g:\n\n```lua\ntask.delay(2, function()\n\t-- Create comp\n\tComponent.new(someClass)\nend)\n\nComponent.ObserveFromTags({\&quot;Example\&quot;}, 5):andThen(function()\n\tprint(\&quot;Component found!\&quot;)\nend):catch(function(errorMessage)\n\twarn(\&quot;Component not found under 5 seconds\&quot;)\nend)\n\n--&gt; \&quot;Component found!\n```&quot;,
+            &quot;desc&quot;: &quot;Works the same as `Component.GetFromTags`,\texcept returns a promise which is resolved with the valid component found\nunder `timeout` seconds, if specified. If `timeout` is specified and a valid component was still not found, then the promise \nwill reject with a `nil` value.\n\nFor e.g:\n\n```lua\ntask.delay(2, function()\n\t-- Create comp\n\tComponent.new(someClass)\nend)\n\nComponent.ObserveFromTags({\&quot;Example\&quot;}, 5):andThen(function()\n\tprint(\&quot;Component found!\&quot;)\nend):catch(function(errorMessage)\n\twarn(\&quot;Component not found under 5 seconds\&quot;)\nend)\n\n--&gt; \&quot;Component found!\n```&quot;,
             &quot;params&quot;: [
                 {
                     &quot;name&quot;: &quot;tags&quot;,
@@ -257,7 +305,7 @@ Component<span class="token punctuation">.</span><span class="token function">Ob
             ],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 229,
+                &quot;line&quot;: 241,
                 &quot;path&quot;: &quot;packages/Component/init.lua&quot;
             }
         },
@@ -273,24 +321,24 @@ Component<span class="token punctuation">.</span><span class="token function">Ob
             ],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 292,
+                &quot;line&quot;: 310,
                 &quot;path&quot;: &quot;packages/Component/init.lua&quot;
             }
         },
         {
             &quot;name&quot;: &quot;new&quot;,
-            &quot;desc&quot;: &quot;Creates and binds a new component to `module`, `module` must have the following required members and methods:\n\n| Required members and methods     | Description                          |\n| ----------- | ------------------------------------ |\n| `.new`  | A constructor method which will be called whenever a new object is created.  |\n| `:Destroy`     | A method which will be called on an object which is destroyed. |\n| `Tags`   | An array of strings (CollectionService tags). |\n\n| Optional lifecycle methods and members     | Description  |\n| ----------- | ------------------------------------ |\n| `PreRenderUpdatePriority`  | An `EnumItem` used in calling the `PreRenderUpdate` method, learn more about it [here](https://developer.roblox.com/en-us/api-reference/function/RunService/BindToRenderStep).  |\n| `:Start`  | A method which is called on an object created, just after `.new` is called for it.  |\n| `:Stop`     | A method which is called on an object destroyed. Perform any cleanup for the object in this method |\n| `PostSimulationUpdate`  | A method called every `RunService.Heartbeat` on an object. |\n| `PreSimulationUpdate`  | A method called every `RunService.Stepped` on an object. |\n| `PreRenderUpdate`  | A method called every `RunService.RenderStepped` on an object. |&quot;,
+            &quot;desc&quot;: &quot;Creates and binds a new component to `class`, `class` must have the following required members and methods:\n\n| Required members and methods     | Description                          |\n| ----------- | ------------------------------------ |\n| `Tags`   | An array of strings ([CollectionService](https://developer.roblox.com/en-us/api-reference/class/CollectionService) tags). |\n| `.new`  | A constructor method which is called whenever an instance is added or found whose [CollectionService](https://developer.roblox.com/en-us/api-reference/class/CollectionService) tags match `Tags`. The instance is passed as the only argument to this method and is considered \&quot;bound\&quot; to the object returned by this method.  |\n| `:Destroy` | A method which which is called on an object (returned by the constructor method) bound to a instance which no longer has matching CollectionService tags or is destroyed / parented to `nil`.  |\n\n:::note\nIt is expected that the constructor method `.new` returns an object (a table which \&quot;inherits\&quot; from `class`). However, it is also\nsafe to return nothing from the constructor method.\n:::\n\n| Optional lifecycle methods and members     | Description  |\n| ----------- | ------------------------------------ |\n| `PreRenderUpdatePriority`  | An `EnumItem` used in calling the `PreRenderUpdate` method, learn more about it [here](https://developer.roblox.com/en-us/api-reference/function/RunService/BindToRenderStep).  |\n| `:Start`  | A method which is called on an object just after it is created and returned from the constructor method.  |\n| `:Stop`     | A method which is called on an object bound to an instance whose CollectionService tags no longer matches `Tags`. |\n| `PostSimulationUpdate`  | A method called every `RunService.Heartbeat` on an object. |\n| `PreSimulationUpdate`  | A method called every `RunService.Stepped` on an object. |\n| `PreRenderUpdate`  | A method called every `RunService.RenderStepped` on an object. |\n\nExample component class; any part with the `Part` tag will have it&#x27;s brick color change to green and smoothly rotate.\nOnce the `Part` tag is removed, the part will no longer rotate and have it&#x27;s brick color change to red. There are no\nlimiations to how many parts can be binded to a component, which means you can have many parts with `Part` tag bound\nto this funtionality of the class!\n\n```lua\nlocal Part = {Tags = {\&quot;Part\&quot;}}\nPart.__index = Part\n\nfunction Part.new(part)\n\treturn setmetatable({}, {__index = Part})\nend\n\nfunction Part:Start()\n\tself.Instance.BrickColor = BrickColor.Green()\nend\n\nfunction Part:PostSimulationUpdate(deltaTime)\n\tself.Instance.CFrame *= CFrame.Angles(0, math.rad(35) * deltaTime, 0)\nend\n\nfunction Part:Stop()\n\tself.Instance.BrickColor = BrickColor.Red()\nend\n\nfunction Part:Destroy()\n\t\nend\n```&quot;,
             &quot;params&quot;: [
                 {
-                    &quot;name&quot;: &quot;module&quot;,
+                    &quot;name&quot;: &quot;class&quot;,
                     &quot;desc&quot;: &quot;&quot;,
-                    &quot;lua_type&quot;: &quot;ModuleScript&quot;
+                    &quot;lua_type&quot;: &quot;table&quot;
                 }
             ],
             &quot;returns&quot;: [],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 325,
+                &quot;line&quot;: 378,
                 &quot;path&quot;: &quot;packages/Component/init.lua&quot;
             }
         },
@@ -309,32 +357,7 @@ Component<span class="token punctuation">.</span><span class="token function">Ob
                 &quot;Component&quot;
             ],
             &quot;source&quot;: {
-                &quot;line&quot;: 402,
-                &quot;path&quot;: &quot;packages/Component/init.lua&quot;
-            }
-        },
-        {
-            &quot;name&quot;: &quot;GetObjectFromInstance&quot;,
-            &quot;desc&quot;: &quot;Returns an active object bound to `instance` in the component.&quot;,
-            &quot;params&quot;: [
-                {
-                    &quot;name&quot;: &quot;instance&quot;,
-                    &quot;desc&quot;: &quot;&quot;,
-                    &quot;lua_type&quot;: &quot;Instance&quot;
-                }
-            ],
-            &quot;returns&quot;: [
-                {
-                    &quot;desc&quot;: &quot;&quot;,
-                    &quot;lua_type&quot;: &quot;table&quot;
-                }
-            ],
-            &quot;function_type&quot;: &quot;method&quot;,
-            &quot;tags&quot;: [
-                &quot;Component&quot;
-            ],
-            &quot;source&quot;: {
-                &quot;line&quot;: 414,
+                &quot;line&quot;: 460,
                 &quot;path&quot;: &quot;packages/Component/init.lua&quot;
             }
         },
@@ -348,19 +371,29 @@ Component<span class="token punctuation">.</span><span class="token function">Ob
                 &quot;Component&quot;
             ],
             &quot;source&quot;: {
-                &quot;line&quot;: 439,
+                &quot;line&quot;: 475,
                 &quot;path&quot;: &quot;packages/Component/init.lua&quot;
             }
         }
     ],
     &quot;properties&quot;: [
         {
+            &quot;name&quot;: &quot;ActiveObjects&quot;,
+            &quot;desc&quot;: &quot;A dictionary of all active component objects.&quot;,
+            &quot;lua_type&quot;: &quot;table&quot;,
+            &quot;readonly&quot;: true,
+            &quot;source&quot;: {
+                &quot;line&quot;: 44,
+                &quot;path&quot;: &quot;packages/Component/init.lua&quot;
+            }
+        },
+        {
             &quot;name&quot;: &quot;OnComponentAdded&quot;,
             &quot;desc&quot;: &quot;A signal which is fired whenever a component is added. &quot;,
             &quot;lua_type&quot;: &quot;Signal &lt;componentAdded : Component&gt;&quot;,
             &quot;readonly&quot;: true,
             &quot;source&quot;: {
-                &quot;line&quot;: 44,
+                &quot;line&quot;: 51,
                 &quot;path&quot;: &quot;packages/Component/init.lua&quot;
             }
         },
@@ -370,33 +403,33 @@ Component<span class="token punctuation">.</span><span class="token function">Ob
             &quot;lua_type&quot;: &quot;Signal &lt;componentDestroyed : Component&gt;&quot;,
             &quot;readonly&quot;: true,
             &quot;source&quot;: {
-                &quot;line&quot;: 51,
+                &quot;line&quot;: 58,
                 &quot;path&quot;: &quot;packages/Component/init.lua&quot;
             }
         },
         {
             &quot;name&quot;: &quot;OnObjectAdded&quot;,
-            &quot;desc&quot;: &quot;A signal which is fired whenever a new object is created in the component.&quot;,
+            &quot;desc&quot;: &quot;A signal which is fired whenever an object is created and returned \nthrough the constructor method of the class bound to the component.&quot;,
             &quot;lua_type&quot;: &quot;Signal &lt;objectAdded: table&gt;&quot;,
             &quot;tags&quot;: [
                 &quot;Component&quot;
             ],
             &quot;readonly&quot;: true,
             &quot;source&quot;: {
-                &quot;line&quot;: 59,
+                &quot;line&quot;: 68,
                 &quot;path&quot;: &quot;packages/Component/init.lua&quot;
             }
         },
         {
             &quot;name&quot;: &quot;OnObjectDestroyed&quot;,
-            &quot;desc&quot;: &quot;A signal which is fired whenever an object of the component is destroyed. &quot;,
+            &quot;desc&quot;: &quot;A signal which is fired whenever an object of the class bound to the component\nis destroyed.&quot;,
             &quot;lua_type&quot;: &quot;Signal  &lt;objectDestroyed: table&gt;&quot;,
             &quot;tags&quot;: [
                 &quot;Component&quot;
             ],
             &quot;readonly&quot;: true,
             &quot;source&quot;: {
-                &quot;line&quot;: 67,
+                &quot;line&quot;: 78,
                 &quot;path&quot;: &quot;packages/Component/init.lua&quot;
             }
         },
@@ -409,7 +442,7 @@ Component<span class="token punctuation">.</span><span class="token function">Ob
             ],
             &quot;readonly&quot;: true,
             &quot;source&quot;: {
-                &quot;line&quot;: 76,
+                &quot;line&quot;: 87,
                 &quot;path&quot;: &quot;packages/Component/init.lua&quot;
             }
         }
@@ -418,11 +451,11 @@ Component<span class="token punctuation">.</span><span class="token function">Ob
     &quot;name&quot;: &quot;Component&quot;,
     &quot;desc&quot;: &quot;A class which is used to bind instances to tags and extend their functionality. Components are like binders, but are\nhandled differently.&quot;,
     &quot;source&quot;: {
-        &quot;line&quot;: 37,
+        &quot;line&quot;: 36,
         &quot;path&quot;: &quot;packages/Component/init.lua&quot;
     }
-}</pre></details></div><div class="col col--3"><div class="tableOfContents_35-E thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#types" class="table-of-contents__link">Types</a></li><li><a href="#properties" class="table-of-contents__link">Properties</a><ul><li><a href="#OnComponentAdded" class="table-of-contents__link">OnComponentAdded</a></li><li><a href="#OnComponentDestroyed" class="table-of-contents__link">OnComponentDestroyed</a></li><li><a href="#OnObjectAdded" class="table-of-contents__link">OnObjectAdded</a></li><li><a href="#OnObjectDestroyed" class="table-of-contents__link">OnObjectDestroyed</a></li><li><a href="#Tags" class="table-of-contents__link">Tags</a></li></ul></li><li><a href="#functions" class="table-of-contents__link">Functions</a><ul><li><a href="#GetAll" class="table-of-contents__link">.GetAll</a></li><li><a href="#GetFromTags" class="table-of-contents__link">.GetFromTags</a></li><li><a href="#GetObjectFromInstance" class="table-of-contents__link">.GetObjectFromInstance</a></li><li><a href="#IsA" class="table-of-contents__link">.IsA</a></li><li><a href="#new" class="table-of-contents__link">.new</a></li><li><a href="#ObserveFromTags" class="table-of-contents__link">.ObserveFromTags</a></li><li><a href="#RegisterComponentsIn" class="table-of-contents__link">.RegisterComponentsIn</a></li><li><a href="#Destroy" class="table-of-contents__link">:Destroy</a></li><li><a href="#GetObjectFromInstance" class="table-of-contents__link">:GetObjectFromInstance</a></li><li><a href="#GetObjects" class="table-of-contents__link">:GetObjects</a></li></ul></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2021 finobinos. Built with Moonwave and Docusaurus.</div></div></div></footer></div>
-<script src="/RBXUtil/assets/js/runtime~main.bcd7af1b.js"></script>
-<script src="/RBXUtil/assets/js/main.805383db.js"></script>
+}</pre></details></div><div class="col col--3"><div class="tableOfContents_35-E thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#types" class="table-of-contents__link">Types</a></li><li><a href="#properties" class="table-of-contents__link">Properties</a><ul><li><a href="#ActiveObjects" class="table-of-contents__link">ActiveObjects</a></li><li><a href="#OnComponentAdded" class="table-of-contents__link">OnComponentAdded</a></li><li><a href="#OnComponentDestroyed" class="table-of-contents__link">OnComponentDestroyed</a></li><li><a href="#OnObjectAdded" class="table-of-contents__link">OnObjectAdded</a></li><li><a href="#OnObjectDestroyed" class="table-of-contents__link">OnObjectDestroyed</a></li><li><a href="#Tags" class="table-of-contents__link">Tags</a></li></ul></li><li><a href="#functions" class="table-of-contents__link">Functions</a><ul><li><a href="#GetAll" class="table-of-contents__link">.GetAll</a></li><li><a href="#GetFromTags" class="table-of-contents__link">.GetFromTags</a></li><li><a href="#GetObjectFromInstance" class="table-of-contents__link">.GetObjectFromInstance</a></li><li><a href="#IsA" class="table-of-contents__link">.IsA</a></li><li><a href="#new" class="table-of-contents__link">.new</a></li><li><a href="#ObserveFromTags" class="table-of-contents__link">.ObserveFromTags</a></li><li><a href="#RegisterComponentsIn" class="table-of-contents__link">.RegisterComponentsIn</a></li><li><a href="#Destroy" class="table-of-contents__link">:Destroy</a></li><li><a href="#GetObjects" class="table-of-contents__link">:GetObjects</a></li></ul></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2021 finobinos. Built with Moonwave and Docusaurus.</div></div></div></footer></div>
+<script src="/RBXUtil/assets/js/runtime~main.a633c996.js"></script>
+<script src="/RBXUtil/assets/js/main.9d8dcaa9.js"></script>
 </body>
 </html>
