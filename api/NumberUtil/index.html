@@ -25,8 +25,8 @@ local nan = 0/0
 print(NumberUtil.IsNaN(nan)) --&gt; true
 print(NumberUtil.IsCloseTo(0.1 + 0.2, 0.3)) --&gt; true
 ```"><meta data-react-helmet="true" property="og:url" content="https://finobinos.github.io/RBXUtil/api/NumberUtil"><meta data-react-helmet="true" name="docusaurus_locale" content="en"><meta data-react-helmet="true" name="docusaurus_tag" content="default"><link data-react-helmet="true" rel="canonical" href="https://finobinos.github.io/RBXUtil/api/NumberUtil"><link data-react-helmet="true" rel="alternate" href="https://finobinos.github.io/RBXUtil/api/NumberUtil" hreflang="en"><link data-react-helmet="true" rel="alternate" href="https://finobinos.github.io/RBXUtil/api/NumberUtil" hreflang="x-default"><link rel="stylesheet" href="/RBXUtil/assets/css/styles.60329a60.css">
-<link rel="preload" href="/RBXUtil/assets/js/runtime~main.9c718db2.js" as="script">
-<link rel="preload" href="/RBXUtil/assets/js/main.c46c5af7.js" as="script">
+<link rel="preload" href="/RBXUtil/assets/js/runtime~main.bc34c7b6.js" as="script">
+<link rel="preload" href="/RBXUtil/assets/js/main.939d61b7.js" as="script">
 </head>
 <body>
 <script>!function(){function e(e){document.documentElement.setAttribute("data-theme",e)}var t=function(){var e=null;try{e=localStorage.getItem("theme")}catch(e){}return e}();null!==t?e(t):window.matchMedia("(prefers-color-scheme: dark)").matches?e("dark"):(window.matchMedia("(prefers-color-scheme: light)").matches,e("light"))}()</script><div id="__docusaurus">
@@ -52,7 +52,7 @@ print(NumberUtil.IsCloseTo(0.1 + 0.2, 0.3)) --&gt; true
 <p>An irrational number which is often known as the golden ratio or the most beautiful number in maths.</p>
 </div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="NaN"></a><code style="text-decoration:none">NaN</code><a class="hash-link" href="#NaN" title="Direct link to heading">#</a></h3><span class="badge_3ZFo" style="color:#e74c3c"><span class="badgeTooltip_2qiw">This item is read only and cannot be modified.</span><span class="badgeToolTipTail_2yaQ"><svg xmlns="http://www.w3.org/2000/svg" height="300px" width="300px" fill="#e74c3c" x="0px" y="0px" viewBox="0 0 96 96"><path d="M70.354,15.662h-7.496H25.566c-3.282,0-5.19-0.776-5.728-1.169v-1.456c0.538-0.393,2.445-1.168,5.728-1.168h46.479V8H25.566  c-4.776,0-9.594,1.468-9.594,4.747v61.458C15.972,86.645,20.328,88,37.495,88h42.535V15.662H70.354z"></path></svg> Read Only</span></span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/NumberUtil/init.lua#L67"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>NumberUtil.NaN: </code> <code class="blue_2Afy">NaN</code></div><div>
 <p>An NaN (Not a Number) value.</p>
-</div><h2><a aria-hidden="true" tabindex="-1" class="anchor anchor__h2 anchorWithStickyNavbar_31ik" id="functions"></a>Functions<a class="hash-link" href="#functions" title="Direct link to heading">#</a></h2><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Lerp"></a><code style="text-decoration:none">Lerp</code><a class="hash-link" href="#Lerp" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/NumberUtil/init.lua#L104"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>NumberUtil.</code><code class="green_3LnD">Lerp</code><code>(</code><div class="inset_2cJr"><div><code>number: </code><code class="blue_2Afy">number</code><code>,</code></div><div><code>goal: </code><code class="blue_2Afy">number</code><code>,</code></div><div><code>alpha: </code><code class="blue_2Afy">number</code></div></div><code>) → </code><code class="blue_2Afy">number</code></div><div>
+</div><h2><a aria-hidden="true" tabindex="-1" class="anchor anchor__h2 anchorWithStickyNavbar_31ik" id="functions"></a>Functions<a class="hash-link" href="#functions" title="Direct link to heading">#</a></h2><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Lerp"></a><code style="text-decoration:none">Lerp</code><a class="hash-link" href="#Lerp" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/NumberUtil/init.lua#L107"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>NumberUtil.</code><code class="green_3LnD">Lerp</code><code>(</code><div class="inset_2cJr"><div><code>number: </code><code class="blue_2Afy">number</code><code>,</code></div><div><code>goal: </code><code class="blue_2Afy">number</code><code>,</code></div><div><code>alpha: </code><code class="blue_2Afy">number</code></div></div><code>) → </code><code class="blue_2Afy">number</code></div><div>
 <p>Used for smoothly interpolating a number to <code>goal</code>, with <code>alpha</code> being the multiplier.</p>
 <p>For e.g:</p>
 <pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> number <span class="token operator">=</span> <span class="token number">0</span>
@@ -64,31 +64,31 @@ print(NumberUtil.IsCloseTo(0.1 + 0.2, 0.3)) --&gt; true
 	<span class="token function">print</span><span class="token punctuation">(</span>number<span class="token punctuation">)</span>
 <span class="token keyword">end</span>
 </code></pre>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="QuadraticLerp"></a><code style="text-decoration:none">QuadraticLerp</code><a class="hash-link" href="#QuadraticLerp" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/NumberUtil/init.lua#L130"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>NumberUtil.</code><code class="green_3LnD">QuadraticLerp</code><code>(</code><div class="inset_2cJr"><div><code>number: </code><code class="blue_2Afy">number</code><code>,</code></div><div><code>goal: </code><code class="blue_2Afy">number</code><code>,</code></div><div><code>alpha: </code><code class="blue_2Afy">number</code></div></div><code>) → </code><code class="blue_2Afy">number</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="QuadraticLerp"></a><code style="text-decoration:none">QuadraticLerp</code><a class="hash-link" href="#QuadraticLerp" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/NumberUtil/init.lua#L133"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>NumberUtil.</code><code class="green_3LnD">QuadraticLerp</code><code>(</code><div class="inset_2cJr"><div><code>number: </code><code class="blue_2Afy">number</code><code>,</code></div><div><code>goal: </code><code class="blue_2Afy">number</code><code>,</code></div><div><code>alpha: </code><code class="blue_2Afy">number</code></div></div><code>) → </code><code class="blue_2Afy">number</code></div><div>
 <p>Same as <code>NumberUtil.Lerp</code>, except the lerp is quadratic.</p>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="InverseLerp"></a><code style="text-decoration:none">InverseLerp</code><a class="hash-link" href="#InverseLerp" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/NumberUtil/init.lua#L171"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>NumberUtil.</code><code class="green_3LnD">InverseLerp</code><code>(</code><div class="inset_2cJr"><div><code>min: </code><code class="blue_2Afy">number</code><code>,</code></div><div><code>max: </code><code class="blue_2Afy">number</code><code>,</code></div><div><code>alpha: </code><code class="blue_2Afy">number</code></div></div><code>) → </code><code class="blue_2Afy">number</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="InverseLerp"></a><code style="text-decoration:none">InverseLerp</code><a class="hash-link" href="#InverseLerp" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/NumberUtil/init.lua#L159"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>NumberUtil.</code><code class="green_3LnD">InverseLerp</code><code>(</code><div class="inset_2cJr"><div><code>min: </code><code class="blue_2Afy">number</code><code>,</code></div><div><code>max: </code><code class="blue_2Afy">number</code><code>,</code></div><div><code>alpha: </code><code class="blue_2Afy">number</code></div></div><code>) → </code><code class="blue_2Afy">number</code></div><div>
 <p>Inversely lerps <code>min</code> to <code>goal</code>, with <code>alpha</code> being the multiplier.</p>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Map"></a><code style="text-decoration:none">Map</code><a class="hash-link" href="#Map" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/NumberUtil/init.lua#L199"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>NumberUtil.</code><code class="green_3LnD">Map</code><code>(</code><div class="inset_2cJr"><div><code>number: </code><code class="blue_2Afy">number</code><code>,</code></div><div><code>inMin: </code><code class="blue_2Afy">number</code><code>,</code></div><div><code>inMax: </code><code class="blue_2Afy">number</code><code>,</code></div><div><code>outMin: </code><code class="blue_2Afy">number</code><code>,</code></div><div><code>outMax: </code><code class="blue_2Afy">number</code></div></div><code>) → </code><code class="blue_2Afy">number</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Map"></a><code style="text-decoration:none">Map</code><a class="hash-link" href="#Map" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/NumberUtil/init.lua#L187"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>NumberUtil.</code><code class="green_3LnD">Map</code><code>(</code><div class="inset_2cJr"><div><code>number: </code><code class="blue_2Afy">number</code><code>,</code></div><div><code>inMin: </code><code class="blue_2Afy">number</code><code>,</code></div><div><code>inMax: </code><code class="blue_2Afy">number</code><code>,</code></div><div><code>outMin: </code><code class="blue_2Afy">number</code><code>,</code></div><div><code>outMax: </code><code class="blue_2Afy">number</code></div></div><code>) → </code><code class="blue_2Afy">number</code></div><div>
 <p>Maps <code>number</code> between <code>inMin</code>, <code>inMax</code>, <code>outMin</code> and <code>outMax</code>.</p>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="RoundTo"></a><code style="text-decoration:none">RoundTo</code><a class="hash-link" href="#RoundTo" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/NumberUtil/init.lua#L232"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>NumberUtil.</code><code class="green_3LnD">RoundTo</code><code>(</code><div class="inset_2cJr"><div><code>number: </code><code class="blue_2Afy">number</code><code>,</code></div><div><code>to: </code><code class="blue_2Afy">number</code></div></div><code>) → </code><code class="blue_2Afy">number</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="RoundTo"></a><code style="text-decoration:none">RoundTo</code><a class="hash-link" href="#RoundTo" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/NumberUtil/init.lua#L220"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>NumberUtil.</code><code class="green_3LnD">RoundTo</code><code>(</code><div class="inset_2cJr"><div><code>number: </code><code class="blue_2Afy">number</code><code>,</code></div><div><code>to: </code><code class="blue_2Afy">number</code></div></div><code>) → </code><code class="blue_2Afy">number</code></div><div>
 <p>Rounds <code>number</code> to <code>to</code>.</p>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="IsNaN"></a><code style="text-decoration:none">IsNaN</code><a class="hash-link" href="#IsNaN" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/NumberUtil/init.lua#L252"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>NumberUtil.</code><code class="green_3LnD">IsNaN</code><code>(</code><code>number: </code><code class="blue_2Afy">number</code><code>) → </code><code class="blue_2Afy">boolean</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="IsNaN"></a><code style="text-decoration:none">IsNaN</code><a class="hash-link" href="#IsNaN" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/NumberUtil/init.lua#L240"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>NumberUtil.</code><code class="green_3LnD">IsNaN</code><code>(</code><code>number: </code><code class="blue_2Afy">number</code><code>) → </code><code class="blue_2Afy">boolean</code></div><div>
 <p>Returns a boolean if the provided number is <code>NaN</code> (Not a Number).</p>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="IsCloseTo"></a><code style="text-decoration:none">IsCloseTo</code><a class="hash-link" href="#IsCloseTo" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/NumberUtil/init.lua#L275"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>NumberUtil.</code><code class="green_3LnD">IsCloseTo</code><code>(</code><div class="inset_2cJr"><div><code>number: </code><code class="blue_2Afy">number</code><code>,</code></div><div><code>to: </code><code class="blue_2Afy">number</code><code>,</code></div><div><code>eplison: </code><code class="blue_2Afy">number</code><code class="op_1JtD"> | </code><code class="blue_2Afy">nil</code></div></div><code>) → </code><code class="blue_2Afy">boolean</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="IsCloseTo"></a><code style="text-decoration:none">IsCloseTo</code><a class="hash-link" href="#IsCloseTo" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/NumberUtil/init.lua#L263"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>NumberUtil.</code><code class="green_3LnD">IsCloseTo</code><code>(</code><div class="inset_2cJr"><div><code>number: </code><code class="blue_2Afy">number</code><code>,</code></div><div><code>to: </code><code class="blue_2Afy">number</code><code>,</code></div><div><code>eplison: </code><code class="blue_2Afy">number</code><code class="blue_2Afy">?</code></div></div><code>) → </code><code class="blue_2Afy">boolean</code></div><div>
 <p>Returns a boolean if the provided number is close to <code>to</code> under <code>eplision</code> (or the default eplison i.e <code>1e-5</code>).</p>
 <pre class="language-lua"><code class="language-lua"><span class="token function">print</span><span class="token punctuation">(</span><span class="token number">0.1</span> <span class="token operator">+</span> <span class="token number">0.2</span> <span class="token operator">==</span> <span class="token number">0.3</span><span class="token punctuation">)</span> <span class="token comment">--> false (due to floating point imprecision)</span>
 <span class="token function">print</span><span class="token punctuation">(</span>NumberUtil<span class="token punctuation">.</span><span class="token function">IsCloseTo</span><span class="token punctuation">(</span><span class="token number">0.1</span> <span class="token operator">+</span> <span class="token number">0.2</span><span class="token punctuation">,</span> <span class="token number">0.3</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">--> true</span>
 </code></pre>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Root"></a><code style="text-decoration:none">Root</code><a class="hash-link" href="#Root" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/NumberUtil/init.lua#L312"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>NumberUtil.</code><code class="green_3LnD">Root</code><code>(</code><div class="inset_2cJr"><div><code>number: </code><code class="blue_2Afy">number</code><code>,</code></div><div><code>root: </code><code class="blue_2Afy">number</code></div></div><code>) → </code><code class="blue_2Afy">number</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Root"></a><code style="text-decoration:none">Root</code><a class="hash-link" href="#Root" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/NumberUtil/init.lua#L300"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>NumberUtil.</code><code class="green_3LnD">Root</code><code>(</code><div class="inset_2cJr"><div><code>number: </code><code class="blue_2Afy">number</code><code>,</code></div><div><code>root: </code><code class="blue_2Afy">number</code></div></div><code>) → </code><code class="blue_2Afy">number</code></div><div>
 <p>Returns the <code>root</code> of the number.</p>
 <pre class="language-lua"><code class="language-lua"><span class="token function">print</span><span class="token punctuation">(</span>NumberUtil<span class="token punctuation">.</span><span class="token function">Root</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">--> 1.4142135623731 (Square root)</span>
 <span class="token function">print</span><span class="token punctuation">(</span>NumberUtil<span class="token punctuation">.</span><span class="token function">Root</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">--> 1.2599210498949 (Cube root)</span>
 </code></pre>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Factorial"></a><code style="text-decoration:none">Factorial</code><a class="hash-link" href="#Factorial" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/NumberUtil/init.lua#L332"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>NumberUtil.</code><code class="green_3LnD">Factorial</code><code>(</code><code>number: </code><code class="blue_2Afy">number</code><code>) → </code><code class="blue_2Afy">number</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Factorial"></a><code style="text-decoration:none">Factorial</code><a class="hash-link" href="#Factorial" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/NumberUtil/init.lua#L320"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>NumberUtil.</code><code class="green_3LnD">Factorial</code><code>(</code><code>number: </code><code class="blue_2Afy">number</code><code>) → </code><code class="blue_2Afy">number</code></div><div>
 <p>Returns the factorial of the number.</p>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="GetFactorsOf"></a><code style="text-decoration:none">GetFactorsOf</code><a class="hash-link" href="#GetFactorsOf" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/NumberUtil/init.lua#L354"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>NumberUtil.</code><code class="green_3LnD">GetFactorsOf</code><code>(</code><code>number: </code><code class="blue_2Afy">number</code><code>) → </code><code class="blue_2Afy">table</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="GetFactorsOf"></a><code style="text-decoration:none">GetFactorsOf</code><a class="hash-link" href="#GetFactorsOf" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/NumberUtil/init.lua#L342"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>NumberUtil.</code><code class="green_3LnD">GetFactorsOf</code><code>(</code><code>number: </code><code class="blue_2Afy">number</code><code>) → </code><code class="blue_2Afy">table</code></div><div>
 <p>Returns all the factors of the number.</p>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="IsInfinite"></a><code style="text-decoration:none">IsInfinite</code><a class="hash-link" href="#IsInfinite" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/NumberUtil/init.lua#L387"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>NumberUtil.</code><code class="green_3LnD">IsInfinite</code><code>(</code><code>number: </code><code class="blue_2Afy">number</code><code>) → </code><code class="blue_2Afy">boolean</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="IsInfinite"></a><code style="text-decoration:none">IsInfinite</code><a class="hash-link" href="#IsInfinite" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/NumberUtil/init.lua#L370"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>NumberUtil.</code><code class="green_3LnD">IsInfinite</code><code>(</code><code>number: </code><code class="blue_2Afy">number</code><code>) → </code><code class="blue_2Afy">boolean</code></div><div>
 <p>Returns a boolean indicating if the number is infinite i.e <code>math.huge</code> or not.</p>
 </div></div></article></div><details><summary>Show raw api</summary><pre style="max-width:100%;white-space:pre-wrap">{
     &quot;functions&quot;: [
@@ -120,7 +120,7 @@ print(NumberUtil.IsCloseTo(0.1 + 0.2, 0.3)) --&gt; true
             ],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 104,
+                &quot;line&quot;: 107,
                 &quot;path&quot;: &quot;packages/NumberUtil/init.lua&quot;
             }
         },
@@ -152,7 +152,7 @@ print(NumberUtil.IsCloseTo(0.1 + 0.2, 0.3)) --&gt; true
             ],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 130,
+                &quot;line&quot;: 133,
                 &quot;path&quot;: &quot;packages/NumberUtil/init.lua&quot;
             }
         },
@@ -184,7 +184,7 @@ print(NumberUtil.IsCloseTo(0.1 + 0.2, 0.3)) --&gt; true
             ],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 171,
+                &quot;line&quot;: 159,
                 &quot;path&quot;: &quot;packages/NumberUtil/init.lua&quot;
             }
         },
@@ -226,7 +226,7 @@ print(NumberUtil.IsCloseTo(0.1 + 0.2, 0.3)) --&gt; true
             ],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 199,
+                &quot;line&quot;: 187,
                 &quot;path&quot;: &quot;packages/NumberUtil/init.lua&quot;
             }
         },
@@ -253,7 +253,7 @@ print(NumberUtil.IsCloseTo(0.1 + 0.2, 0.3)) --&gt; true
             ],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 232,
+                &quot;line&quot;: 220,
                 &quot;path&quot;: &quot;packages/NumberUtil/init.lua&quot;
             }
         },
@@ -275,7 +275,7 @@ print(NumberUtil.IsCloseTo(0.1 + 0.2, 0.3)) --&gt; true
             ],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 252,
+                &quot;line&quot;: 240,
                 &quot;path&quot;: &quot;packages/NumberUtil/init.lua&quot;
             }
         },
@@ -296,7 +296,7 @@ print(NumberUtil.IsCloseTo(0.1 + 0.2, 0.3)) --&gt; true
                 {
                     &quot;name&quot;: &quot;eplison&quot;,
                     &quot;desc&quot;: &quot;&quot;,
-                    &quot;lua_type&quot;: &quot;number | nil&quot;
+                    &quot;lua_type&quot;: &quot;number ?&quot;
                 }
             ],
             &quot;returns&quot;: [
@@ -307,7 +307,7 @@ print(NumberUtil.IsCloseTo(0.1 + 0.2, 0.3)) --&gt; true
             ],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 275,
+                &quot;line&quot;: 263,
                 &quot;path&quot;: &quot;packages/NumberUtil/init.lua&quot;
             }
         },
@@ -334,7 +334,7 @@ print(NumberUtil.IsCloseTo(0.1 + 0.2, 0.3)) --&gt; true
             ],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 312,
+                &quot;line&quot;: 300,
                 &quot;path&quot;: &quot;packages/NumberUtil/init.lua&quot;
             }
         },
@@ -356,7 +356,7 @@ print(NumberUtil.IsCloseTo(0.1 + 0.2, 0.3)) --&gt; true
             ],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 332,
+                &quot;line&quot;: 320,
                 &quot;path&quot;: &quot;packages/NumberUtil/init.lua&quot;
             }
         },
@@ -378,7 +378,7 @@ print(NumberUtil.IsCloseTo(0.1 + 0.2, 0.3)) --&gt; true
             ],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 354,
+                &quot;line&quot;: 342,
                 &quot;path&quot;: &quot;packages/NumberUtil/init.lua&quot;
             }
         },
@@ -400,7 +400,7 @@ print(NumberUtil.IsCloseTo(0.1 + 0.2, 0.3)) --&gt; true
             ],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 387,
+                &quot;line&quot;: 370,
                 &quot;path&quot;: &quot;packages/NumberUtil/init.lua&quot;
             }
         }
@@ -455,7 +455,7 @@ print(NumberUtil.IsCloseTo(0.1 + 0.2, 0.3)) --&gt; true
         &quot;path&quot;: &quot;packages/NumberUtil/init.lua&quot;
     }
 }</pre></details></div><div class="col col--3"><div class="tableOfContents_35-E thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#types" class="table-of-contents__link">Types</a></li><li><a href="#properties" class="table-of-contents__link">Properties</a><ul><li><a href="#e" class="table-of-contents__link">e</a></li><li><a href="#NaN" class="table-of-contents__link">NaN</a></li><li><a href="#Phi" class="table-of-contents__link">Phi</a></li><li><a href="#Tau" class="table-of-contents__link">Tau</a></li></ul></li><li><a href="#functions" class="table-of-contents__link">Functions</a><ul><li><a href="#Factorial" class="table-of-contents__link">.Factorial</a></li><li><a href="#GetFactorsOf" class="table-of-contents__link">.GetFactorsOf</a></li><li><a href="#InverseLerp" class="table-of-contents__link">.InverseLerp</a></li><li><a href="#IsCloseTo" class="table-of-contents__link">.IsCloseTo</a></li><li><a href="#IsInfinite" class="table-of-contents__link">.IsInfinite</a></li><li><a href="#IsNaN" class="table-of-contents__link">.IsNaN</a></li><li><a href="#Lerp" class="table-of-contents__link">.Lerp</a></li><li><a href="#Map" class="table-of-contents__link">.Map</a></li><li><a href="#QuadraticLerp" class="table-of-contents__link">.QuadraticLerp</a></li><li><a href="#Root" class="table-of-contents__link">.Root</a></li><li><a href="#RoundTo" class="table-of-contents__link">.RoundTo</a></li></ul></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2021 finobinos. Built with Moonwave and Docusaurus.</div></div></div></footer></div>
-<script src="/RBXUtil/assets/js/runtime~main.9c718db2.js"></script>
-<script src="/RBXUtil/assets/js/main.c46c5af7.js"></script>
+<script src="/RBXUtil/assets/js/runtime~main.bc34c7b6.js"></script>
+<script src="/RBXUtil/assets/js/main.939d61b7.js"></script>
 </body>
 </html>

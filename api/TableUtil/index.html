@@ -15,7 +15,18 @@ local t3 = {1, 2}
 
 print(TableUtil.IsTableEqualTo(t1, t2)) --&gt; true
 print(TableUtil.IsTableEqualTo(t1, t3)) --&gt; false
-```"><meta data-react-helmet="true" property="og:description" content="A utility designed to provide a layer of abstraction along with useful methods when working with tables.
+```
+
+:::tip
+This library handles cyclic tables just fine, for e.g:
+
+```lua
+local t = {}
+t.a = t
+
+print(TableUtil.IsTableCyclic(t)) --&gt; true
+```
+:::"><meta data-react-helmet="true" property="og:description" content="A utility designed to provide a layer of abstraction along with useful methods when working with tables.
 
 A common use case would be to compare 2 tables via their elements, for e.g:
 
@@ -26,9 +37,20 @@ local t3 = {1, 2}
 
 print(TableUtil.IsTableEqualTo(t1, t2)) --&gt; true
 print(TableUtil.IsTableEqualTo(t1, t3)) --&gt; false
-```"><meta data-react-helmet="true" property="og:url" content="https://finobinos.github.io/RBXUtil/api/TableUtil"><meta data-react-helmet="true" name="docusaurus_locale" content="en"><meta data-react-helmet="true" name="docusaurus_tag" content="default"><link data-react-helmet="true" rel="canonical" href="https://finobinos.github.io/RBXUtil/api/TableUtil"><link data-react-helmet="true" rel="alternate" href="https://finobinos.github.io/RBXUtil/api/TableUtil" hreflang="en"><link data-react-helmet="true" rel="alternate" href="https://finobinos.github.io/RBXUtil/api/TableUtil" hreflang="x-default"><link rel="stylesheet" href="/RBXUtil/assets/css/styles.60329a60.css">
-<link rel="preload" href="/RBXUtil/assets/js/runtime~main.9c718db2.js" as="script">
-<link rel="preload" href="/RBXUtil/assets/js/main.c46c5af7.js" as="script">
+```
+
+:::tip
+This library handles cyclic tables just fine, for e.g:
+
+```lua
+local t = {}
+t.a = t
+
+print(TableUtil.IsTableCyclic(t)) --&gt; true
+```
+:::"><meta data-react-helmet="true" property="og:url" content="https://finobinos.github.io/RBXUtil/api/TableUtil"><meta data-react-helmet="true" name="docusaurus_locale" content="en"><meta data-react-helmet="true" name="docusaurus_tag" content="default"><link data-react-helmet="true" rel="canonical" href="https://finobinos.github.io/RBXUtil/api/TableUtil"><link data-react-helmet="true" rel="alternate" href="https://finobinos.github.io/RBXUtil/api/TableUtil" hreflang="en"><link data-react-helmet="true" rel="alternate" href="https://finobinos.github.io/RBXUtil/api/TableUtil" hreflang="x-default"><link rel="stylesheet" href="/RBXUtil/assets/css/styles.60329a60.css">
+<link rel="preload" href="/RBXUtil/assets/js/runtime~main.bc34c7b6.js" as="script">
+<link rel="preload" href="/RBXUtil/assets/js/main.939d61b7.js" as="script">
 </head>
 <body>
 <script>!function(){function e(e){document.documentElement.setAttribute("data-theme",e)}var t=function(){var e=null;try{e=localStorage.getItem("theme")}catch(e){}return e}();null!==t?e(t):window.matchMedia("(prefers-color-scheme: dark)").matches?e("dark"):(window.matchMedia("(prefers-color-scheme: light)").matches,e("light"))}()</script><div id="__docusaurus">
@@ -42,11 +64,26 @@ print(TableUtil.IsTableEqualTo(t1, t3)) --&gt; false
 <span class="token function">print</span><span class="token punctuation">(</span>TableUtil<span class="token punctuation">.</span><span class="token function">IsTableEqualTo</span><span class="token punctuation">(</span>t1<span class="token punctuation">,</span> t2<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">--> true</span>
 <span class="token function">print</span><span class="token punctuation">(</span>TableUtil<span class="token punctuation">.</span><span class="token function">IsTableEqualTo</span><span class="token punctuation">(</span>t1<span class="token punctuation">,</span> t3<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">--> false</span>
 </code></pre>
-</div></header><h2><a aria-hidden="true" tabindex="-1" class="anchor anchor__h2 anchorWithStickyNavbar_31ik" id="functions"></a>Functions<a class="hash-link" href="#functions" title="Direct link to heading">#</a></h2><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="DeepFreezeTable"></a><code style="text-decoration:none">DeepFreezeTable</code><a class="hash-link" href="#DeepFreezeTable" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/TableUtil/init.lua#L52"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>TableUtil.</code><code class="green_3LnD">DeepFreezeTable</code><code>(</code><code>tabl: </code><code class="blue_2Afy">table</code><code>) → </code><code class="blue_2Afy">table</code></div><div>
+<div class="admonition admonition-tip alert alert--success">
+  <div class="admonition-heading">
+    <h5><span class="admonition-icon"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16">
+          <path d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path>
+        </svg></span>tip</h5>
+  </div>
+  <div class="admonition-content">
+    <p>This library handles cyclic tables just fine, for e.g:</p>
+    <pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> t <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+t<span class="token punctuation">.</span>a <span class="token operator">=</span> t
+
+<span class="token function">print</span><span class="token punctuation">(</span>TableUtil<span class="token punctuation">.</span><span class="token function">IsTableCyclic</span><span class="token punctuation">(</span>t<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">--> true</span>
+</code></pre>
+  </div>
+</div>
+</div></header><h2><a aria-hidden="true" tabindex="-1" class="anchor anchor__h2 anchorWithStickyNavbar_31ik" id="functions"></a>Functions<a class="hash-link" href="#functions" title="Direct link to heading">#</a></h2><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="DeepFreezeTable"></a><code style="text-decoration:none">DeepFreezeTable</code><a class="hash-link" href="#DeepFreezeTable" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/TableUtil/init.lua#L75"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>TableUtil.</code><code class="green_3LnD">DeepFreezeTable</code><code>(</code><code>tabl: </code><code class="blue_2Afy">table</code><code>) → </code><code class="blue_2Afy">table</code></div><div>
 <p>Freezes <code>tabl</code> via <code>table.freeze</code>, and all other nested tables in <code>tabl</code>.</p>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="DeepCopyTable"></a><code style="text-decoration:none">DeepCopyTable</code><a class="hash-link" href="#DeepCopyTable" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/TableUtil/init.lua#L78"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>TableUtil.</code><code class="green_3LnD">DeepCopyTable</code><code>(</code><code>tabl: </code><code class="blue_2Afy">table</code><code>) → </code><code class="blue_2Afy">table</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="DeepCopyTable"></a><code style="text-decoration:none">DeepCopyTable</code><a class="hash-link" href="#DeepCopyTable" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/TableUtil/init.lua#L106"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>TableUtil.</code><code class="green_3LnD">DeepCopyTable</code><code>(</code><code>tabl: </code><code class="blue_2Afy">table</code><code>) → </code><code class="blue_2Afy">table</code></div><div>
 <p>Unfreezes <code>tabl</code> via <code>table.unfreeze</code>, and all other nested tables in <code>tabl</code>.</p>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="ShallowCopyTable"></a><code style="text-decoration:none">ShallowCopyTable</code><a class="hash-link" href="#ShallowCopyTable" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/TableUtil/init.lua#L119"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>TableUtil.</code><code class="green_3LnD">ShallowCopyTable</code><code>(</code><code>tabl: </code><code class="blue_2Afy">table</code><code>) → </code><code class="blue_2Afy">table</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="ShallowCopyTable"></a><code style="text-decoration:none">ShallowCopyTable</code><a class="hash-link" href="#ShallowCopyTable" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/TableUtil/init.lua#L152"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>TableUtil.</code><code class="green_3LnD">ShallowCopyTable</code><code>(</code><code>tabl: </code><code class="blue_2Afy">table</code><code>) → </code><code class="blue_2Afy">table</code></div><div>
 <p>
   Shallow copies all elements in <code>tabl</code> to a new table, i.e only the "children" of <code>tabl</code> are considered
   and not their descendants.
@@ -62,7 +99,7 @@ print(TableUtil.IsTableEqualTo(t1, t3)) --&gt; false
 
 <span class="token function">print</span><span class="token punctuation">(</span>TableUtil<span class="token punctuation">.</span><span class="token function">ShallowCopyTable</span><span class="token punctuation">(</span>t1<span class="token punctuation">)</span><span class="token punctuation">)</span>
 </code></pre>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="ReconcileTable"></a><code style="text-decoration:none">ReconcileTable</code><a class="hash-link" href="#ReconcileTable" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/TableUtil/init.lua#L151"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>TableUtil.</code><code class="green_3LnD">ReconcileTable</code><code>(</code><div class="inset_2cJr"><div><code>tabl: </code><code class="blue_2Afy">table</code><code>,</code></div><div><code>templateTable: </code><code class="blue_2Afy">table</code></div></div><code>) → </code><code class="blue_2Afy">table</code><span class="inlineDescription_17uy">-- <span>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="ReconcileTable"></a><code style="text-decoration:none">ReconcileTable</code><a class="hash-link" href="#ReconcileTable" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/TableUtil/init.lua#L184"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>TableUtil.</code><code class="green_3LnD">ReconcileTable</code><code>(</code><div class="inset_2cJr"><div><code>tabl: </code><code class="blue_2Afy">table</code><code>,</code></div><div><code>templateTable: </code><code class="blue_2Afy">table</code></div></div><code>) → </code><code class="blue_2Afy">table</code><span class="inlineDescription_17uy">-- <span>
 <p>The first argument passed to this method</p>
 </span></span></div><div>
 <p>Adds all missing elements from <code>templateTable</code> to <code>tabl</code>, and also sets the metatable of <code>tabl</code> to <code>templateTable</code>.</p>
@@ -72,7 +109,7 @@ print(TableUtil.IsTableEqualTo(t1, t3)) --&gt; false
 TableUtil<span class="token punctuation">.</span><span class="token function">ReconcileTable</span><span class="token punctuation">(</span>t1<span class="token punctuation">,</span> templateTable<span class="token punctuation">)</span>
 <span class="token function">print</span><span class="token punctuation">(</span>t1<span class="token punctuation">)</span> <span class="token comment">--> {1, 2, 3}</span>
 </code></pre>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="ShuffleTable"></a><code style="text-decoration:none">ShuffleTable</code><a class="hash-link" href="#ShuffleTable" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/TableUtil/init.lua#L200"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>TableUtil.</code><code class="green_3LnD">ShuffleTable</code><code>(</code><div class="inset_2cJr"><div><code>tabl: </code><code class="blue_2Afy">table</code><code>,</code></div><div><code>randomObject: </code><code class="blue_2Afy">Random</code><code class="op_1JtD"> | </code><code class="blue_2Afy">nil</code></div></div><code>) → </code><code class="blue_2Afy">table</code><span class="inlineDescription_17uy">-- <span>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="ShuffleTable"></a><code style="text-decoration:none">ShuffleTable</code><a class="hash-link" href="#ShuffleTable" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/TableUtil/init.lua#L233"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>TableUtil.</code><code class="green_3LnD">ShuffleTable</code><code>(</code><div class="inset_2cJr"><div><code>tabl: </code><code class="blue_2Afy">table</code><code>,</code></div><div><code>randomObject: </code><code class="blue_2Afy">Random</code><code class="blue_2Afy">?</code></div></div><code>) → </code><code class="blue_2Afy">table</code><span class="inlineDescription_17uy">-- <span>
 <p>The first argument passed to this method</p>
 </span></span></div><div>
 <p>
@@ -94,12 +131,12 @@ TableUtil<span class="token punctuation">.</span><span class="token function">Re
 <span class="token keyword">local</span> shuffledTable <span class="token operator">=</span> TableUtil<span class="token punctuation">.</span><span class="token function">ShuffleTable</span><span class="token punctuation">(</span>t1<span class="token punctuation">)</span>
 <span class="token function">print</span><span class="token punctuation">(</span>shuffledTable<span class="token punctuation">)</span> <span class="token comment">--> {3, 2, 4, 5, 1, 6}</span>
 </code></pre>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="IsTableEmpty"></a><code style="text-decoration:none">IsTableEmpty</code><a class="hash-link" href="#IsTableEmpty" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/TableUtil/init.lua#L239"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>TableUtil.</code><code class="green_3LnD">IsTableEmpty</code><code>(</code><code>tabl: </code><code class="blue_2Afy">table</code><code>) → </code><code>(</code><div class="inset_2cJr"><div><code class="blue_2Afy">boolean</code><code>,</code></div><div><code class="blue_2Afy">table</code></div></div><code>)</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="IsTableEmpty"></a><code style="text-decoration:none">IsTableEmpty</code><a class="hash-link" href="#IsTableEmpty" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/TableUtil/init.lua#L272"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>TableUtil.</code><code class="green_3LnD">IsTableEmpty</code><code>(</code><code>tabl: </code><code class="blue_2Afy">table</code><code>) → </code><code>(</code><div class="inset_2cJr"><div><code class="blue_2Afy">boolean</code><code>,</code></div><div><code class="blue_2Afy">table</code></div></div><code>)</code></div><div>
 <p>
   Returns a boolean indicating if <code>tabl</code> is empty i.e it is basically <code>{}</code>. For arrays with no holes, the <code>#</code> operator should be
   used instead.
 </p>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="SyncTable"></a><code style="text-decoration:none">SyncTable</code><a class="hash-link" href="#SyncTable" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/TableUtil/init.lua#L265"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>TableUtil.</code><code class="green_3LnD">SyncTable</code><code>(</code><div class="inset_2cJr"><div><code>tabl: </code><code class="blue_2Afy">table</code><code>,</code></div><div><code>templateSyncTable: </code><code class="blue_2Afy">table</code></div></div><code>) → </code><code class="blue_2Afy">table</code><span class="inlineDescription_17uy">-- <span>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="SyncTable"></a><code style="text-decoration:none">SyncTable</code><a class="hash-link" href="#SyncTable" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/TableUtil/init.lua#L298"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>TableUtil.</code><code class="green_3LnD">SyncTable</code><code>(</code><div class="inset_2cJr"><div><code>tabl: </code><code class="blue_2Afy">table</code><code>,</code></div><div><code>templateSyncTable: </code><code class="blue_2Afy">table</code></div></div><code>) → </code><code class="blue_2Afy">table</code><span class="inlineDescription_17uy">-- <span>
 <p>The first argument passed to this method</p>
 </span></span></div><div>
 <p>
@@ -112,7 +149,7 @@ TableUtil<span class="token punctuation">.</span><span class="token function">Re
 	TableUtil<span class="token punctuation">.</span><span class="token function">SyncTable</span><span class="token punctuation">(</span>t<span class="token punctuation">,</span> templateT<span class="token punctuation">)</span>
 	<span class="token function">print</span><span class="token punctuation">(</span>t<span class="token punctuation">)</span> <span class="token comment">--> {a = {}, b = 5}</span>
 </code></pre>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Map"></a><code style="text-decoration:none">Map</code><a class="hash-link" href="#Map" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/TableUtil/init.lua#L329"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>TableUtil.</code><code class="green_3LnD">Map</code><code>(</code><div class="inset_2cJr"><div><code>tabl: </code><code class="blue_2Afy">table</code><code>,</code></div><div><code>callback: </code><code class="blue_2Afy">function</code></div></div><code>) → </code><code class="blue_2Afy">table</code><span class="inlineDescription_17uy">-- <span>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Map"></a><code style="text-decoration:none">Map</code><a class="hash-link" href="#Map" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/TableUtil/init.lua#L367"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>TableUtil.</code><code class="green_3LnD">Map</code><code>(</code><div class="inset_2cJr"><div><code>tabl: </code><code class="blue_2Afy">table</code><code>,</code></div><div><code>callback: </code><code class="blue_2Afy">function</code></div></div><code>) → </code><code class="blue_2Afy">table</code><span class="inlineDescription_17uy">-- <span>
 <p>The first argument passed to this method</p>
 </span></span></div><div>
 <p>Performs a map against <code>tabl</code>, which can be used to map new values based on the old values at given indices.</p>
@@ -122,7 +159,7 @@ TableUtil<span class="token punctuation">.</span><span class="token function">Re
 <span class="token keyword">end</span><span class="token punctuation">)</span>
 <span class="token function">print</span><span class="token punctuation">(</span>t2<span class="token punctuation">)</span> <span class="token comment">--> {2, 4, 6, 8, 10}</span>
 </code></pre>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="ConvertTableIndicesToStartFrom"></a><code style="text-decoration:none">ConvertTableIndicesToStartFrom</code><a class="hash-link" href="#ConvertTableIndicesToStartFrom" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/TableUtil/init.lua#L362"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>TableUtil.</code><code class="green_3LnD">ConvertTableIndicesToStartFrom</code><code>(</code><div class="inset_2cJr"><div><code>tabl: </code><code class="blue_2Afy">table</code><code>,</code></div><div><code>index: </code><code class="blue_2Afy">number</code></div></div><code>) → </code><code class="blue_2Afy">table</code><span class="inlineDescription_17uy">-- <span>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="ConvertTableIndicesToStartFrom"></a><code style="text-decoration:none">ConvertTableIndicesToStartFrom</code><a class="hash-link" href="#ConvertTableIndicesToStartFrom" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/TableUtil/init.lua#L400"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>TableUtil.</code><code class="green_3LnD">ConvertTableIndicesToStartFrom</code><code>(</code><div class="inset_2cJr"><div><code>tabl: </code><code class="blue_2Afy">table</code><code>,</code></div><div><code>index: </code><code class="blue_2Afy">number</code></div></div><code>) → </code><code class="blue_2Afy">table</code><span class="inlineDescription_17uy">-- <span>
 <p>The first argument passed to this method</p>
 </span></span></div><div>
 <p>
@@ -133,7 +170,7 @@ TableUtil<span class="token punctuation">.</span><span class="token function">Re
 TableUtil<span class="token punctuation">.</span><span class="token function">ConvertTableIndicesToStartFrom</span><span class="token punctuation">(</span>t<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span>
 <span class="token function">print</span><span class="token punctuation">(</span>t<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span> t<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> t<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span> t<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token comment">--> 1, 2, 3, 4</span>
 </code></pre>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="CombineTables"></a><code style="text-decoration:none">CombineTables</code><a class="hash-link" href="#CombineTables" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/TableUtil/init.lua#L412"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>TableUtil.</code><code class="green_3LnD">CombineTables</code><code>(</code><code>...: </code><code class="blue_2Afy">table</code><code>) → </code><code class="blue_2Afy">table</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="CombineTables"></a><code style="text-decoration:none">CombineTables</code><a class="hash-link" href="#CombineTables" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/TableUtil/init.lua#L455"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>TableUtil.</code><code class="green_3LnD">CombineTables</code><code>(</code><code>...: </code><code class="blue_2Afy">table</code><code>) → </code><code class="blue_2Afy">table</code></div><div>
 <p>A method which combines all tables <code>...</code> into 1 single mega table.</p>
 <pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> t <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">}</span>
 <span class="token keyword">local</span> t1 <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">}</span>
@@ -142,14 +179,16 @@ TableUtil<span class="token punctuation">.</span><span class="token function">Co
 <span class="token keyword">local</span> combinedTable <span class="token operator">=</span> TableUtil<span class="token punctuation">.</span><span class="token function">CombineTables</span><span class="token punctuation">(</span>t<span class="token punctuation">,</span> t1<span class="token punctuation">,</span> t2<span class="token punctuation">)</span>
 <span class="token function">print</span><span class="token punctuation">(</span>combinedTable<span class="token punctuation">)</span> <span class="token comment">--> {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}</span>
 </code></pre>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="EmptyTable"></a><code style="text-decoration:none">EmptyTable</code><a class="hash-link" href="#EmptyTable" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/TableUtil/init.lua#L440"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>TableUtil.</code><code class="green_3LnD">EmptyTable</code><code>(</code><code>tabl: </code><code class="blue_2Afy">table</code><code>) → </code><code>(</code><code>)</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="EmptyTable"></a><code style="text-decoration:none">EmptyTable</code><a class="hash-link" href="#EmptyTable" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/TableUtil/init.lua#L483"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>TableUtil.</code><code class="green_3LnD">EmptyTable</code><code>(</code><code>tabl: </code><code class="blue_2Afy">table</code><code>) → </code><code>(</code><code>)</code></div><div>
 <p>Clears out all keys in <code>tabl</code>.</p>
 <pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> t <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">}</span>
 TableUtil<span class="token punctuation">.</span><span class="token function">EmptyTable</span><span class="token punctuation">(</span>t<span class="token punctuation">)</span>
 <span class="token function">print</span><span class="token punctuation">(</span>t<span class="token punctuation">)</span> <span class="token comment">--> {}</span>
 </code></pre>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="ReverseTable"></a><code style="text-decoration:none">ReverseTable</code><a class="hash-link" href="#ReverseTable" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/TableUtil/init.lua#L468"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>TableUtil.</code><code class="green_3LnD">ReverseTable</code><code>(</code><code>tabl: </code><code class="blue_2Afy">table</code><code>) → </code><code class="blue_2Afy">table</code></div><div>
-<p>A method which reverses <code>tabl</code>. Returns <code>tabl</code>.</p>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="ReverseTable"></a><code style="text-decoration:none">ReverseTable</code><a class="hash-link" href="#ReverseTable" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/TableUtil/init.lua#L511"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>TableUtil.</code><code class="green_3LnD">ReverseTable</code><code>(</code><code>tabl: </code><code class="blue_2Afy">table</code><code>) → </code><code class="blue_2Afy">table</code><span class="inlineDescription_17uy">-- <span>
+<p>The table passed to this method</p>
+</span></span></div><div>
+<p>A method which reverses <code>tabl</code>.</p>
 <div class="admonition admonition-note alert alert--secondary">
   <div class="admonition-heading">
     <h5><span class="admonition-icon"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16">
@@ -164,12 +203,12 @@ TableUtil<span class="token punctuation">.</span><span class="token function">Em
 TableUtil<span class="token punctuation">.</span><span class="token function">ReverseTable</span><span class="token punctuation">(</span>t<span class="token punctuation">)</span>
 <span class="token function">print</span><span class="token punctuation">(</span>t<span class="token punctuation">)</span> <span class="token comment">--> {5, 4, 3, 2, 2, 1}</span>
 </code></pre>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="GetCount"></a><code style="text-decoration:none">GetCount</code><a class="hash-link" href="#GetCount" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/TableUtil/init.lua#L491"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>TableUtil.</code><code class="green_3LnD">GetCount</code><code>(</code><code>tabl: </code><code class="blue_2Afy">table</code><code>) → </code><code class="blue_2Afy">number</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="GetCount"></a><code style="text-decoration:none">GetCount</code><a class="hash-link" href="#GetCount" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/TableUtil/init.lua#L536"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>TableUtil.</code><code class="green_3LnD">GetCount</code><code>(</code><code>tabl: </code><code class="blue_2Afy">table</code><code>) → </code><code class="blue_2Afy">number</code></div><div>
 <p>A method which returns a number of all the elements in <code>tabl</code>.</p>
 <pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> t <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> a <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">,</span> b <span class="token operator">=</span> <span class="token number">6</span><span class="token punctuation">}</span>
 <span class="token function">print</span><span class="token punctuation">(</span>TableUtil<span class="token punctuation">.</span><span class="token function">GetCount</span><span class="token punctuation">(</span>t<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">--> 7</span>
 </code></pre>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="GetKeyFromValue"></a><code style="text-decoration:none">GetKeyFromValue</code><a class="hash-link" href="#GetKeyFromValue" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/TableUtil/init.lua#L523"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>TableUtil.</code><code class="green_3LnD">GetKeyFromValue</code><code>(</code><div class="inset_2cJr"><div><code>tabl: </code><code class="blue_2Afy">table</code><code>,</code></div><div><code>value: </code><code class="blue_2Afy">any</code></div></div><code>) → </code><code class="blue_2Afy">any</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="GetKeyFromValue"></a><code style="text-decoration:none">GetKeyFromValue</code><a class="hash-link" href="#GetKeyFromValue" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/TableUtil/init.lua#L568"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>TableUtil.</code><code class="green_3LnD">GetKeyFromValue</code><code>(</code><div class="inset_2cJr"><div><code>tabl: </code><code class="blue_2Afy">table</code><code>,</code></div><div><code>value: </code><code class="blue_2Afy">any</code></div></div><code>) → </code><code class="blue_2Afy">any</code></div><div>
 <p>A method which returns the key in which <code>value</code> is stored at in <code>tabl</code>.</p>
 <pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> t <span class="token operator">=</span> <span class="token punctuation">{</span>a <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">,</span> b <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">}</span>
 <span class="token function">print</span><span class="token punctuation">(</span>TableUtil<span class="token punctuation">.</span><span class="token function">GetKeyFromValue</span><span class="token punctuation">(</span>t<span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">--> "a"</span>
@@ -184,8 +223,8 @@ TableUtil<span class="token punctuation">.</span><span class="token function">Re
     <p>This method will not work well for different keys which have the same value, and doesn't account for nested values.</p>
   </div>
 </div>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="AreTablesSame"></a><code style="text-decoration:none">AreTablesSame</code><a class="hash-link" href="#AreTablesSame" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/TableUtil/init.lua#L600"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>TableUtil.</code><code class="green_3LnD">AreTablesSame</code><code>(</code><div class="inset_2cJr"><div><code>tabl: </code><code class="blue_2Afy">table</code><code>,</code></div><div><code>otherTable: </code><code class="blue_2Afy">table</code></div></div><code>) → </code><code class="blue_2Afy">boolean</code></div><div>
-<p>A simple method which checks if both <code>tabl</code> and <code>otherTable</code> have the same elements.</p>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="AreTablesSame"></a><code style="text-decoration:none">AreTablesSame</code><a class="hash-link" href="#AreTablesSame" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/TableUtil/init.lua#L605"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>TableUtil.</code><code class="green_3LnD">AreTablesSame</code><code>(</code><div class="inset_2cJr"><div><code>tabl: </code><code class="blue_2Afy">table</code><code>,</code></div><div><code>otherTable: </code><code class="blue_2Afy">table</code></div></div><code>) → </code><code class="blue_2Afy">boolean</code></div><div>
+<p>A method which checks if both <code>tabl</code> and <code>otherTable</code> are exactly equal. Also accounts for nested values.</p>
 <pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> t1 <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>a <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">}</span><span class="token punctuation">}</span>
 <span class="token keyword">local</span> t2 <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>a <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">}</span><span class="token punctuation">}</span>
 
@@ -196,49 +235,26 @@ TableUtil<span class="token punctuation">.</span><span class="token function">Re
 
 <span class="token function">print</span><span class="token punctuation">(</span>TableUtil<span class="token punctuation">.</span><span class="token function">AreTablesSame</span><span class="token punctuation">(</span>t1<span class="token punctuation">,</span> t2<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">--> true</span>
 </code></pre>
-<pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> t1 <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>a <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>a <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>a <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>a <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>a <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">}</span>
-<span class="token keyword">local</span> t2 <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>a <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>a <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>a <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>a <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>a <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">}</span>
-
-<span class="token function">print</span><span class="token punctuation">(</span>t<span class="token punctuation">.</span><span class="token function">AreTablesSame</span><span class="token punctuation">(</span>t1<span class="token punctuation">,</span> t2<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">--> true</span>
-</code></pre>
-<div class="admonition admonition-note alert alert--secondary">
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="IsCyclic"></a><code style="text-decoration:none">IsCyclic</code><a class="hash-link" href="#IsCyclic" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/TableUtil/init.lua#L667"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>TableUtil.</code><code class="green_3LnD">IsCyclic</code><code>(</code><code>tabl: </code><code class="blue_2Afy">table</code><code>) → </code><code class="blue_2Afy">number</code></div><div>
+<p>A method which returns a boolean indicating if <code>tabl</code> is cyclic or not.</p>
+<div class="admonition admonition-tip alert alert--success">
   <div class="admonition-heading">
-    <h5><span class="admonition-icon"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16">
-          <path d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path>
-        </svg></span>note</h5>
+    <h5><span class="admonition-icon"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16">
+          <path d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path>
+        </svg></span>tip</h5>
   </div>
   <div class="admonition-content">
-    <p>
-      This method assumes that <code>tabl</code> and <code>otherTabl</code> contain only primitive keys and values and that the keys
-      aren't tables.
-    </p>
-    <p>For e.g:</p>
-    <pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> b <span class="token operator">=</span> <span class="token punctuation">{</span>
-	<span class="token punctuation">[</span><span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">}</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">1</span>
-<span class="token punctuation">}</span>
-<span class="token keyword">local</span> a <span class="token operator">=</span> <span class="token punctuation">{</span>
-	<span class="token punctuation">[</span><span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">}</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">1</span>
-<span class="token punctuation">}</span>
-
-<span class="token function">print</span><span class="token punctuation">(</span>t<span class="token punctuation">.</span><span class="token function">AreTablesSame</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">--> false (doesn't account for keys)</span>
-
-<span class="token keyword">local</span> r <span class="token operator">=</span> RaycastParams<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-r<span class="token punctuation">.</span>FilterDescendantsInstances <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
-
-<span class="token keyword">local</span> b <span class="token operator">=</span> RaycastParams<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-r<span class="token punctuation">.</span>FilterDescendantsInstances <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
-
-<span class="token keyword">local</span> b <span class="token operator">=</span> <span class="token punctuation">{</span>
-	r<span class="token punctuation">,</span>
-<span class="token punctuation">}</span>
-<span class="token keyword">local</span> a <span class="token operator">=</span> <span class="token punctuation">{</span>
-	b<span class="token punctuation">,</span>
-<span class="token punctuation">}</span>
-
-<span class="token function">print</span><span class="token punctuation">(</span>t<span class="token punctuation">.</span><span class="token function">AreTablesSame</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">--> false (r, b are the same data type, but have different members)</span>
+    <p>A cyclic table is a table whose elements or keys reference to the same table they're contained in, for e.g:</p>
+    <pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> t <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+t<span class="token punctuation">.</span>a <span class="token operator">=</span> t
+<span class="token comment">-- t is now a cyclic table</span>
 </code></pre>
   </div>
 </div>
+<pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> t <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+t<span class="token punctuation">.</span>a <span class="token operator">=</span> t
+<span class="token function">print</span><span class="token punctuation">(</span>TableUtil<span class="token punctuation">.</span><span class="token function">IsCyclic</span><span class="token punctuation">(</span>t<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">--> true</span>
+</code></pre>
 </div></div></article></div><details><summary>Show raw api</summary><pre style="max-width:100%;white-space:pre-wrap">{
     &quot;functions&quot;: [
         {
@@ -259,7 +275,7 @@ r<span class="token punctuation">.</span>FilterDescendantsInstances <span class=
             ],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 52,
+                &quot;line&quot;: 75,
                 &quot;path&quot;: &quot;packages/TableUtil/init.lua&quot;
             }
         },
@@ -281,7 +297,7 @@ r<span class="token punctuation">.</span>FilterDescendantsInstances <span class=
             ],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 78,
+                &quot;line&quot;: 106,
                 &quot;path&quot;: &quot;packages/TableUtil/init.lua&quot;
             }
         },
@@ -303,7 +319,7 @@ r<span class="token punctuation">.</span>FilterDescendantsInstances <span class=
             ],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 119,
+                &quot;line&quot;: 152,
                 &quot;path&quot;: &quot;packages/TableUtil/init.lua&quot;
             }
         },
@@ -330,7 +346,7 @@ r<span class="token punctuation">.</span>FilterDescendantsInstances <span class=
             ],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 151,
+                &quot;line&quot;: 184,
                 &quot;path&quot;: &quot;packages/TableUtil/init.lua&quot;
             }
         },
@@ -346,7 +362,7 @@ r<span class="token punctuation">.</span>FilterDescendantsInstances <span class=
                 {
                     &quot;name&quot;: &quot;randomObject&quot;,
                     &quot;desc&quot;: &quot;&quot;,
-                    &quot;lua_type&quot;: &quot;Random | nil&quot;
+                    &quot;lua_type&quot;: &quot;Random ?&quot;
                 }
             ],
             &quot;returns&quot;: [
@@ -357,7 +373,7 @@ r<span class="token punctuation">.</span>FilterDescendantsInstances <span class=
             ],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 200,
+                &quot;line&quot;: 233,
                 &quot;path&quot;: &quot;packages/TableUtil/init.lua&quot;
             }
         },
@@ -383,7 +399,7 @@ r<span class="token punctuation">.</span>FilterDescendantsInstances <span class=
             ],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 239,
+                &quot;line&quot;: 272,
                 &quot;path&quot;: &quot;packages/TableUtil/init.lua&quot;
             }
         },
@@ -410,7 +426,7 @@ r<span class="token punctuation">.</span>FilterDescendantsInstances <span class=
             ],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 265,
+                &quot;line&quot;: 298,
                 &quot;path&quot;: &quot;packages/TableUtil/init.lua&quot;
             }
         },
@@ -437,7 +453,7 @@ r<span class="token punctuation">.</span>FilterDescendantsInstances <span class=
             ],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 329,
+                &quot;line&quot;: 367,
                 &quot;path&quot;: &quot;packages/TableUtil/init.lua&quot;
             }
         },
@@ -464,7 +480,7 @@ r<span class="token punctuation">.</span>FilterDescendantsInstances <span class=
             ],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 362,
+                &quot;line&quot;: 400,
                 &quot;path&quot;: &quot;packages/TableUtil/init.lua&quot;
             }
         },
@@ -486,7 +502,7 @@ r<span class="token punctuation">.</span>FilterDescendantsInstances <span class=
             ],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 412,
+                &quot;line&quot;: 455,
                 &quot;path&quot;: &quot;packages/TableUtil/init.lua&quot;
             }
         },
@@ -503,13 +519,13 @@ r<span class="token punctuation">.</span>FilterDescendantsInstances <span class=
             &quot;returns&quot;: [],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 440,
+                &quot;line&quot;: 483,
                 &quot;path&quot;: &quot;packages/TableUtil/init.lua&quot;
             }
         },
         {
             &quot;name&quot;: &quot;ReverseTable&quot;,
-            &quot;desc&quot;: &quot;A method which reverses `tabl`. Returns `tabl`.\n\n:::note\nThis method assumes that `tabl` is an array with no holes.\n:::\n\n```lua\nlocal t = {1, 2, 3, 4, 5}\nTableUtil.ReverseTable(t)\nprint(t) --&gt; {5, 4, 3, 2, 2, 1}\n```&quot;,
+            &quot;desc&quot;: &quot;A method which reverses `tabl`. \n\n:::note\nThis method assumes that `tabl` is an array with no holes.\n:::\n\n```lua\nlocal t = {1, 2, 3, 4, 5}\nTableUtil.ReverseTable(t)\nprint(t) --&gt; {5, 4, 3, 2, 2, 1}\n```&quot;,
             &quot;params&quot;: [
                 {
                     &quot;name&quot;: &quot;tabl&quot;,
@@ -519,13 +535,13 @@ r<span class="token punctuation">.</span>FilterDescendantsInstances <span class=
             ],
             &quot;returns&quot;: [
                 {
-                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;desc&quot;: &quot;The table passed to this method&quot;,
                     &quot;lua_type&quot;: &quot;table&quot;
                 }
             ],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 468,
+                &quot;line&quot;: 511,
                 &quot;path&quot;: &quot;packages/TableUtil/init.lua&quot;
             }
         },
@@ -547,7 +563,7 @@ r<span class="token punctuation">.</span>FilterDescendantsInstances <span class=
             ],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 491,
+                &quot;line&quot;: 536,
                 &quot;path&quot;: &quot;packages/TableUtil/init.lua&quot;
             }
         },
@@ -574,13 +590,13 @@ r<span class="token punctuation">.</span>FilterDescendantsInstances <span class=
             ],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 523,
+                &quot;line&quot;: 568,
                 &quot;path&quot;: &quot;packages/TableUtil/init.lua&quot;
             }
         },
         {
             &quot;name&quot;: &quot;AreTablesSame&quot;,
-            &quot;desc&quot;: &quot;A simple method which checks if both `tabl` and `otherTable` have the same elements. \n\n```lua\nlocal t1 = {1, 2, 3, 4, 5, {a = 4}}\nlocal t2 = {1, 2, 3, 4, 5, {a = 3}}\n\nprint(TableUtil.AreTablesSame(t1, t2)) --&gt; false\n```\n\n```lua\nlocal t1 = {1, 2, 3, 4, 5, {a = 4}}\nlocal t2 = {1, 2, 3, 4, 5, {a = 4}}\n\nprint(TableUtil.AreTablesSame(t1, t2)) --&gt; true\n```\n\n```lua\nlocal t1 = {1, 2, 3, 4, 5, {a = 4}, 1, 2, 3, 4, 5, {a = 4, 1, 2, 3, 4, 5, {a = 4, 1, 2, 3, 4, 5, {a = 4, 1, 2, 3, 4, 5, {a = 4}}}}}\nlocal t2 = {1, 2, 3, 4, 5, {a = 4}, 1, 2, 3, 4, 5, {a = 4, 1, 2, 3, 4, 5, {a = 4, 1, 2, 3, 4, 5, {a = 4, 1, 2, 3, 4, 5, {a = 4}}}}}\n\nprint(t.AreTablesSame(t1, t2)) --&gt; true\n```\n\n:::note\nThis method assumes that `tabl` and `otherTabl` contain only primitive keys and values and that the keys\naren&#x27;t tables.\n\nFor e.g:\n\n```lua\nlocal b = {\n\t[{1, 2, 3}] = 1\n}\nlocal a = {\n\t[{1, 2, 3}] = 1\n}\n\nprint(t.AreTablesSame(a, b)) --&gt; false (doesn&#x27;t account for keys)\n\nlocal r = RaycastParams.new()\nr.FilterDescendantsInstances = {}\n\nlocal b = RaycastParams.new()\nr.FilterDescendantsInstances = {}\n\nlocal b = {\n\tr,\n}\nlocal a = {\n\tb,\n}\n\nprint(t.AreTablesSame(a, b)) --&gt; false (r, b are the same data type, but have different members)\n```\n:::\t&quot;,
+            &quot;desc&quot;: &quot;A method which checks if both `tabl` and `otherTable` are exactly equal. Also accounts for nested values.\n\n```lua\nlocal t1 = {1, 2, 3, 4, 5, {a = 4}}\nlocal t2 = {1, 2, 3, 4, 5, {a = 3}}\n\nprint(TableUtil.AreTablesSame(t1, t2)) --&gt; false\n```\n\n```lua\nlocal t1 = {1, 2, 3, 4, 5, {a = 4}}\nlocal t2 = {1, 2, 3, 4, 5, {a = 4}}\n\nprint(TableUtil.AreTablesSame(t1, t2)) --&gt; true\n```&quot;,
             &quot;params&quot;: [
                 {
                     &quot;name&quot;: &quot;tabl&quot;,
@@ -601,7 +617,29 @@ r<span class="token punctuation">.</span>FilterDescendantsInstances <span class=
             ],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 600,
+                &quot;line&quot;: 605,
+                &quot;path&quot;: &quot;packages/TableUtil/init.lua&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;IsCyclic&quot;,
+            &quot;desc&quot;: &quot;A method which returns a boolean indicating if `tabl` is cyclic or not.\n\n:::tip\nA cyclic table is a table whose elements or keys reference to the same table they&#x27;re contained in, for e.g:\n\n```lua\nlocal t = {}\nt.a = t\n-- t is now a cyclic table\n:::\n\n```lua\nlocal t = {}\nt.a = t\nprint(TableUtil.IsCyclic(t)) --&gt; true\n```&quot;,
+            &quot;params&quot;: [
+                {
+                    &quot;name&quot;: &quot;tabl&quot;,
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;table&quot;
+                }
+            ],
+            &quot;returns&quot;: [
+                {
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;number&quot;
+                }
+            ],
+            &quot;function_type&quot;: &quot;static&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 667,
                 &quot;path&quot;: &quot;packages/TableUtil/init.lua&quot;
             }
         }
@@ -609,13 +647,13 @@ r<span class="token punctuation">.</span>FilterDescendantsInstances <span class=
     &quot;properties&quot;: [],
     &quot;types&quot;: [],
     &quot;name&quot;: &quot;TableUtil&quot;,
-    &quot;desc&quot;: &quot;A utility designed to provide a layer of abstraction along with useful methods when working with tables.\n\nA common use case would be to compare 2 tables via their elements, for e.g:\n\n```lua\nlocal t1 = {1, 2, 3}\nlocal t2 = {1, 2, 3}\nlocal t3 = {1, 2}\n\nprint(TableUtil.IsTableEqualTo(t1, t2)) --&gt; true\nprint(TableUtil.IsTableEqualTo(t1, t3)) --&gt; false\n```&quot;,
+    &quot;desc&quot;: &quot;A utility designed to provide a layer of abstraction along with useful methods when working with tables.\n\nA common use case would be to compare 2 tables via their elements, for e.g:\n\n```lua\nlocal t1 = {1, 2, 3}\nlocal t2 = {1, 2, 3}\nlocal t3 = {1, 2}\n\nprint(TableUtil.IsTableEqualTo(t1, t2)) --&gt; true\nprint(TableUtil.IsTableEqualTo(t1, t3)) --&gt; false\n```\n\n:::tip\nThis library handles cyclic tables just fine, for e.g:\n\n```lua\nlocal t = {}\nt.a = t\n\nprint(TableUtil.IsTableCyclic(t)) --&gt; true\n```\n:::&quot;,
     &quot;source&quot;: {
-        &quot;line&quot;: 37,
+        &quot;line&quot;: 49,
         &quot;path&quot;: &quot;packages/TableUtil/init.lua&quot;
     }
-}</pre></details></div><div class="col col--3"><div class="tableOfContents_35-E thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#types" class="table-of-contents__link">Types</a></li><li><a href="#properties" class="table-of-contents__link">Properties</a></li><li><a href="#functions" class="table-of-contents__link">Functions</a><ul><li><a href="#AreTablesSame" class="table-of-contents__link">.AreTablesSame</a></li><li><a href="#CombineTables" class="table-of-contents__link">.CombineTables</a></li><li><a href="#ConvertTableIndicesToStartFrom" class="table-of-contents__link">.ConvertTableIndicesToStartFrom</a></li><li><a href="#DeepCopyTable" class="table-of-contents__link">.DeepCopyTable</a></li><li><a href="#DeepFreezeTable" class="table-of-contents__link">.DeepFreezeTable</a></li><li><a href="#EmptyTable" class="table-of-contents__link">.EmptyTable</a></li><li><a href="#GetCount" class="table-of-contents__link">.GetCount</a></li><li><a href="#GetKeyFromValue" class="table-of-contents__link">.GetKeyFromValue</a></li><li><a href="#IsTableEmpty" class="table-of-contents__link">.IsTableEmpty</a></li><li><a href="#Map" class="table-of-contents__link">.Map</a></li><li><a href="#ReconcileTable" class="table-of-contents__link">.ReconcileTable</a></li><li><a href="#ReverseTable" class="table-of-contents__link">.ReverseTable</a></li><li><a href="#ShallowCopyTable" class="table-of-contents__link">.ShallowCopyTable</a></li><li><a href="#ShuffleTable" class="table-of-contents__link">.ShuffleTable</a></li><li><a href="#SyncTable" class="table-of-contents__link">.SyncTable</a></li></ul></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2021 finobinos. Built with Moonwave and Docusaurus.</div></div></div></footer></div>
-<script src="/RBXUtil/assets/js/runtime~main.9c718db2.js"></script>
-<script src="/RBXUtil/assets/js/main.c46c5af7.js"></script>
+}</pre></details></div><div class="col col--3"><div class="tableOfContents_35-E thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#types" class="table-of-contents__link">Types</a></li><li><a href="#properties" class="table-of-contents__link">Properties</a></li><li><a href="#functions" class="table-of-contents__link">Functions</a><ul><li><a href="#AreTablesSame" class="table-of-contents__link">.AreTablesSame</a></li><li><a href="#CombineTables" class="table-of-contents__link">.CombineTables</a></li><li><a href="#ConvertTableIndicesToStartFrom" class="table-of-contents__link">.ConvertTableIndicesToStartFrom</a></li><li><a href="#DeepCopyTable" class="table-of-contents__link">.DeepCopyTable</a></li><li><a href="#DeepFreezeTable" class="table-of-contents__link">.DeepFreezeTable</a></li><li><a href="#EmptyTable" class="table-of-contents__link">.EmptyTable</a></li><li><a href="#GetCount" class="table-of-contents__link">.GetCount</a></li><li><a href="#GetKeyFromValue" class="table-of-contents__link">.GetKeyFromValue</a></li><li><a href="#IsCyclic" class="table-of-contents__link">.IsCyclic</a></li><li><a href="#IsTableEmpty" class="table-of-contents__link">.IsTableEmpty</a></li><li><a href="#Map" class="table-of-contents__link">.Map</a></li><li><a href="#ReconcileTable" class="table-of-contents__link">.ReconcileTable</a></li><li><a href="#ReverseTable" class="table-of-contents__link">.ReverseTable</a></li><li><a href="#ShallowCopyTable" class="table-of-contents__link">.ShallowCopyTable</a></li><li><a href="#ShuffleTable" class="table-of-contents__link">.ShuffleTable</a></li><li><a href="#SyncTable" class="table-of-contents__link">.SyncTable</a></li></ul></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2021 finobinos. Built with Moonwave and Docusaurus.</div></div></div></footer></div>
+<script src="/RBXUtil/assets/js/runtime~main.bc34c7b6.js"></script>
+<script src="/RBXUtil/assets/js/main.939d61b7.js"></script>
 </body>
 </html>

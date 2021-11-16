@@ -19,8 +19,8 @@ A common use case would be to visualize rays, for e.g:
 local ray = Ray.new(Vector3.new(), Vector3.new(35, 0, 75))
 ray:Visualize() -- Visualize the ray!
 ```"><meta data-react-helmet="true" property="og:url" content="https://finobinos.github.io/RBXUtil/api/Ray"><meta data-react-helmet="true" name="docusaurus_locale" content="en"><meta data-react-helmet="true" name="docusaurus_tag" content="default"><link data-react-helmet="true" rel="canonical" href="https://finobinos.github.io/RBXUtil/api/Ray"><link data-react-helmet="true" rel="alternate" href="https://finobinos.github.io/RBXUtil/api/Ray" hreflang="en"><link data-react-helmet="true" rel="alternate" href="https://finobinos.github.io/RBXUtil/api/Ray" hreflang="x-default"><link rel="stylesheet" href="/RBXUtil/assets/css/styles.60329a60.css">
-<link rel="preload" href="/RBXUtil/assets/js/runtime~main.9c718db2.js" as="script">
-<link rel="preload" href="/RBXUtil/assets/js/main.c46c5af7.js" as="script">
+<link rel="preload" href="/RBXUtil/assets/js/runtime~main.bc34c7b6.js" as="script">
+<link rel="preload" href="/RBXUtil/assets/js/main.939d61b7.js" as="script">
 </head>
 <body>
 <script>!function(){function e(e){document.documentElement.setAttribute("data-theme",e)}var t=function(){var e=null;try{e=localStorage.getItem("theme")}catch(e){}return e}();null!==t?e(t):window.matchMedia("(prefers-color-scheme: dark)").matches?e("dark"):(window.matchMedia("(prefers-color-scheme: light)").matches,e("light"))}()</script><div id="__docusaurus">
@@ -86,9 +86,9 @@ ray<span class="token punctuation">:</span><span class="token function">Visualiz
     </tr>
   </tbody>
 </table>
-</div><h2><a aria-hidden="true" tabindex="-1" class="anchor anchor__h2 anchorWithStickyNavbar_31ik" id="functions"></a>Functions<a class="hash-link" href="#functions" title="Direct link to heading">#</a></h2><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="IsA"></a><code style="text-decoration:none">IsA</code><a class="hash-link" href="#IsA" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Ray/init.lua#L154"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Ray.</code><code class="green_3LnD">IsA</code><code>(</code><code>self: </code><code class="blue_2Afy">any</code><code>) → </code><code class="blue_2Afy">boolean</code></div><div>
+</div><h2><a aria-hidden="true" tabindex="-1" class="anchor anchor__h2 anchorWithStickyNavbar_31ik" id="functions"></a>Functions<a class="hash-link" href="#functions" title="Direct link to heading">#</a></h2><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="IsA"></a><code style="text-decoration:none">IsA</code><a class="hash-link" href="#IsA" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Ray/init.lua#L156"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Ray.</code><code class="green_3LnD">IsA</code><code>(</code><code>self: </code><code class="blue_2Afy">any</code><code>) → </code><code class="blue_2Afy">boolean</code></div><div>
 <p>A method which returns a boolean indicating if <code>self</code> is a ray or not.</p>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="new"></a><code style="text-decoration:none">new</code><a class="hash-link" href="#new" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Ray/init.lua#L167"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Ray.</code><code class="green_3LnD">new</code><code>(</code><div class="inset_2cJr"><div><code>origin: </code><code class="blue_2Afy">Vector3</code><code class="op_1JtD"> | </code><code class="blue_2Afy">nil</code><code>,</code></div><div><code>direction: </code><code class="blue_2Afy">Vector3</code><code>,</code></div><div><code>params: </code><code class="blue_2Afy">RaycastParams</code><code class="op_1JtD"> | </code><code class="blue_2Afy">nil</code></div></div><code>) → </code><code class="blue_2Afy">Ray</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="new"></a><code style="text-decoration:none">new</code><a class="hash-link" href="#new" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Ray/init.lua#L169"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Ray.</code><code class="green_3LnD">new</code><code>(</code><div class="inset_2cJr"><div><code>origin: </code><code class="blue_2Afy">Vector3</code><code class="blue_2Afy">?</code><code>,</code></div><div><code>direction: </code><code class="blue_2Afy">Vector3</code><code>,</code></div><div><code>params: </code><code class="blue_2Afy">RaycastParams</code><code class="blue_2Afy">?</code></div></div><code>) → </code><code class="blue_2Afy">Ray</code></div><div>
 <p>A constructor which creates and returns a new ray from <code>origin</code>, <code>direction</code> and <code>params</code> (if provided).</p>
 </div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Visualize"></a><code style="text-decoration:none">Visualize</code><a class="hash-link" href="#Visualize" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#2b8ab6;color:#2b8ab6">Ray</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/Ray/init.lua#L210"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Ray:</code><code class="green_3LnD">Visualize</code><code>(</code><code>) → </code><code>(</code><code>)</code></div><div>
 <p>Visualizes the ray.</p>
@@ -215,7 +215,7 @@ ray<span class="token punctuation">:</span><span class="token function">Visualiz
             ],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 154,
+                &quot;line&quot;: 156,
                 &quot;path&quot;: &quot;packages/Ray/init.lua&quot;
             }
         },
@@ -226,7 +226,7 @@ ray<span class="token punctuation">:</span><span class="token function">Visualiz
                 {
                     &quot;name&quot;: &quot;origin&quot;,
                     &quot;desc&quot;: &quot;&quot;,
-                    &quot;lua_type&quot;: &quot;Vector3 | nil&quot;
+                    &quot;lua_type&quot;: &quot;Vector3 ?&quot;
                 },
                 {
                     &quot;name&quot;: &quot;direction&quot;,
@@ -236,7 +236,7 @@ ray<span class="token punctuation">:</span><span class="token function">Visualiz
                 {
                     &quot;name&quot;: &quot;params&quot;,
                     &quot;desc&quot;: &quot;&quot;,
-                    &quot;lua_type&quot;: &quot;RaycastParams | nil&quot;
+                    &quot;lua_type&quot;: &quot;RaycastParams ?&quot;
                 }
             ],
             &quot;returns&quot;: [
@@ -247,7 +247,7 @@ ray<span class="token punctuation">:</span><span class="token function">Visualiz
             ],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 167,
+                &quot;line&quot;: 169,
                 &quot;path&quot;: &quot;packages/Ray/init.lua&quot;
             }
         },
@@ -510,7 +510,7 @@ ray<span class="token punctuation">:</span><span class="token function">Visualiz
         &quot;path&quot;: &quot;packages/Ray/init.lua&quot;
     }
 }</pre></details></div><div class="col col--3"><div class="tableOfContents_35-E thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#types" class="table-of-contents__link">Types</a></li><li><a href="#properties" class="table-of-contents__link">Properties</a><ul><li><a href="#Direction" class="table-of-contents__link">Direction</a></li><li><a href="#OnInstanceHit" class="table-of-contents__link">OnInstanceHit</a></li><li><a href="#Origin" class="table-of-contents__link">Origin</a></li><li><a href="#Results" class="table-of-contents__link">Results</a></li><li><a href="#Size" class="table-of-contents__link">Size</a></li><li><a href="#Unit" class="table-of-contents__link">Unit</a></li><li><a href="#Visualizer" class="table-of-contents__link">Visualizer</a></li></ul></li><li><a href="#functions" class="table-of-contents__link">Functions</a><ul><li><a href="#AddTargetFilter" class="table-of-contents__link">:AddTargetFilter</a></li><li><a href="#Destroy" class="table-of-contents__link">:Destroy</a></li><li><a href="#GetTouchingParts" class="table-of-contents__link">:GetTouchingParts</a></li><li><a href="#RemoveTargetFilter" class="table-of-contents__link">:RemoveTargetFilter</a></li><li><a href="#SetTargetFilterType" class="table-of-contents__link">:SetTargetFilterType</a></li><li><a href="#SetVisualizerThickness" class="table-of-contents__link">:SetVisualizerThickness</a></li><li><a href="#Unvisualize" class="table-of-contents__link">:Unvisualize</a></li><li><a href="#Update" class="table-of-contents__link">:Update</a></li><li><a href="#Visualize" class="table-of-contents__link">:Visualize</a></li><li><a href="#IsA" class="table-of-contents__link">.IsA</a></li><li><a href="#new" class="table-of-contents__link">.new</a></li></ul></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2021 finobinos. Built with Moonwave and Docusaurus.</div></div></div></footer></div>
-<script src="/RBXUtil/assets/js/runtime~main.9c718db2.js"></script>
-<script src="/RBXUtil/assets/js/main.c46c5af7.js"></script>
+<script src="/RBXUtil/assets/js/runtime~main.bc34c7b6.js"></script>
+<script src="/RBXUtil/assets/js/main.939d61b7.js"></script>
 </body>
 </html>
