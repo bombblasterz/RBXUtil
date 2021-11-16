@@ -27,8 +27,8 @@ local t3 = {1, 2}
 print(TableUtil.IsTableEqualTo(t1, t2)) --&gt; true
 print(TableUtil.IsTableEqualTo(t1, t3)) --&gt; false
 ```"><meta data-react-helmet="true" property="og:url" content="https://finobinos.github.io/RBXUtil/api/TableUtil"><meta data-react-helmet="true" name="docusaurus_locale" content="en"><meta data-react-helmet="true" name="docusaurus_tag" content="default"><link data-react-helmet="true" rel="canonical" href="https://finobinos.github.io/RBXUtil/api/TableUtil"><link data-react-helmet="true" rel="alternate" href="https://finobinos.github.io/RBXUtil/api/TableUtil" hreflang="en"><link data-react-helmet="true" rel="alternate" href="https://finobinos.github.io/RBXUtil/api/TableUtil" hreflang="x-default"><link rel="stylesheet" href="/RBXUtil/assets/css/styles.60329a60.css">
-<link rel="preload" href="/RBXUtil/assets/js/runtime~main.7f8e8958.js" as="script">
-<link rel="preload" href="/RBXUtil/assets/js/main.4bfff350.js" as="script">
+<link rel="preload" href="/RBXUtil/assets/js/runtime~main.9c718db2.js" as="script">
+<link rel="preload" href="/RBXUtil/assets/js/main.c46c5af7.js" as="script">
 </head>
 <body>
 <script>!function(){function e(e){document.documentElement.setAttribute("data-theme",e)}var t=function(){var e=null;try{e=localStorage.getItem("theme")}catch(e){}return e}();null!==t?e(t):window.matchMedia("(prefers-color-scheme: dark)").matches?e("dark"):(window.matchMedia("(prefers-color-scheme: light)").matches,e("light"))}()</script><div id="__docusaurus">
@@ -184,7 +184,7 @@ TableUtil<span class="token punctuation">.</span><span class="token function">Re
     <p>This method will not work well for different keys which have the same value, and doesn't account for nested values.</p>
   </div>
 </div>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="AreTablesSame"></a><code style="text-decoration:none">AreTablesSame</code><a class="hash-link" href="#AreTablesSame" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/TableUtil/init.lua#L614"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>TableUtil.</code><code class="green_3LnD">AreTablesSame</code><code>(</code><div class="inset_2cJr"><div><code>tabl: </code><code class="blue_2Afy">table</code><code>,</code></div><div><code>otherTable: </code><code class="blue_2Afy">table</code></div></div><code>) → </code><code class="blue_2Afy">boolean</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="AreTablesSame"></a><code style="text-decoration:none">AreTablesSame</code><a class="hash-link" href="#AreTablesSame" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/main/packages/TableUtil/init.lua#L600"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>TableUtil.</code><code class="green_3LnD">AreTablesSame</code><code>(</code><div class="inset_2cJr"><div><code>tabl: </code><code class="blue_2Afy">table</code><code>,</code></div><div><code>otherTable: </code><code class="blue_2Afy">table</code></div></div><code>) → </code><code class="blue_2Afy">boolean</code></div><div>
 <p>A simple method which checks if both <code>tabl</code> and <code>otherTable</code> have the same elements.</p>
 <pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> t1 <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>a <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">}</span><span class="token punctuation">}</span>
 <span class="token keyword">local</span> t2 <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>a <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">}</span><span class="token punctuation">}</span>
@@ -236,17 +236,6 @@ r<span class="token punctuation">.</span>FilterDescendantsInstances <span class=
 <span class="token punctuation">}</span>
 
 <span class="token function">print</span><span class="token punctuation">(</span>t<span class="token punctuation">.</span><span class="token function">AreTablesSame</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">--> false (r, b are the same data type, but have different members)</span>
-</code></pre>
-    <p>Some other basic examples:</p>
-    <pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> b <span class="token operator">=</span> <span class="token punctuation">{</span>
-	<span class="token punctuation">[</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">5</span>
-<span class="token punctuation">}</span>
-<span class="token keyword">local</span> a <span class="token operator">=</span> <span class="token punctuation">{</span>
-	bo <span class="token operator">=</span> <span class="token number">5</span>
-<span class="token punctuation">}</span>
-
-<span class="token function">print</span><span class="token punctuation">(</span>t<span class="token punctuation">.</span><span class="token function">AreTablesSame</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">--> false (doesn't account for keys)</span>
-
 </code></pre>
   </div>
 </div>
@@ -591,7 +580,7 @@ r<span class="token punctuation">.</span>FilterDescendantsInstances <span class=
         },
         {
             &quot;name&quot;: &quot;AreTablesSame&quot;,
-            &quot;desc&quot;: &quot;A simple method which checks if both `tabl` and `otherTable` have the same elements. \n\n```lua\nlocal t1 = {1, 2, 3, 4, 5, {a = 4}}\nlocal t2 = {1, 2, 3, 4, 5, {a = 3}}\n\nprint(TableUtil.AreTablesSame(t1, t2)) --&gt; false\n```\n\n```lua\nlocal t1 = {1, 2, 3, 4, 5, {a = 4}}\nlocal t2 = {1, 2, 3, 4, 5, {a = 4}}\n\nprint(TableUtil.AreTablesSame(t1, t2)) --&gt; true\n```\n\n```lua\nlocal t1 = {1, 2, 3, 4, 5, {a = 4}, 1, 2, 3, 4, 5, {a = 4, 1, 2, 3, 4, 5, {a = 4, 1, 2, 3, 4, 5, {a = 4, 1, 2, 3, 4, 5, {a = 4}}}}}\nlocal t2 = {1, 2, 3, 4, 5, {a = 4}, 1, 2, 3, 4, 5, {a = 4, 1, 2, 3, 4, 5, {a = 4, 1, 2, 3, 4, 5, {a = 4, 1, 2, 3, 4, 5, {a = 4}}}}}\n\nprint(t.AreTablesSame(t1, t2)) --&gt; true\n```\n\n:::note\nThis method assumes that `tabl` and `otherTabl` contain only primitive keys and values and that the keys\naren&#x27;t tables.\n\nFor e.g:\n\n```lua\nlocal b = {\n\t[{1, 2, 3}] = 1\n}\nlocal a = {\n\t[{1, 2, 3}] = 1\n}\n\nprint(t.AreTablesSame(a, b)) --&gt; false (doesn&#x27;t account for keys)\n\nlocal r = RaycastParams.new()\nr.FilterDescendantsInstances = {}\n\nlocal b = RaycastParams.new()\nr.FilterDescendantsInstances = {}\n\nlocal b = {\n\tr,\n}\nlocal a = {\n\tb,\n}\n\nprint(t.AreTablesSame(a, b)) --&gt; false (r, b are the same data type, but have different members)\n```\n\nSome other basic examples:\n\n```lua\nlocal b = {\n\t[{}] = 5\n}\nlocal a = {\n\tbo = 5\n}\n\nprint(t.AreTablesSame(a, b)) --&gt; false (doesn&#x27;t account for keys)\n\n```\n:::\t&quot;,
+            &quot;desc&quot;: &quot;A simple method which checks if both `tabl` and `otherTable` have the same elements. \n\n```lua\nlocal t1 = {1, 2, 3, 4, 5, {a = 4}}\nlocal t2 = {1, 2, 3, 4, 5, {a = 3}}\n\nprint(TableUtil.AreTablesSame(t1, t2)) --&gt; false\n```\n\n```lua\nlocal t1 = {1, 2, 3, 4, 5, {a = 4}}\nlocal t2 = {1, 2, 3, 4, 5, {a = 4}}\n\nprint(TableUtil.AreTablesSame(t1, t2)) --&gt; true\n```\n\n```lua\nlocal t1 = {1, 2, 3, 4, 5, {a = 4}, 1, 2, 3, 4, 5, {a = 4, 1, 2, 3, 4, 5, {a = 4, 1, 2, 3, 4, 5, {a = 4, 1, 2, 3, 4, 5, {a = 4}}}}}\nlocal t2 = {1, 2, 3, 4, 5, {a = 4}, 1, 2, 3, 4, 5, {a = 4, 1, 2, 3, 4, 5, {a = 4, 1, 2, 3, 4, 5, {a = 4, 1, 2, 3, 4, 5, {a = 4}}}}}\n\nprint(t.AreTablesSame(t1, t2)) --&gt; true\n```\n\n:::note\nThis method assumes that `tabl` and `otherTabl` contain only primitive keys and values and that the keys\naren&#x27;t tables.\n\nFor e.g:\n\n```lua\nlocal b = {\n\t[{1, 2, 3}] = 1\n}\nlocal a = {\n\t[{1, 2, 3}] = 1\n}\n\nprint(t.AreTablesSame(a, b)) --&gt; false (doesn&#x27;t account for keys)\n\nlocal r = RaycastParams.new()\nr.FilterDescendantsInstances = {}\n\nlocal b = RaycastParams.new()\nr.FilterDescendantsInstances = {}\n\nlocal b = {\n\tr,\n}\nlocal a = {\n\tb,\n}\n\nprint(t.AreTablesSame(a, b)) --&gt; false (r, b are the same data type, but have different members)\n```\n:::\t&quot;,
             &quot;params&quot;: [
                 {
                     &quot;name&quot;: &quot;tabl&quot;,
@@ -612,7 +601,7 @@ r<span class="token punctuation">.</span>FilterDescendantsInstances <span class=
             ],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 614,
+                &quot;line&quot;: 600,
                 &quot;path&quot;: &quot;packages/TableUtil/init.lua&quot;
             }
         }
@@ -626,7 +615,7 @@ r<span class="token punctuation">.</span>FilterDescendantsInstances <span class=
         &quot;path&quot;: &quot;packages/TableUtil/init.lua&quot;
     }
 }</pre></details></div><div class="col col--3"><div class="tableOfContents_35-E thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#types" class="table-of-contents__link">Types</a></li><li><a href="#properties" class="table-of-contents__link">Properties</a></li><li><a href="#functions" class="table-of-contents__link">Functions</a><ul><li><a href="#AreTablesSame" class="table-of-contents__link">.AreTablesSame</a></li><li><a href="#CombineTables" class="table-of-contents__link">.CombineTables</a></li><li><a href="#ConvertTableIndicesToStartFrom" class="table-of-contents__link">.ConvertTableIndicesToStartFrom</a></li><li><a href="#DeepCopyTable" class="table-of-contents__link">.DeepCopyTable</a></li><li><a href="#DeepFreezeTable" class="table-of-contents__link">.DeepFreezeTable</a></li><li><a href="#EmptyTable" class="table-of-contents__link">.EmptyTable</a></li><li><a href="#GetCount" class="table-of-contents__link">.GetCount</a></li><li><a href="#GetKeyFromValue" class="table-of-contents__link">.GetKeyFromValue</a></li><li><a href="#IsTableEmpty" class="table-of-contents__link">.IsTableEmpty</a></li><li><a href="#Map" class="table-of-contents__link">.Map</a></li><li><a href="#ReconcileTable" class="table-of-contents__link">.ReconcileTable</a></li><li><a href="#ReverseTable" class="table-of-contents__link">.ReverseTable</a></li><li><a href="#ShallowCopyTable" class="table-of-contents__link">.ShallowCopyTable</a></li><li><a href="#ShuffleTable" class="table-of-contents__link">.ShuffleTable</a></li><li><a href="#SyncTable" class="table-of-contents__link">.SyncTable</a></li></ul></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2021 finobinos. Built with Moonwave and Docusaurus.</div></div></div></footer></div>
-<script src="/RBXUtil/assets/js/runtime~main.7f8e8958.js"></script>
-<script src="/RBXUtil/assets/js/main.4bfff350.js"></script>
+<script src="/RBXUtil/assets/js/runtime~main.9c718db2.js"></script>
+<script src="/RBXUtil/assets/js/main.c46c5af7.js"></script>
 </body>
 </html>
