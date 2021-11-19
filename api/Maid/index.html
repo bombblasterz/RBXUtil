@@ -33,8 +33,8 @@ task.defer(function()
 	print(connection.Connected) --&gt; false
 end)
 ```"><meta data-react-helmet="true" property="og:url" content="https://finobinos.github.io/RBXUtil/api/Maid"><meta data-react-helmet="true" name="docusaurus_locale" content="en"><meta data-react-helmet="true" name="docusaurus_tag" content="default"><link data-react-helmet="true" rel="canonical" href="https://finobinos.github.io/RBXUtil/api/Maid"><link data-react-helmet="true" rel="alternate" href="https://finobinos.github.io/RBXUtil/api/Maid" hreflang="en"><link data-react-helmet="true" rel="alternate" href="https://finobinos.github.io/RBXUtil/api/Maid" hreflang="x-default"><link rel="stylesheet" href="/RBXUtil/assets/css/styles.60329a60.css">
-<link rel="preload" href="/RBXUtil/assets/js/runtime~main.d1b8122a.js" as="script">
-<link rel="preload" href="/RBXUtil/assets/js/main.f1bf8694.js" as="script">
+<link rel="preload" href="/RBXUtil/assets/js/runtime~main.add98a5c.js" as="script">
+<link rel="preload" href="/RBXUtil/assets/js/main.d4d0134c.js" as="script">
 </head>
 <body>
 <script>!function(){function e(e){document.documentElement.setAttribute("data-theme",e)}var t=function(){var e=null;try{e=localStorage.getItem("theme")}catch(e){}return e}();null!==t?e(t):window.matchMedia("(prefers-color-scheme: dark)").matches?e("dark"):(window.matchMedia("(prefers-color-scheme: light)").matches,e("light"))}()</script><div id="__docusaurus">
@@ -112,7 +112,7 @@ task<span class="token punctuation">.</span><span class="token function">defer</
     <p>Trivial errors will occur if your code unintentionally works on a destroyed maid, only call this method when you're done working with the maid.</p>
   </div>
 </div>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="LinkToInstance"></a><code style="text-decoration:none">LinkToInstance</code><a class="hash-link" href="#LinkToInstance" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Maid/init.lua#L270"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Maid:</code><code class="green_3LnD">LinkToInstance</code><code>(</code><div class="inset_2cJr"><div><code>instance: </code><code class="blue_2Afy">Instance</code><code>,</code></div><div><code>callback: </code><code class="blue_2Afy">function</code><code class="blue_2Afy">?</code></div></div><code>) → </code><code class="blue_2Afy">Instance,</code><code class="blue_2Afy">Connection</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="LinkToInstance"></a><code style="text-decoration:none">LinkToInstance</code><a class="hash-link" href="#LinkToInstance" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Maid/init.lua#L266"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Maid:</code><code class="green_3LnD">LinkToInstance</code><code>(</code><div class="inset_2cJr"><div><code>instance: </code><code class="blue_2Afy">Instance</code><code>,</code></div><div><code>callback: </code><code class="blue_2Afy">function</code><code class="blue_2Afy">?</code></div></div><code>) → </code><code class="blue_2Afy">Instance,</code><code class="blue_2Afy">Connection</code></div><div>
 <p>
   Links the given instance to the maid so that the maid will be destroyed once the instance has been removed from the game i.e parented to <code>nil</code>.
   If <code>callback</code> is specified, it will be called before destroying the maid (when the instance is parented to <code>nil</code>) and
@@ -148,7 +148,7 @@ instance<span class="token punctuation">.</span>Parent <span class="token operat
 </code></pre>
 <p>
   A connection is returned so that once it is disconnected, the maid will unlink from the instance. The connection
-  contains the following methods:
+  will automatically be disconnected once the maid is destroyed and contains the following methods:
 </p>
 <table>
   <thead>
@@ -168,16 +168,6 @@ instance<span class="token punctuation">.</span>Parent <span class="token operat
     </tr>
   </tbody>
 </table>
-<div class="admonition admonition-note alert alert--secondary">
-  <div class="admonition-heading">
-    <h5><span class="admonition-icon"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16">
-          <path d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path>
-        </svg></span>note</h5>
-  </div>
-  <div class="admonition-content">
-    <p>This connection will be disconnected when the maid is destroyed, so be careful with how you work with them.</p>
-  </div>
-</div>
 </div></div></article></div><details><summary>Show raw api</summary><pre style="max-width:100%;white-space:pre-wrap">{
     &quot;functions&quot;: [
         {
@@ -313,7 +303,7 @@ instance<span class="token punctuation">.</span>Parent <span class="token operat
         },
         {
             &quot;name&quot;: &quot;LinkToInstance&quot;,
-            &quot;desc&quot;: &quot;Links the given instance to the maid so that the maid will be destroyed once the instance has been removed from the game i.e parented to `nil`.\nIf `callback` is specified, it will be called before destroying the maid (when the instance is parented to `nil`) and \nif the function upon being called doesn&#x27;t return a truthy value, the maid will not be destroyed.\n\nFor e.g:\n\n```lua\nlocal instance = ... -- some instance parented to workspace\nlocal maid = Maid.new()\n\nmaid:AddTask(function()\n\twarn(\&quot;cleaned up\&quot;)\nend)\n\nmaid:LinkToInstance(instance)\ninstance.Parent = nil\n-- Now the maid will cleanup as the instance is parented to nil.\n```\n\nHere&#x27;s an alternate case:\n\n```lua\nlocal instance = ... -- some instance parented to workspace\nlocal maid = Maid.new()\n\nmaid:AddTask(function()\n\twarn(\&quot;cleaned up\&quot;)\nend)\n\nmaid:LinkToInstance(instance, function()\n\treturn not instance:GetAttribute(\&quot;DontHaveTheMaidCleanedupYetPlease\&quot;) \nend))\n\ninstance:SetAttribute(\&quot;DontHaveTheMaidCleanedupYetPlease\&quot;, true)\ninstance.Parent = nil\n-- The instance is parented to nil, but the maid hasn&#x27;t cleaned up!\n```\n\nA connection is returned so that once it is disconnected, the maid will unlink from the instance. The connection \ncontains the following methods:\n\n| Methods      | Description                          |\n| ----------- | ------------------------------------ |\n| `Disconnect`  | The connection will be disconnected and the maid will unlink to the instance it was linked to.  |\n| `IsConnected` | Returns a boolean indicating if the connection has been disconnected. |\n\n:::note\nThis connection will be disconnected when the maid is destroyed, so be careful with how you work with them.\n:::&quot;,
+            &quot;desc&quot;: &quot;Links the given instance to the maid so that the maid will be destroyed once the instance has been removed from the game i.e parented to `nil`.\nIf `callback` is specified, it will be called before destroying the maid (when the instance is parented to `nil`) and \nif the function upon being called doesn&#x27;t return a truthy value, the maid will not be destroyed.\n\nFor e.g:\n\n```lua\nlocal instance = ... -- some instance parented to workspace\nlocal maid = Maid.new()\n\nmaid:AddTask(function()\n\twarn(\&quot;cleaned up\&quot;)\nend)\n\nmaid:LinkToInstance(instance)\ninstance.Parent = nil\n-- Now the maid will cleanup as the instance is parented to nil.\n```\n\nHere&#x27;s an alternate case:\n\n```lua\nlocal instance = ... -- some instance parented to workspace\nlocal maid = Maid.new()\n\nmaid:AddTask(function()\n\twarn(\&quot;cleaned up\&quot;)\nend)\n\nmaid:LinkToInstance(instance, function()\n\treturn not instance:GetAttribute(\&quot;DontHaveTheMaidCleanedupYetPlease\&quot;) \nend))\n\ninstance:SetAttribute(\&quot;DontHaveTheMaidCleanedupYetPlease\&quot;, true)\ninstance.Parent = nil\n-- The instance is parented to nil, but the maid hasn&#x27;t cleaned up!\n```\n\nA connection is returned so that once it is disconnected, the maid will unlink from the instance. The connection \nwill automatically be disconnected once the maid is destroyed and contains the following methods:\n\n| Methods      | Description                          |\n| ----------- | ------------------------------------ |\n| `Disconnect`  | The connection will be disconnected and the maid will unlink to the instance it was linked to.  |\n| `IsConnected` | Returns a boolean indicating if the connection has been disconnected. |&quot;,
             &quot;params&quot;: [
                 {
                     &quot;name&quot;: &quot;instance&quot;,
@@ -334,7 +324,7 @@ instance<span class="token punctuation">.</span>Parent <span class="token operat
             ],
             &quot;function_type&quot;: &quot;method&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 270,
+                &quot;line&quot;: 266,
                 &quot;path&quot;: &quot;packages/Maid/init.lua&quot;
             }
         }
@@ -348,7 +338,7 @@ instance<span class="token punctuation">.</span>Parent <span class="token operat
         &quot;path&quot;: &quot;packages/Maid/init.lua&quot;
     }
 }</pre></details></div><div class="col col--3"><div class="tableOfContents_35-E thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#types" class="table-of-contents__link">Types</a></li><li><a href="#properties" class="table-of-contents__link">Properties</a></li><li><a href="#functions" class="table-of-contents__link">Functions</a><ul><li><a href="#AddTask" class="table-of-contents__link">:AddTask</a></li><li><a href="#Cleanup" class="table-of-contents__link">:Cleanup</a></li><li><a href="#Destroy" class="table-of-contents__link">:Destroy</a></li><li><a href="#LinkToInstance" class="table-of-contents__link">:LinkToInstance</a></li><li><a href="#RemoveTask" class="table-of-contents__link">:RemoveTask</a></li><li><a href="#RemoveTaskAndCleanup" class="table-of-contents__link">:RemoveTaskAndCleanup</a></li><li><a href="#IsA" class="table-of-contents__link">.IsA</a></li><li><a href="#new" class="table-of-contents__link">.new</a></li></ul></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2021 finobinos. Built with Moonwave and Docusaurus.</div></div></div></footer></div>
-<script src="/RBXUtil/assets/js/runtime~main.d1b8122a.js"></script>
-<script src="/RBXUtil/assets/js/main.f1bf8694.js"></script>
+<script src="/RBXUtil/assets/js/runtime~main.add98a5c.js"></script>
+<script src="/RBXUtil/assets/js/main.d4d0134c.js"></script>
 </body>
 </html>
