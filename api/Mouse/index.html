@@ -7,8 +7,8 @@
 <title data-react-helmet="true">Mouse | RBXUtil</title><meta data-react-helmet="true" property="og:title" content="Mouse | RBXUtil"><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"><meta data-react-helmet="true" name="description" content="The mouse module is a superior module designed over the legacy mouse (which may soon go deprecated in the near future) Roblox has provided us.
 It should be used over `player:GetMouse()`."><meta data-react-helmet="true" property="og:description" content="The mouse module is a superior module designed over the legacy mouse (which may soon go deprecated in the near future) Roblox has provided us.
 It should be used over `player:GetMouse()`."><meta data-react-helmet="true" property="og:url" content="https://finobinos.github.io/RBXUtil/api/Mouse"><meta data-react-helmet="true" name="docusaurus_locale" content="en"><meta data-react-helmet="true" name="docusaurus_tag" content="default"><link data-react-helmet="true" rel="canonical" href="https://finobinos.github.io/RBXUtil/api/Mouse"><link data-react-helmet="true" rel="alternate" href="https://finobinos.github.io/RBXUtil/api/Mouse" hreflang="en"><link data-react-helmet="true" rel="alternate" href="https://finobinos.github.io/RBXUtil/api/Mouse" hreflang="x-default"><link rel="stylesheet" href="/RBXUtil/assets/css/styles.60329a60.css">
-<link rel="preload" href="/RBXUtil/assets/js/runtime~main.add98a5c.js" as="script">
-<link rel="preload" href="/RBXUtil/assets/js/main.d4d0134c.js" as="script">
+<link rel="preload" href="/RBXUtil/assets/js/runtime~main.e493c26c.js" as="script">
+<link rel="preload" href="/RBXUtil/assets/js/main.8b582b87.js" as="script">
 </head>
 <body>
 <script>!function(){function e(e){document.documentElement.setAttribute("data-theme",e)}var t=function(){var e=null;try{e=localStorage.getItem("theme")}catch(e){}return e}();null!==t?e(t):window.matchMedia("(prefers-color-scheme: dark)").matches?e("dark"):(window.matchMedia("(prefers-color-scheme: light)").matches,e("light"))}()</script><div id="__docusaurus">
@@ -68,7 +68,7 @@ It should be used over `player:GetMouse()`."><meta data-react-helmet="true" prop
 <p>Locks the mouse to the center, same as <code>UserInputService.MouseBehavior = Enum.MouseBehavior.LockCenter</code>.</p>
 </div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="AddTargetFilter"></a><code style="text-decoration:none">AddTargetFilter</code><a class="hash-link" href="#AddTargetFilter" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/UserInput/Mouse.lua#L232"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Mouse.</code><code class="green_3LnD">AddTargetFilter</code><code>(</code><code>targetFilters: </code><code class="blue_2Afy">table</code><code>) → </code><code>(</code><code>)</code></div><div>
 <p>Adds all instances in <code>targetFilter</code> so that they will be filtered out when calculating <code>Mouse.Hit</code> and <code>Mouse.Target</code>.</p>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="SetTargetFilterType"></a><code style="text-decoration:none">SetTargetFilterType</code><a class="hash-link" href="#SetTargetFilterType" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/UserInput/Mouse.lua#L265"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Mouse.</code><code class="green_3LnD">SetTargetFilterType</code><code>(</code><code>targetFilterType: </code><code class="blue_2Afy">EnumItem</code><code>) → </code><code>(</code><code>)</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="SetTargetFilterType"></a><code style="text-decoration:none">SetTargetFilterType</code><a class="hash-link" href="#SetTargetFilterType" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/UserInput/Mouse.lua#L270"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Mouse.</code><code class="green_3LnD">SetTargetFilterType</code><code>(</code><code>targetFilterType: </code><code class="blue_2Afy">EnumItem</code><code>) → </code><code>(</code><code>)</code></div><div>
 <p>
   Sets the filter type to <code>targetFilterType</code> which is used internally in filtering
   instances added through <code>Mouse.AddTargetFilter</code> when calculating <code>Mouse.Hit</code> and <code>Mouse.Target</code>.
@@ -102,7 +102,7 @@ It should be used over `player:GetMouse()`."><meta data-react-helmet="true" prop
     <p><code>targetFilterType</code> must be <code>Enum.RaycastFilterType.Whitelist</code> or <code>Enum.RaycastFilterType.Blacklist</code>.</p>
   </div>
 </div>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="RemoveTargetFilter"></a><code style="text-decoration:none">RemoveTargetFilter</code><a class="hash-link" href="#RemoveTargetFilter" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/UserInput/Mouse.lua#L285"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Mouse.</code><code class="green_3LnD">RemoveTargetFilter</code><code>(</code><code>targetFilter: </code><code class="blue_2Afy">table</code><code>) → </code><code>(</code><code>)</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="RemoveTargetFilter"></a><code style="text-decoration:none">RemoveTargetFilter</code><a class="hash-link" href="#RemoveTargetFilter" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/UserInput/Mouse.lua#L290"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Mouse.</code><code class="green_3LnD">RemoveTargetFilter</code><code>(</code><code>targetFilter: </code><code class="blue_2Afy">table</code><code>) → </code><code>(</code><code>)</code></div><div>
 <p>Removes all instances in <code>targetFilter</code> so that they will not be filtered out when calculating <code>Mouse.Hit</code> and <code>Mouse.Target</code>.</p>
 </div></div></article></div><details><summary>Show raw api</summary><pre style="max-width:100%;white-space:pre-wrap">{
     &quot;functions&quot;: [
@@ -212,7 +212,7 @@ It should be used over `player:GetMouse()`."><meta data-react-helmet="true" prop
             &quot;returns&quot;: [],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 265,
+                &quot;line&quot;: 270,
                 &quot;path&quot;: &quot;packages/UserInput/Mouse.lua&quot;
             }
         },
@@ -229,7 +229,19 @@ It should be used over `player:GetMouse()`."><meta data-react-helmet="true" prop
             &quot;returns&quot;: [],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 285,
+                &quot;line&quot;: 290,
+                &quot;path&quot;: &quot;packages/UserInput/Mouse.lua&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;Init&quot;,
+            &quot;desc&quot;: &quot;&quot;,
+            &quot;params&quot;: [],
+            &quot;returns&quot;: [],
+            &quot;function_type&quot;: &quot;static&quot;,
+            &quot;ignore&quot;: true,
+            &quot;source&quot;: {
+                &quot;line&quot;: 314,
                 &quot;path&quot;: &quot;packages/UserInput/Mouse.lua&quot;
             }
         }
@@ -373,8 +385,8 @@ It should be used over `player:GetMouse()`."><meta data-react-helmet="true" prop
         &quot;line&quot;: 38,
         &quot;path&quot;: &quot;packages/UserInput/Mouse.lua&quot;
     }
-}</pre></details></div><div class="col col--3"><div class="tableOfContents_35-E thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#types" class="table-of-contents__link">Types</a></li><li><a href="#properties" class="table-of-contents__link">Properties</a><ul><li><a href="#Hit" class="table-of-contents__link">Hit</a></li><li><a href="#OnLeftClick" class="table-of-contents__link">OnLeftClick</a></li><li><a href="#OnMove" class="table-of-contents__link">OnMove</a></li><li><a href="#OnRightClick" class="table-of-contents__link">OnRightClick</a></li><li><a href="#OnScrollClick" class="table-of-contents__link">OnScrollClick</a></li><li><a href="#OnTargetChanged" class="table-of-contents__link">OnTargetChanged</a></li><li><a href="#Origin" class="table-of-contents__link">Origin</a></li><li><a href="#Target" class="table-of-contents__link">Target</a></li><li><a href="#TargetFilters" class="table-of-contents__link">TargetFilters</a></li><li><a href="#TargetFilterType" class="table-of-contents__link">TargetFilterType</a></li><li><a href="#UnitRay" class="table-of-contents__link">UnitRay</a></li><li><a href="#X" class="table-of-contents__link">X</a></li><li><a href="#X" class="table-of-contents__link">X</a></li></ul></li><li><a href="#functions" class="table-of-contents__link">Functions</a><ul><li><a href="#AddTargetFilter" class="table-of-contents__link">.AddTargetFilter</a></li><li><a href="#CastRay" class="table-of-contents__link">.CastRay</a></li><li><a href="#GetDeltaPosition" class="table-of-contents__link">.GetDeltaPosition</a></li><li><a href="#LockCurrentPosition" class="table-of-contents__link">.LockCurrentPosition</a></li><li><a href="#RemoveTargetFilter" class="table-of-contents__link">.RemoveTargetFilter</a></li><li><a href="#SetLockOnCenter" class="table-of-contents__link">.SetLockOnCenter</a></li><li><a href="#SetTargetFilterType" class="table-of-contents__link">.SetTargetFilterType</a></li><li><a href="#Unlock" class="table-of-contents__link">.Unlock</a></li></ul></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2021 finobinos. Built with Moonwave and Docusaurus.</div></div></div></footer></div>
-<script src="/RBXUtil/assets/js/runtime~main.add98a5c.js"></script>
-<script src="/RBXUtil/assets/js/main.d4d0134c.js"></script>
+}</pre></details></div><div class="col col--3"><div class="tableOfContents_35-E thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#types" class="table-of-contents__link">Types</a></li><li><a href="#properties" class="table-of-contents__link">Properties</a><ul><li><a href="#Hit" class="table-of-contents__link">Hit</a></li><li><a href="#OnLeftClick" class="table-of-contents__link">OnLeftClick</a></li><li><a href="#OnMove" class="table-of-contents__link">OnMove</a></li><li><a href="#OnRightClick" class="table-of-contents__link">OnRightClick</a></li><li><a href="#OnScrollClick" class="table-of-contents__link">OnScrollClick</a></li><li><a href="#OnTargetChanged" class="table-of-contents__link">OnTargetChanged</a></li><li><a href="#Origin" class="table-of-contents__link">Origin</a></li><li><a href="#Target" class="table-of-contents__link">Target</a></li><li><a href="#TargetFilters" class="table-of-contents__link">TargetFilters</a></li><li><a href="#TargetFilterType" class="table-of-contents__link">TargetFilterType</a></li><li><a href="#UnitRay" class="table-of-contents__link">UnitRay</a></li><li><a href="#X" class="table-of-contents__link">X</a></li><li><a href="#X" class="table-of-contents__link">X</a></li></ul></li><li><a href="#functions" class="table-of-contents__link">Functions</a><ul><li><a href="#AddTargetFilter" class="table-of-contents__link">.AddTargetFilter</a></li><li><a href="#CastRay" class="table-of-contents__link">.CastRay</a></li><li><a href="#GetDeltaPosition" class="table-of-contents__link">.GetDeltaPosition</a></li><li><a href="#Init" class="table-of-contents__link">.Init</a></li><li><a href="#LockCurrentPosition" class="table-of-contents__link">.LockCurrentPosition</a></li><li><a href="#RemoveTargetFilter" class="table-of-contents__link">.RemoveTargetFilter</a></li><li><a href="#SetLockOnCenter" class="table-of-contents__link">.SetLockOnCenter</a></li><li><a href="#SetTargetFilterType" class="table-of-contents__link">.SetTargetFilterType</a></li><li><a href="#Unlock" class="table-of-contents__link">.Unlock</a></li></ul></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2021 finobinos. Built with Moonwave and Docusaurus.</div></div></div></footer></div>
+<script src="/RBXUtil/assets/js/runtime~main.e493c26c.js"></script>
+<script src="/RBXUtil/assets/js/main.8b582b87.js"></script>
 </body>
 </html>
