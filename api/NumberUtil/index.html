@@ -25,8 +25,8 @@ local nan = 0/0
 print(NumberUtil.IsNaN(nan)) --&gt; true
 print(NumberUtil.IsCloseTo(0.1 + 0.2, 0.3)) --&gt; true
 ```"><meta data-react-helmet="true" property="og:url" content="https://finobinos.github.io/RBXUtil/api/NumberUtil"><meta data-react-helmet="true" name="docusaurus_locale" content="en"><meta data-react-helmet="true" name="docusaurus_tag" content="default"><link data-react-helmet="true" rel="canonical" href="https://finobinos.github.io/RBXUtil/api/NumberUtil"><link data-react-helmet="true" rel="alternate" href="https://finobinos.github.io/RBXUtil/api/NumberUtil" hreflang="en"><link data-react-helmet="true" rel="alternate" href="https://finobinos.github.io/RBXUtil/api/NumberUtil" hreflang="x-default"><link rel="stylesheet" href="/RBXUtil/assets/css/styles.60329a60.css">
-<link rel="preload" href="/RBXUtil/assets/js/runtime~main.21a6ece1.js" as="script">
-<link rel="preload" href="/RBXUtil/assets/js/main.dd549fa9.js" as="script">
+<link rel="preload" href="/RBXUtil/assets/js/runtime~main.e76774bd.js" as="script">
+<link rel="preload" href="/RBXUtil/assets/js/main.801aa586.js" as="script">
 </head>
 <body>
 <script>!function(){function e(e){document.documentElement.setAttribute("data-theme",e)}var t=function(){var e=null;try{e=localStorage.getItem("theme")}catch(e){}return e}();null!==t?e(t):window.matchMedia("(prefers-color-scheme: dark)").matches?e("dark"):(window.matchMedia("(prefers-color-scheme: light)").matches,e("light"))}()</script><div id="__docusaurus">
@@ -79,17 +79,18 @@ print(NumberUtil.IsCloseTo(0.1 + 0.2, 0.3)) --&gt; true
 <pre class="language-lua"><code class="language-lua"><span class="token function">print</span><span class="token punctuation">(</span><span class="token number">0.1</span> <span class="token operator">+</span> <span class="token number">0.2</span> <span class="token operator">==</span> <span class="token number">0.3</span><span class="token punctuation">)</span> <span class="token comment">--> false (due to floating point imprecision)</span>
 <span class="token function">print</span><span class="token punctuation">(</span>NumberUtil<span class="token punctuation">.</span><span class="token function">IsCloseTo</span><span class="token punctuation">(</span><span class="token number">0.1</span> <span class="token operator">+</span> <span class="token number">0.2</span><span class="token punctuation">,</span> <span class="token number">0.3</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">--> true</span>
 </code></pre>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Root"></a><code style="text-decoration:none">Root</code><a class="hash-link" href="#Root" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/NumberUtil/init.lua#L297"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>NumberUtil.</code><code class="green_3LnD">Root</code><code>(</code><div class="inset_2cJr"><div><code>number: </code><code class="blue_2Afy">number</code><code>,</code></div><div><code>root: </code><code class="blue_2Afy">number</code></div></div><code>) → </code><code class="blue_2Afy">number</code></div><div>
-<p>Returns the <code>root</code> of the number.</p>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Root"></a><code style="text-decoration:none">Root</code><a class="hash-link" href="#Root" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/NumberUtil/init.lua#L298"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>NumberUtil.</code><code class="green_3LnD">Root</code><code>(</code><div class="inset_2cJr"><div><code>number: </code><code class="blue_2Afy">number</code><code>,</code></div><div><code>root: </code><code class="blue_2Afy">number</code></div></div><code>) → </code><code class="blue_2Afy">number</code></div><div>
+<p>Returns the "root" of the number.</p>
 <pre class="language-lua"><code class="language-lua"><span class="token function">print</span><span class="token punctuation">(</span>NumberUtil<span class="token punctuation">.</span><span class="token function">Root</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">--> 1.4142135623731 (Square root)</span>
 <span class="token function">print</span><span class="token punctuation">(</span>NumberUtil<span class="token punctuation">.</span><span class="token function">Root</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">--> 1.2599210498949 (Cube root)</span>
+<span class="token function">print</span><span class="token punctuation">(</span>NumberUtil<span class="token punctuation">.</span><span class="token function">Root</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">--> 1.1892071150027 (Fourth root)</span>
 </code></pre>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Factorial"></a><code style="text-decoration:none">Factorial</code><a class="hash-link" href="#Factorial" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/NumberUtil/init.lua#L317"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>NumberUtil.</code><code class="green_3LnD">Factorial</code><code>(</code><code>number: </code><code class="blue_2Afy">number</code><code>) → </code><code class="blue_2Afy">number</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Factorial"></a><code style="text-decoration:none">Factorial</code><a class="hash-link" href="#Factorial" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/NumberUtil/init.lua#L318"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>NumberUtil.</code><code class="green_3LnD">Factorial</code><code>(</code><code>number: </code><code class="blue_2Afy">number</code><code>) → </code><code class="blue_2Afy">number</code></div><div>
 <p>Returns the factorial of the number.</p>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="GetFactorsOf"></a><code style="text-decoration:none">GetFactorsOf</code><a class="hash-link" href="#GetFactorsOf" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/NumberUtil/init.lua#L339"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>NumberUtil.</code><code class="green_3LnD">GetFactorsOf</code><code>(</code><code>number: </code><code class="blue_2Afy">number</code><code>) → </code><code class="blue_2Afy">table</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="GetFactorsOf"></a><code style="text-decoration:none">GetFactorsOf</code><a class="hash-link" href="#GetFactorsOf" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/NumberUtil/init.lua#L340"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>NumberUtil.</code><code class="green_3LnD">GetFactorsOf</code><code>(</code><code>number: </code><code class="blue_2Afy">number</code><code>) → </code><code class="blue_2Afy">table</code></div><div>
 <p>Returns all the factors of the number.</p>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="IsInfinite"></a><code style="text-decoration:none">IsInfinite</code><a class="hash-link" href="#IsInfinite" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/NumberUtil/init.lua#L367"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>NumberUtil.</code><code class="green_3LnD">IsInfinite</code><code>(</code><code>number: </code><code class="blue_2Afy">number</code><code>) → </code><code class="blue_2Afy">boolean</code></div><div>
-<p>Returns a boolean indicating if the number is infinite i.e <code>math.huge</code> or not.</p>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="IsInfinite"></a><code style="text-decoration:none">IsInfinite</code><a class="hash-link" href="#IsInfinite" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/NumberUtil/init.lua#L368"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>NumberUtil.</code><code class="green_3LnD">IsInfinite</code><code>(</code><code>number: </code><code class="blue_2Afy">number</code><code>) → </code><code class="blue_2Afy">boolean</code></div><div>
+<p>Returns a boolean indicating if the number is infinite i.e <code>math.huge</code>.</p>
 </div></div></article></div><details><summary>Show raw api</summary><pre style="max-width:100%;white-space:pre-wrap">{
     &quot;functions&quot;: [
         {
@@ -313,7 +314,7 @@ print(NumberUtil.IsCloseTo(0.1 + 0.2, 0.3)) --&gt; true
         },
         {
             &quot;name&quot;: &quot;Root&quot;,
-            &quot;desc&quot;: &quot;Returns the `root` of the number.\n\n```lua\nprint(NumberUtil.Root(2, 2)) --&gt; 1.4142135623731 (Square root)\nprint(NumberUtil.Root(2, 3)) --&gt; 1.2599210498949 (Cube root)\n```&quot;,
+            &quot;desc&quot;: &quot;Returns the \&quot;root\&quot; of the number.\n\n```lua\nprint(NumberUtil.Root(2, 2)) --&gt; 1.4142135623731 (Square root)\nprint(NumberUtil.Root(2, 3)) --&gt; 1.2599210498949 (Cube root)\nprint(NumberUtil.Root(2, 4)) --&gt; 1.1892071150027 (Fourth root)\n```&quot;,
             &quot;params&quot;: [
                 {
                     &quot;name&quot;: &quot;number&quot;,
@@ -334,7 +335,7 @@ print(NumberUtil.IsCloseTo(0.1 + 0.2, 0.3)) --&gt; true
             ],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 297,
+                &quot;line&quot;: 298,
                 &quot;path&quot;: &quot;packages/NumberUtil/init.lua&quot;
             }
         },
@@ -356,7 +357,7 @@ print(NumberUtil.IsCloseTo(0.1 + 0.2, 0.3)) --&gt; true
             ],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 317,
+                &quot;line&quot;: 318,
                 &quot;path&quot;: &quot;packages/NumberUtil/init.lua&quot;
             }
         },
@@ -378,13 +379,13 @@ print(NumberUtil.IsCloseTo(0.1 + 0.2, 0.3)) --&gt; true
             ],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 339,
+                &quot;line&quot;: 340,
                 &quot;path&quot;: &quot;packages/NumberUtil/init.lua&quot;
             }
         },
         {
             &quot;name&quot;: &quot;IsInfinite&quot;,
-            &quot;desc&quot;: &quot;Returns a boolean indicating if the number is infinite i.e `math.huge` or not.&quot;,
+            &quot;desc&quot;: &quot;Returns a boolean indicating if the number is infinite i.e `math.huge`.&quot;,
             &quot;params&quot;: [
                 {
                     &quot;name&quot;: &quot;number&quot;,
@@ -400,7 +401,7 @@ print(NumberUtil.IsCloseTo(0.1 + 0.2, 0.3)) --&gt; true
             ],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 367,
+                &quot;line&quot;: 368,
                 &quot;path&quot;: &quot;packages/NumberUtil/init.lua&quot;
             }
         }
@@ -455,7 +456,7 @@ print(NumberUtil.IsCloseTo(0.1 + 0.2, 0.3)) --&gt; true
         &quot;path&quot;: &quot;packages/NumberUtil/init.lua&quot;
     }
 }</pre></details></div><div class="col col--3"><div class="tableOfContents_35-E thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#types" class="table-of-contents__link">Types</a></li><li><a href="#properties" class="table-of-contents__link">Properties</a><ul><li><a href="#e" class="table-of-contents__link">e</a></li><li><a href="#NaN" class="table-of-contents__link">NaN</a></li><li><a href="#Phi" class="table-of-contents__link">Phi</a></li><li><a href="#Tau" class="table-of-contents__link">Tau</a></li></ul></li><li><a href="#functions" class="table-of-contents__link">Functions</a><ul><li><a href="#Factorial" class="table-of-contents__link">.Factorial</a></li><li><a href="#GetFactorsOf" class="table-of-contents__link">.GetFactorsOf</a></li><li><a href="#InverseLerp" class="table-of-contents__link">.InverseLerp</a></li><li><a href="#IsCloseTo" class="table-of-contents__link">.IsCloseTo</a></li><li><a href="#IsInfinite" class="table-of-contents__link">.IsInfinite</a></li><li><a href="#IsNaN" class="table-of-contents__link">.IsNaN</a></li><li><a href="#Lerp" class="table-of-contents__link">.Lerp</a></li><li><a href="#Map" class="table-of-contents__link">.Map</a></li><li><a href="#QuadraticLerp" class="table-of-contents__link">.QuadraticLerp</a></li><li><a href="#Root" class="table-of-contents__link">.Root</a></li><li><a href="#RoundTo" class="table-of-contents__link">.RoundTo</a></li></ul></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2021 finobinos. Built with Moonwave and Docusaurus.</div></div></div></footer></div>
-<script src="/RBXUtil/assets/js/runtime~main.21a6ece1.js"></script>
-<script src="/RBXUtil/assets/js/main.dd549fa9.js"></script>
+<script src="/RBXUtil/assets/js/runtime~main.e76774bd.js"></script>
+<script src="/RBXUtil/assets/js/main.801aa586.js"></script>
 </body>
 </html>

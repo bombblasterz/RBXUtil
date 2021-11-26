@@ -29,8 +29,8 @@ end
 
 signal:Fire(&quot;Signals dispatch information like this one!&quot;)
 ```"><meta data-react-helmet="true" property="og:url" content="https://finobinos.github.io/RBXUtil/api/Signal"><meta data-react-helmet="true" name="docusaurus_locale" content="en"><meta data-react-helmet="true" name="docusaurus_tag" content="default"><link data-react-helmet="true" rel="canonical" href="https://finobinos.github.io/RBXUtil/api/Signal"><link data-react-helmet="true" rel="alternate" href="https://finobinos.github.io/RBXUtil/api/Signal" hreflang="en"><link data-react-helmet="true" rel="alternate" href="https://finobinos.github.io/RBXUtil/api/Signal" hreflang="x-default"><link rel="stylesheet" href="/RBXUtil/assets/css/styles.60329a60.css">
-<link rel="preload" href="/RBXUtil/assets/js/runtime~main.21a6ece1.js" as="script">
-<link rel="preload" href="/RBXUtil/assets/js/main.dd549fa9.js" as="script">
+<link rel="preload" href="/RBXUtil/assets/js/runtime~main.e76774bd.js" as="script">
+<link rel="preload" href="/RBXUtil/assets/js/main.801aa586.js" as="script">
 </head>
 <body>
 <script>!function(){function e(e){document.documentElement.setAttribute("data-theme",e)}var t=function(){var e=null;try{e=localStorage.getItem("theme")}catch(e){}return e}();null!==t?e(t):window.matchMedia("(prefers-color-scheme: dark)").matches?e("dark"):(window.matchMedia("(prefers-color-scheme: light)").matches,e("light"))}()</script><div id="__docusaurus">
@@ -51,7 +51,7 @@ signal<span class="token punctuation">:</span><span class="token function">Fire<
 <p>A method which returns a boolean indicating if <code>self</code> is a signal or not.</p>
 </div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="new"></a><code style="text-decoration:none">new</code><a class="hash-link" href="#new" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Signal/init.lua#L79"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Signal.</code><code class="green_3LnD">new</code><code>(</code><code>) → </code><code class="blue_2Afy">Signal</code></div><div>
 <p>Creates and returns a new signal.</p>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Connect"></a><code style="text-decoration:none">Connect</code><a class="hash-link" href="#Connect" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#2b8ab6;color:#2b8ab6">Signal</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Signal/init.lua#L148"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Signal:</code><code class="green_3LnD">Connect</code><code>(</code><code>callback: </code><code class="blue_2Afy">function</code><code>) → </code><code class="blue_2Afy">Connection</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Connect"></a><code style="text-decoration:none">Connect</code><a class="hash-link" href="#Connect" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#2b8ab6;color:#2b8ab6">Signal</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Signal/init.lua#L149"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Signal:</code><code class="green_3LnD">Connect</code><code>(</code><code>callback: </code><code class="blue_2Afy">function</code><code>) → </code><code class="blue_2Afy">Connection</code></div><div>
 <p>
   Connects <code>callback</code> to the signal so that it will be called when <code>Signal:Fire</code> or <code>Signal:DeferredFire</code> are called, and the arguments
   passed to them will be passed to <code>callback</code>. This method returns a connection which contains the following methods:
@@ -74,28 +74,18 @@ signal<span class="token punctuation">:</span><span class="token function">Fire<
     </tr>
   </tbody>
 </table>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="CleanupConnections"></a><code style="text-decoration:none">CleanupConnections</code><a class="hash-link" href="#CleanupConnections" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#2b8ab6;color:#2b8ab6">Signal</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Signal/init.lua#L172"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Signal:</code><code class="green_3LnD">CleanupConnections</code><code>(</code><code>) → </code><code>(</code><code>)</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="CleanupConnections"></a><code style="text-decoration:none">CleanupConnections</code><a class="hash-link" href="#CleanupConnections" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#2b8ab6;color:#2b8ab6">Signal</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Signal/init.lua#L173"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Signal:</code><code class="green_3LnD">CleanupConnections</code><code>(</code><code>) → </code><code>(</code><code>)</code></div><div>
 <p>Disconnects all active connections.</p>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Destroy"></a><code style="text-decoration:none">Destroy</code><a class="hash-link" href="#Destroy" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#2b8ab6;color:#2b8ab6">Signal</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Signal/init.lua#L194"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Signal:</code><code class="green_3LnD">Destroy</code><code>(</code><code>) → </code><code>(</code><code>)</code></div><div>
-<p>Destroys the signal and makes it unusuable.</p>
-<div class="admonition admonition-warning alert alert--danger">
-  <div class="admonition-heading">
-    <h5><span class="admonition-icon"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16">
-          <path d="M5.05.31c.81 2.17.41 3.38-.52 4.31C3.55 5.67 1.98 6.45.9 7.98c-1.45 2.05-1.7 6.53 3.53 7.7-2.2-1.16-2.67-4.52-.3-6.61-.61 2.03.53 3.33 1.94 2.86 1.39-.47 2.3.53 2.27 1.67-.02.78-.31 1.44-1.13 1.81 3.42-.59 4.78-3.42 4.78-5.56 0-2.84-2.53-3.22-1.25-5.61-1.52.13-2.03 1.13-1.89 2.75.09 1.08-1.02 1.8-1.86 1.33-.67-.41-.66-1.19-.06-1.78C8.18 5.31 8.68 2.45 5.05.32L5.03.3l.02.01z"></path>
-        </svg></span>warning</h5>
-  </div>
-  <div class="admonition-content">
-    <p>Trivial errors will occur if your code unintentionally works on a destroyed signal, only call this method when you're done working with the signal.</p>
-  </div>
-</div>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Wait"></a><code style="text-decoration:none">Wait</code><a class="hash-link" href="#Wait" title="Direct link to heading">#</a></h3><span class="badge_3ZFo" style="color:#f1c40f"><span class="badgeTooltip_2qiw">This is a yielding function. When called, it will pause the Lua thread that called the function until a result is ready to be returned, without interrupting other scripts.</span><span class="badgeToolTipTail_2yaQ"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="#f1c40f" role="img" aria-label="This is a yielding function. When called, it will pause the Lua thread that called the function until a result is ready to be returned, without interrupting other scripts."><path d="M96.4 11.9c-1.4-2.5-4-4-6.9-4H10.8c-2.9 0-5.4 1.5-6.9 4-1.4 2.5-1.4 5.5 0 7.9L43.3 88c1.4 2.5 4 4 6.9 4 2.9 0 5.4-1.5 6.9-4l39.3-68.2c1.4-2.4 1.4-5.4 0-7.9zM46.3 54.5c1.1-1.1 2.3-1.6 3.8-1.6s2.8.5 3.8 1.6c1.1 1.1 1.6 2.3 1.6 3.8s-.5 2.8-1.6 3.8c-1.1 1.1-2.3 1.6-3.8 1.6s-2.8-.5-3.8-1.6c-1.1-1.1-1.6-2.3-1.6-3.8.1-1.5.6-2.8 1.6-3.8zm-.5-4.9V21.8h8.8v27.8h-8.8z"></path></svg> Yields</span></span><span class="docTag_3qMS" style="border-color:#2b8ab6;color:#2b8ab6">Signal</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Signal/init.lua#L211"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Signal:</code><code class="green_3LnD">Wait</code><code>(</code><code>) → </code><code>(</code><code>)</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Destroy"></a><code style="text-decoration:none">Destroy</code><a class="hash-link" href="#Destroy" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#2b8ab6;color:#2b8ab6">Signal</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Signal/init.lua#L191"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Signal:</code><code class="green_3LnD">Destroy</code><code>(</code><code>) → </code><code>(</code><code>)</code></div><div>
+<p>Destroys the signal and renders it unusuable.</p>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Wait"></a><code style="text-decoration:none">Wait</code><a class="hash-link" href="#Wait" title="Direct link to heading">#</a></h3><span class="badge_3ZFo" style="color:#f1c40f"><span class="badgeTooltip_2qiw">This is a yielding function. When called, it will pause the Lua thread that called the function until a result is ready to be returned, without interrupting other scripts.</span><span class="badgeToolTipTail_2yaQ"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="#f1c40f" role="img" aria-label="This is a yielding function. When called, it will pause the Lua thread that called the function until a result is ready to be returned, without interrupting other scripts."><path d="M96.4 11.9c-1.4-2.5-4-4-6.9-4H10.8c-2.9 0-5.4 1.5-6.9 4-1.4 2.5-1.4 5.5 0 7.9L43.3 88c1.4 2.5 4 4 6.9 4 2.9 0 5.4-1.5 6.9-4l39.3-68.2c1.4-2.4 1.4-5.4 0-7.9zM46.3 54.5c1.1-1.1 2.3-1.6 3.8-1.6s2.8.5 3.8 1.6c1.1 1.1 1.6 2.3 1.6 3.8s-.5 2.8-1.6 3.8c-1.1 1.1-2.3 1.6-3.8 1.6s-2.8-.5-3.8-1.6c-1.1-1.1-1.6-2.3-1.6-3.8.1-1.5.6-2.8 1.6-3.8zm-.5-4.9V21.8h8.8v27.8h-8.8z"></path></svg> Yields</span></span><span class="docTag_3qMS" style="border-color:#2b8ab6;color:#2b8ab6">Signal</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Signal/init.lua#L208"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Signal:</code><code class="green_3LnD">Wait</code><code>(</code><code>) → </code><code>(</code><code>)</code></div><div>
 <p>
   Yields the current Luau thread that called it until the signal is fired through <code>Signal:Fire</code> or <code>Signal:DeferredFire</code>. All
   arguments passed to them will be returned.
 </p>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Fire"></a><code style="text-decoration:none">Fire</code><a class="hash-link" href="#Fire" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#2b8ab6;color:#2b8ab6">Signal</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Signal/init.lua#L230"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Signal:</code><code class="green_3LnD">Fire</code><code>(</code><code>...: </code><code class="blue_2Afy">any</code><code>) → </code><code>(</code><code>)</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Fire"></a><code style="text-decoration:none">Fire</code><a class="hash-link" href="#Fire" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#2b8ab6;color:#2b8ab6">Signal</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Signal/init.lua#L227"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Signal:</code><code class="green_3LnD">Fire</code><code>(</code><code>...: </code><code class="blue_2Afy">any</code><code>) → </code><code>(</code><code>)</code></div><div>
 <p>Resumes any yielded threads and calls every connection's callback passing in <code>...</code> as the argument.</p>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="DeferredFire"></a><code style="text-decoration:none">DeferredFire</code><a class="hash-link" href="#DeferredFire" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#2b8ab6;color:#2b8ab6">Signal</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Signal/init.lua#L253"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Signal:</code><code class="green_3LnD">DeferredFire</code><code>(</code><code>...: </code><code class="blue_2Afy">any</code><code>) → </code><code>(</code><code>)</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="DeferredFire"></a><code style="text-decoration:none">DeferredFire</code><a class="hash-link" href="#DeferredFire" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#2b8ab6;color:#2b8ab6">Signal</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Signal/init.lua#L238"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Signal:</code><code class="green_3LnD">DeferredFire</code><code>(</code><code>...: </code><code class="blue_2Afy">any</code><code>) → </code><code>(</code><code>)</code></div><div>
 <p>Works the same as <code>Signal:Fire</code>, but calls every connection's callback <strong>in the next engine execution step</strong>, passing in <code>...</code> as the argument.</p>
 </div></div></article></div><details><summary>Show raw api</summary><pre style="max-width:100%;white-space:pre-wrap">{
     &quot;functions&quot;: [
@@ -158,7 +148,7 @@ signal<span class="token punctuation">:</span><span class="token function">Fire<
                 &quot;Signal&quot;
             ],
             &quot;source&quot;: {
-                &quot;line&quot;: 148,
+                &quot;line&quot;: 149,
                 &quot;path&quot;: &quot;packages/Signal/init.lua&quot;
             }
         },
@@ -172,13 +162,13 @@ signal<span class="token punctuation">:</span><span class="token function">Fire<
                 &quot;Signal&quot;
             ],
             &quot;source&quot;: {
-                &quot;line&quot;: 172,
+                &quot;line&quot;: 173,
                 &quot;path&quot;: &quot;packages/Signal/init.lua&quot;
             }
         },
         {
             &quot;name&quot;: &quot;Destroy&quot;,
-            &quot;desc&quot;: &quot;Destroys the signal and makes it unusuable.\n\n:::warning\nTrivial errors will occur if your code unintentionally works on a destroyed signal, only call this method when you&#x27;re done working with the signal.\n:::&quot;,
+            &quot;desc&quot;: &quot;Destroys the signal and renders it unusuable.&quot;,
             &quot;params&quot;: [],
             &quot;returns&quot;: [],
             &quot;function_type&quot;: &quot;method&quot;,
@@ -186,7 +176,7 @@ signal<span class="token punctuation">:</span><span class="token function">Fire<
                 &quot;Signal&quot;
             ],
             &quot;source&quot;: {
-                &quot;line&quot;: 194,
+                &quot;line&quot;: 191,
                 &quot;path&quot;: &quot;packages/Signal/init.lua&quot;
             }
         },
@@ -201,7 +191,7 @@ signal<span class="token punctuation">:</span><span class="token function">Fire<
             ],
             &quot;yields&quot;: true,
             &quot;source&quot;: {
-                &quot;line&quot;: 211,
+                &quot;line&quot;: 208,
                 &quot;path&quot;: &quot;packages/Signal/init.lua&quot;
             }
         },
@@ -221,7 +211,7 @@ signal<span class="token punctuation">:</span><span class="token function">Fire<
                 &quot;Signal&quot;
             ],
             &quot;source&quot;: {
-                &quot;line&quot;: 230,
+                &quot;line&quot;: 227,
                 &quot;path&quot;: &quot;packages/Signal/init.lua&quot;
             }
         },
@@ -241,7 +231,7 @@ signal<span class="token punctuation">:</span><span class="token function">Fire<
                 &quot;Signal&quot;
             ],
             &quot;source&quot;: {
-                &quot;line&quot;: 253,
+                &quot;line&quot;: 238,
                 &quot;path&quot;: &quot;packages/Signal/init.lua&quot;
             }
         }
@@ -269,7 +259,7 @@ signal<span class="token punctuation">:</span><span class="token function">Fire<
         &quot;path&quot;: &quot;packages/Signal/init.lua&quot;
     }
 }</pre></details></div><div class="col col--3"><div class="tableOfContents_35-E thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#types" class="table-of-contents__link">Types</a></li><li><a href="#properties" class="table-of-contents__link">Properties</a><ul><li><a href="#ActiveConnectionCount" class="table-of-contents__link">ActiveConnectionCount</a></li></ul></li><li><a href="#functions" class="table-of-contents__link">Functions</a><ul><li><a href="#CleanupConnections" class="table-of-contents__link">:CleanupConnections</a></li><li><a href="#Connect" class="table-of-contents__link">:Connect</a></li><li><a href="#DeferredFire" class="table-of-contents__link">:DeferredFire</a></li><li><a href="#Destroy" class="table-of-contents__link">:Destroy</a></li><li><a href="#Fire" class="table-of-contents__link">:Fire</a></li><li><a href="#Wait" class="table-of-contents__link">:Wait</a></li><li><a href="#IsA" class="table-of-contents__link">.IsA</a></li><li><a href="#new" class="table-of-contents__link">.new</a></li></ul></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2021 finobinos. Built with Moonwave and Docusaurus.</div></div></div></footer></div>
-<script src="/RBXUtil/assets/js/runtime~main.21a6ece1.js"></script>
-<script src="/RBXUtil/assets/js/main.dd549fa9.js"></script>
+<script src="/RBXUtil/assets/js/runtime~main.e76774bd.js"></script>
+<script src="/RBXUtil/assets/js/main.801aa586.js"></script>
 </body>
 </html>
