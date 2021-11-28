@@ -10,7 +10,7 @@ has few of it&#x27;s own methods and signals.
 ```lua
 local Mouse = UserInput.Mouse
 
-Mouse.OnTargetChanged:Connect(function(newTarget)
+Mouse.OnTargetChange:Connect(function(newTarget)
 	print(newTarget)
 end)
 ```"><meta data-react-helmet="true" property="og:description" content="UserInput is a module which provides access to other utility input controllers like `Mouse`, `Device` and `Keyboard`, but also
@@ -19,12 +19,12 @@ has few of it&#x27;s own methods and signals.
 ```lua
 local Mouse = UserInput.Mouse
 
-Mouse.OnTargetChanged:Connect(function(newTarget)
+Mouse.OnTargetChange:Connect(function(newTarget)
 	print(newTarget)
 end)
 ```"><meta data-react-helmet="true" property="og:url" content="https://finobinos.github.io/RBXUtil/api/UserInput"><meta data-react-helmet="true" name="docusaurus_locale" content="en"><meta data-react-helmet="true" name="docusaurus_tag" content="default"><link data-react-helmet="true" rel="canonical" href="https://finobinos.github.io/RBXUtil/api/UserInput"><link data-react-helmet="true" rel="alternate" href="https://finobinos.github.io/RBXUtil/api/UserInput" hreflang="en"><link data-react-helmet="true" rel="alternate" href="https://finobinos.github.io/RBXUtil/api/UserInput" hreflang="x-default"><link rel="stylesheet" href="/RBXUtil/assets/css/styles.60329a60.css">
-<link rel="preload" href="/RBXUtil/assets/js/runtime~main.7838ff83.js" as="script">
-<link rel="preload" href="/RBXUtil/assets/js/main.9315a43f.js" as="script">
+<link rel="preload" href="/RBXUtil/assets/js/runtime~main.ce67e419.js" as="script">
+<link rel="preload" href="/RBXUtil/assets/js/main.3717f4b1.js" as="script">
 </head>
 <body>
 <script>!function(){function e(e){document.documentElement.setAttribute("data-theme",e)}var t=function(){var e=null;try{e=localStorage.getItem("theme")}catch(e){}return e}();null!==t?e(t):window.matchMedia("(prefers-color-scheme: dark)").matches?e("dark"):(window.matchMedia("(prefers-color-scheme: light)").matches,e("light"))}()</script><div id="__docusaurus">
@@ -35,11 +35,11 @@ end)
 </p>
 <pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> Mouse <span class="token operator">=</span> UserInput<span class="token punctuation">.</span>Mouse
 
-Mouse<span class="token punctuation">.</span>OnTargetChanged<span class="token punctuation">:</span><span class="token function">Connect</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span>newTarget<span class="token punctuation">)</span>
+Mouse<span class="token punctuation">.</span>OnTargetChange<span class="token punctuation">:</span><span class="token function">Connect</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span>newTarget<span class="token punctuation">)</span>
 	<span class="token function">print</span><span class="token punctuation">(</span>newTarget<span class="token punctuation">)</span>
 <span class="token keyword">end</span><span class="token punctuation">)</span>
 </code></pre>
-</div></header><h2><a aria-hidden="true" tabindex="-1" class="anchor anchor__h2 anchorWithStickyNavbar_31ik" id="properties"></a>Properties<a class="hash-link" href="#properties" title="Direct link to heading">#</a></h2><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="OnInputTypeChanged"></a><code style="text-decoration:none">OnInputTypeChanged</code><a class="hash-link" href="#OnInputTypeChanged" title="Direct link to heading">#</a></h3><span class="badge_3ZFo" style="color:#e74c3c"><span class="badgeTooltip_2qiw">This item is read only and cannot be modified.</span><span class="badgeToolTipTail_2yaQ"><svg xmlns="http://www.w3.org/2000/svg" height="300px" width="300px" fill="#e74c3c" x="0px" y="0px" viewBox="0 0 96 96"><path d="M70.354,15.662h-7.496H25.566c-3.282,0-5.19-0.776-5.728-1.169v-1.456c0.538-0.393,2.445-1.168,5.728-1.168h46.479V8H25.566  c-4.776,0-9.594,1.468-9.594,4.747v61.458C15.972,86.645,20.328,88,37.495,88h42.535V15.662H70.354z"></path></svg> Read Only</span></span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/UserInput/init.lua#L34"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>UserInput.OnInputTypeChanged: </code> <code class="blue_2Afy">Signal</code><code class="op_1JtD">&lt;</code><code>newInputType: </code><code class="blue_2Afy">string</code><code class="op_1JtD">&gt;</code></div><div>
+</div></header><h2><a aria-hidden="true" tabindex="-1" class="anchor anchor__h2 anchorWithStickyNavbar_31ik" id="properties"></a>Properties<a class="hash-link" href="#properties" title="Direct link to heading">#</a></h2><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="OnInputTypeChange"></a><code style="text-decoration:none">OnInputTypeChange</code><a class="hash-link" href="#OnInputTypeChange" title="Direct link to heading">#</a></h3><span class="badge_3ZFo" style="color:#e74c3c"><span class="badgeTooltip_2qiw">This item is read only and cannot be modified.</span><span class="badgeToolTipTail_2yaQ"><svg xmlns="http://www.w3.org/2000/svg" height="300px" width="300px" fill="#e74c3c" x="0px" y="0px" viewBox="0 0 96 96"><path d="M70.354,15.662h-7.496H25.566c-3.282,0-5.19-0.776-5.728-1.169v-1.456c0.538-0.393,2.445-1.168,5.728-1.168h46.479V8H25.566  c-4.776,0-9.594,1.468-9.594,4.747v61.458C15.972,86.645,20.328,88,37.495,88h42.535V15.662H70.354z"></path></svg> Read Only</span></span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/UserInput/init.lua#L34"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>UserInput.OnInputTypeChange: </code> <code class="blue_2Afy">Signal</code><code class="op_1JtD">&lt;</code><code>newInputType: </code><code class="blue_2Afy">string</code><code class="op_1JtD">&gt;</code></div><div>
 <p>A signal which is fired whenever the input type of the client changes.</p>
 </div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Mouse"></a><code style="text-decoration:none">Mouse</code><a class="hash-link" href="#Mouse" title="Direct link to heading">#</a></h3><span class="badge_3ZFo" style="color:#e74c3c"><span class="badgeTooltip_2qiw">This item is read only and cannot be modified.</span><span class="badgeToolTipTail_2yaQ"><svg xmlns="http://www.w3.org/2000/svg" height="300px" width="300px" fill="#e74c3c" x="0px" y="0px" viewBox="0 0 96 96"><path d="M70.354,15.662h-7.496H25.566c-3.282,0-5.19-0.776-5.728-1.169v-1.456c0.538-0.393,2.445-1.168,5.728-1.168h46.479V8H25.566  c-4.776,0-9.594,1.468-9.594,4.747v61.458C15.972,86.645,20.328,88,37.495,88h42.535V15.662H70.354z"></path></svg> Read Only</span></span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/UserInput/init.lua#L42"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>UserInput.Mouse: </code> <code class="blue_2Afy">table</code></div><div>
 <p>The required mouse module.</p>
@@ -106,7 +106,7 @@ Mouse<span class="token punctuation">.</span>OnTargetChanged<span class="token p
     ],
     &quot;properties&quot;: [
         {
-            &quot;name&quot;: &quot;OnInputTypeChanged&quot;,
+            &quot;name&quot;: &quot;OnInputTypeChange&quot;,
             &quot;desc&quot;: &quot;A signal which is fired whenever the input type of the client changes. &quot;,
             &quot;lua_type&quot;: &quot;Signal &lt;newInputType: string&gt;&quot;,
             &quot;readonly&quot;: true,
@@ -148,13 +148,13 @@ Mouse<span class="token punctuation">.</span>OnTargetChanged<span class="token p
     ],
     &quot;types&quot;: [],
     &quot;name&quot;: &quot;UserInput&quot;,
-    &quot;desc&quot;: &quot;UserInput is a module which provides access to other utility input controllers like `Mouse`, `Device` and `Keyboard`, but also\nhas few of it&#x27;s own methods and signals.\n\n```lua\nlocal Mouse = UserInput.Mouse\n\nMouse.OnTargetChanged:Connect(function(newTarget)\n\tprint(newTarget)\nend)\n```&quot;,
+    &quot;desc&quot;: &quot;UserInput is a module which provides access to other utility input controllers like `Mouse`, `Device` and `Keyboard`, but also\nhas few of it&#x27;s own methods and signals.\n\n```lua\nlocal Mouse = UserInput.Mouse\n\nMouse.OnTargetChange:Connect(function(newTarget)\n\tprint(newTarget)\nend)\n```&quot;,
     &quot;source&quot;: {
         &quot;line&quot;: 26,
         &quot;path&quot;: &quot;packages/UserInput/init.lua&quot;
     }
-}</pre></details></div><div class="col col--3"><div class="tableOfContents_35-E thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#types" class="table-of-contents__link">Types</a></li><li><a href="#properties" class="table-of-contents__link">Properties</a><ul><li><a href="#InputType" class="table-of-contents__link">InputType</a></li><li><a href="#Keyboard" class="table-of-contents__link">Keyboard</a></li><li><a href="#Mouse" class="table-of-contents__link">Mouse</a></li><li><a href="#OnInputTypeChanged" class="table-of-contents__link">OnInputTypeChanged</a></li></ul></li><li><a href="#functions" class="table-of-contents__link">Functions</a><ul><li><a href="#GetLastInputType" class="table-of-contents__link">.GetLastInputType</a></li></ul></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2021 finobinos. Built with Moonwave and Docusaurus.</div></div></div></footer></div>
-<script src="/RBXUtil/assets/js/runtime~main.7838ff83.js"></script>
-<script src="/RBXUtil/assets/js/main.9315a43f.js"></script>
+}</pre></details></div><div class="col col--3"><div class="tableOfContents_35-E thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#types" class="table-of-contents__link">Types</a></li><li><a href="#properties" class="table-of-contents__link">Properties</a><ul><li><a href="#InputType" class="table-of-contents__link">InputType</a></li><li><a href="#Keyboard" class="table-of-contents__link">Keyboard</a></li><li><a href="#Mouse" class="table-of-contents__link">Mouse</a></li><li><a href="#OnInputTypeChange" class="table-of-contents__link">OnInputTypeChange</a></li></ul></li><li><a href="#functions" class="table-of-contents__link">Functions</a><ul><li><a href="#GetLastInputType" class="table-of-contents__link">.GetLastInputType</a></li></ul></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2021 finobinos. Built with Moonwave and Docusaurus.</div></div></div></footer></div>
+<script src="/RBXUtil/assets/js/runtime~main.ce67e419.js"></script>
+<script src="/RBXUtil/assets/js/main.3717f4b1.js"></script>
 </body>
 </html>
