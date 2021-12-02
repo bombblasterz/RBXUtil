@@ -4,7 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="generator" content="Docusaurus v2.0.0-beta.6">
-<title data-react-helmet="true">Maid | RBXUtil</title><meta data-react-helmet="true" property="og:title" content="Maid | RBXUtil"><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"><meta data-react-helmet="true" name="description" content="Maids track tasks and clean them when needed.
+<title data-react-helmet="true">Maid | RBXUtil</title><meta data-react-helmet="true" property="og:title" content="Maid | RBXUtil"><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"><meta data-react-helmet="true" name="description" content="Maids track tasks and clean them when needed. They are used to manage
+state easier and encapsulate clean ups.
 
 For e.g:
 ```lua
@@ -14,11 +15,9 @@ local connection = workspace.ChildAdded:Connect(function()
 end)
 maid:AddTask(connection)
 maid:Cleanup()
-
-task.defer(function()
-	print(connection.Connected) --&gt; false
-end)
-```"><meta data-react-helmet="true" property="og:description" content="Maids track tasks and clean them when needed.
+print(connection.Connected) --&gt; false
+```"><meta data-react-helmet="true" property="og:description" content="Maids track tasks and clean them when needed. They are used to manage
+state easier and encapsulate clean ups.
 
 For e.g:
 ```lua
@@ -28,18 +27,18 @@ local connection = workspace.ChildAdded:Connect(function()
 end)
 maid:AddTask(connection)
 maid:Cleanup()
-
-task.defer(function()
-	print(connection.Connected) --&gt; false
-end)
+print(connection.Connected) --&gt; false
 ```"><meta data-react-helmet="true" property="og:url" content="https://finobinos.github.io/RBXUtil/api/Maid"><meta data-react-helmet="true" name="docusaurus_locale" content="en"><meta data-react-helmet="true" name="docusaurus_tag" content="default"><link data-react-helmet="true" rel="canonical" href="https://finobinos.github.io/RBXUtil/api/Maid"><link data-react-helmet="true" rel="alternate" href="https://finobinos.github.io/RBXUtil/api/Maid" hreflang="en"><link data-react-helmet="true" rel="alternate" href="https://finobinos.github.io/RBXUtil/api/Maid" hreflang="x-default"><link rel="stylesheet" href="/RBXUtil/assets/css/styles.60329a60.css">
-<link rel="preload" href="/RBXUtil/assets/js/runtime~main.dac2234d.js" as="script">
-<link rel="preload" href="/RBXUtil/assets/js/main.15a71880.js" as="script">
+<link rel="preload" href="/RBXUtil/assets/js/runtime~main.dec17cba.js" as="script">
+<link rel="preload" href="/RBXUtil/assets/js/main.f37c36b1.js" as="script">
 </head>
 <body>
 <script>!function(){function e(e){document.documentElement.setAttribute("data-theme",e)}var t=function(){var e=null;try{e=localStorage.getItem("theme")}catch(e){}return e}();null!==t?e(t):window.matchMedia("(prefers-color-scheme: dark)").matches?e("dark"):(window.matchMedia("(prefers-color-scheme: light)").matches,e("light"))}()</script><div id="__docusaurus">
-<div><a href="#" class="skipToContent_1oUP">Skip to main content</a></div><nav class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Navigation bar toggle" class="navbar__toggle clean-btn" type="button" tabindex="0"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/RBXUtil/"><b class="navbar__title">RBXUtil</b></a><a class="navbar__item navbar__link" href="/RBXUtil/docs/intro">Docs</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/RBXUtil/api/">API</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/finobinos/RBXUtil" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link"><span>GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_3J9K"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></span></a><div class="react-toggle toggle_3Zt9 react-toggle--disabled"><div class="react-toggle-track" role="button" tabindex="-1"><div class="react-toggle-track-check"><span class="toggle_71bT">🌜</span></div><div class="react-toggle-track-x"><span class="toggle_71bT">🌞</span></div><div class="react-toggle-thumb"></div></div><input type="checkbox" class="react-toggle-screenreader-only" aria-label="Switch between dark and light mode"></div><div class="navbar__search"><span aria-label="expand searchbar" role="button" class="search-icon" tabindex="0"></span><input type="search" id="search_input_react" placeholder="Press S to Search..." aria-label="Search" class="navbar__search-input search-bar"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div class="main-wrapper docPageContainer_2Kz0"><div class="docPage_1bdk"><div class="docSidebarContainer_1ykS"><div class="sidebar_15mo"><nav class="menu thin-scrollbar menu_Bmed menuWithAnnouncementBar_2WvA"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category menu__list-item menu__list-item--collapsed"><a class="menu__link menu__link--sublist" href="#">Remote</a></li><li class="theme-doc-sidebar-item-category menu__list-item menu__list-item--collapsed"><a class="menu__link menu__link--sublist" href="#">Client Input</a></li><li class="theme-doc-sidebar-item-link menu__list-item"><a class="menu__link menu__link--active" aria-current="page" href="/RBXUtil/api/Maid">​Maid</a></li><li class="theme-doc-sidebar-item-link menu__list-item"><a class="menu__link" href="/RBXUtil/api/NumberUtil">​Number​Util</a></li><li class="theme-doc-sidebar-item-link menu__list-item"><a class="menu__link" href="/RBXUtil/api/Ray">​Ray</a></li><li class="theme-doc-sidebar-item-link menu__list-item"><a class="menu__link" href="/RBXUtil/api/Signal">​Signal</a></li><li class="theme-doc-sidebar-item-link menu__list-item"><a class="menu__link" href="/RBXUtil/api/TableUtil">​Table​Util</a></li><li class="theme-doc-sidebar-item-link menu__list-item"><a class="menu__link" href="/RBXUtil/api/Timer">​Timer</a></li></ul></nav><button type="button" title="Collapse sidebar" aria-label="Collapse sidebar" class="button button--secondary button--outline collapseSidebarButton_1CGd"><svg width="20" height="20" aria-hidden="true" class="collapseSidebarButtonIcon_3E-R"><g fill="#7a7a7a"><path d="M9.992 10.023c0 .2-.062.399-.172.547l-4.996 7.492a.982.982 0 01-.828.454H1c-.55 0-1-.453-1-1 0-.2.059-.403.168-.551l4.629-6.942L.168 3.078A.939.939 0 010 2.528c0-.548.45-.997 1-.997h2.996c.352 0 .649.18.828.45L9.82 9.472c.11.148.172.347.172.55zm0 0"></path><path d="M19.98 10.023c0 .2-.058.399-.168.547l-4.996 7.492a.987.987 0 01-.828.454h-3c-.547 0-.996-.453-.996-1 0-.2.059-.403.168-.551l4.625-6.942-4.625-6.945a.939.939 0 01-.168-.55 1 1 0 01.996-.997h3c.348 0 .649.18.828.45l4.996 7.492c.11.148.168.347.168.55zm0 0"></path></g></svg></button></div></div><main class="docMainContainer_28N5"><div class="container padding-vert--lg"><div class="row"><div class="col docItemCol_3WPG"><div class="docItemContainer_3XDu"><article><div class="member_qHIL markdown"><div class="tocCollapsible_1PrD theme-doc-toc-mobile tocMobile_3ryM"><button type="button" class="clean-btn tocCollapsibleButton_2O1e">On this page</button></div><header><h1 class="docTitle_1ddc" style="text-decoration:none"><span style="display:inline-block">Maid</span></h1><div class="luaClassTags_2Zrs"></div><div>
-<p>Maids track tasks and clean them when needed.</p>
+<div><a href="#" class="skipToContent_1oUP">Skip to main content</a></div><nav class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Navigation bar toggle" class="navbar__toggle clean-btn" type="button" tabindex="0"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/RBXUtil/"><b class="navbar__title">RBXUtil</b></a><a class="navbar__item navbar__link" href="/RBXUtil/docs/intro">Docs</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/RBXUtil/api/">API</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/finobinos/RBXUtil" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link"><span>GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_3J9K"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></span></a><div class="react-toggle toggle_3Zt9 react-toggle--disabled"><div class="react-toggle-track" role="button" tabindex="-1"><div class="react-toggle-track-check"><span class="toggle_71bT">🌜</span></div><div class="react-toggle-track-x"><span class="toggle_71bT">🌞</span></div><div class="react-toggle-thumb"></div></div><input type="checkbox" class="react-toggle-screenreader-only" aria-label="Switch between dark and light mode"></div><div class="navbar__search"><span aria-label="expand searchbar" role="button" class="search-icon" tabindex="0"></span><input type="search" id="search_input_react" placeholder="Press S to Search..." aria-label="Search" class="navbar__search-input search-bar"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div class="main-wrapper docPageContainer_2Kz0"><div class="docPage_1bdk"><div class="docSidebarContainer_1ykS"><div class="sidebar_15mo"><nav class="menu thin-scrollbar menu_Bmed menuWithAnnouncementBar_2WvA"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category menu__list-item menu__list-item--collapsed"><a class="menu__link menu__link--sublist" href="#">Remote</a></li><li class="theme-doc-sidebar-item-category menu__list-item menu__list-item--collapsed"><a class="menu__link menu__link--sublist" href="#">Client Input</a></li><li class="theme-doc-sidebar-item-link menu__list-item"><a class="menu__link menu__link--active" aria-current="page" href="/RBXUtil/api/Maid">​Maid</a></li><li class="theme-doc-sidebar-item-link menu__list-item"><a class="menu__link" href="/RBXUtil/api/NumberUtil">​Number​Util</a></li><li class="theme-doc-sidebar-item-link menu__list-item"><a class="menu__link" href="/RBXUtil/api/Signal">​Signal</a></li><li class="theme-doc-sidebar-item-link menu__list-item"><a class="menu__link" href="/RBXUtil/api/TableUtil">​Table​Util</a></li><li class="theme-doc-sidebar-item-link menu__list-item"><a class="menu__link" href="/RBXUtil/api/Timer">​Timer</a></li></ul></nav><button type="button" title="Collapse sidebar" aria-label="Collapse sidebar" class="button button--secondary button--outline collapseSidebarButton_1CGd"><svg width="20" height="20" aria-hidden="true" class="collapseSidebarButtonIcon_3E-R"><g fill="#7a7a7a"><path d="M9.992 10.023c0 .2-.062.399-.172.547l-4.996 7.492a.982.982 0 01-.828.454H1c-.55 0-1-.453-1-1 0-.2.059-.403.168-.551l4.629-6.942L.168 3.078A.939.939 0 010 2.528c0-.548.45-.997 1-.997h2.996c.352 0 .649.18.828.45L9.82 9.472c.11.148.172.347.172.55zm0 0"></path><path d="M19.98 10.023c0 .2-.058.399-.168.547l-4.996 7.492a.987.987 0 01-.828.454h-3c-.547 0-.996-.453-.996-1 0-.2.059-.403.168-.551l4.625-6.942-4.625-6.945a.939.939 0 01-.168-.55 1 1 0 01.996-.997h3c.348 0 .649.18.828.45l4.996 7.492c.11.148.168.347.168.55zm0 0"></path></g></svg></button></div></div><main class="docMainContainer_28N5"><div class="container padding-vert--lg"><div class="row"><div class="col docItemCol_3WPG"><div class="docItemContainer_3XDu"><article><div class="member_qHIL markdown"><div class="tocCollapsible_1PrD theme-doc-toc-mobile tocMobile_3ryM"><button type="button" class="clean-btn tocCollapsibleButton_2O1e">On this page</button></div><header><h1 class="docTitle_1ddc" style="text-decoration:none"><span style="display:inline-block">Maid</span></h1><div class="luaClassTags_2Zrs"></div><div>
+<p>
+  Maids track tasks and clean them when needed. They are used to manage
+  state easier and encapsulate clean ups.
+</p>
 <p>For e.g:</p>
 <pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> maid <span class="token operator">=</span> Maid<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
 <span class="token keyword">local</span> connection <span class="token operator">=</span> workspace<span class="token punctuation">.</span>ChildAdded<span class="token punctuation">:</span><span class="token function">Connect</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
@@ -47,16 +46,13 @@ end)
 <span class="token keyword">end</span><span class="token punctuation">)</span>
 maid<span class="token punctuation">:</span><span class="token function">AddTask</span><span class="token punctuation">(</span>connection<span class="token punctuation">)</span>
 maid<span class="token punctuation">:</span><span class="token function">Cleanup</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-
-task<span class="token punctuation">.</span><span class="token function">defer</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-	<span class="token function">print</span><span class="token punctuation">(</span>connection<span class="token punctuation">.</span>Connected<span class="token punctuation">)</span> <span class="token comment">--> false</span>
-<span class="token keyword">end</span><span class="token punctuation">)</span>
+<span class="token function">print</span><span class="token punctuation">(</span>connection<span class="token punctuation">.</span>Connected<span class="token punctuation">)</span> <span class="token comment">--> false</span>
 </code></pre>
-</div></header><h2><a aria-hidden="true" tabindex="-1" class="anchor anchor__h2 anchorWithStickyNavbar_31ik" id="functions"></a>Functions<a class="hash-link" href="#functions" title="Direct link to heading">#</a></h2><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="new"></a><code style="text-decoration:none">new</code><a class="hash-link" href="#new" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Maid/init.lua#L83"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Maid.</code><code class="green_3LnD">new</code><code>(</code><code>) → </code><code class="blue_2Afy">Maid</code></div><div>
+</div></header><h2><a aria-hidden="true" tabindex="-1" class="anchor anchor__h2 anchorWithStickyNavbar_31ik" id="functions"></a>Functions<a class="hash-link" href="#functions" title="Direct link to heading">#</a></h2><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="new"></a><code style="text-decoration:none">new</code><a class="hash-link" href="#new" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Maid/init.lua#L87"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Maid.</code><code class="green_3LnD">new</code><code>(</code><code>) → </code><code class="blue_2Afy">Maid</code></div><div>
 <p>A constructor method which creates and returns a new maid.</p>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="IsA"></a><code style="text-decoration:none">IsA</code><a class="hash-link" href="#IsA" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Maid/init.lua#L97"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Maid.</code><code class="green_3LnD">IsA</code><code>(</code><code>self: </code><code class="blue_2Afy">any</code><code>) → </code><code class="blue_2Afy">boolean</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="IsA"></a><code style="text-decoration:none">IsA</code><a class="hash-link" href="#IsA" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Maid/init.lua#L101"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Maid.</code><code class="green_3LnD">IsA</code><code>(</code><code>self: </code><code class="blue_2Afy">any</code><code>) → </code><code class="blue_2Afy">boolean</code></div><div>
 <p>A method which is used to check if the given argument is a maid or not.</p>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="AddTask"></a><code style="text-decoration:none">AddTask</code><a class="hash-link" href="#AddTask" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#ff5252;color:#ff5252">Maid</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Maid/init.lua#L113"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Maid:</code><code class="green_3LnD">AddTask</code><code>(</code><code>task: </code><code class="blue_2Afy">function</code><code class="op_1JtD"> | </code><code class="blue_2Afy">RBXScriptConnection</code><code class="op_1JtD"> | </code><code class="blue_2Afy">table</code><code class="op_1JtD"> | </code><code class="blue_2Afy">Instance</code><code>) → </code><code class="blue_2Afy">task</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="AddTask"></a><code style="text-decoration:none">AddTask</code><a class="hash-link" href="#AddTask" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#ff5252;color:#ff5252">Maid</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Maid/init.lua#L117"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Maid:</code><code class="green_3LnD">AddTask</code><code>(</code><code>task: </code><code class="blue_2Afy">function</code><code class="op_1JtD"> | </code><code class="blue_2Afy">RBXScriptConnection</code><code class="op_1JtD"> | </code><code class="blue_2Afy">table</code><code class="op_1JtD"> | </code><code class="blue_2Afy">Instance</code><code>) → </code><code class="blue_2Afy">task</code></div><div>
 <p>Adds a task for the maid to cleanup.</p>
 <div class="admonition admonition-note alert alert--secondary">
   <div class="admonition-heading">
@@ -68,15 +64,24 @@ task<span class="token punctuation">.</span><span class="token function">defer</
     <p>If <code>table</code> is passed as a task, it must have a <code>Destroy</code> or <code>Disconnect</code> method so that it can be cleaned up.</p>
   </div>
 </div>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="RemoveTask"></a><code style="text-decoration:none">RemoveTask</code><a class="hash-link" href="#RemoveTask" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#ff5252;color:#ff5252">Maid</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Maid/init.lua#L140"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Maid:</code><code class="green_3LnD">RemoveTask</code><code>(</code><code>task: </code><code class="blue_2Afy">task</code><code>) → </code><code>(</code><code>)</code></div><div>
-<p>Removes the task (assuming it was added as an task for the maid to cleanup) so that it will not be cleaned up.</p>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Cleanup"></a><code style="text-decoration:none">Cleanup</code><a class="hash-link" href="#Cleanup" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#ff5252;color:#ff5252">Maid</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Maid/init.lua#L156"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Maid:</code><code class="green_3LnD">Cleanup</code><code>(</code><code>) → </code><code>(</code><code>)</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="RemoveTask"></a><code style="text-decoration:none">RemoveTask</code><a class="hash-link" href="#RemoveTask" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#ff5252;color:#ff5252">Maid</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Maid/init.lua#L156"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Maid:</code><code class="green_3LnD">RemoveTask</code><code>(</code><code>task: </code><code class="blue_2Afy">task</code><code>) → </code><code>(</code><code>)</code></div><div>
+<p>Removes the task so that it will not be cleaned up when the maid is cleaning up added tasks.</p>
+<p>For e.g:</p>
+<pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> task <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">end</span>
+maid<span class="token punctuation">:</span><span class="token function">AddTask</span><span class="token punctuation">(</span>task<span class="token punctuation">)</span>
+
+<span class="token comment">-- Okay, i just dont want task to be cleaned up anymore, redundant:</span>
+maid<span class="token punctuation">:</span><span class="token function">RemoveTask</span><span class="token punctuation">(</span>task<span class="token punctuation">)</span>
+
+maid<span class="token punctuation">:</span><span class="token function">Cleanup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">-- (nothing, the added task wasn't cleaned up as we removed it just after it was added, lol!)</span>
+</code></pre>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Cleanup"></a><code style="text-decoration:none">Cleanup</code><a class="hash-link" href="#Cleanup" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#ff5252;color:#ff5252">Maid</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Maid/init.lua#L174"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Maid:</code><code class="green_3LnD">Cleanup</code><code>(</code><code>) → </code><code>(</code><code>)</code></div><div>
 <p>Cleans up all the added tasks.</p>
 <table>
   <thead>
     <tr>
       <th>Task</th>
-      <th>Type</th>
+      <th>Cleanup procedure</th>
     </tr>
   </thead>
   <tbody>
@@ -98,9 +103,18 @@ task<span class="token punctuation">.</span><span class="token function">defer</
     </tr>
   </tbody>
 </table>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Destroy"></a><code style="text-decoration:none">Destroy</code><a class="hash-link" href="#Destroy" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#ff5252;color:#ff5252">Maid</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Maid/init.lua#L166"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Maid:</code><code class="green_3LnD">Destroy</code><code>(</code><code>) → </code><code>(</code><code>)</code></div><div>
-<p>Destroys the maid and renders it unusuable, as well as cleans up all tasks.</p>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="LinkToInstance"></a><code style="text-decoration:none">LinkToInstance</code><a class="hash-link" href="#LinkToInstance" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Maid/init.lua#L232"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Maid:</code><code class="green_3LnD">LinkToInstance</code><code>(</code><div class="inset_2cJr"><div><code>instance: </code><code class="blue_2Afy">Instance</code><code>,</code></div><div><code>callback: </code><code class="blue_2Afy">function</code><code class="blue_2Afy">?</code></div></div><code>) → </code><code class="blue_2Afy">Instance,</code><code class="blue_2Afy">Connection</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Destroy"></a><code style="text-decoration:none">Destroy</code><a class="hash-link" href="#Destroy" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#ff5252;color:#ff5252">Maid</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Maid/init.lua#L194"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Maid:</code><code class="green_3LnD">Destroy</code><code>(</code><code>) → </code><code>(</code><code>)</code></div><div>
+<p>
+  Destroys the maid and renders it unusuable and cleans up all added tasks. Also unlinks the maid from all instances
+  it was linked to.
+</p>
+<p>For e.g:</p>
+<pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> _<span class="token punctuation">,</span> connection <span class="token operator">=</span> maid<span class="token punctuation">:</span><span class="token function">LinkToInstance</span><span class="token punctuation">(</span>instance<span class="token punctuation">)</span>
+<span class="token function">print</span><span class="token punctuation">(</span>connection<span class="token punctuation">:</span><span class="token function">IsConnected</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">--> true</span>
+maid<span class="token punctuation">:</span><span class="token function">Destroy</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token function">print</span><span class="token punctuation">(</span>connection<span class="token punctuation">:</span><span class="token function">IsConnected</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">--> false</span>
+</code></pre>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="LinkToInstance"></a><code style="text-decoration:none">LinkToInstance</code><a class="hash-link" href="#LinkToInstance" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Maid/init.lua#L259"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Maid:</code><code class="green_3LnD">LinkToInstance</code><code>(</code><div class="inset_2cJr"><div><code>instance: </code><code class="blue_2Afy">Instance</code><code>,</code></div><div><code>callback: </code><code class="blue_2Afy">function</code><code class="blue_2Afy">?</code></div></div><code>) → </code><code>(</code><div class="inset_2cJr"><div><code class="blue_2Afy">Instance</code><code>,</code></div><div><code class="blue_2Afy">Connection</code></div></div><code>)</code></div><div>
 <p>
   Links the given instance to the maid so that the maid will be destroyed once the instance has been removed from the game i.e parented to <code>nil</code>.
   If <code>callback</code> is specified, it will be called before destroying the maid (when the instance is parented to <code>nil</code>) and
@@ -135,8 +149,8 @@ instance<span class="token punctuation">.</span>Parent <span class="token operat
 <span class="token comment">-- The instance is parented to nil, but the maid hasn't cleaned up!</span>
 </code></pre>
 <p>
-  A connection is returned so that once it is disconnected, the maid will unlink from the instance. The connection
-  will automatically be disconnected once the maid is destroyed and contains the following methods:
+  A connection is returned so that once it is disconnected, the maid will unlink from the instance,
+  which contains the following methods:
 </p>
 <table>
   <thead>
@@ -170,7 +184,7 @@ instance<span class="token punctuation">.</span>Parent <span class="token operat
             ],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 83,
+                &quot;line&quot;: 87,
                 &quot;path&quot;: &quot;packages/Maid/init.lua&quot;
             }
         },
@@ -192,7 +206,7 @@ instance<span class="token punctuation">.</span>Parent <span class="token operat
             ],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 97,
+                &quot;line&quot;: 101,
                 &quot;path&quot;: &quot;packages/Maid/init.lua&quot;
             }
         },
@@ -217,13 +231,13 @@ instance<span class="token punctuation">.</span>Parent <span class="token operat
                 &quot;Maid&quot;
             ],
             &quot;source&quot;: {
-                &quot;line&quot;: 113,
+                &quot;line&quot;: 117,
                 &quot;path&quot;: &quot;packages/Maid/init.lua&quot;
             }
         },
         {
             &quot;name&quot;: &quot;RemoveTask&quot;,
-            &quot;desc&quot;: &quot;Removes the task (assuming it was added as an task for the maid to cleanup) so that it will not be cleaned up. &quot;,
+            &quot;desc&quot;: &quot;Removes the task so that it will not be cleaned up when the maid is cleaning up added tasks. \n\nFor e.g:\n\n```lua\nlocal task = function() end\nmaid:AddTask(task)\n\n-- Okay, i just dont want task to be cleaned up anymore, redundant:\nmaid:RemoveTask(task)\n\nmaid:Cleanup() -- (nothing, the added task wasn&#x27;t cleaned up as we removed it just after it was added, lol!)\n```&quot;,
             &quot;params&quot;: [
                 {
                     &quot;name&quot;: &quot;task&quot;,
@@ -237,27 +251,13 @@ instance<span class="token punctuation">.</span>Parent <span class="token operat
                 &quot;Maid&quot;
             ],
             &quot;source&quot;: {
-                &quot;line&quot;: 140,
-                &quot;path&quot;: &quot;packages/Maid/init.lua&quot;
-            }
-        },
-        {
-            &quot;name&quot;: &quot;Cleanup&quot;,
-            &quot;desc&quot;: &quot;Cleans up all the added tasks.\n\n| Task      | Type                          |\n| ----------- | ------------------------------------ |\n| `function`  | The function will be called.  |\n| `table`     | Any `Destroy` or `Disconnect` method in the table will be called. |\n| `Instance`    | The instance will be destroyed. |\n| `RBXScriptConnection`    | The connection will be disconnected. |&quot;,
-            &quot;params&quot;: [],
-            &quot;returns&quot;: [],
-            &quot;function_type&quot;: &quot;method&quot;,
-            &quot;tags&quot;: [
-                &quot;Maid&quot;
-            ],
-            &quot;source&quot;: {
                 &quot;line&quot;: 156,
                 &quot;path&quot;: &quot;packages/Maid/init.lua&quot;
             }
         },
         {
-            &quot;name&quot;: &quot;Destroy&quot;,
-            &quot;desc&quot;: &quot;Destroys the maid and renders it unusuable, as well as cleans up all tasks.&quot;,
+            &quot;name&quot;: &quot;Cleanup&quot;,
+            &quot;desc&quot;: &quot;Cleans up all the added tasks.\n\n| Task      | Cleanup procedure                          |\n| ----------- | ------------------------------------ |\n| `function`  | The function will be called.  |\n| `table`     | Any `Destroy` or `Disconnect` method in the table will be called. |\n| `Instance`    | The instance will be destroyed. |\n| `RBXScriptConnection`    | The connection will be disconnected. |&quot;,
             &quot;params&quot;: [],
             &quot;returns&quot;: [],
             &quot;function_type&quot;: &quot;method&quot;,
@@ -265,13 +265,27 @@ instance<span class="token punctuation">.</span>Parent <span class="token operat
                 &quot;Maid&quot;
             ],
             &quot;source&quot;: {
-                &quot;line&quot;: 166,
+                &quot;line&quot;: 174,
+                &quot;path&quot;: &quot;packages/Maid/init.lua&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;Destroy&quot;,
+            &quot;desc&quot;: &quot;Destroys the maid and renders it unusuable and cleans up all added tasks. Also unlinks the maid from all instances\nit was linked to.\n\nFor e.g:\n\n```lua\nlocal _, connection = maid:LinkToInstance(instance)\nprint(connection:IsConnected()) --&gt; true\nmaid:Destroy()\nprint(connection:IsConnected()) --&gt; false\n```&quot;,
+            &quot;params&quot;: [],
+            &quot;returns&quot;: [],
+            &quot;function_type&quot;: &quot;method&quot;,
+            &quot;tags&quot;: [
+                &quot;Maid&quot;
+            ],
+            &quot;source&quot;: {
+                &quot;line&quot;: 194,
                 &quot;path&quot;: &quot;packages/Maid/init.lua&quot;
             }
         },
         {
             &quot;name&quot;: &quot;LinkToInstance&quot;,
-            &quot;desc&quot;: &quot;Links the given instance to the maid so that the maid will be destroyed once the instance has been removed from the game i.e parented to `nil`.\nIf `callback` is specified, it will be called before destroying the maid (when the instance is parented to `nil`) and \nif the function upon being called doesn&#x27;t return a truthy value, the maid will not be destroyed.\n\nFor e.g:\n\n```lua\nlocal instance = ... -- some instance parented to workspace\nlocal maid = Maid.new()\n\nmaid:AddTask(function()\n\twarn(\&quot;cleaned up\&quot;)\nend)\n\nmaid:LinkToInstance(instance)\ninstance.Parent = nil\n-- Now the maid will cleanup as the instance is parented to nil.\n```\n\nHere&#x27;s an alternate case:\n\n```lua\nlocal instance = ... -- some instance parented to workspace\nlocal maid = Maid.new()\n\nmaid:AddTask(function()\n\twarn(\&quot;cleaned up\&quot;)\nend)\n\nmaid:LinkToInstance(instance, function()\n\treturn not instance:GetAttribute(\&quot;DontHaveTheMaidCleanedupYetPlease\&quot;) \nend))\n\ninstance:SetAttribute(\&quot;DontHaveTheMaidCleanedupYetPlease\&quot;, true)\ninstance.Parent = nil\n-- The instance is parented to nil, but the maid hasn&#x27;t cleaned up!\n```\n\nA connection is returned so that once it is disconnected, the maid will unlink from the instance. The connection \nwill automatically be disconnected once the maid is destroyed and contains the following methods:\n\n| Methods      | Description                          |\n| ----------- | ------------------------------------ |\n| `Disconnect`  | The connection will be disconnected and the maid will unlink to the instance it was linked to.  |\n| `IsConnected` | Returns a boolean indicating if the connection has been disconnected. |&quot;,
+            &quot;desc&quot;: &quot;Links the given instance to the maid so that the maid will be destroyed once the instance has been removed from the game i.e parented to `nil`.\nIf `callback` is specified, it will be called before destroying the maid (when the instance is parented to `nil`) and \nif the function upon being called doesn&#x27;t return a truthy value, the maid will not be destroyed.\n\nFor e.g:\n\n```lua\nlocal instance = ... -- some instance parented to workspace\nlocal maid = Maid.new()\n\nmaid:AddTask(function()\n\twarn(\&quot;cleaned up\&quot;)\nend)\n\nmaid:LinkToInstance(instance)\ninstance.Parent = nil\n-- Now the maid will cleanup as the instance is parented to nil.\n```\n\nHere&#x27;s an alternate case:\n\n```lua\nlocal instance = ... -- some instance parented to workspace\nlocal maid = Maid.new()\n\nmaid:AddTask(function()\n\twarn(\&quot;cleaned up\&quot;)\nend)\n\nmaid:LinkToInstance(instance, function()\n\treturn not instance:GetAttribute(\&quot;DontHaveTheMaidCleanedupYetPlease\&quot;) \nend))\n\ninstance:SetAttribute(\&quot;DontHaveTheMaidCleanedupYetPlease\&quot;, true)\ninstance.Parent = nil\n-- The instance is parented to nil, but the maid hasn&#x27;t cleaned up!\n```\n\nA connection is returned so that once it is disconnected, the maid will unlink from the instance,\nwhich contains the following methods:\n\n| Methods      | Description                          |\n| ----------- | ------------------------------------ |\n| `Disconnect`  | The connection will be disconnected and the maid will unlink to the instance it was linked to.  |\n| `IsConnected` | Returns a boolean indicating if the connection has been disconnected. |\n\n\t&quot;,
             &quot;params&quot;: [
                 {
                     &quot;name&quot;: &quot;instance&quot;,
@@ -287,12 +301,16 @@ instance<span class="token punctuation">.</span>Parent <span class="token operat
             &quot;returns&quot;: [
                 {
                     &quot;desc&quot;: &quot;&quot;,
-                    &quot;lua_type&quot;: &quot;Instance, Connection&quot;
+                    &quot;lua_type&quot;: &quot;Instance&quot;
+                },
+                {
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;Connection&quot;
                 }
             ],
             &quot;function_type&quot;: &quot;method&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 232,
+                &quot;line&quot;: 259,
                 &quot;path&quot;: &quot;packages/Maid/init.lua&quot;
             }
         }
@@ -300,13 +318,13 @@ instance<span class="token punctuation">.</span>Parent <span class="token operat
     &quot;properties&quot;: [],
     &quot;types&quot;: [],
     &quot;name&quot;: &quot;Maid&quot;,
-    &quot;desc&quot;: &quot;Maids track tasks and clean them when needed.\n\nFor e.g:\n```lua\nlocal maid = Maid.new()\nlocal connection = workspace.ChildAdded:Connect(function()\n\nend)\nmaid:AddTask(connection)\nmaid:Cleanup()\n\ntask.defer(function()\n\tprint(connection.Connected) --&gt; false\nend)\n```&quot;,
+    &quot;desc&quot;: &quot;Maids track tasks and clean them when needed. They are used to manage\nstate easier and encapsulate clean ups.\n\nFor e.g:\n```lua\nlocal maid = Maid.new()\nlocal connection = workspace.ChildAdded:Connect(function()\n\nend)\nmaid:AddTask(connection)\nmaid:Cleanup()\nprint(connection.Connected) --&gt; false\n```&quot;,
     &quot;source&quot;: {
-        &quot;line&quot;: 40,
+        &quot;line&quot;: 38,
         &quot;path&quot;: &quot;packages/Maid/init.lua&quot;
     }
 }</pre></details></div><div class="col col--3"><div class="tableOfContents_35-E thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#types" class="table-of-contents__link">Types</a></li><li><a href="#properties" class="table-of-contents__link">Properties</a></li><li><a href="#functions" class="table-of-contents__link">Functions</a><ul><li><a href="#AddTask" class="table-of-contents__link">:AddTask</a></li><li><a href="#Cleanup" class="table-of-contents__link">:Cleanup</a></li><li><a href="#Destroy" class="table-of-contents__link">:Destroy</a></li><li><a href="#LinkToInstance" class="table-of-contents__link">:LinkToInstance</a></li><li><a href="#RemoveTask" class="table-of-contents__link">:RemoveTask</a></li><li><a href="#IsA" class="table-of-contents__link">.IsA</a></li><li><a href="#new" class="table-of-contents__link">.new</a></li></ul></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2021 finobinos. Built with Moonwave and Docusaurus.</div></div></div></footer></div>
-<script src="/RBXUtil/assets/js/runtime~main.dac2234d.js"></script>
-<script src="/RBXUtil/assets/js/main.15a71880.js"></script>
+<script src="/RBXUtil/assets/js/runtime~main.dec17cba.js"></script>
+<script src="/RBXUtil/assets/js/main.f37c36b1.js"></script>
 </body>
 </html>
