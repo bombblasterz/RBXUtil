@@ -33,8 +33,8 @@ print(clientRemoteProperty:GetValue()) --&gt; 100
 :::note
 Remote function limitations and behavior edge cases apply. For more information, see [Remote Functions and Events](https://developer.roblox.com/en-us/articles/Remote-Functions-and-Events).
 :::"><meta data-react-helmet="true" property="og:url" content="https://finobinos.github.io/RBXUtil/api/ClientRemoteProperty"><meta data-react-helmet="true" name="docusaurus_locale" content="en"><meta data-react-helmet="true" name="docusaurus_tag" content="default"><link data-react-helmet="true" rel="canonical" href="https://finobinos.github.io/RBXUtil/api/ClientRemoteProperty"><link data-react-helmet="true" rel="alternate" href="https://finobinos.github.io/RBXUtil/api/ClientRemoteProperty" hreflang="en"><link data-react-helmet="true" rel="alternate" href="https://finobinos.github.io/RBXUtil/api/ClientRemoteProperty" hreflang="x-default"><link rel="stylesheet" href="/RBXUtil/assets/css/styles.60329a60.css">
-<link rel="preload" href="/RBXUtil/assets/js/runtime~main.17aa26fa.js" as="script">
-<link rel="preload" href="/RBXUtil/assets/js/main.c55863e8.js" as="script">
+<link rel="preload" href="/RBXUtil/assets/js/runtime~main.03ff5a67.js" as="script">
+<link rel="preload" href="/RBXUtil/assets/js/main.fedecb26.js" as="script">
 </head>
 <body>
 <script>!function(){function e(e){document.documentElement.setAttribute("data-theme",e)}var t=function(){var e=null;try{e=localStorage.getItem("theme")}catch(e){}return e}();null!==t?e(t):window.matchMedia("(prefers-color-scheme: dark)").matches?e("dark"):(window.matchMedia("(prefers-color-scheme: light)").matches,e("light"))}()</script><div id="__docusaurus">
@@ -60,32 +60,59 @@ clientRemoteProperty<span class="token punctuation">:</span><span class="token f
     <p>Remote function limitations and behavior edge cases apply. For more information, see <a href="https://developer.roblox.com/en-us/articles/Remote-Functions-and-Events" target="_blank">Remote Functions and Events</a>.</p>
   </div>
 </div>
-</div></header><h2><a aria-hidden="true" tabindex="-1" class="anchor anchor__h2 anchorWithStickyNavbar_31ik" id="properties"></a>Properties<a class="hash-link" href="#properties" title="Direct link to heading">#</a></h2><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="OnValueUpdate"></a><code style="text-decoration:none">OnValueUpdate</code><a class="hash-link" href="#OnValueUpdate" title="Direct link to heading">#</a></h3><span class="badge_3ZFo" style="color:#e74c3c"><span class="badgeTooltip_2qiw">This item is read only and cannot be modified.</span><span class="badgeToolTipTail_2yaQ"><svg xmlns="http://www.w3.org/2000/svg" height="300px" width="300px" fill="#e74c3c" x="0px" y="0px" viewBox="0 0 96 96"><path d="M70.354,15.662h-7.496H25.566c-3.282,0-5.19-0.776-5.728-1.169v-1.456c0.538-0.393,2.445-1.168,5.728-1.168h46.479V8H25.566  c-4.776,0-9.594,1.468-9.594,4.747v61.458C15.972,86.645,20.328,88,37.495,88h42.535V15.662H70.354z"></path></svg> Read Only</span></span><span class="docTag_3qMS" style="border-color:#925FB9;color:#925FB9">ClientRemoteProperty</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Remote/Client/ClientRemoteProperty.lua#L53"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>ClientRemoteProperty.OnValueUpdate: </code> <code class="blue_2Afy">Signal</code><code class="op_1JtD">&lt;</code><code>newValue: </code><code class="blue_2Afy">any</code><code class="op_1JtD">&gt;</code></div><div>
+</div></header><h2><a aria-hidden="true" tabindex="-1" class="anchor anchor__h2 anchorWithStickyNavbar_31ik" id="properties"></a>Properties<a class="hash-link" href="#properties" title="Direct link to heading">#</a></h2><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="OnValueUpdate"></a><code style="text-decoration:none">OnValueUpdate</code><a class="hash-link" href="#OnValueUpdate" title="Direct link to heading">#</a></h3><span class="badge_3ZFo" style="color:#e74c3c"><span class="badgeTooltip_2qiw">This item is read only and cannot be modified.</span><span class="badgeToolTipTail_2yaQ"><svg xmlns="http://www.w3.org/2000/svg" height="300px" width="300px" fill="#e74c3c" x="0px" y="0px" viewBox="0 0 96 96"><path d="M70.354,15.662h-7.496H25.566c-3.282,0-5.19-0.776-5.728-1.169v-1.456c0.538-0.393,2.445-1.168,5.728-1.168h46.479V8H25.566  c-4.776,0-9.594,1.468-9.594,4.747v61.458C15.972,86.645,20.328,88,37.495,88h42.535V15.662H70.354z"></path></svg> Read Only</span></span><span class="docTag_3qMS" style="border-color:#925FB9;color:#925FB9">ClientRemoteProperty</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Remote/Client/ClientRemoteProperty.lua#L54"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>ClientRemoteProperty.OnValueUpdate: </code> <code class="blue_2Afy">Signal</code><code class="op_1JtD">&lt;</code><code>newValue: </code><code class="blue_2Afy">any</code><code class="op_1JtD">&gt;</code></div><div>
 <p>
   A signal which is fired whenever the value of the client remote property is updated, either on the client
-  or on the server if the client remote property is bound to the server.
+  or on the server for the client, if the client remote property is bound to the server (a serverside remote property).
 </p>
-</div><h2><a aria-hidden="true" tabindex="-1" class="anchor anchor__h2 anchorWithStickyNavbar_31ik" id="functions"></a>Functions<a class="hash-link" href="#functions" title="Direct link to heading">#</a></h2><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="IsA"></a><code style="text-decoration:none">IsA</code><a class="hash-link" href="#IsA" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Remote/Client/ClientRemoteProperty.lua#L73"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>ClientRemoteProperty.</code><code class="green_3LnD">IsA</code><code>(</code><code>self: </code><code class="blue_2Afy">any</code><code>) → </code><code class="blue_2Afy">boolean</code></div><div>
+</div><h2><a aria-hidden="true" tabindex="-1" class="anchor anchor__h2 anchorWithStickyNavbar_31ik" id="functions"></a>Functions<a class="hash-link" href="#functions" title="Direct link to heading">#</a></h2><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="IsA"></a><code style="text-decoration:none">IsA</code><a class="hash-link" href="#IsA" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Remote/Client/ClientRemoteProperty.lua#L74"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>ClientRemoteProperty.</code><code class="green_3LnD">IsA</code><code>(</code><code>self: </code><code class="blue_2Afy">any</code><code>) → </code><code class="blue_2Afy">boolean</code></div><div>
 <p>A method which returns a boolean indicating if <code>self</code> is a client remote property or not.</p>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="new"></a><code style="text-decoration:none">new</code><a class="hash-link" href="#new" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Remote/Client/ClientRemoteProperty.lua#L84"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>ClientRemoteProperty.</code><code class="green_3LnD">new</code><code>(</code><code>currentValue: </code><code class="blue_2Afy">any</code><code>) → </code><code class="blue_2Afy">ClientRemoteProperty</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="new"></a><code style="text-decoration:none">new</code><a class="hash-link" href="#new" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Remote/Client/ClientRemoteProperty.lua#L85"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>ClientRemoteProperty.</code><code class="green_3LnD">new</code><code>(</code><code>currentValue: </code><code class="blue_2Afy">any</code><code>) → </code><code class="blue_2Afy">ClientRemoteProperty</code></div><div>
 <p>Creates and returns a new client remote property.</p>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="IsBoundToServer"></a><code style="text-decoration:none">IsBoundToServer</code><a class="hash-link" href="#IsBoundToServer" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#925FB9;color:#925FB9">ClientRemoteProperty</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Remote/Client/ClientRemoteProperty.lua#L105"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>ClientRemoteProperty:</code><code class="green_3LnD">IsBoundToServer</code><code>(</code><code>) → </code><code class="blue_2Afy">boolean</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="IsBoundToServer"></a><code style="text-decoration:none">IsBoundToServer</code><a class="hash-link" href="#IsBoundToServer" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#925FB9;color:#925FB9">ClientRemoteProperty</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Remote/Client/ClientRemoteProperty.lua#L106"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>ClientRemoteProperty:</code><code class="green_3LnD">IsBoundToServer</code><code>(</code><code>) → </code><code class="blue_2Afy">boolean</code></div><div>
 <p>Returns a boolean indicating if the client remote property is bound to a server remote property.</p>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Destroy"></a><code style="text-decoration:none">Destroy</code><a class="hash-link" href="#Destroy" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#925FB9;color:#925FB9">ClientRemoteProperty</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Remote/Client/ClientRemoteProperty.lua#L127"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>ClientRemoteProperty:</code><code class="green_3LnD">Destroy</code><code>(</code><code>) → </code><code>(</code><code>)</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Destroy"></a><code style="text-decoration:none">Destroy</code><a class="hash-link" href="#Destroy" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#925FB9;color:#925FB9">ClientRemoteProperty</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Remote/Client/ClientRemoteProperty.lua#L133"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>ClientRemoteProperty:</code><code class="green_3LnD">Destroy</code><code>(</code><code>) → </code><code>(</code><code>)</code></div><div>
 <p>Destroys the client remote property, renders it unusable and cleans up everything.</p>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="SetValue"></a><code style="text-decoration:none">SetValue</code><a class="hash-link" href="#SetValue" title="Direct link to heading">#</a></h3><span class="badge_3ZFo" style="color:#f1c40f"><span class="badgeTooltip_2qiw">This is a yielding function. When called, it will pause the Lua thread that called the function until a result is ready to be returned, without interrupting other scripts.</span><span class="badgeToolTipTail_2yaQ"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="#f1c40f" role="img" aria-label="This is a yielding function. When called, it will pause the Lua thread that called the function until a result is ready to be returned, without interrupting other scripts."><path d="M96.4 11.9c-1.4-2.5-4-4-6.9-4H10.8c-2.9 0-5.4 1.5-6.9 4-1.4 2.5-1.4 5.5 0 7.9L43.3 88c1.4 2.5 4 4 6.9 4 2.9 0 5.4-1.5 6.9-4l39.3-68.2c1.4-2.4 1.4-5.4 0-7.9zM46.3 54.5c1.1-1.1 2.3-1.6 3.8-1.6s2.8.5 3.8 1.6c1.1 1.1 1.6 2.3 1.6 3.8s-.5 2.8-1.6 3.8c-1.1 1.1-2.3 1.6-3.8 1.6s-2.8-.5-3.8-1.6c-1.1-1.1-1.6-2.3-1.6-3.8.1-1.5.6-2.8 1.6-3.8zm-.5-4.9V21.8h8.8v27.8h-8.8z"></path></svg> Yields</span></span><span class="docTag_3qMS" style="border-color:#925FB9;color:#925FB9">ClientRemoteProperty</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Remote/Client/ClientRemoteProperty.lua#L141"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>ClientRemoteProperty:</code><code class="green_3LnD">SetValue</code><code>(</code><code>newValue: </code><code class="blue_2Afy">any</code><code>) → </code><code>(</code><code>)</code></div><div>
+<div class="admonition admonition-note alert alert--secondary">
+  <div class="admonition-heading">
+    <h5><span class="admonition-icon"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16">
+          <path d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path>
+        </svg></span>note</h5>
+  </div>
+  <div class="admonition-content">
+    <p>
+      You should only ever destroy the client remote property once you're completely done working with it to avoid
+      unexpected behavior.
+    </p>
+  </div>
+</div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="SetValue"></a><code style="text-decoration:none">SetValue</code><a class="hash-link" href="#SetValue" title="Direct link to heading">#</a></h3><span class="badge_3ZFo" style="color:#f1c40f"><span class="badgeTooltip_2qiw">This is a yielding function. When called, it will pause the Lua thread that called the function until a result is ready to be returned, without interrupting other scripts.</span><span class="badgeToolTipTail_2yaQ"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="#f1c40f" role="img" aria-label="This is a yielding function. When called, it will pause the Lua thread that called the function until a result is ready to be returned, without interrupting other scripts."><path d="M96.4 11.9c-1.4-2.5-4-4-6.9-4H10.8c-2.9 0-5.4 1.5-6.9 4-1.4 2.5-1.4 5.5 0 7.9L43.3 88c1.4 2.5 4 4 6.9 4 2.9 0 5.4-1.5 6.9-4l39.3-68.2c1.4-2.4 1.4-5.4 0-7.9zM46.3 54.5c1.1-1.1 2.3-1.6 3.8-1.6s2.8.5 3.8 1.6c1.1 1.1 1.6 2.3 1.6 3.8s-.5 2.8-1.6 3.8c-1.1 1.1-2.3 1.6-3.8 1.6s-2.8-.5-3.8-1.6c-1.1-1.1-1.6-2.3-1.6-3.8.1-1.5.6-2.8 1.6-3.8zm-.5-4.9V21.8h8.8v27.8h-8.8z"></path></svg> Yields</span></span><span class="docTag_3qMS" style="border-color:#925FB9;color:#925FB9">ClientRemoteProperty</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Remote/Client/ClientRemoteProperty.lua#L147"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>ClientRemoteProperty:</code><code class="green_3LnD">SetValue</code><code>(</code><code>newValue: </code><code class="blue_2Afy">any</code><code>) → </code><code>(</code><code>)</code></div><div>
 <p>
   Sets the value of the client remote property to <code>newValue</code>. If the client remote property is bound
   to a serverside remote property, then it will ask that remote property to set the value for the client
   to <code>newValue</code>.
 </p>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="GetValue"></a><code style="text-decoration:none">GetValue</code><a class="hash-link" href="#GetValue" title="Direct link to heading">#</a></h3><span class="badge_3ZFo" style="color:#f1c40f"><span class="badgeTooltip_2qiw">This is a yielding function. When called, it will pause the Lua thread that called the function until a result is ready to be returned, without interrupting other scripts.</span><span class="badgeToolTipTail_2yaQ"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="#f1c40f" role="img" aria-label="This is a yielding function. When called, it will pause the Lua thread that called the function until a result is ready to be returned, without interrupting other scripts."><path d="M96.4 11.9c-1.4-2.5-4-4-6.9-4H10.8c-2.9 0-5.4 1.5-6.9 4-1.4 2.5-1.4 5.5 0 7.9L43.3 88c1.4 2.5 4 4 6.9 4 2.9 0 5.4-1.5 6.9-4l39.3-68.2c1.4-2.4 1.4-5.4 0-7.9zM46.3 54.5c1.1-1.1 2.3-1.6 3.8-1.6s2.8.5 3.8 1.6c1.1 1.1 1.6 2.3 1.6 3.8s-.5 2.8-1.6 3.8c-1.1 1.1-2.3 1.6-3.8 1.6s-2.8-.5-3.8-1.6c-1.1-1.1-1.6-2.3-1.6-3.8.1-1.5.6-2.8 1.6-3.8zm-.5-4.9V21.8h8.8v27.8h-8.8z"></path></svg> Yields</span></span><span class="docTag_3qMS" style="border-color:#925FB9;color:#925FB9">ClientRemoteProperty</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Remote/Client/ClientRemoteProperty.lua#L164"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>ClientRemoteProperty:</code><code class="green_3LnD">GetValue</code><code>(</code><code>) → </code><code class="blue_2Afy">any</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="GetValue"></a><code style="text-decoration:none">GetValue</code><a class="hash-link" href="#GetValue" title="Direct link to heading">#</a></h3><span class="badge_3ZFo" style="color:#f1c40f"><span class="badgeTooltip_2qiw">This is a yielding function. When called, it will pause the Lua thread that called the function until a result is ready to be returned, without interrupting other scripts.</span><span class="badgeToolTipTail_2yaQ"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="#f1c40f" role="img" aria-label="This is a yielding function. When called, it will pause the Lua thread that called the function until a result is ready to be returned, without interrupting other scripts."><path d="M96.4 11.9c-1.4-2.5-4-4-6.9-4H10.8c-2.9 0-5.4 1.5-6.9 4-1.4 2.5-1.4 5.5 0 7.9L43.3 88c1.4 2.5 4 4 6.9 4 2.9 0 5.4-1.5 6.9-4l39.3-68.2c1.4-2.4 1.4-5.4 0-7.9zM46.3 54.5c1.1-1.1 2.3-1.6 3.8-1.6s2.8.5 3.8 1.6c1.1 1.1 1.6 2.3 1.6 3.8s-.5 2.8-1.6 3.8c-1.1 1.1-2.3 1.6-3.8 1.6s-2.8-.5-3.8-1.6c-1.1-1.1-1.6-2.3-1.6-3.8.1-1.5.6-2.8 1.6-3.8zm-.5-4.9V21.8h8.8v27.8h-8.8z"></path></svg> Yields</span></span><span class="docTag_3qMS" style="border-color:#925FB9;color:#925FB9">ClientRemoteProperty</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Remote/Client/ClientRemoteProperty.lua#L169"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>ClientRemoteProperty:</code><code class="green_3LnD">GetValue</code><code>(</code><code>) → </code><code class="blue_2Afy">any</code></div><div>
 <p>
-  Returns the value of the client remote property. If bound to a serverside remote property,
-  then it will retrieve the value of the local player from that serverside remote property and if there is no value
-  set specifically for the local player, then the value returned will be the current value of that
-  serverside remote property.
+  Returns the value of the client remote property. If bound to the server (a serverside remote property),
+  then it will retrieve the value of the client from that serverside remote property and if there is no value
+  set specifically for the client, then it will return the current value of that serverside remote property.
 </p>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="GetSpecificValue"></a><code style="text-decoration:none">GetSpecificValue</code><a class="hash-link" href="#GetSpecificValue" title="Direct link to heading">#</a></h3><span class="badge_3ZFo" style="color:#f1c40f"><span class="badgeTooltip_2qiw">This is a yielding function. When called, it will pause the Lua thread that called the function until a result is ready to be returned, without interrupting other scripts.</span><span class="badgeToolTipTail_2yaQ"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="#f1c40f" role="img" aria-label="This is a yielding function. When called, it will pause the Lua thread that called the function until a result is ready to be returned, without interrupting other scripts."><path d="M96.4 11.9c-1.4-2.5-4-4-6.9-4H10.8c-2.9 0-5.4 1.5-6.9 4-1.4 2.5-1.4 5.5 0 7.9L43.3 88c1.4 2.5 4 4 6.9 4 2.9 0 5.4-1.5 6.9-4l39.3-68.2c1.4-2.4 1.4-5.4 0-7.9zM46.3 54.5c1.1-1.1 2.3-1.6 3.8-1.6s2.8.5 3.8 1.6c1.1 1.1 1.6 2.3 1.6 3.8s-.5 2.8-1.6 3.8c-1.1 1.1-2.3 1.6-3.8 1.6s-2.8-.5-3.8-1.6c-1.1-1.1-1.6-2.3-1.6-3.8.1-1.5.6-2.8 1.6-3.8zm-.5-4.9V21.8h8.8v27.8h-8.8z"></path></svg> Yields</span></span><span class="docTag_3qMS" style="border-color:#925FB9;color:#925FB9">ClientRemoteProperty</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Remote/Client/ClientRemoteProperty.lua#L190"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>ClientRemoteProperty:</code><code class="green_3LnD">GetSpecificValue</code><code>(</code><code>) → </code><code class="blue_2Afy">any</code></div><div>
+<p>
+  This method is slighly different from <code>ClientRemoteProperty:GetValue</code>. It returns the specific value (<strong>only</strong>) set
+  for the client in the serverside remote property that this remote property is bound to.
+</p>
+<div class="admonition admonition-warning alert alert--danger">
+  <div class="admonition-heading">
+    <h5><span class="admonition-icon"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16">
+          <path d="M5.05.31c.81 2.17.41 3.38-.52 4.31C3.55 5.67 1.98 6.45.9 7.98c-1.45 2.05-1.7 6.53 3.53 7.7-2.2-1.16-2.67-4.52-.3-6.61-.61 2.03.53 3.33 1.94 2.86 1.39-.47 2.3.53 2.27 1.67-.02.78-.31 1.44-1.13 1.81 3.42-.59 4.78-3.42 4.78-5.56 0-2.84-2.53-3.22-1.25-5.61-1.52.13-2.03 1.13-1.89 2.75.09 1.08-1.02 1.8-1.86 1.33-.67-.41-.66-1.19-.06-1.78C8.18 5.31 8.68 2.45 5.05.32L5.03.3l.02.01z"></path>
+        </svg></span>warning</h5>
+  </div>
+  <div class="admonition-content">
+    <p>This method is illegal to call if the client remote property is not bound to the server (a serverside remote property).</p>
+  </div>
+</div>
 </div></div></article></div><details><summary>Show raw api</summary><pre style="max-width:100%;white-space:pre-wrap">{
     &quot;functions&quot;: [
         {
@@ -106,7 +133,7 @@ clientRemoteProperty<span class="token punctuation">:</span><span class="token f
             ],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 73,
+                &quot;line&quot;: 74,
                 &quot;path&quot;: &quot;packages/Remote/Client/ClientRemoteProperty.lua&quot;
             }
         },
@@ -128,7 +155,7 @@ clientRemoteProperty<span class="token punctuation">:</span><span class="token f
             ],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 84,
+                &quot;line&quot;: 85,
                 &quot;path&quot;: &quot;packages/Remote/Client/ClientRemoteProperty.lua&quot;
             }
         },
@@ -147,7 +174,7 @@ clientRemoteProperty<span class="token punctuation">:</span><span class="token f
                 &quot;ClientRemoteProperty&quot;
             ],
             &quot;source&quot;: {
-                &quot;line&quot;: 105,
+                &quot;line&quot;: 106,
                 &quot;path&quot;: &quot;packages/Remote/Client/ClientRemoteProperty.lua&quot;
             }
         },
@@ -159,13 +186,13 @@ clientRemoteProperty<span class="token punctuation">:</span><span class="token f
             &quot;function_type&quot;: &quot;method&quot;,
             &quot;ignore&quot;: true,
             &quot;source&quot;: {
-                &quot;line&quot;: 113,
+                &quot;line&quot;: 114,
                 &quot;path&quot;: &quot;packages/Remote/Client/ClientRemoteProperty.lua&quot;
             }
         },
         {
             &quot;name&quot;: &quot;Destroy&quot;,
-            &quot;desc&quot;: &quot;Destroys the client remote property, renders it unusable and cleans up everything.&quot;,
+            &quot;desc&quot;: &quot;Destroys the client remote property, renders it unusable and cleans up everything.\n\n:::note\nYou should only ever destroy the client remote property once you&#x27;re completely done working with it to avoid\nunexpected behavior.\n:::&quot;,
             &quot;params&quot;: [],
             &quot;returns&quot;: [],
             &quot;function_type&quot;: &quot;method&quot;,
@@ -173,7 +200,7 @@ clientRemoteProperty<span class="token punctuation">:</span><span class="token f
                 &quot;ClientRemoteProperty&quot;
             ],
             &quot;source&quot;: {
-                &quot;line&quot;: 127,
+                &quot;line&quot;: 133,
                 &quot;path&quot;: &quot;packages/Remote/Client/ClientRemoteProperty.lua&quot;
             }
         },
@@ -194,13 +221,13 @@ clientRemoteProperty<span class="token punctuation">:</span><span class="token f
             ],
             &quot;yields&quot;: true,
             &quot;source&quot;: {
-                &quot;line&quot;: 141,
+                &quot;line&quot;: 147,
                 &quot;path&quot;: &quot;packages/Remote/Client/ClientRemoteProperty.lua&quot;
             }
         },
         {
             &quot;name&quot;: &quot;GetValue&quot;,
-            &quot;desc&quot;: &quot;Returns the value of the client remote property. If bound to a serverside remote property, \nthen it will retrieve the value of the local player from that serverside remote property and if there is no value \nset specifically for the local player, then the value returned will be the current value of that\nserverside remote property.&quot;,
+            &quot;desc&quot;: &quot;Returns the value of the client remote property. If bound to the server (a serverside remote property), \nthen it will retrieve the value of the client from that serverside remote property and if there is no value \nset specifically for the client, then it will return the current value of that serverside remote property.&quot;,
             &quot;params&quot;: [],
             &quot;returns&quot;: [
                 {
@@ -214,7 +241,27 @@ clientRemoteProperty<span class="token punctuation">:</span><span class="token f
             ],
             &quot;yields&quot;: true,
             &quot;source&quot;: {
-                &quot;line&quot;: 164,
+                &quot;line&quot;: 169,
+                &quot;path&quot;: &quot;packages/Remote/Client/ClientRemoteProperty.lua&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;GetSpecificValue&quot;,
+            &quot;desc&quot;: &quot;This method is slighly different from `ClientRemoteProperty:GetValue`. It returns the specific value (**only**) set \nfor the client in the serverside remote property that this remote property is bound to.\n\n:::warning\nThis method is illegal to call if the client remote property is not bound to the server (a serverside remote property).\n:::&quot;,
+            &quot;params&quot;: [],
+            &quot;returns&quot;: [
+                {
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;any&quot;
+                }
+            ],
+            &quot;function_type&quot;: &quot;method&quot;,
+            &quot;tags&quot;: [
+                &quot;ClientRemoteProperty&quot;
+            ],
+            &quot;yields&quot;: true,
+            &quot;source&quot;: {
+                &quot;line&quot;: 190,
                 &quot;path&quot;: &quot;packages/Remote/Client/ClientRemoteProperty.lua&quot;
             }
         }
@@ -222,14 +269,14 @@ clientRemoteProperty<span class="token punctuation">:</span><span class="token f
     &quot;properties&quot;: [
         {
             &quot;name&quot;: &quot;OnValueUpdate&quot;,
-            &quot;desc&quot;: &quot; \nA signal which is fired whenever the value of the client remote property is updated, either on the client\nor on the server if the client remote property is bound to the server.&quot;,
+            &quot;desc&quot;: &quot; \nA signal which is fired whenever the value of the client remote property is updated, either on the client\nor on the server for the client, if the client remote property is bound to the server (a serverside remote property).&quot;,
             &quot;lua_type&quot;: &quot;Signal &lt;newValue: any&gt;&quot;,
             &quot;tags&quot;: [
                 &quot;ClientRemoteProperty&quot;
             ],
             &quot;readonly&quot;: true,
             &quot;source&quot;: {
-                &quot;line&quot;: 53,
+                &quot;line&quot;: 54,
                 &quot;path&quot;: &quot;packages/Remote/Client/ClientRemoteProperty.lua&quot;
             }
         }
@@ -241,11 +288,11 @@ clientRemoteProperty<span class="token punctuation">:</span><span class="token f
         &quot;Client&quot;
     ],
     &quot;source&quot;: {
-        &quot;line&quot;: 43,
+        &quot;line&quot;: 44,
         &quot;path&quot;: &quot;packages/Remote/Client/ClientRemoteProperty.lua&quot;
     }
-}</pre></details></div><div class="col col--3"><div class="tableOfContents_35-E thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#types" class="table-of-contents__link">Types</a></li><li><a href="#properties" class="table-of-contents__link">Properties</a><ul><li><a href="#OnValueUpdate" class="table-of-contents__link">OnValueUpdate</a></li></ul></li><li><a href="#functions" class="table-of-contents__link">Functions</a><ul><li><a href="#BindToServer" class="table-of-contents__link">:BindToServer</a></li><li><a href="#Destroy" class="table-of-contents__link">:Destroy</a></li><li><a href="#GetValue" class="table-of-contents__link">:GetValue</a></li><li><a href="#IsBoundToServer" class="table-of-contents__link">:IsBoundToServer</a></li><li><a href="#SetValue" class="table-of-contents__link">:SetValue</a></li><li><a href="#IsA" class="table-of-contents__link">.IsA</a></li><li><a href="#new" class="table-of-contents__link">.new</a></li></ul></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2021 finobinos. Built with Moonwave and Docusaurus.</div></div></div></footer></div>
-<script src="/RBXUtil/assets/js/runtime~main.17aa26fa.js"></script>
-<script src="/RBXUtil/assets/js/main.c55863e8.js"></script>
+}</pre></details></div><div class="col col--3"><div class="tableOfContents_35-E thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#types" class="table-of-contents__link">Types</a></li><li><a href="#properties" class="table-of-contents__link">Properties</a><ul><li><a href="#OnValueUpdate" class="table-of-contents__link">OnValueUpdate</a></li></ul></li><li><a href="#functions" class="table-of-contents__link">Functions</a><ul><li><a href="#BindToServer" class="table-of-contents__link">:BindToServer</a></li><li><a href="#Destroy" class="table-of-contents__link">:Destroy</a></li><li><a href="#GetSpecificValue" class="table-of-contents__link">:GetSpecificValue</a></li><li><a href="#GetValue" class="table-of-contents__link">:GetValue</a></li><li><a href="#IsBoundToServer" class="table-of-contents__link">:IsBoundToServer</a></li><li><a href="#SetValue" class="table-of-contents__link">:SetValue</a></li><li><a href="#IsA" class="table-of-contents__link">.IsA</a></li><li><a href="#new" class="table-of-contents__link">.new</a></li></ul></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2021 finobinos. Built with Moonwave and Docusaurus.</div></div></div></footer></div>
+<script src="/RBXUtil/assets/js/runtime~main.03ff5a67.js"></script>
+<script src="/RBXUtil/assets/js/main.fedecb26.js"></script>
 </body>
 </html>
