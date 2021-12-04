@@ -37,8 +37,8 @@ print(remoteProperty:GetValue()) --&gt; 50
 :::note
 Remote function limitations and behavior edge cases apply. For more information, see [Remote Functions and Events](https://developer.roblox.com/en-us/articles/Remote-Functions-and-Events).
 :::"><meta data-react-helmet="true" property="og:url" content="https://finobinos.github.io/RBXUtil/api/RemoteProperty"><meta data-react-helmet="true" name="docusaurus_locale" content="en"><meta data-react-helmet="true" name="docusaurus_tag" content="default"><link data-react-helmet="true" rel="canonical" href="https://finobinos.github.io/RBXUtil/api/RemoteProperty"><link data-react-helmet="true" rel="alternate" href="https://finobinos.github.io/RBXUtil/api/RemoteProperty" hreflang="en"><link data-react-helmet="true" rel="alternate" href="https://finobinos.github.io/RBXUtil/api/RemoteProperty" hreflang="x-default"><link rel="stylesheet" href="/RBXUtil/assets/css/styles.60329a60.css">
-<link rel="preload" href="/RBXUtil/assets/js/runtime~main.ed1d49d5.js" as="script">
-<link rel="preload" href="/RBXUtil/assets/js/main.35122530.js" as="script">
+<link rel="preload" href="/RBXUtil/assets/js/runtime~main.6d8817e5.js" as="script">
+<link rel="preload" href="/RBXUtil/assets/js/main.77adb022.js" as="script">
 </head>
 <body>
 <script>!function(){function e(e){document.documentElement.setAttribute("data-theme",e)}var t=function(){var e=null;try{e=localStorage.getItem("theme")}catch(e){}return e}();null!==t?e(t):window.matchMedia("(prefers-color-scheme: dark)").matches?e("dark"):(window.matchMedia("(prefers-color-scheme: light)").matches,e("light"))}()</script><div id="__docusaurus">
@@ -72,22 +72,25 @@ Remote function limitations and behavior edge cases apply. For more information,
 	<span class="token function">print</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token string">"Value was updated to %s"</span><span class="token punctuation">)</span><span class="token punctuation">:</span><span class="token function">format</span><span class="token punctuation">(</span><span class="token function">tostring</span><span class="token punctuation">(</span>newValue<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 <span class="token keyword">end</span><span class="token punctuation">)</span>
 </code></pre>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="OnClientValueUpdate"></a><code style="text-decoration:none">OnClientValueUpdate</code><a class="hash-link" href="#OnClientValueUpdate" title="Direct link to heading">#</a></h3><span class="badge_3ZFo" style="color:#e74c3c"><span class="badgeTooltip_2qiw">This item is read only and cannot be modified.</span><span class="badgeToolTipTail_2yaQ"><svg xmlns="http://www.w3.org/2000/svg" height="300px" width="300px" fill="#e74c3c" x="0px" y="0px" viewBox="0 0 96 96"><path d="M70.354,15.662h-7.496H25.566c-3.282,0-5.19-0.776-5.728-1.169v-1.456c0.538-0.393,2.445-1.168,5.728-1.168h46.479V8H25.566  c-4.776,0-9.594,1.468-9.594,4.747v61.458C15.972,86.645,20.328,88,37.495,88h42.535V15.662H70.354z"></path></svg> Read Only</span></span><span class="docTag_3qMS" style="border-color:#00a1e4;color:#00a1e4">RemoteProperty</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Remote/Server/RemoteProperty.lua#L76"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>RemoteProperty.OnClientValueUpdate: </code> <code class="blue_2Afy">Signal</code><code class="op_1JtD">&lt;</code><code>client: </code><code class="blue_2Afy">Player,</code><code>newValue: </code><code class="blue_2Afy">any</code><code class="op_1JtD">&gt;</code></div><div>
-<p>A signal which is fired whenever the value of a client is updated to a new one.</p>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="OnClientValueUpdate"></a><code style="text-decoration:none">OnClientValueUpdate</code><a class="hash-link" href="#OnClientValueUpdate" title="Direct link to heading">#</a></h3><span class="badge_3ZFo" style="color:#e74c3c"><span class="badgeTooltip_2qiw">This item is read only and cannot be modified.</span><span class="badgeToolTipTail_2yaQ"><svg xmlns="http://www.w3.org/2000/svg" height="300px" width="300px" fill="#e74c3c" x="0px" y="0px" viewBox="0 0 96 96"><path d="M70.354,15.662h-7.496H25.566c-3.282,0-5.19-0.776-5.728-1.169v-1.456c0.538-0.393,2.445-1.168,5.728-1.168h46.479V8H25.566  c-4.776,0-9.594,1.468-9.594,4.747v61.458C15.972,86.645,20.328,88,37.495,88h42.535V15.662H70.354z"></path></svg> Read Only</span></span><span class="docTag_3qMS" style="border-color:#00a1e4;color:#00a1e4">RemoteProperty</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Remote/Server/RemoteProperty.lua#L77"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>RemoteProperty.OnClientValueUpdate: </code> <code class="blue_2Afy">Signal</code><code class="op_1JtD">&lt;</code><code>client: </code><code class="blue_2Afy">Player,</code><code>newValue: </code><code class="blue_2Afy">any</code><code class="op_1JtD">&gt;</code></div><div>
+<p>
+  A signal which is fired whenever the value of a client is updated to a new one. This signal should not be used
+  if the remote property is not bound to the client.
+</p>
 <pre class="language-lua"><code class="language-lua">remoteProperty<span class="token punctuation">.</span>OnClientValueUpdate<span class="token punctuation">:</span><span class="token function">Connect</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span>client<span class="token punctuation">,</span> newValue<span class="token punctuation">)</span>
 	<span class="token function">print</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token string">"%s's value was updated to %s"</span><span class="token punctuation">)</span><span class="token punctuation">:</span><span class="token function">format</span><span class="token punctuation">(</span>client<span class="token punctuation">.</span>Name<span class="token punctuation">,</span> <span class="token function">tostring</span><span class="token punctuation">(</span>newValue<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 <span class="token keyword">end</span><span class="token punctuation">)</span>
 </code></pre>
-</div><h2><a aria-hidden="true" tabindex="-1" class="anchor anchor__h2 anchorWithStickyNavbar_31ik" id="functions"></a>Functions<a class="hash-link" href="#functions" title="Direct link to heading">#</a></h2><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="IsA"></a><code style="text-decoration:none">IsA</code><a class="hash-link" href="#IsA" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Remote/Server/RemoteProperty.lua#L97"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>RemoteProperty.</code><code class="green_3LnD">IsA</code><code>(</code><code>self: </code><code class="blue_2Afy">any</code><code>) → </code><code class="blue_2Afy">boolean</code></div><div>
+</div><h2><a aria-hidden="true" tabindex="-1" class="anchor anchor__h2 anchorWithStickyNavbar_31ik" id="functions"></a>Functions<a class="hash-link" href="#functions" title="Direct link to heading">#</a></h2><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="IsA"></a><code style="text-decoration:none">IsA</code><a class="hash-link" href="#IsA" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Remote/Server/RemoteProperty.lua#L98"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>RemoteProperty.</code><code class="green_3LnD">IsA</code><code>(</code><code>self: </code><code class="blue_2Afy">any</code><code>) → </code><code class="blue_2Afy">boolean</code></div><div>
 <p>A method which returns a boolean indicating if <code>self</code> is a remote property or not.</p>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="new"></a><code style="text-decoration:none">new</code><a class="hash-link" href="#new" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Remote/Server/RemoteProperty.lua#L129"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>RemoteProperty.</code><code class="green_3LnD">new</code><code>(</code><div class="inset_2cJr"><div><code>initialValue: </code><code class="blue_2Afy">any</code><code>,</code></div><div><code>clientValueSetValidatorCallback: </code><code class="blue_2Afy">function</code><code class="blue_2Afy">?</code></div></div><code>) → </code><code class="blue_2Afy">RemoteProperty</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="new"></a><code style="text-decoration:none">new</code><a class="hash-link" href="#new" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Remote/Server/RemoteProperty.lua#L131"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>RemoteProperty.</code><code class="green_3LnD">new</code><code>(</code><div class="inset_2cJr"><div><code>initialValue: </code><code class="blue_2Afy">any</code><code>,</code></div><div><code>clientValueSetValidatorCallback: </code><code class="blue_2Afy">function</code><code class="blue_2Afy">?</code></div></div><code>) → </code><code class="blue_2Afy">RemoteProperty</code></div><div>
 <p>Creates and returns a new remote property, with the initial value of the remote property being <code>initialValue</code>.</p>
 <p>
-  <code>clientValueSetValidatorCallback</code> can be a function which will be run when a client requests to set their value to something
-  they desire, <em>if this remote property is binded to the client through a communication signal</em>. For e.g:
+  <code>clientValueSetValidatorCallback</code> can be a function which will be called when a client requests
+  to set their value to something they desire, <em>if this remote property is bound to the client</em>. For e.g:
 </p>
 <pre class="language-lua"><code class="language-lua"><span class="token comment">-- On the server</span>
-<span class="token keyword">local</span> remoteProperty <span class="token operator">=</span> RemoteProperty<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span>client<span class="token punctuation">,</span> valueTheyWantToSet<span class="token punctuation">)</span>
+<span class="token keyword">local</span> remoteProperty <span class="token operator">=</span> RemoteProperty<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span>client<span class="token punctuation">,</span> valueTheyWantToSet<span class="token punctuation">)</span>
 	<span class="token keyword">if</span> <span class="token function">IsValueValid</span><span class="token punctuation">(</span>valueTheyWantToSet<span class="token punctuation">)</span> <span class="token keyword">then</span>
 		<span class="token keyword">return</span> <span class="token keyword">true</span>
 	<span class="token keyword">end</span>
@@ -96,14 +99,15 @@ Remote function limitations and behavior edge cases apply. For more information,
 <span class="token comment">-- On the client:</span>
 <span class="token keyword">local</span> clientRemoteProperty <span class="token operator">=</span> <span class="token punctuation">...</span>
 
-<span class="token comment">-- This will tell the serverside remote property to set the value of the client to 50 by first</span>
-<span class="token comment">-- calling the onServerInvokeCallback and if it returns true, then the remote property sets the value </span>
-<span class="token comment">-- of the client to 50. If onServerInvokeCallback is not specified, then this won't work.</span>
-clientRemoteProperty<span class="token punctuation">:</span><span class="token function">SetValue</span><span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span> 
+<span class="token comment">-- This will request the remote property to set the value for the client to 150 by first</span>
+<span class="token comment">-- calling the onServerInvokeCallback and if it returns true, then the remote property will set</span>
+<span class="token comment">-- the value for the client to 150. If onServerInvokeCallback is not specified, then this won't work</span>
+<span class="token comment">-- and the client's request will be disregarded.</span>
+clientRemoteProperty<span class="token punctuation">:</span><span class="token function">SetValue</span><span class="token punctuation">(</span><span class="token number">150</span><span class="token punctuation">)</span> 
 </code></pre>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="IsBoundToClient"></a><code style="text-decoration:none">IsBoundToClient</code><a class="hash-link" href="#IsBoundToClient" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#00a1e4;color:#00a1e4">RemoteProperty</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Remote/Server/RemoteProperty.lua#L166"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>RemoteProperty:</code><code class="green_3LnD">IsBoundToClient</code><code>(</code><code>) → </code><code class="blue_2Afy">boolean</code></div><div>
-<p>Returns a boolean indicating if the remote property is bound to the client.</p>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Destroy"></a><code style="text-decoration:none">Destroy</code><a class="hash-link" href="#Destroy" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#00a1e4;color:#00a1e4">RemoteProperty</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Remote/Server/RemoteProperty.lua#L208"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>RemoteProperty:</code><code class="green_3LnD">Destroy</code><code>(</code><code>) → </code><code>(</code><code>)</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="IsBoundToClient"></a><code style="text-decoration:none">IsBoundToClient</code><a class="hash-link" href="#IsBoundToClient" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#00a1e4;color:#00a1e4">RemoteProperty</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Remote/Server/RemoteProperty.lua#L167"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>RemoteProperty:</code><code class="green_3LnD">IsBoundToClient</code><code>(</code><code>) → </code><code class="blue_2Afy">boolean</code></div><div>
+<p>Returns a boolean indicating if the remote property is bound to the client or not.</p>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Destroy"></a><code style="text-decoration:none">Destroy</code><a class="hash-link" href="#Destroy" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#00a1e4;color:#00a1e4">RemoteProperty</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Remote/Server/RemoteProperty.lua#L205"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>RemoteProperty:</code><code class="green_3LnD">Destroy</code><code>(</code><code>) → </code><code>(</code><code>)</code></div><div>
 <p>Destroys the remote property, renders it unusable and cleans up everything.</p>
 <div class="admonition admonition-note alert alert--secondary">
   <div class="admonition-heading">
@@ -118,16 +122,16 @@ clientRemoteProperty<span class="token punctuation">:</span><span class="token f
     </p>
   </div>
 </div>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="SetValue"></a><code style="text-decoration:none">SetValue</code><a class="hash-link" href="#SetValue" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#00a1e4;color:#00a1e4">RemoteProperty</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Remote/Server/RemoteProperty.lua#L234"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>RemoteProperty:</code><code class="green_3LnD">SetValue</code><code>(</code><div class="inset_2cJr"><div><code>newValue: </code><code class="blue_2Afy">any</code><code>,</code></div><div><code>clients: </code><code class="blue_2Afy">?</code></div></div><code>) → </code><code>(</code><code>)</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="SetValue"></a><code style="text-decoration:none">SetValue</code><a class="hash-link" href="#SetValue" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#00a1e4;color:#00a1e4">RemoteProperty</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Remote/Server/RemoteProperty.lua#L231"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>RemoteProperty:</code><code class="green_3LnD">SetValue</code><code>(</code><div class="inset_2cJr"><div><code>newValue: </code><code class="blue_2Afy">any</code><code>,</code></div><div><code>clients: </code><code class="blue_2Afy">?</code></div></div><code>) → </code><code>(</code><code>)</code></div><div>
 <p>
   Sets the value of the remote property to <code>newValue</code>. If the remote property is bound
   to the client, then it will update the value for every player to <code>newValue</code> and their
   client remote property (the one that is bound to this remote property) to <code>newValue</code> as well and also
-  updates the current value of the remote property to <code>newValue</code>.
+  update the current value of the remote property to <code>newValue</code>.
 </p>
 <p>
   If <code>clients</code> is specified, then the value will only be updated for each
-  player in the <code>clients</code> table.
+  player in the <code>clients</code> table only.
 </p>
 <div class="admonition admonition-note alert alert--secondary">
   <div class="admonition-heading">
@@ -136,7 +140,7 @@ clientRemoteProperty<span class="token punctuation">:</span><span class="token f
         </svg></span>note</h5>
   </div>
   <div class="admonition-content">
-    <p>Each client's specific value set in the remote property will be flushed (cleared out) when they leave.</p>
+    <p>Each client's value set in the remote property will be flushed (cleared out) when they leave.</p>
   </div>
 </div>
 <div class="admonition admonition-warning alert alert--danger">
@@ -149,7 +153,7 @@ clientRemoteProperty<span class="token punctuation">:</span><span class="token f
     <p>It is illegal to set the value for clients only if the remote property isn't bound to the client.</p>
   </div>
 </div>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="GetValue"></a><code style="text-decoration:none">GetValue</code><a class="hash-link" href="#GetValue" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#00a1e4;color:#00a1e4">RemoteProperty</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Remote/Server/RemoteProperty.lua#L274"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>RemoteProperty:</code><code class="green_3LnD">GetValue</code><code>(</code><code>client: </code><code class="blue_2Afy">Player</code><code class="blue_2Afy">?</code><code>) → </code><code class="blue_2Afy">any</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="GetValue"></a><code style="text-decoration:none">GetValue</code><a class="hash-link" href="#GetValue" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#00a1e4;color:#00a1e4">RemoteProperty</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Remote/Server/RemoteProperty.lua#L271"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>RemoteProperty:</code><code class="green_3LnD">GetValue</code><code>(</code><code>client: </code><code class="blue_2Afy">Player</code><code class="blue_2Afy">?</code><code>) → </code><code class="blue_2Afy">any</code></div><div>
 <p>
   Returns the current value of the remote property. If <code>client</code> is specified, then it will return the <strong>specific</strong>
   value set for <code>client</code> in the remote property.
@@ -174,13 +178,13 @@ clientRemoteProperty<span class="token punctuation">:</span><span class="token f
             ],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 97,
+                &quot;line&quot;: 98,
                 &quot;path&quot;: &quot;packages/Remote/Server/RemoteProperty.lua&quot;
             }
         },
         {
             &quot;name&quot;: &quot;new&quot;,
-            &quot;desc&quot;: &quot;Creates and returns a new remote property, with the initial value of the remote property being `initialValue`.\n\n`clientValueSetValidatorCallback` can be a function which will be run when a client requests to set their value to something\nthey desire, _if this remote property is binded to the client through a communication signal_. For e.g:\n\n```lua\n-- On the server\nlocal remoteProperty = RemoteProperty.new(3, function(client, valueTheyWantToSet)\n\tif IsValueValid(valueTheyWantToSet) then\n\t\treturn true\n\tend\nend)\n\n-- On the client:\nlocal clientRemoteProperty = ...\n\n-- This will tell the serverside remote property to set the value of the client to 50 by first\n-- calling the onServerInvokeCallback and if it returns true, then the remote property sets the value \n-- of the client to 50. If onServerInvokeCallback is not specified, then this won&#x27;t work.\nclientRemoteProperty:SetValue(50) \n```&quot;,
+            &quot;desc&quot;: &quot;Creates and returns a new remote property, with the initial value of the remote property being `initialValue`.\n\n`clientValueSetValidatorCallback` can be a function which will be called when a client requests \nto set their value to something they desire, _if this remote property is bound to the client_. For e.g:\n\n```lua\n-- On the server\nlocal remoteProperty = RemoteProperty.new(50, function(client, valueTheyWantToSet)\n\tif IsValueValid(valueTheyWantToSet) then\n\t\treturn true\n\tend\nend)\n\n-- On the client:\nlocal clientRemoteProperty = ...\n\n-- This will request the remote property to set the value for the client to 150 by first\n-- calling the onServerInvokeCallback and if it returns true, then the remote property will set\n-- the value for the client to 150. If onServerInvokeCallback is not specified, then this won&#x27;t work\n-- and the client&#x27;s request will be disregarded.\nclientRemoteProperty:SetValue(150) \n```&quot;,
             &quot;params&quot;: [
                 {
                     &quot;name&quot;: &quot;initialValue&quot;,
@@ -201,13 +205,13 @@ clientRemoteProperty<span class="token punctuation">:</span><span class="token f
             ],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 129,
+                &quot;line&quot;: 131,
                 &quot;path&quot;: &quot;packages/Remote/Server/RemoteProperty.lua&quot;
             }
         },
         {
             &quot;name&quot;: &quot;IsBoundToClient&quot;,
-            &quot;desc&quot;: &quot;Returns a boolean indicating if the remote property is bound to the client.&quot;,
+            &quot;desc&quot;: &quot;Returns a boolean indicating if the remote property is bound to the client or not.&quot;,
             &quot;params&quot;: [],
             &quot;returns&quot;: [
                 {
@@ -220,7 +224,7 @@ clientRemoteProperty<span class="token punctuation">:</span><span class="token f
                 &quot;RemoteProperty&quot;
             ],
             &quot;source&quot;: {
-                &quot;line&quot;: 166,
+                &quot;line&quot;: 167,
                 &quot;path&quot;: &quot;packages/Remote/Server/RemoteProperty.lua&quot;
             }
         },
@@ -232,7 +236,7 @@ clientRemoteProperty<span class="token punctuation">:</span><span class="token f
             &quot;function_type&quot;: &quot;method&quot;,
             &quot;ignore&quot;: true,
             &quot;source&quot;: {
-                &quot;line&quot;: 174,
+                &quot;line&quot;: 175,
                 &quot;path&quot;: &quot;packages/Remote/Server/RemoteProperty.lua&quot;
             }
         },
@@ -246,13 +250,13 @@ clientRemoteProperty<span class="token punctuation">:</span><span class="token f
                 &quot;RemoteProperty&quot;
             ],
             &quot;source&quot;: {
-                &quot;line&quot;: 208,
+                &quot;line&quot;: 205,
                 &quot;path&quot;: &quot;packages/Remote/Server/RemoteProperty.lua&quot;
             }
         },
         {
             &quot;name&quot;: &quot;SetValue&quot;,
-            &quot;desc&quot;: &quot;Sets the value of the remote property to `newValue`. If the remote property is bound \nto the client, then it will update the value for every player to `newValue` and their \nclient remote property (the one that is bound to this remote property) to `newValue` as well and also\nupdates the current value of the remote property to `newValue`. \n\nIf `clients` is specified, then the value will only be updated for each \nplayer in the `clients` table.\n\n:::note\nEach client&#x27;s specific value set in the remote property will be flushed (cleared out) when they leave. \n:::\n\n:::warning\nIt is illegal to set the value for clients only if the remote property isn&#x27;t bound to the client.\n:::&quot;,
+            &quot;desc&quot;: &quot;Sets the value of the remote property to `newValue`. If the remote property is bound \nto the client, then it will update the value for every player to `newValue` and their \nclient remote property (the one that is bound to this remote property) to `newValue` as well and also\nupdate the current value of the remote property to `newValue`. \n\nIf `clients` is specified, then the value will only be updated for each \nplayer in the `clients` table only.\n\n:::note\nEach client&#x27;s value set in the remote property will be flushed (cleared out) when they leave. \n:::\n\n:::warning\nIt is illegal to set the value for clients only if the remote property isn&#x27;t bound to the client.\n:::&quot;,
             &quot;params&quot;: [
                 {
                     &quot;name&quot;: &quot;newValue&quot;,
@@ -271,7 +275,7 @@ clientRemoteProperty<span class="token punctuation">:</span><span class="token f
                 &quot;RemoteProperty&quot;
             ],
             &quot;source&quot;: {
-                &quot;line&quot;: 234,
+                &quot;line&quot;: 231,
                 &quot;path&quot;: &quot;packages/Remote/Server/RemoteProperty.lua&quot;
             }
         },
@@ -296,7 +300,7 @@ clientRemoteProperty<span class="token punctuation">:</span><span class="token f
                 &quot;RemoteProperty&quot;
             ],
             &quot;source&quot;: {
-                &quot;line&quot;: 274,
+                &quot;line&quot;: 271,
                 &quot;path&quot;: &quot;packages/Remote/Server/RemoteProperty.lua&quot;
             }
         }
@@ -317,14 +321,14 @@ clientRemoteProperty<span class="token punctuation">:</span><span class="token f
         },
         {
             &quot;name&quot;: &quot;OnClientValueUpdate&quot;,
-            &quot;desc&quot;: &quot;A signal which is fired whenever the value of a client is updated to a new one.\n\n```lua\nremoteProperty.OnClientValueUpdate:Connect(function(client, newValue)\n\tprint((\&quot;%s&#x27;s value was updated to %s\&quot;):format(client.Name, tostring(newValue)))\nend)\n```&quot;,
+            &quot;desc&quot;: &quot;A signal which is fired whenever the value of a client is updated to a new one. This signal should not be used\nif the remote property is not bound to the client.\n\n```lua\nremoteProperty.OnClientValueUpdate:Connect(function(client, newValue)\n\tprint((\&quot;%s&#x27;s value was updated to %s\&quot;):format(client.Name, tostring(newValue)))\nend)\n```&quot;,
             &quot;lua_type&quot;: &quot;Signal &lt;client: Player, newValue: any&gt;&quot;,
             &quot;tags&quot;: [
                 &quot;RemoteProperty&quot;
             ],
             &quot;readonly&quot;: true,
             &quot;source&quot;: {
-                &quot;line&quot;: 76,
+                &quot;line&quot;: 77,
                 &quot;path&quot;: &quot;packages/Remote/Server/RemoteProperty.lua&quot;
             }
         }
@@ -340,7 +344,7 @@ clientRemoteProperty<span class="token punctuation">:</span><span class="token f
         &quot;path&quot;: &quot;packages/Remote/Server/RemoteProperty.lua&quot;
     }
 }</pre></details></div><div class="col col--3"><div class="tableOfContents_35-E thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#types" class="table-of-contents__link">Types</a></li><li><a href="#properties" class="table-of-contents__link">Properties</a><ul><li><a href="#OnClientValueUpdate" class="table-of-contents__link">OnClientValueUpdate</a></li><li><a href="#OnValueUpdate" class="table-of-contents__link">OnValueUpdate</a></li></ul></li><li><a href="#functions" class="table-of-contents__link">Functions</a><ul><li><a href="#BindToClient" class="table-of-contents__link">:BindToClient</a></li><li><a href="#Destroy" class="table-of-contents__link">:Destroy</a></li><li><a href="#GetValue" class="table-of-contents__link">:GetValue</a></li><li><a href="#IsBoundToClient" class="table-of-contents__link">:IsBoundToClient</a></li><li><a href="#SetValue" class="table-of-contents__link">:SetValue</a></li><li><a href="#IsA" class="table-of-contents__link">.IsA</a></li><li><a href="#new" class="table-of-contents__link">.new</a></li></ul></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2021 finobinos. Built with Moonwave and Docusaurus.</div></div></div></footer></div>
-<script src="/RBXUtil/assets/js/runtime~main.ed1d49d5.js"></script>
-<script src="/RBXUtil/assets/js/main.35122530.js"></script>
+<script src="/RBXUtil/assets/js/runtime~main.6d8817e5.js"></script>
+<script src="/RBXUtil/assets/js/main.77adb022.js"></script>
 </body>
 </html>
