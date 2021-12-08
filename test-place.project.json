@@ -1,0 +1,16 @@
+{
+  "name": "RBXUtil",
+  "tree": {
+    "$className": "DataModel",
+
+    "ReplicatedStorage": {
+      "$className": "ReplicatedStorage",
+      "$ignoreUnknownInstances": true,
+        
+      "Packages" : {
+        "$ignoreUnknownInstances": true,
+        "$path": "packages"
+      }
+    }
+  }
+}

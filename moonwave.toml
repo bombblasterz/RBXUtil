@@ -1,0 +1,18 @@
+gitSourceBranch = "master"
+gitRepoUrl = "https://github.com/finobinos/RBXUtil"
+
+[home]
+enabled = true
+
+[[classOrder]]
+section = "Remote"
+classes = ["RemoteProperty", "RemoteSignal", "CommunicationSignal", "ClientRemoteProperty", "ClientRemoteSignal", "ClientCommunicationSignal"]
+  
+[[classOrder]]
+section = "Client Input"
+classes = ["UserInput", "Mouse", "Keyboard"]
+
+[docusaurus]
+tagline = "All my utility modules for Roblox"
+url = "https://finobinos.github.io"
+baseUrl = "/RBXUtil/"

@@ -1,0 +1,8 @@
+{
+    "editor.defaultFormatter": "JohnnyMorganz.stylua",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "robloxLsp.diagnostics.enable": false,
+    "robloxLsp.completion.callParenthesess": true,
+    "robloxLsp.completion.endAutocompletion": true
+}

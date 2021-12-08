@@ -1,0 +1,13 @@
+# Project place file
+/RBXUtil.rbxlx
+
+# Roblox Studio lock files
+/*.rbxlx.lock
+/*.rbxl.lock
+
+# Other
+/build
+/selene.toml
+/stylua.toml
+/roblox.toml
+/moonwave.toml
