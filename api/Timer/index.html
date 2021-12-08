@@ -29,8 +29,8 @@ end)
 
 timer:Start()
 ```"><meta data-react-helmet="true" property="og:url" content="https://finobinos.github.io/RBXUtil/api/Timer"><meta data-react-helmet="true" name="docusaurus_locale" content="en"><meta data-react-helmet="true" name="docusaurus_tag" content="default"><link data-react-helmet="true" rel="canonical" href="https://finobinos.github.io/RBXUtil/api/Timer"><link data-react-helmet="true" rel="alternate" href="https://finobinos.github.io/RBXUtil/api/Timer" hreflang="en"><link data-react-helmet="true" rel="alternate" href="https://finobinos.github.io/RBXUtil/api/Timer" hreflang="x-default"><link rel="stylesheet" href="/RBXUtil/assets/css/styles.60329a60.css">
-<link rel="preload" href="/RBXUtil/assets/js/runtime~main.6d8817e5.js" as="script">
-<link rel="preload" href="/RBXUtil/assets/js/main.7f99f416.js" as="script">
+<link rel="preload" href="/RBXUtil/assets/js/runtime~main.70841f22.js" as="script">
+<link rel="preload" href="/RBXUtil/assets/js/main.501d7398.js" as="script">
 </head>
 <body>
 <script>!function(){function e(e){document.documentElement.setAttribute("data-theme",e)}var t=function(){var e=null;try{e=localStorage.getItem("theme")}catch(e){}return e}();null!==t?e(t):window.matchMedia("(prefers-color-scheme: dark)").matches?e("dark"):(window.matchMedia("(prefers-color-scheme: light)").matches,e("light"))}()</script><div id="__docusaurus">
@@ -47,7 +47,7 @@ timer<span class="token punctuation">.</span>OnTick<span class="token punctuatio
 
 timer<span class="token punctuation">:</span><span class="token function">Start</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
 </code></pre>
-</div></header><h2><a aria-hidden="true" tabindex="-1" class="anchor anchor__h2 anchorWithStickyNavbar_31ik" id="properties"></a>Properties<a class="hash-link" href="#properties" title="Direct link to heading">#</a></h2><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Boost"></a><code style="text-decoration:none">Boost</code><a class="hash-link" href="#Boost" title="Direct link to heading">#</a></h3><span class="badge_3ZFo" style="color:#e74c3c"><span class="badgeTooltip_2qiw">This item is read only and cannot be modified.</span><span class="badgeToolTipTail_2yaQ"><svg xmlns="http://www.w3.org/2000/svg" height="300px" width="300px" fill="#e74c3c" x="0px" y="0px" viewBox="0 0 96 96"><path d="M70.354,15.662h-7.496H25.566c-3.282,0-5.19-0.776-5.728-1.169v-1.456c0.538-0.393,2.445-1.168,5.728-1.168h46.479V8H25.566  c-4.776,0-9.594,1.468-9.594,4.747v61.458C15.972,86.645,20.328,88,37.495,88h42.535V15.662H70.354z"></path></svg> Read Only</span></span><span class="docTag_3qMS" style="border-color:#dc0073;color:#dc0073">Timer</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Timer/init.lua#L63"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Timer.Boost: </code> <code class="blue_2Afy">number</code></div><div>
+</div></header><h2><a aria-hidden="true" tabindex="-1" class="anchor anchor__h2 anchorWithStickyNavbar_31ik" id="properties"></a>Properties<a class="hash-link" href="#properties" title="Direct link to heading">#</a></h2><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Boost"></a><code style="text-decoration:none">Boost</code><a class="hash-link" href="#Boost" title="Direct link to heading">#</a></h3><span class="badge_3ZFo" style="color:#e74c3c"><span class="badgeTooltip_2qiw">This item is read only and cannot be modified.</span><span class="badgeToolTipTail_2yaQ"><svg xmlns="http://www.w3.org/2000/svg" height="300px" width="300px" fill="#e74c3c" x="0px" y="0px" viewBox="0 0 96 96"><path d="M70.354,15.662h-7.496H25.566c-3.282,0-5.19-0.776-5.728-1.169v-1.456c0.538-0.393,2.445-1.168,5.728-1.168h46.479V8H25.566  c-4.776,0-9.594,1.468-9.594,4.747v61.458C15.972,86.645,20.328,88,37.495,88h42.535V15.662H70.354z"></path></svg> Read Only</span></span><span class="docTag_3qMS" style="border-color:#dc0073;color:#dc0073">Timer</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Timer/init.lua#L64"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Timer.Boost: </code> <code class="blue_2Afy">number</code></div><div>
 <p>
   A value which by default is 0. This value is added to the delta time of every approximate frame the timer is updated (or if an update signal was specified, which in case
   the number fired to the custom update signal). Increasing it will lead to faster timer updates.
@@ -61,7 +61,7 @@ timer<span class="token punctuation">.</span>OnTick<span class="token punctuatio
 	<span class="token function">print</span><span class="token punctuation">(</span>deltaTime<span class="token punctuation">)</span> <span class="token comment">--> 8 (approx) </span>
 <span class="token keyword">end</span><span class="token punctuation">)</span>
 </code></pre>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="OnTick"></a><code style="text-decoration:none">OnTick</code><a class="hash-link" href="#OnTick" title="Direct link to heading">#</a></h3><span class="badge_3ZFo" style="color:#e74c3c"><span class="badgeTooltip_2qiw">This item is read only and cannot be modified.</span><span class="badgeToolTipTail_2yaQ"><svg xmlns="http://www.w3.org/2000/svg" height="300px" width="300px" fill="#e74c3c" x="0px" y="0px" viewBox="0 0 96 96"><path d="M70.354,15.662h-7.496H25.566c-3.282,0-5.19-0.776-5.728-1.169v-1.456c0.538-0.393,2.445-1.168,5.728-1.168h46.479V8H25.566  c-4.776,0-9.594,1.468-9.594,4.747v61.458C15.972,86.645,20.328,88,37.495,88h42.535V15.662H70.354z"></path></svg> Read Only</span></span><span class="docTag_3qMS" style="border-color:#dc0073;color:#dc0073">Timer</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Timer/init.lua#L80"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Timer.OnTick: </code> <code class="blue_2Afy">Signal</code><code class="op_1JtD">&lt;</code><code>deltaTime: </code><code class="blue_2Afy">number</code><code class="op_1JtD">&gt;</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="OnTick"></a><code style="text-decoration:none">OnTick</code><a class="hash-link" href="#OnTick" title="Direct link to heading">#</a></h3><span class="badge_3ZFo" style="color:#e74c3c"><span class="badgeTooltip_2qiw">This item is read only and cannot be modified.</span><span class="badgeToolTipTail_2yaQ"><svg xmlns="http://www.w3.org/2000/svg" height="300px" width="300px" fill="#e74c3c" x="0px" y="0px" viewBox="0 0 96 96"><path d="M70.354,15.662h-7.496H25.566c-3.282,0-5.19-0.776-5.728-1.169v-1.456c0.538-0.393,2.445-1.168,5.728-1.168h46.479V8H25.566  c-4.776,0-9.594,1.468-9.594,4.747v61.458C15.972,86.645,20.328,88,37.495,88h42.535V15.662H70.354z"></path></svg> Read Only</span></span><span class="docTag_3qMS" style="border-color:#dc0073;color:#dc0073">Timer</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Timer/init.lua#L81"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Timer.OnTick: </code> <code class="blue_2Afy">Signal</code><code class="op_1JtD">&lt;</code><code>deltaTime: </code><code class="blue_2Afy">number</code><code class="op_1JtD">&gt;</code></div><div>
 <p>A signal which is fired whenever the timer "ticks" (when started).</p>
 <pre class="language-lua"><code class="language-lua">timer<span class="token punctuation">.</span>OnTick<span class="token punctuation">:</span><span class="token function">Connect</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span>deltaTime<span class="token punctuation">)</span>
 	<span class="token function">warn</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token string">"After %d seconds, tick!"</span><span class="token punctuation">)</span><span class="token punctuation">:</span><span class="token function">format</span><span class="token punctuation">(</span>deltaTime<span class="token punctuation">)</span><span class="token punctuation">)</span>
@@ -69,9 +69,9 @@ timer<span class="token punctuation">.</span>OnTick<span class="token punctuatio
 
 timer<span class="token punctuation">:</span><span class="token function">Start</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
 </code></pre>
-</div><h2><a aria-hidden="true" tabindex="-1" class="anchor anchor__h2 anchorWithStickyNavbar_31ik" id="functions"></a>Functions<a class="hash-link" href="#functions" title="Direct link to heading">#</a></h2><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="IsA"></a><code style="text-decoration:none">IsA</code><a class="hash-link" href="#IsA" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Timer/init.lua#L100"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Timer.</code><code class="green_3LnD">IsA</code><code>(</code><code>self: </code><code class="blue_2Afy">any</code><code>) → </code><code class="blue_2Afy">boolean</code></div><div>
+</div><h2><a aria-hidden="true" tabindex="-1" class="anchor anchor__h2 anchorWithStickyNavbar_31ik" id="functions"></a>Functions<a class="hash-link" href="#functions" title="Direct link to heading">#</a></h2><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="IsA"></a><code style="text-decoration:none">IsA</code><a class="hash-link" href="#IsA" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Timer/init.lua#L101"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Timer.</code><code class="green_3LnD">IsA</code><code>(</code><code>self: </code><code class="blue_2Afy">any</code><code>) → </code><code class="blue_2Afy">boolean</code></div><div>
 <p>A method which returns a boolean indicating if <code>self</code> is a timer or not.</p>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="new"></a><code style="text-decoration:none">new</code><a class="hash-link" href="#new" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Timer/init.lua#L131"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Timer.</code><code class="green_3LnD">new</code><code>(</code><div class="inset_2cJr"><div><code>timer: </code><code class="blue_2Afy">number</code><code class="blue_2Afy">?</code><code>,</code></div><div><code>updateSignal: </code><code class="blue_2Afy">RBXScriptSignal</code><code class="blue_2Afy">?</code></div></div><code>) → </code><code class="blue_2Afy">Timer</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="new"></a><code style="text-decoration:none">new</code><a class="hash-link" href="#new" title="Direct link to heading">#</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Timer/init.lua#L132"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Timer.</code><code class="green_3LnD">new</code><code>(</code><div class="inset_2cJr"><div><code>timer: </code><code class="blue_2Afy">number</code><code class="blue_2Afy">?</code><code>,</code></div><div><code>updateSignal: </code><code class="blue_2Afy">RBXScriptSignal</code><code class="blue_2Afy">?</code></div></div><code>) → </code><code class="blue_2Afy">Timer</code></div><div>
 <p>
   Creates and returns a new timer. If <code>timer</code> is not specified, it will default to <code>0</code> i.e the timer will be updated
   every frame. If <code>updateSignal</code> is not specified, it will default to
@@ -97,21 +97,21 @@ timer<span class="token punctuation">:</span><span class="token function">Start<
 </code></pre>
   </div>
 </div>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Reset"></a><code style="text-decoration:none">Reset</code><a class="hash-link" href="#Reset" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#dc0073;color:#dc0073">Timer</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Timer/init.lua#L168"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Timer:</code><code class="green_3LnD">Reset</code><code>(</code><code>) → </code><code>(</code><code>)</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Reset"></a><code style="text-decoration:none">Reset</code><a class="hash-link" href="#Reset" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#dc0073;color:#dc0073">Timer</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Timer/init.lua#L169"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Timer:</code><code class="green_3LnD">Reset</code><code>(</code><code>) → </code><code>(</code><code>)</code></div><div>
 <p>Resets the timer.</p>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Start"></a><code style="text-decoration:none">Start</code><a class="hash-link" href="#Start" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#dc0073;color:#dc0073">Timer</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Timer/init.lua#L177"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Timer:</code><code class="green_3LnD">Start</code><code>(</code><code>) → </code><code>(</code><code>)</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Start"></a><code style="text-decoration:none">Start</code><a class="hash-link" href="#Start" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#dc0073;color:#dc0073">Timer</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Timer/init.lua#L178"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Timer:</code><code class="green_3LnD">Start</code><code>(</code><code>) → </code><code>(</code><code>)</code></div><div>
 <p>Starts the timer.</p>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="IsStarted"></a><code style="text-decoration:none">IsStarted</code><a class="hash-link" href="#IsStarted" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#dc0073;color:#dc0073">Timer</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Timer/init.lua#L202"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Timer:</code><code class="green_3LnD">IsStarted</code><code>(</code><code>) → </code><code class="blue_2Afy">boolean</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="IsStarted"></a><code style="text-decoration:none">IsStarted</code><a class="hash-link" href="#IsStarted" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#dc0073;color:#dc0073">Timer</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Timer/init.lua#L203"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Timer:</code><code class="green_3LnD">IsStarted</code><code>(</code><code>) → </code><code class="blue_2Afy">boolean</code></div><div>
 <p>Returns a boolean indicating if the timer has started.</p>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Pause"></a><code style="text-decoration:none">Pause</code><a class="hash-link" href="#Pause" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#dc0073;color:#dc0073">Timer</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Timer/init.lua#L211"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Timer:</code><code class="green_3LnD">Pause</code><code>(</code><code>) → </code><code>(</code><code>)</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Pause"></a><code style="text-decoration:none">Pause</code><a class="hash-link" href="#Pause" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#dc0073;color:#dc0073">Timer</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Timer/init.lua#L212"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Timer:</code><code class="green_3LnD">Pause</code><code>(</code><code>) → </code><code>(</code><code>)</code></div><div>
 <p>Pauses the timer.</p>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Unpause"></a><code style="text-decoration:none">Unpause</code><a class="hash-link" href="#Unpause" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#dc0073;color:#dc0073">Timer</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Timer/init.lua#L222"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Timer:</code><code class="green_3LnD">Unpause</code><code>(</code><code>) → </code><code>(</code><code>)</code></div><div>
-<p>Unpauses the timer.</p>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="IsPaused"></a><code style="text-decoration:none">IsPaused</code><a class="hash-link" href="#IsPaused" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#dc0073;color:#dc0073">Timer</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Timer/init.lua#L233"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Timer:</code><code class="green_3LnD">IsPaused</code><code>(</code><code>) → </code><code class="blue_2Afy">boolean</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Resume"></a><code style="text-decoration:none">Resume</code><a class="hash-link" href="#Resume" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#dc0073;color:#dc0073">Timer</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Timer/init.lua#L225"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Timer:</code><code class="green_3LnD">Resume</code><code>(</code><code>) → </code><code>(</code><code>)</code></div><div>
+<p>Resumes or "un-pauses" the timer.</p>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="IsPaused"></a><code style="text-decoration:none">IsPaused</code><a class="hash-link" href="#IsPaused" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#dc0073;color:#dc0073">Timer</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Timer/init.lua#L239"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Timer:</code><code class="green_3LnD">IsPaused</code><code>(</code><code>) → </code><code class="blue_2Afy">boolean</code></div><div>
 <p>Returns a boolean indicating if the timer has being paused.</p>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Destroy"></a><code style="text-decoration:none">Destroy</code><a class="hash-link" href="#Destroy" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#dc0073;color:#dc0073">Timer</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Timer/init.lua#L243"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Timer:</code><code class="green_3LnD">Destroy</code><code>(</code><code>) → </code><code>(</code><code>)</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Destroy"></a><code style="text-decoration:none">Destroy</code><a class="hash-link" href="#Destroy" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#dc0073;color:#dc0073">Timer</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Timer/init.lua#L249"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Timer:</code><code class="green_3LnD">Destroy</code><code>(</code><code>) → </code><code>(</code><code>)</code></div><div>
 <p>Destroys the timer, renders it unusuable and cleans up everything.</p>
-</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Stop"></a><code style="text-decoration:none">Stop</code><a class="hash-link" href="#Stop" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#dc0073;color:#dc0073">Timer</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Timer/init.lua#L259"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Timer:</code><code class="green_3LnD">Stop</code><code>(</code><code>) → </code><code>(</code><code>)</code></div><div>
+</div><div class="divider_3z1R"></div><h3><a aria-hidden="true" tabindex="-1" class="anchor anchor__h3 anchorWithStickyNavbar_31ik" id="Stop"></a><code style="text-decoration:none">Stop</code><a class="hash-link" href="#Stop" title="Direct link to heading">#</a></h3><span class="docTag_3qMS" style="border-color:#dc0073;color:#dc0073">Timer</span><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/finobinos/RBXUtil/blob/master/packages/Timer/init.lua#L265"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Timer:</code><code class="green_3LnD">Stop</code><code>(</code><code>) → </code><code>(</code><code>)</code></div><div>
 <p>Stops the timer.</p>
 </div></div></article></div><details><summary>Show raw api</summary><pre style="max-width:100%;white-space:pre-wrap">{
     &quot;functions&quot;: [
@@ -133,7 +133,7 @@ timer<span class="token punctuation">:</span><span class="token function">Start<
             ],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 100,
+                &quot;line&quot;: 101,
                 &quot;path&quot;: &quot;packages/Timer/init.lua&quot;
             }
         },
@@ -160,7 +160,7 @@ timer<span class="token punctuation">:</span><span class="token function">Start<
             ],
             &quot;function_type&quot;: &quot;static&quot;,
             &quot;source&quot;: {
-                &quot;line&quot;: 131,
+                &quot;line&quot;: 132,
                 &quot;path&quot;: &quot;packages/Timer/init.lua&quot;
             }
         },
@@ -174,7 +174,7 @@ timer<span class="token punctuation">:</span><span class="token function">Start<
                 &quot;Timer&quot;
             ],
             &quot;source&quot;: {
-                &quot;line&quot;: 168,
+                &quot;line&quot;: 169,
                 &quot;path&quot;: &quot;packages/Timer/init.lua&quot;
             }
         },
@@ -188,7 +188,7 @@ timer<span class="token punctuation">:</span><span class="token function">Start<
                 &quot;Timer&quot;
             ],
             &quot;source&quot;: {
-                &quot;line&quot;: 177,
+                &quot;line&quot;: 178,
                 &quot;path&quot;: &quot;packages/Timer/init.lua&quot;
             }
         },
@@ -207,7 +207,7 @@ timer<span class="token punctuation">:</span><span class="token function">Start<
                 &quot;Timer&quot;
             ],
             &quot;source&quot;: {
-                &quot;line&quot;: 202,
+                &quot;line&quot;: 203,
                 &quot;path&quot;: &quot;packages/Timer/init.lua&quot;
             }
         },
@@ -221,13 +221,13 @@ timer<span class="token punctuation">:</span><span class="token function">Start<
                 &quot;Timer&quot;
             ],
             &quot;source&quot;: {
-                &quot;line&quot;: 211,
+                &quot;line&quot;: 212,
                 &quot;path&quot;: &quot;packages/Timer/init.lua&quot;
             }
         },
         {
-            &quot;name&quot;: &quot;Unpause&quot;,
-            &quot;desc&quot;: &quot;Unpauses the timer.&quot;,
+            &quot;name&quot;: &quot;Resume&quot;,
+            &quot;desc&quot;: &quot;Resumes or \&quot;un-pauses\&quot; the timer.&quot;,
             &quot;params&quot;: [],
             &quot;returns&quot;: [],
             &quot;function_type&quot;: &quot;method&quot;,
@@ -235,7 +235,7 @@ timer<span class="token punctuation">:</span><span class="token function">Start<
                 &quot;Timer&quot;
             ],
             &quot;source&quot;: {
-                &quot;line&quot;: 222,
+                &quot;line&quot;: 225,
                 &quot;path&quot;: &quot;packages/Timer/init.lua&quot;
             }
         },
@@ -254,7 +254,7 @@ timer<span class="token punctuation">:</span><span class="token function">Start<
                 &quot;Timer&quot;
             ],
             &quot;source&quot;: {
-                &quot;line&quot;: 233,
+                &quot;line&quot;: 239,
                 &quot;path&quot;: &quot;packages/Timer/init.lua&quot;
             }
         },
@@ -268,7 +268,7 @@ timer<span class="token punctuation">:</span><span class="token function">Start<
                 &quot;Timer&quot;
             ],
             &quot;source&quot;: {
-                &quot;line&quot;: 243,
+                &quot;line&quot;: 249,
                 &quot;path&quot;: &quot;packages/Timer/init.lua&quot;
             }
         },
@@ -282,7 +282,7 @@ timer<span class="token punctuation">:</span><span class="token function">Start<
                 &quot;Timer&quot;
             ],
             &quot;source&quot;: {
-                &quot;line&quot;: 259,
+                &quot;line&quot;: 265,
                 &quot;path&quot;: &quot;packages/Timer/init.lua&quot;
             }
         }
@@ -297,7 +297,7 @@ timer<span class="token punctuation">:</span><span class="token function">Start<
             ],
             &quot;readonly&quot;: true,
             &quot;source&quot;: {
-                &quot;line&quot;: 63,
+                &quot;line&quot;: 64,
                 &quot;path&quot;: &quot;packages/Timer/init.lua&quot;
             }
         },
@@ -310,7 +310,7 @@ timer<span class="token punctuation">:</span><span class="token function">Start<
             ],
             &quot;readonly&quot;: true,
             &quot;source&quot;: {
-                &quot;line&quot;: 80,
+                &quot;line&quot;: 81,
                 &quot;path&quot;: &quot;packages/Timer/init.lua&quot;
             }
         }
@@ -319,11 +319,11 @@ timer<span class="token punctuation">:</span><span class="token function">Start<
     &quot;name&quot;: &quot;Timer&quot;,
     &quot;desc&quot;: &quot;Timers designed to work like alarms and are used to run code\nat a specific later time.\n\nFor e.g:\n\n```lua\nlocal timer = Timer.new(2)\ntimer.OnTick:Connect(function(deltaTime)\n\twarn((\&quot;Approximately %d seconds have passed\&quot;):format(deltaTime))\nend)\n\ntimer:Start()\n```&quot;,
     &quot;source&quot;: {
-        &quot;line&quot;: 42,
+        &quot;line&quot;: 43,
         &quot;path&quot;: &quot;packages/Timer/init.lua&quot;
     }
-}</pre></details></div><div class="col col--3"><div class="tableOfContents_35-E thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#types" class="table-of-contents__link">Types</a></li><li><a href="#properties" class="table-of-contents__link">Properties</a><ul><li><a href="#Boost" class="table-of-contents__link">Boost</a></li><li><a href="#OnTick" class="table-of-contents__link">OnTick</a></li></ul></li><li><a href="#functions" class="table-of-contents__link">Functions</a><ul><li><a href="#Destroy" class="table-of-contents__link">:Destroy</a></li><li><a href="#IsPaused" class="table-of-contents__link">:IsPaused</a></li><li><a href="#IsStarted" class="table-of-contents__link">:IsStarted</a></li><li><a href="#Pause" class="table-of-contents__link">:Pause</a></li><li><a href="#Reset" class="table-of-contents__link">:Reset</a></li><li><a href="#Start" class="table-of-contents__link">:Start</a></li><li><a href="#Stop" class="table-of-contents__link">:Stop</a></li><li><a href="#Unpause" class="table-of-contents__link">:Unpause</a></li><li><a href="#IsA" class="table-of-contents__link">.IsA</a></li><li><a href="#new" class="table-of-contents__link">.new</a></li></ul></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2021 finobinos. Built with Moonwave and Docusaurus.</div></div></div></footer></div>
-<script src="/RBXUtil/assets/js/runtime~main.6d8817e5.js"></script>
-<script src="/RBXUtil/assets/js/main.7f99f416.js"></script>
+}</pre></details></div><div class="col col--3"><div class="tableOfContents_35-E thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#types" class="table-of-contents__link">Types</a></li><li><a href="#properties" class="table-of-contents__link">Properties</a><ul><li><a href="#Boost" class="table-of-contents__link">Boost</a></li><li><a href="#OnTick" class="table-of-contents__link">OnTick</a></li></ul></li><li><a href="#functions" class="table-of-contents__link">Functions</a><ul><li><a href="#Destroy" class="table-of-contents__link">:Destroy</a></li><li><a href="#IsPaused" class="table-of-contents__link">:IsPaused</a></li><li><a href="#IsStarted" class="table-of-contents__link">:IsStarted</a></li><li><a href="#Pause" class="table-of-contents__link">:Pause</a></li><li><a href="#Reset" class="table-of-contents__link">:Reset</a></li><li><a href="#Resume" class="table-of-contents__link">:Resume</a></li><li><a href="#Start" class="table-of-contents__link">:Start</a></li><li><a href="#Stop" class="table-of-contents__link">:Stop</a></li><li><a href="#IsA" class="table-of-contents__link">.IsA</a></li><li><a href="#new" class="table-of-contents__link">.new</a></li></ul></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2021 finobinos. Built with Moonwave and Docusaurus.</div></div></div></footer></div>
+<script src="/RBXUtil/assets/js/runtime~main.70841f22.js"></script>
+<script src="/RBXUtil/assets/js/main.501d7398.js"></script>
 </body>
 </html>
